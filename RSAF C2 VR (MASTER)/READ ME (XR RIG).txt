@@ -1,0 +1,2 @@
+For XR Rig Advanced (for environment) note:
+1. VR Controller button input checker scripts requires 3 flags: proceed flag, chatlog flag and checklist flag u must connect them in every scene (chatlog to test the chatlog function, checklist to test the check list function, and proceed to activate the proceed flag when both functions are tested)
