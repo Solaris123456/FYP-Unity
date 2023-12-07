@@ -75575,14 +75575,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cfcc2e1085e9514fa81715308b22c0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDist: 2
   deepgramInstance: {fileID: 6955207765446452092}
   buttonTrigger: 0
   hold: 0
   pressed: 0
   timer: 0
   addtime: 0
-  checktime: 5
+  checktime: 3
   OpenHandUI: {fileID: 3588339806423463972}
   menu: {fileID: 6955207764748358035}
 --- !u!114 &6955207765446452092
@@ -107145,7 +107144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControllerType: 0
-  MovementSpeed: 3
+  MovementSpeed: 5
   MovementForce: 500
   MaxHorizontalVelocity: 5
   MaxVerticalVelocity: 10
