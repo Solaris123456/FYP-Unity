@@ -34,11 +34,11 @@ public class Alternative
 [System.Serializable]
 public class WordMatch
 {
-    public AudioSource audiocheck;
-    public float waiting = 2;
-    public GameObject detectFlag;
+    public AudioSource audiocheck; // check if audio source is playing
+    public float waiting = 2; // waiting time before bypass menu pop up
+    public GameObject detectFlag; // currentflag active status detection
     public string[] words;
-    public string bypassUIWords;
+    public string bypassUIWords; // bypass menu words 
     public int matchedCount;
     public bool activated;
     public bool singleUseOnly; // Added field to indicate if the element is single use only
@@ -48,11 +48,11 @@ public class WordMatch
 
 public class DeepgramInstance : MonoBehaviour
 {
-    public bool allDone = false;
+    public bool allDone = false; // for repeating elements
     public int currentIndex2 = 0; // To keep track of the current index
-    public bool Bypass;
-    public BypassDeepgram bypassScript;
-    WebSocket websocket;
+    public bool Bypass; // will only be true if only bypass is available (deepgram connection lost/fail)
+    public BypassDeepgram bypassScript; // BypassDeepgram script
+    WebSocket websocket; // Deepgram
     public WordMatch[] wordMatches; // Changed the type to WordMatch array
 
     public float tolerance;
