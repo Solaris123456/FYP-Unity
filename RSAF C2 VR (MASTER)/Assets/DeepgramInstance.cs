@@ -38,7 +38,7 @@ public class WordMatch
     public float waiting = 2; // waiting time before bypass menu pop up
     public GameObject detectFlag; // currentflag active status detection
     public string[] words;
-    public string bypassUIWords; // bypass menu words 
+    // public string bypassUIWords; // bypass menu words 
     public int matchedCount;
     public bool activated;
     public bool singleUseOnly; // Added field to indicate if the element is single use only
