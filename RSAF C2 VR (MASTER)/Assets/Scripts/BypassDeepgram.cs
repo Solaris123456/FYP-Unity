@@ -23,7 +23,6 @@ public class BypassDeepgram : MonoBehaviour
     public float addtime = 0; // timer 2 for press and hold time (how long the bypass button was held)
     public float checktime = 3; // press and hold time b4 bypass
     public OpenHandUI OpenHandUI; // wrist menu script
-    public GameObject menu; // bypass pop up
     //public GameObject bypassimgmenu; // bypass loading
 
     private void Start()
@@ -47,7 +46,7 @@ public class BypassDeepgram : MonoBehaviour
                 {
                     Debug.Log("bypass armed");
                     hold = true;
-                    menu.SetActive(true);
+                    deepgramInstance.wordMatches[deepgramInstance.currentIndex2].bypassUiPopup.SetActive(true);
                     timer = 0;
                 }
 
@@ -78,7 +77,7 @@ public class BypassDeepgram : MonoBehaviour
                             buttonTrigger = true; // bypassed
                             addtime = 0; // timer 2 reset
                             //bypassimgmenu.SetActive(false); // deactive bypass loading
-                            menu.SetActive(false); // deactive bypass pop up
+                            deepgramInstance.wordMatches[deepgramInstance.currentIndex2].bypassUiPopup.SetActive(false); // deactive bypass pop up
                         }
                     }
                     else

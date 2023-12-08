@@ -43,7 +43,7 @@ public class WordMatch
     public bool activated;
     public bool singleUseOnly; // Added field to indicate if the element is single use only
     public UnityEvent method; // Added field to store the corresponding UnityEvent
-    
+    public GameObject bypassUiPopup; // bypass pop up
 }
 
 public class DeepgramInstance : MonoBehaviour
@@ -193,7 +193,7 @@ public class DeepgramInstance : MonoBehaviour
                                         bypassScript.addtime = 0;
                                         bypassScript.timer = 0;
                                         //bypassimgmenu.SetActive(false); // deactive bypass loading
-                                        bypassScript.menu.SetActive(false); // deactive bypass pop up
+                                        wordMatches[currentIndex2].bypassUiPopup.SetActive(false); // deactive bypass pop up
                                     }
                                     break;
                                 }
