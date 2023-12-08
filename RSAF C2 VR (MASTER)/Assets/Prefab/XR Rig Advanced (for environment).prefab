@@ -47185,7 +47185,7 @@ Transform:
   - {fileID: 3930803448206802776}
   - {fileID: 6955207764975029265}
   - {fileID: 6955207766209584032}
-  - {fileID: 6955207764748358034}
+  - {fileID: 8781696030905349162}
   m_Father: {fileID: 5024184113917304991}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -67467,6 +67467,38 @@ CapsuleCollider:
   m_Height: 0.035
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6952686075534438634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8781696030905349162}
+  m_Layer: 0
+  m_Name: Bypass UIs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8781696030905349162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952686075534438634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6955207764748358034}
+  m_Father: {fileID: 5024184113917245153}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6955207764281104765
 GameObject:
   m_ObjectHideFlags: 0
@@ -70141,14 +70173,14 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6955207764748358035}
   m_LocalRotation: {x: 0.08970075, y: -0, z: -0.00000001117587, w: 0.9959688}
-  m_LocalPosition: {x: 0, y: 0, z: 0.4739}
-  m_LocalScale: {x: 0.0002613628, y: 0.0002613628, z: 0.30026352}
+  m_LocalPosition: {x: 0, y: 0, z: 0.47390282}
+  m_LocalScale: {x: 0.0002613628, y: 0.00026136276, z: 0.30026352}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6955207765405394543}
   - {fileID: 6955207765590618571}
-  m_Father: {fileID: 5024184113917245153}
-  m_RootOrder: 10
+  m_Father: {fileID: 8781696030905349162}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10.293, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -75583,7 +75615,6 @@ MonoBehaviour:
   addtime: 0
   checktime: 3
   OpenHandUI: {fileID: 3588339806423463972}
-  menu: {fileID: 6955207764748358035}
 --- !u!114 &6955207765446452092
 MonoBehaviour:
   m_ObjectHideFlags: 0
