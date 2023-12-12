@@ -32,7 +32,7 @@ public class BeginScenarioFireScript : MonoBehaviour
     {
         selectedOptions.Clear();
 
-        int numTargets = Random.Range(1, 4);
+        int numTargets = Random.Range(2, 2);
 
         List<GameObject> options = new List<GameObject>(FlammableTargets);
 
