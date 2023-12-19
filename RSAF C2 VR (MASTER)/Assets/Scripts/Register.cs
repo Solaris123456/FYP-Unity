@@ -7,9 +7,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-//using UnityEditor.Build.Content;
+using UnityEditor.Build.Content;
 using static System.Net.WebRequestMethods;
-//using static UnityEditor.PlayerSettings;
+using static UnityEditor.PlayerSettings;
 using UnityEngine.EventSystems;
 
 public class Register : MonoBehaviour
@@ -81,8 +81,6 @@ public class Register : MonoBehaviour
     }
     public void Registering()
     {
-        //LoadUserData();
-
         string username = nameInputField.text;
         string password = passwordInputField.text;
         foreach (User user in users)
@@ -96,10 +94,10 @@ public class Register : MonoBehaviour
 
 
         string encryptedPassword = EncryptPassword(password);
-        User newUser = new User { Username = username, Password = encryptedPassword };
+        User newUser = new User { Username = username, Password = encryptedPassword, category = "1" };
         users.Add(newUser);
 
-        
+        //LoadUserData();
         SaveUserData();
 
         Debug.Log("Registration Successful");
@@ -111,7 +109,7 @@ public class Register : MonoBehaviour
             foreach (User user in users)
             {
                 string encryptedUsername = user.Username;/*Encrypt(user.Username)*/
-                writer.WriteLine(encryptedUsername + "," + user.Password + "," + trainingMode);
+                writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
             }
         }
         Debug.Log("User data saved");
