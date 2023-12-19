@@ -10,6 +10,7 @@ public class BeginScenarioFireScript2 : MonoBehaviour
     public GameObject ScenarioChecker;
     public GameObject ManualPickedflag;
     public GameObject ConfirmedInspectionflag;
+    public SuccessRackCounter RackCounter;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class BeginScenarioFireScript2 : MonoBehaviour
         selectedOptions.Clear();
 
         int numTargets = Random.Range(2, 2);
+        RackCounter.RacksToCount += numTargets;
 
         List<GameObject> options = new List<GameObject>(FlammableTargets);
 

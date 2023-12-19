@@ -7,6 +7,7 @@ public class V2FireSelecter : MonoBehaviour
     public GameObject[] FlammableTargets;
     private List<GameObject> selectedOptions = new List<GameObject>();
     public GameObject FireTick;
+    public SuccessRackCounter RackCounter;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,11 @@ public class V2FireSelecter : MonoBehaviour
         selectedOptions.Clear();
 
         int numTargets = Random.Range(2, 5);
-
+        if (RackCounter.RacksToCount < 0)
+        {
+            RackCounter.RacksToCount = numTargets;
+        }
+        RackCounter.RacksToCount += numTargets;
         List<GameObject> options = new List<GameObject>(FlammableTargets);
 
         for (int i = 0; i < numTargets; i++)

@@ -6,7 +6,7 @@ public class SuccessRackCounter : MonoBehaviour
 {
     public GameObject RackCounter;
     public int SuccessfulRackCount = 0;
-    public int RacksToCount = 3;
+    public int RacksToCount = 0;
     public GameObject AllRacksDone;
     // Start is called before the first frame update
     void Start()
@@ -21,10 +21,10 @@ public class SuccessRackCounter : MonoBehaviour
         {
             SuccessfulRackCount++;
             RackCounter.SetActive(true);
-        }
-        if (SuccessfulRackCount == RacksToCount)
-        {
-            AllRacksDone.SetActive(true);
+            if (SuccessfulRackCount == RacksToCount)
+            {
+                AllRacksDone.SetActive(true);
+            }
         }
     }
 }
