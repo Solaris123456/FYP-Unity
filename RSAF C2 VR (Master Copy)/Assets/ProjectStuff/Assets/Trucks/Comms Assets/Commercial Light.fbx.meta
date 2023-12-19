@@ -1,0 +1,4303 @@
+fileFormatVersion: 2
+guid: 5ee1b2fc9f9f77449ab33f5419f0ccdc
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: 5185168457583558744
+    second: Box024|Birth 001|Birth 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -5304440651480948262
+    second: Box024|Birth 001|Birth 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 3292503968700598756
+    second: Box024|Birth 001|Birth 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 9046234352974577088
+    second: Box024|Birth 001|Birth 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -5826611337925272478
+    second: Box024|Birth 001|Birth 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 288515330407401050
+    second: Box024|Birth 001|Birth 001|Box022|Take 001|BaseLayer
+  - first:
+      74: 3936260228656106713
+    second: Box024|Birth 001|Birth 001|Box023|Take 001|BaseLayer
+  - first:
+      74: -427855737084696264
+    second: Box024|Birth 001|Birth 001|Box024|Take 001|BaseLayer
+  - first:
+      74: 6727638605764228122
+    second: Box024|Birth 001|Birth 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 7206316396479494772
+    second: Box024|Birth 001|Birth 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 5557130206776975316
+    second: Box024|Birth 001|Birth 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -4007371222572251105
+    second: Box024|Birth 001|Birth 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -2586733415480612154
+    second: Box024|Birth 001|Birth 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -7798424482986624836
+    second: Box024|Birth 001|Birth 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -2732940979863927240
+    second: Box024|Birth 001|Birth 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 2345493273915724192
+    second: Box024|Birth 001|Birth 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 8070908551435888448
+    second: Box024|Birth 001|Birth 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 6178569343829700767
+    second: Box024|Birth 001|Birth 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -7202483617408793089
+    second: Box024|Birth 001|Birth 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: -1724654918924029665
+    second: Box024|Birth 001|Birth 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: -682766182134122351
+    second: Box024|Birth 001|Birth 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: 4377345053000261465
+    second: Box024|Birth 001|Birth 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -262039168798066847
+    second: Box024|Birth 001|Birth 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: -9095069187848575118
+    second: Box024|Birth 001|Birth 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -5724441720724036604
+    second: Box024|Birth 001|Birth 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -5416109894517399958
+    second: Box024|Birth 001|Birth 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -7053872696901269638
+    second: Box024|Birth 001|Birth 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -6190843525854693290
+    second: Box024|Birth 001|Birth 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -2208119378259734347
+    second: Box024|Birth 001|Birth 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 1662570109000653809
+    second: Box024|Birth 001|Birth 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 7499714747929839810
+    second: Box024|Birth 001|Birth 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 6557424690447542598
+    second: Box024|Birth 001|Birth 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -5902211251059692321
+    second: Box024|Birth 001|Birth 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -3664841288047639460
+    second: Box024|Birth 001|Birth 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 2264584573526608203
+    second: Box024|Box024|Box024|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -4299583294923839847
+    second: Box024|Box024|Box024|Box018|Take 001|BaseLayer
+  - first:
+      74: 9208209219285743654
+    second: Box024|Box024|Box024|Box019|Take 001|BaseLayer
+  - first:
+      74: -5204331452974104105
+    second: Box024|Box024|Box024|Box020|Take 001|BaseLayer
+  - first:
+      74: -4988591606050166608
+    second: Box024|Box024|Box024|Box021|Take 001|BaseLayer
+  - first:
+      74: 6758125328309541079
+    second: Box024|Box024|Box024|Box022|Take 001|BaseLayer
+  - first:
+      74: 531404644901801985
+    second: Box024|Box024|Box024|Box023|Take 001|BaseLayer
+  - first:
+      74: -7677036900701216815
+    second: Box024|Box024|Box024|Box024|Take 001|BaseLayer
+  - first:
+      74: -249030787213287053
+    second: Box024|Box024|Box024|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -9088104253729168264
+    second: Box024|Box024|Box024|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 4028229117300821426
+    second: Box024|Box024|Box024|Camera001|Take 001|BaseLayer
+  - first:
+      74: -3915425257854527748
+    second: Box024|Box024|Box024|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -7915324243255215128
+    second: Box024|Box024|Box024|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -5757046333428415570
+    second: Box024|Box024|Box024|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 372686408745306710
+    second: Box024|Box024|Box024|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -4310732077592191523
+    second: Box024|Box024|Box024|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -7443297058853030088
+    second: Box024|Box024|Box024|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -631416477146694180
+    second: Box024|Box024|Box024|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 7258393239154317616
+    second: Box024|Box024|Box024|Display 001|Take 001|BaseLayer
+  - first:
+      74: -6288305082141995992
+    second: Box024|Box024|Box024|Display 002|Take 001|BaseLayer
+  - first:
+      74: -7179583202805340044
+    second: Box024|Box024|Box024|Display 003|Take 001|BaseLayer
+  - first:
+      74: -4915990188078193756
+    second: Box024|Box024|Box024|Event 001|Take 001|BaseLayer
+  - first:
+      74: 5977621698351716883
+    second: Box024|Box024|Box024|Event 002|Take 001|BaseLayer
+  - first:
+      74: -7466595542214078172
+    second: Box024|Box024|Box024|Event 003|Take 001|BaseLayer
+  - first:
+      74: -1689778161351161718
+    second: Box024|Box024|Box024|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 7773965058166328011
+    second: Box024|Box024|Box024|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 5213514228599382072
+    second: Box024|Box024|Box024|Omni001|Take 001|BaseLayer
+  - first:
+      74: 8853417420910794935
+    second: Box024|Box024|Box024|Omni002|Take 001|BaseLayer
+  - first:
+      74: -6626562649110923572
+    second: Box024|Box024|Box024|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -4456773022873011140
+    second: Box024|Box024|Box024|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -1944350549048726397
+    second: Box024|Box024|Box024|Render 001|Take 001|BaseLayer
+  - first:
+      74: -1716429714347119223
+    second: Box024|Box024|Box024|Render 002|Take 001|BaseLayer
+  - first:
+      74: 7826701043064854879
+    second: Box024|Box024|Box024|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -7846769183368333405
+    second: Box024|Box024|Box024|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 7793582678819659104
+    second: Box024|Camera001.Target|Camera001.Target|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -7429070767595562296
+    second: Box024|Camera001.Target|Camera001.Target|Box018|Take 001|BaseLayer
+  - first:
+      74: -7423385495833471499
+    second: Box024|Camera001.Target|Camera001.Target|Box019|Take 001|BaseLayer
+  - first:
+      74: -8559291182676549899
+    second: Box024|Camera001.Target|Camera001.Target|Box020|Take 001|BaseLayer
+  - first:
+      74: -3056369829352605693
+    second: Box024|Camera001.Target|Camera001.Target|Box021|Take 001|BaseLayer
+  - first:
+      74: -5989647939576980038
+    second: Box024|Camera001.Target|Camera001.Target|Box022|Take 001|BaseLayer
+  - first:
+      74: 5493125950983161079
+    second: Box024|Camera001.Target|Camera001.Target|Box023|Take 001|BaseLayer
+  - first:
+      74: -3193083342022880216
+    second: Box024|Camera001.Target|Camera001.Target|Box024|Take 001|BaseLayer
+  - first:
+      74: 6985502484768505362
+    second: Box024|Camera001.Target|Camera001.Target|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -7955160434054526414
+    second: Box024|Camera001.Target|Camera001.Target|Camera001.Target|Take 001|Bas
+  - first:
+      74: -8987782915442891603
+    second: Box024|Camera001.Target|Camera001.Target|Camera001|Take 001|BaseLayer
+  - first:
+      74: 5758788384156353745
+    second: Box024|Camera001.Target|Camera001.Target|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -8089462474878001709
+    second: Box024|Camera001.Target|Camera001.Target|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 1077511416829468785
+    second: Box024|Camera001.Target|Camera001.Target|ChamferBox002|Take 001|BaseLa
+  - first:
+      74: 2160416911463452882
+    second: Box024|Camera001.Target|Camera001.Target|Cylinder009|Take 001|BaseLaye
+  - first:
+      74: -903539082924652449
+    second: Box024|Camera001.Target|Camera001.Target|Cylinder010|Take 001|BaseLaye
+  - first:
+      74: 1673142772779333823
+    second: Box024|Camera001.Target|Camera001.Target|Cylinder011|Take 001|BaseLaye
+  - first:
+      74: -8300759885314824074
+    second: Box024|Camera001.Target|Camera001.Target|Cylinder012|Take 001|BaseLaye
+  - first:
+      74: 1830739188279730064
+    second: Box024|Camera001.Target|Camera001.Target|Display 001|Take 001|BaseLaye
+  - first:
+      74: 3907190617787931427
+    second: Box024|Camera001.Target|Camera001.Target|Display 002|Take 001|BaseLaye
+  - first:
+      74: -268590913323873376
+    second: Box024|Camera001.Target|Camera001.Target|Display 003|Take 001|BaseLaye
+  - first:
+      74: 5362320040334811504
+    second: Box024|Camera001.Target|Camera001.Target|Event 001|Take 001|BaseLayer
+  - first:
+      74: 4871548218290828803
+    second: Box024|Camera001.Target|Camera001.Target|Event 002|Take 001|BaseLayer
+  - first:
+      74: -1017527918394697678
+    second: Box024|Camera001.Target|Camera001.Target|Event 003|Take 001|BaseLayer
+  - first:
+      74: -3091917264475382952
+    second: Box024|Camera001.Target|Camera001.Target|Light_ceiling001|Take 001|Bas
+  - first:
+      74: -3013608241141039190
+    second: Box024|Camera001.Target|Camera001.Target|Material Static 001|Take 001|
+  - first:
+      74: -9091758391986938280
+    second: Box024|Camera001.Target|Camera001.Target|Omni001|Take 001|BaseLayer
+  - first:
+      74: 1794962869698249206
+    second: Box024|Camera001.Target|Camera001.Target|Omni002|Take 001|BaseLayer
+  - first:
+      74: 6276368221993036136
+    second: Box024|Camera001.Target|Camera001.Target|Particle View 001|Take 001|Ba
+  - first:
+      74: -6874559587177774930
+    second: Box024|Camera001.Target|Camera001.Target|Position Object 001|Take 001|
+  - first:
+      74: 2212443262800594232
+    second: Box024|Camera001.Target|Camera001.Target|Render 001|Take 001|BaseLayer
+  - first:
+      74: -5178465304542589423
+    second: Box024|Camera001.Target|Camera001.Target|Render 002|Take 001|BaseLayer
+  - first:
+      74: 6599919201634198735
+    second: Box024|Camera001.Target|Camera001.Target|Shape Facing 001|Take 001|Bas
+  - first:
+      74: -6763795441511850856
+    second: Box024|Camera001.Target|Camera001.Target|Tunnel_light03|Take 001|BaseL
+  - first:
+      74: -1024702796196478632
+    second: Box024|Cylinder009|Cylinder009|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -2794337132166733200
+    second: Box024|Cylinder009|Cylinder009|Box018|Take 001|BaseLayer
+  - first:
+      74: -5060468924395069316
+    second: Box024|Cylinder009|Cylinder009|Box019|Take 001|BaseLayer
+  - first:
+      74: -1079445586674661426
+    second: Box024|Cylinder009|Cylinder009|Box020|Take 001|BaseLayer
+  - first:
+      74: 3082091044592118437
+    second: Box024|Cylinder009|Cylinder009|Box021|Take 001|BaseLayer
+  - first:
+      74: -811712323822308878
+    second: Box024|Cylinder009|Cylinder009|Box022|Take 001|BaseLayer
+  - first:
+      74: 5752797534155097739
+    second: Box024|Cylinder009|Cylinder009|Box023|Take 001|BaseLayer
+  - first:
+      74: -93866405545833662
+    second: Box024|Cylinder009|Cylinder009|Box024|Take 001|BaseLayer
+  - first:
+      74: -1964957927001528983
+    second: Box024|Cylinder009|Cylinder009|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 2792553110963668368
+    second: Box024|Cylinder009|Cylinder009|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -5719614984386509241
+    second: Box024|Cylinder009|Cylinder009|Camera001|Take 001|BaseLayer
+  - first:
+      74: 4459313233437268275
+    second: Box024|Cylinder009|Cylinder009|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -1065376357835327773
+    second: Box024|Cylinder009|Cylinder009|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 82463331456569665
+    second: Box024|Cylinder009|Cylinder009|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 2986673852726947734
+    second: Box024|Cylinder009|Cylinder009|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 7690863404254938649
+    second: Box024|Cylinder009|Cylinder009|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -106111196134098547
+    second: Box024|Cylinder009|Cylinder009|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -905205734584201713
+    second: Box024|Cylinder009|Cylinder009|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -5647687369012473936
+    second: Box024|Cylinder009|Cylinder009|Display 001|Take 001|BaseLayer
+  - first:
+      74: 4591707246916662536
+    second: Box024|Cylinder009|Cylinder009|Display 002|Take 001|BaseLayer
+  - first:
+      74: -7000147509392647798
+    second: Box024|Cylinder009|Cylinder009|Display 003|Take 001|BaseLayer
+  - first:
+      74: 5336705491786657950
+    second: Box024|Cylinder009|Cylinder009|Event 001|Take 001|BaseLayer
+  - first:
+      74: -309643062670585896
+    second: Box024|Cylinder009|Cylinder009|Event 002|Take 001|BaseLayer
+  - first:
+      74: 3229943607150908001
+    second: Box024|Cylinder009|Cylinder009|Event 003|Take 001|BaseLayer
+  - first:
+      74: 2447432127771877443
+    second: Box024|Cylinder009|Cylinder009|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 2708899054941126221
+    second: Box024|Cylinder009|Cylinder009|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -4379460248610944038
+    second: Box024|Cylinder009|Cylinder009|Omni001|Take 001|BaseLayer
+  - first:
+      74: 4012951480965342441
+    second: Box024|Cylinder009|Cylinder009|Omni002|Take 001|BaseLayer
+  - first:
+      74: -1826386714603689491
+    second: Box024|Cylinder009|Cylinder009|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -6022753832762640114
+    second: Box024|Cylinder009|Cylinder009|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -9201447611684706464
+    second: Box024|Cylinder009|Cylinder009|Render 001|Take 001|BaseLayer
+  - first:
+      74: -5380010009283793837
+    second: Box024|Cylinder009|Cylinder009|Render 002|Take 001|BaseLayer
+  - first:
+      74: -4367688334976155223
+    second: Box024|Cylinder009|Cylinder009|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 5477158406376484891
+    second: Box024|Cylinder009|Cylinder009|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -8281626331777347098
+    second: Box024|Cylinder010|Cylinder010|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -301147824020680618
+    second: Box024|Cylinder010|Cylinder010|Box018|Take 001|BaseLayer
+  - first:
+      74: 125548597995551425
+    second: Box024|Cylinder010|Cylinder010|Box019|Take 001|BaseLayer
+  - first:
+      74: -2511056314013185695
+    second: Box024|Cylinder010|Cylinder010|Box020|Take 001|BaseLayer
+  - first:
+      74: 658728417322730934
+    second: Box024|Cylinder010|Cylinder010|Box021|Take 001|BaseLayer
+  - first:
+      74: -1979528322163993198
+    second: Box024|Cylinder010|Cylinder010|Box022|Take 001|BaseLayer
+  - first:
+      74: -109259276500538253
+    second: Box024|Cylinder010|Cylinder010|Box023|Take 001|BaseLayer
+  - first:
+      74: 8586052535761137563
+    second: Box024|Cylinder010|Cylinder010|Box024|Take 001|BaseLayer
+  - first:
+      74: 8646877691628843406
+    second: Box024|Cylinder010|Cylinder010|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 77964383553159896
+    second: Box024|Cylinder010|Cylinder010|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 5497764933226389822
+    second: Box024|Cylinder010|Cylinder010|Camera001|Take 001|BaseLayer
+  - first:
+      74: 4762775845484891959
+    second: Box024|Cylinder010|Cylinder010|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -6642607928913406601
+    second: Box024|Cylinder010|Cylinder010|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -2858127696334392343
+    second: Box024|Cylinder010|Cylinder010|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 4321723433237522193
+    second: Box024|Cylinder010|Cylinder010|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 2662107523022429206
+    second: Box024|Cylinder010|Cylinder010|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 8065189241000988410
+    second: Box024|Cylinder010|Cylinder010|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 8123197981217088619
+    second: Box024|Cylinder010|Cylinder010|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 2446048913858240302
+    second: Box024|Cylinder010|Cylinder010|Display 001|Take 001|BaseLayer
+  - first:
+      74: 1419606969635685940
+    second: Box024|Cylinder010|Cylinder010|Display 002|Take 001|BaseLayer
+  - first:
+      74: -2590456809937388106
+    second: Box024|Cylinder010|Cylinder010|Display 003|Take 001|BaseLayer
+  - first:
+      74: -1512960766965020920
+    second: Box024|Cylinder010|Cylinder010|Event 001|Take 001|BaseLayer
+  - first:
+      74: -3399158676317389997
+    second: Box024|Cylinder010|Cylinder010|Event 002|Take 001|BaseLayer
+  - first:
+      74: 7136640161108599482
+    second: Box024|Cylinder010|Cylinder010|Event 003|Take 001|BaseLayer
+  - first:
+      74: 3259653716095272195
+    second: Box024|Cylinder010|Cylinder010|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -7029376928599915287
+    second: Box024|Cylinder010|Cylinder010|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -2688670816311275178
+    second: Box024|Cylinder010|Cylinder010|Omni001|Take 001|BaseLayer
+  - first:
+      74: 6483289331840095482
+    second: Box024|Cylinder010|Cylinder010|Omni002|Take 001|BaseLayer
+  - first:
+      74: -1167547037280696657
+    second: Box024|Cylinder010|Cylinder010|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 2507744844025820607
+    second: Box024|Cylinder010|Cylinder010|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -7745924219462344255
+    second: Box024|Cylinder010|Cylinder010|Render 001|Take 001|BaseLayer
+  - first:
+      74: -2937105734793439890
+    second: Box024|Cylinder010|Cylinder010|Render 002|Take 001|BaseLayer
+  - first:
+      74: 5029320730173975367
+    second: Box024|Cylinder010|Cylinder010|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -1157938732503138151
+    second: Box024|Cylinder010|Cylinder010|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -7750663304840726328
+    second: Box024|Cylinder011|Cylinder011|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -4345400237374608794
+    second: Box024|Cylinder011|Cylinder011|Box018|Take 001|BaseLayer
+  - first:
+      74: -7658581976501379121
+    second: Box024|Cylinder011|Cylinder011|Box019|Take 001|BaseLayer
+  - first:
+      74: 8549170696971059919
+    second: Box024|Cylinder011|Cylinder011|Box020|Take 001|BaseLayer
+  - first:
+      74: 7520155481150939073
+    second: Box024|Cylinder011|Cylinder011|Box021|Take 001|BaseLayer
+  - first:
+      74: 1895214722474906972
+    second: Box024|Cylinder011|Cylinder011|Box022|Take 001|BaseLayer
+  - first:
+      74: 4345962851532152875
+    second: Box024|Cylinder011|Cylinder011|Box023|Take 001|BaseLayer
+  - first:
+      74: -3884155434047025462
+    second: Box024|Cylinder011|Cylinder011|Box024|Take 001|BaseLayer
+  - first:
+      74: 4278509751516052562
+    second: Box024|Cylinder011|Cylinder011|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 5414155262636579909
+    second: Box024|Cylinder011|Cylinder011|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -1713805402109045490
+    second: Box024|Cylinder011|Cylinder011|Camera001|Take 001|BaseLayer
+  - first:
+      74: 2489555384490038945
+    second: Box024|Cylinder011|Cylinder011|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 1118515213321703814
+    second: Box024|Cylinder011|Cylinder011|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 2726908959652527440
+    second: Box024|Cylinder011|Cylinder011|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -5901553382605807036
+    second: Box024|Cylinder011|Cylinder011|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 3180426731208223928
+    second: Box024|Cylinder011|Cylinder011|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -6625360165225387975
+    second: Box024|Cylinder011|Cylinder011|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -9198387138878267743
+    second: Box024|Cylinder011|Cylinder011|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 297953520736924228
+    second: Box024|Cylinder011|Cylinder011|Display 001|Take 001|BaseLayer
+  - first:
+      74: 1182247254321415339
+    second: Box024|Cylinder011|Cylinder011|Display 002|Take 001|BaseLayer
+  - first:
+      74: 4049741155660712213
+    second: Box024|Cylinder011|Cylinder011|Display 003|Take 001|BaseLayer
+  - first:
+      74: -2045224915595627484
+    second: Box024|Cylinder011|Cylinder011|Event 001|Take 001|BaseLayer
+  - first:
+      74: 2083810076874979422
+    second: Box024|Cylinder011|Cylinder011|Event 002|Take 001|BaseLayer
+  - first:
+      74: 8647648512676460040
+    second: Box024|Cylinder011|Cylinder011|Event 003|Take 001|BaseLayer
+  - first:
+      74: 4577057481646711897
+    second: Box024|Cylinder011|Cylinder011|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -1698888397824609176
+    second: Box024|Cylinder011|Cylinder011|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 5419643106394254801
+    second: Box024|Cylinder011|Cylinder011|Omni001|Take 001|BaseLayer
+  - first:
+      74: -3274369784660247252
+    second: Box024|Cylinder011|Cylinder011|Omni002|Take 001|BaseLayer
+  - first:
+      74: -2145768294105993240
+    second: Box024|Cylinder011|Cylinder011|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 6058725156950418579
+    second: Box024|Cylinder011|Cylinder011|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 1059524109324660136
+    second: Box024|Cylinder011|Cylinder011|Render 001|Take 001|BaseLayer
+  - first:
+      74: 6026741038071741429
+    second: Box024|Cylinder011|Cylinder011|Render 002|Take 001|BaseLayer
+  - first:
+      74: -8166106536558831581
+    second: Box024|Cylinder011|Cylinder011|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 5559661026100852990
+    second: Box024|Cylinder011|Cylinder011|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 7385127724450039000
+    second: Box024|Cylinder012|Cylinder012|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 5963423165688325571
+    second: Box024|Cylinder012|Cylinder012|Box018|Take 001|BaseLayer
+  - first:
+      74: 2503169158435871714
+    second: Box024|Cylinder012|Cylinder012|Box019|Take 001|BaseLayer
+  - first:
+      74: -145192155895421974
+    second: Box024|Cylinder012|Cylinder012|Box020|Take 001|BaseLayer
+  - first:
+      74: -4205005840190794024
+    second: Box024|Cylinder012|Cylinder012|Box021|Take 001|BaseLayer
+  - first:
+      74: 426603929947120790
+    second: Box024|Cylinder012|Cylinder012|Box022|Take 001|BaseLayer
+  - first:
+      74: 3223521328964863207
+    second: Box024|Cylinder012|Cylinder012|Box023|Take 001|BaseLayer
+  - first:
+      74: -4464345540632376
+    second: Box024|Cylinder012|Cylinder012|Box024|Take 001|BaseLayer
+  - first:
+      74: 4851221362139074653
+    second: Box024|Cylinder012|Cylinder012|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 6574483371109489860
+    second: Box024|Cylinder012|Cylinder012|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -7152652474133237866
+    second: Box024|Cylinder012|Cylinder012|Camera001|Take 001|BaseLayer
+  - first:
+      74: -8759936236137744232
+    second: Box024|Cylinder012|Cylinder012|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -4097226459187999301
+    second: Box024|Cylinder012|Cylinder012|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -9163092063072981012
+    second: Box024|Cylinder012|Cylinder012|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 2149400714194968632
+    second: Box024|Cylinder012|Cylinder012|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -6446206697300188310
+    second: Box024|Cylinder012|Cylinder012|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -8946279746660649314
+    second: Box024|Cylinder012|Cylinder012|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -7895009207799932638
+    second: Box024|Cylinder012|Cylinder012|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 3874070422919358630
+    second: Box024|Cylinder012|Cylinder012|Display 001|Take 001|BaseLayer
+  - first:
+      74: -8742998086678633164
+    second: Box024|Cylinder012|Cylinder012|Display 002|Take 001|BaseLayer
+  - first:
+      74: -7387218186644843822
+    second: Box024|Cylinder012|Cylinder012|Display 003|Take 001|BaseLayer
+  - first:
+      74: 344927618382691670
+    second: Box024|Cylinder012|Cylinder012|Event 001|Take 001|BaseLayer
+  - first:
+      74: 2312493657634550108
+    second: Box024|Cylinder012|Cylinder012|Event 002|Take 001|BaseLayer
+  - first:
+      74: -2128435485974074884
+    second: Box024|Cylinder012|Cylinder012|Event 003|Take 001|BaseLayer
+  - first:
+      74: 2942558126495627257
+    second: Box024|Cylinder012|Cylinder012|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 3032001817832463735
+    second: Box024|Cylinder012|Cylinder012|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -7833426072427872706
+    second: Box024|Cylinder012|Cylinder012|Omni001|Take 001|BaseLayer
+  - first:
+      74: 8438600182817060078
+    second: Box024|Cylinder012|Cylinder012|Omni002|Take 001|BaseLayer
+  - first:
+      74: 5623089463700224304
+    second: Box024|Cylinder012|Cylinder012|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -8760951518401113391
+    second: Box024|Cylinder012|Cylinder012|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 8677191131362440183
+    second: Box024|Cylinder012|Cylinder012|Render 001|Take 001|BaseLayer
+  - first:
+      74: 329932293907721296
+    second: Box024|Cylinder012|Cylinder012|Render 002|Take 001|BaseLayer
+  - first:
+      74: -336177758633152802
+    second: Box024|Cylinder012|Cylinder012|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 4732407090058426688
+    second: Box024|Cylinder012|Cylinder012|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -3783249548562195952
+    second: Box024|Display 001|Display 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -9196917634746948191
+    second: Box024|Display 001|Display 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 1569089594917555180
+    second: Box024|Display 001|Display 001|Box019|Take 001|BaseLayer
+  - first:
+      74: -7946883831115103320
+    second: Box024|Display 001|Display 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -1769185956785310955
+    second: Box024|Display 001|Display 001|Box021|Take 001|BaseLayer
+  - first:
+      74: -9199580165196583152
+    second: Box024|Display 001|Display 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -8281187931075106250
+    second: Box024|Display 001|Display 001|Box023|Take 001|BaseLayer
+  - first:
+      74: 7064764747088420325
+    second: Box024|Display 001|Display 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -828468904889477255
+    second: Box024|Display 001|Display 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -6235087652091169635
+    second: Box024|Display 001|Display 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 1166659607067525869
+    second: Box024|Display 001|Display 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -2844922253319936262
+    second: Box024|Display 001|Display 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 3936190502261231112
+    second: Box024|Display 001|Display 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -8865928449994774582
+    second: Box024|Display 001|Display 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -5693753043702872140
+    second: Box024|Display 001|Display 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 3489197920950989148
+    second: Box024|Display 001|Display 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -8287950535827698119
+    second: Box024|Display 001|Display 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -7898224547511586347
+    second: Box024|Display 001|Display 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -4077282196766232512
+    second: Box024|Display 001|Display 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: -1490285173497915342
+    second: Box024|Display 001|Display 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: 3987595707082902118
+    second: Box024|Display 001|Display 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: 938433764931280973
+    second: Box024|Display 001|Display 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -2926852169464814938
+    second: Box024|Display 001|Display 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: -5610725845268875306
+    second: Box024|Display 001|Display 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: 4154886407823836943
+    second: Box024|Display 001|Display 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 1040047443633387554
+    second: Box024|Display 001|Display 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 7009793180735173093
+    second: Box024|Display 001|Display 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -8792501107144151165
+    second: Box024|Display 001|Display 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: 7523122956137868351
+    second: Box024|Display 001|Display 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -95161328218677611
+    second: Box024|Display 001|Display 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -5678417360377111554
+    second: Box024|Display 001|Display 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 7233014203011661961
+    second: Box024|Display 001|Display 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -6694757066390171245
+    second: Box024|Display 001|Display 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -7625502290056155060
+    second: Box024|Display 001|Display 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -3799487091691129371
+    second: Box024|Display 002|Display 002|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 2150372643110542033
+    second: Box024|Display 002|Display 002|Box018|Take 001|BaseLayer
+  - first:
+      74: -6016785475920089395
+    second: Box024|Display 002|Display 002|Box019|Take 001|BaseLayer
+  - first:
+      74: 3656362145675462680
+    second: Box024|Display 002|Display 002|Box020|Take 001|BaseLayer
+  - first:
+      74: -6619667756259271529
+    second: Box024|Display 002|Display 002|Box021|Take 001|BaseLayer
+  - first:
+      74: -3614526770110617929
+    second: Box024|Display 002|Display 002|Box022|Take 001|BaseLayer
+  - first:
+      74: 3835807782610283569
+    second: Box024|Display 002|Display 002|Box023|Take 001|BaseLayer
+  - first:
+      74: -672331989063340061
+    second: Box024|Display 002|Display 002|Box024|Take 001|BaseLayer
+  - first:
+      74: -3079838363187216178
+    second: Box024|Display 002|Display 002|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 6587339298951306008
+    second: Box024|Display 002|Display 002|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 1340030005710423261
+    second: Box024|Display 002|Display 002|Camera001|Take 001|BaseLayer
+  - first:
+      74: 7167255112391955683
+    second: Box024|Display 002|Display 002|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -896911979618848011
+    second: Box024|Display 002|Display 002|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 4035641440441819811
+    second: Box024|Display 002|Display 002|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 2097861924539192317
+    second: Box024|Display 002|Display 002|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 3375178535080253807
+    second: Box024|Display 002|Display 002|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 2178953468077166669
+    second: Box024|Display 002|Display 002|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -7237823308363719108
+    second: Box024|Display 002|Display 002|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 6268565676029747530
+    second: Box024|Display 002|Display 002|Display 001|Take 001|BaseLayer
+  - first:
+      74: 1786331874673523538
+    second: Box024|Display 002|Display 002|Display 002|Take 001|BaseLayer
+  - first:
+      74: -646862525889925956
+    second: Box024|Display 002|Display 002|Display 003|Take 001|BaseLayer
+  - first:
+      74: 3447596343495900299
+    second: Box024|Display 002|Display 002|Event 001|Take 001|BaseLayer
+  - first:
+      74: 260293135153173071
+    second: Box024|Display 002|Display 002|Event 002|Take 001|BaseLayer
+  - first:
+      74: -985418915255644191
+    second: Box024|Display 002|Display 002|Event 003|Take 001|BaseLayer
+  - first:
+      74: -3441683249888439976
+    second: Box024|Display 002|Display 002|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -3381080954640797427
+    second: Box024|Display 002|Display 002|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 1974314267250122695
+    second: Box024|Display 002|Display 002|Omni001|Take 001|BaseLayer
+  - first:
+      74: -2978433056605789548
+    second: Box024|Display 002|Display 002|Omni002|Take 001|BaseLayer
+  - first:
+      74: -6782038831731982756
+    second: Box024|Display 002|Display 002|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 8767049044826807713
+    second: Box024|Display 002|Display 002|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -700178907234944145
+    second: Box024|Display 002|Display 002|Render 001|Take 001|BaseLayer
+  - first:
+      74: -8372166962222789385
+    second: Box024|Display 002|Display 002|Render 002|Take 001|BaseLayer
+  - first:
+      74: 1543303732726874230
+    second: Box024|Display 002|Display 002|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 7122551797205767312
+    second: Box024|Display 002|Display 002|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -4763907597128573046
+    second: Box024|Display 003|Display 003|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 152211293279733571
+    second: Box024|Display 003|Display 003|Box018|Take 001|BaseLayer
+  - first:
+      74: -7085760415699640061
+    second: Box024|Display 003|Display 003|Box019|Take 001|BaseLayer
+  - first:
+      74: -9116753098552650828
+    second: Box024|Display 003|Display 003|Box020|Take 001|BaseLayer
+  - first:
+      74: -8129856142261834780
+    second: Box024|Display 003|Display 003|Box021|Take 001|BaseLayer
+  - first:
+      74: 2522540222930316837
+    second: Box024|Display 003|Display 003|Box022|Take 001|BaseLayer
+  - first:
+      74: 3158488182387121995
+    second: Box024|Display 003|Display 003|Box023|Take 001|BaseLayer
+  - first:
+      74: -8710817621359347583
+    second: Box024|Display 003|Display 003|Box024|Take 001|BaseLayer
+  - first:
+      74: 6244627582345863959
+    second: Box024|Display 003|Display 003|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 5850818188951950709
+    second: Box024|Display 003|Display 003|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 1806542945582794117
+    second: Box024|Display 003|Display 003|Camera001|Take 001|BaseLayer
+  - first:
+      74: -2389772855145397320
+    second: Box024|Display 003|Display 003|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 909428751893233980
+    second: Box024|Display 003|Display 003|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 3673652537438613362
+    second: Box024|Display 003|Display 003|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 2562411710749174216
+    second: Box024|Display 003|Display 003|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 1365259350928578113
+    second: Box024|Display 003|Display 003|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 2649770017343394232
+    second: Box024|Display 003|Display 003|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -2786235478782182807
+    second: Box024|Display 003|Display 003|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -3035785148843216768
+    second: Box024|Display 003|Display 003|Display 001|Take 001|BaseLayer
+  - first:
+      74: 1156681442495471475
+    second: Box024|Display 003|Display 003|Display 002|Take 001|BaseLayer
+  - first:
+      74: 5685292138229465443
+    second: Box024|Display 003|Display 003|Display 003|Take 001|BaseLayer
+  - first:
+      74: -6162229407495007210
+    second: Box024|Display 003|Display 003|Event 001|Take 001|BaseLayer
+  - first:
+      74: -7945272070701169691
+    second: Box024|Display 003|Display 003|Event 002|Take 001|BaseLayer
+  - first:
+      74: 6184259874173322641
+    second: Box024|Display 003|Display 003|Event 003|Take 001|BaseLayer
+  - first:
+      74: -1588222215496868093
+    second: Box024|Display 003|Display 003|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -7269786287569579077
+    second: Box024|Display 003|Display 003|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 138612946176302403
+    second: Box024|Display 003|Display 003|Omni001|Take 001|BaseLayer
+  - first:
+      74: 8383706085013111032
+    second: Box024|Display 003|Display 003|Omni002|Take 001|BaseLayer
+  - first:
+      74: 3027368303817538409
+    second: Box024|Display 003|Display 003|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 9133923548635296539
+    second: Box024|Display 003|Display 003|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -1955315235429110366
+    second: Box024|Display 003|Display 003|Render 001|Take 001|BaseLayer
+  - first:
+      74: 2031087032266709026
+    second: Box024|Display 003|Display 003|Render 002|Take 001|BaseLayer
+  - first:
+      74: -3359994303253448822
+    second: Box024|Display 003|Display 003|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 9145199641701315032
+    second: Box024|Display 003|Display 003|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 5673623437042682718
+    second: Box024|Event 001|Event 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -484578747988084324
+    second: Box024|Event 001|Event 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 837975427087908667
+    second: Box024|Event 001|Event 001|Box019|Take 001|BaseLayer
+  - first:
+      74: -5371649902234616560
+    second: Box024|Event 001|Event 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -2075373534831373210
+    second: Box024|Event 001|Event 001|Box021|Take 001|BaseLayer
+  - first:
+      74: -5945490045474681137
+    second: Box024|Event 001|Event 001|Box022|Take 001|BaseLayer
+  - first:
+      74: 6840286410082274402
+    second: Box024|Event 001|Event 001|Box023|Take 001|BaseLayer
+  - first:
+      74: -7450317184484628848
+    second: Box024|Event 001|Event 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -4096364298438126718
+    second: Box024|Event 001|Event 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -8743158741467600304
+    second: Box024|Event 001|Event 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 7775191689855981297
+    second: Box024|Event 001|Event 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: 4444940465751545814
+    second: Box024|Event 001|Event 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -6975271048305194311
+    second: Box024|Event 001|Event 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 6643946763309518709
+    second: Box024|Event 001|Event 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -3961087011706215148
+    second: Box024|Event 001|Event 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 8130468257702232505
+    second: Box024|Event 001|Event 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 4131340257952153281
+    second: Box024|Event 001|Event 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -2531356962094901281
+    second: Box024|Event 001|Event 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -4433107427321727246
+    second: Box024|Event 001|Event 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: -5955086963205074025
+    second: Box024|Event 001|Event 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: 3471769104502307911
+    second: Box024|Event 001|Event 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: -8053390890663317776
+    second: Box024|Event 001|Event 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -8484437824269420512
+    second: Box024|Event 001|Event 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: -1194481645090345993
+    second: Box024|Event 001|Event 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -3611524111317543760
+    second: Box024|Event 001|Event 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -663382996065852334
+    second: Box024|Event 001|Event 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -4237601022166589091
+    second: Box024|Event 001|Event 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: 1638122756656506194
+    second: Box024|Event 001|Event 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -1324220637199295140
+    second: Box024|Event 001|Event 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -7205883755027332964
+    second: Box024|Event 001|Event 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -1515568280472146812
+    second: Box024|Event 001|Event 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: -6775435403383818418
+    second: Box024|Event 001|Event 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -5414486856930468409
+    second: Box024|Event 001|Event 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -4053494063499979315
+    second: Box024|Event 001|Event 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -4676836818577104635
+    second: Box024|Event 002|Event 002|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -9015058469469886588
+    second: Box024|Event 002|Event 002|Box018|Take 001|BaseLayer
+  - first:
+      74: -5179458508873829517
+    second: Box024|Event 002|Event 002|Box019|Take 001|BaseLayer
+  - first:
+      74: 8293615412602510352
+    second: Box024|Event 002|Event 002|Box020|Take 001|BaseLayer
+  - first:
+      74: 7925488891523330865
+    second: Box024|Event 002|Event 002|Box021|Take 001|BaseLayer
+  - first:
+      74: -2762714899592204099
+    second: Box024|Event 002|Event 002|Box022|Take 001|BaseLayer
+  - first:
+      74: -2566482625204677238
+    second: Box024|Event 002|Event 002|Box023|Take 001|BaseLayer
+  - first:
+      74: -2345404131811909854
+    second: Box024|Event 002|Event 002|Box024|Take 001|BaseLayer
+  - first:
+      74: 5432845232246567462
+    second: Box024|Event 002|Event 002|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -2552694623082283177
+    second: Box024|Event 002|Event 002|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -7763058903574304387
+    second: Box024|Event 002|Event 002|Camera001|Take 001|BaseLayer
+  - first:
+      74: 3435924180011443661
+    second: Box024|Event 002|Event 002|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 1512860137773072964
+    second: Box024|Event 002|Event 002|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 5005538161191746631
+    second: Box024|Event 002|Event 002|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -8348560594221515613
+    second: Box024|Event 002|Event 002|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -8597052276727024221
+    second: Box024|Event 002|Event 002|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -7373923164682094178
+    second: Box024|Event 002|Event 002|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 8243089576061416606
+    second: Box024|Event 002|Event 002|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 1672011406225901463
+    second: Box024|Event 002|Event 002|Display 001|Take 001|BaseLayer
+  - first:
+      74: -7666528906477901643
+    second: Box024|Event 002|Event 002|Display 002|Take 001|BaseLayer
+  - first:
+      74: -4430525522077079622
+    second: Box024|Event 002|Event 002|Display 003|Take 001|BaseLayer
+  - first:
+      74: 6090141939746191208
+    second: Box024|Event 002|Event 002|Event 001|Take 001|BaseLayer
+  - first:
+      74: -2178929949835876226
+    second: Box024|Event 002|Event 002|Event 002|Take 001|BaseLayer
+  - first:
+      74: 6730244093174668429
+    second: Box024|Event 002|Event 002|Event 003|Take 001|BaseLayer
+  - first:
+      74: 6796003257914527265
+    second: Box024|Event 002|Event 002|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -6353684304471749516
+    second: Box024|Event 002|Event 002|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 943283369267555005
+    second: Box024|Event 002|Event 002|Omni001|Take 001|BaseLayer
+  - first:
+      74: -2609367637595284414
+    second: Box024|Event 002|Event 002|Omni002|Take 001|BaseLayer
+  - first:
+      74: -5343742071221808874
+    second: Box024|Event 002|Event 002|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 8620942605197040753
+    second: Box024|Event 002|Event 002|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 1102290393390263278
+    second: Box024|Event 002|Event 002|Render 001|Take 001|BaseLayer
+  - first:
+      74: 3421379440470816927
+    second: Box024|Event 002|Event 002|Render 002|Take 001|BaseLayer
+  - first:
+      74: 6992895895591824682
+    second: Box024|Event 002|Event 002|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -7064091308459699854
+    second: Box024|Event 002|Event 002|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 8488817393133546819
+    second: Box024|Event 003|Event 003|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 7313851404155672163
+    second: Box024|Event 003|Event 003|Box018|Take 001|BaseLayer
+  - first:
+      74: -1461114135756474831
+    second: Box024|Event 003|Event 003|Box019|Take 001|BaseLayer
+  - first:
+      74: 3089741293788995797
+    second: Box024|Event 003|Event 003|Box020|Take 001|BaseLayer
+  - first:
+      74: -3310650066259107419
+    second: Box024|Event 003|Event 003|Box021|Take 001|BaseLayer
+  - first:
+      74: 7017006564743118486
+    second: Box024|Event 003|Event 003|Box022|Take 001|BaseLayer
+  - first:
+      74: -6774444947825851367
+    second: Box024|Event 003|Event 003|Box023|Take 001|BaseLayer
+  - first:
+      74: 9022829456457519974
+    second: Box024|Event 003|Event 003|Box024|Take 001|BaseLayer
+  - first:
+      74: 3295808363748770350
+    second: Box024|Event 003|Event 003|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -159044404394187528
+    second: Box024|Event 003|Event 003|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -8663170234348541773
+    second: Box024|Event 003|Event 003|Camera001|Take 001|BaseLayer
+  - first:
+      74: 6702220564003672967
+    second: Box024|Event 003|Event 003|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 4239128360682942694
+    second: Box024|Event 003|Event 003|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 8876381366569059744
+    second: Box024|Event 003|Event 003|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -348541089206657104
+    second: Box024|Event 003|Event 003|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 6533731190221488349
+    second: Box024|Event 003|Event 003|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -4246492583105605284
+    second: Box024|Event 003|Event 003|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 7276476575328886127
+    second: Box024|Event 003|Event 003|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 7457737908035574466
+    second: Box024|Event 003|Event 003|Display 001|Take 001|BaseLayer
+  - first:
+      74: 3439866524106166041
+    second: Box024|Event 003|Event 003|Display 002|Take 001|BaseLayer
+  - first:
+      74: 3497906652043636001
+    second: Box024|Event 003|Event 003|Display 003|Take 001|BaseLayer
+  - first:
+      74: -584638126508721387
+    second: Box024|Event 003|Event 003|Event 001|Take 001|BaseLayer
+  - first:
+      74: -7877842344377511147
+    second: Box024|Event 003|Event 003|Event 002|Take 001|BaseLayer
+  - first:
+      74: -3770596802673273640
+    second: Box024|Event 003|Event 003|Event 003|Take 001|BaseLayer
+  - first:
+      74: 128363089997813269
+    second: Box024|Event 003|Event 003|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 3252725133737110747
+    second: Box024|Event 003|Event 003|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -2851913127359205341
+    second: Box024|Event 003|Event 003|Omni001|Take 001|BaseLayer
+  - first:
+      74: -5176821668210393025
+    second: Box024|Event 003|Event 003|Omni002|Take 001|BaseLayer
+  - first:
+      74: 7782738201923561486
+    second: Box024|Event 003|Event 003|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 9128273473570129510
+    second: Box024|Event 003|Event 003|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 1917781547368588809
+    second: Box024|Event 003|Event 003|Render 001|Take 001|BaseLayer
+  - first:
+      74: 5725499166405633968
+    second: Box024|Event 003|Event 003|Render 002|Take 001|BaseLayer
+  - first:
+      74: -5247961587559534920
+    second: Box024|Event 003|Event 003|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -649434965057972976
+    second: Box024|Event 003|Event 003|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -5066284361740415003
+    second: Box024|Light_ceiling001|Light_ceiling001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -8380539745125776906
+    second: Box024|Light_ceiling001|Light_ceiling001|Box018|Take 001|BaseLayer
+  - first:
+      74: 1319051803051551133
+    second: Box024|Light_ceiling001|Light_ceiling001|Box019|Take 001|BaseLayer
+  - first:
+      74: 4889251846588018163
+    second: Box024|Light_ceiling001|Light_ceiling001|Box020|Take 001|BaseLayer
+  - first:
+      74: 2213551672357559169
+    second: Box024|Light_ceiling001|Light_ceiling001|Box021|Take 001|BaseLayer
+  - first:
+      74: -8299627069003728693
+    second: Box024|Light_ceiling001|Light_ceiling001|Box022|Take 001|BaseLayer
+  - first:
+      74: 8022681934075714554
+    second: Box024|Light_ceiling001|Light_ceiling001|Box023|Take 001|BaseLayer
+  - first:
+      74: -3728075113862830080
+    second: Box024|Light_ceiling001|Light_ceiling001|Box024|Take 001|BaseLayer
+  - first:
+      74: 8846208993015073696
+    second: Box024|Light_ceiling001|Light_ceiling001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 1047445028788994568
+    second: Box024|Light_ceiling001|Light_ceiling001|Camera001.Target|Take 001|Bas
+  - first:
+      74: -3219504354560485997
+    second: Box024|Light_ceiling001|Light_ceiling001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -6545796014033859182
+    second: Box024|Light_ceiling001|Light_ceiling001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -6838768138874663478
+    second: Box024|Light_ceiling001|Light_ceiling001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -6219723857925179203
+    second: Box024|Light_ceiling001|Light_ceiling001|ChamferBox002|Take 001|BaseLa
+  - first:
+      74: 867734729428368636
+    second: Box024|Light_ceiling001|Light_ceiling001|Cylinder009|Take 001|BaseLaye
+  - first:
+      74: 3174679178241224627
+    second: Box024|Light_ceiling001|Light_ceiling001|Cylinder010|Take 001|BaseLaye
+  - first:
+      74: 7689381890257665045
+    second: Box024|Light_ceiling001|Light_ceiling001|Cylinder011|Take 001|BaseLaye
+  - first:
+      74: -9174545732294471843
+    second: Box024|Light_ceiling001|Light_ceiling001|Cylinder012|Take 001|BaseLaye
+  - first:
+      74: 8919481896840405352
+    second: Box024|Light_ceiling001|Light_ceiling001|Display 001|Take 001|BaseLaye
+  - first:
+      74: -2042786229767243256
+    second: Box024|Light_ceiling001|Light_ceiling001|Display 002|Take 001|BaseLaye
+  - first:
+      74: -2379791270638255246
+    second: Box024|Light_ceiling001|Light_ceiling001|Display 003|Take 001|BaseLaye
+  - first:
+      74: -5428767721426308690
+    second: Box024|Light_ceiling001|Light_ceiling001|Event 001|Take 001|BaseLayer
+  - first:
+      74: 4630812885196669931
+    second: Box024|Light_ceiling001|Light_ceiling001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 5507045020138161116
+    second: Box024|Light_ceiling001|Light_ceiling001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -1962730025226006150
+    second: Box024|Light_ceiling001|Light_ceiling001|Light_ceiling001|Take 001|Bas
+  - first:
+      74: 9069056041625054337
+    second: Box024|Light_ceiling001|Light_ceiling001|Material Static 001|Take 001|
+  - first:
+      74: 195866873283319707
+    second: Box024|Light_ceiling001|Light_ceiling001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -3798416447922320037
+    second: Box024|Light_ceiling001|Light_ceiling001|Omni002|Take 001|BaseLayer
+  - first:
+      74: 5507779911355440788
+    second: Box024|Light_ceiling001|Light_ceiling001|Particle View 001|Take 001|Ba
+  - first:
+      74: -4034926774717258493
+    second: Box024|Light_ceiling001|Light_ceiling001|Position Object 001|Take 001|
+  - first:
+      74: 5631466954575641772
+    second: Box024|Light_ceiling001|Light_ceiling001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 6536757611229480560
+    second: Box024|Light_ceiling001|Light_ceiling001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -5357773667156575471
+    second: Box024|Light_ceiling001|Light_ceiling001|Shape Facing 001|Take 001|Bas
+  - first:
+      74: -5412016002200863664
+    second: Box024|Light_ceiling001|Light_ceiling001|Tunnel_light03|Take 001|BaseL
+  - first:
+      74: 3212678675029946009
+    second: Box024|Material Static 001|Material Static 001|Birth 001|Take 001|Base
+  - first:
+      74: 8535984440427780539
+    second: Box024|Material Static 001|Material Static 001|Box018|Take 001|BaseLay
+  - first:
+      74: 7008890782850273086
+    second: Box024|Material Static 001|Material Static 001|Box019|Take 001|BaseLay
+  - first:
+      74: 2621050766629114885
+    second: Box024|Material Static 001|Material Static 001|Box020|Take 001|BaseLay
+  - first:
+      74: 1774078125068352794
+    second: Box024|Material Static 001|Material Static 001|Box021|Take 001|BaseLay
+  - first:
+      74: -5936041118139732421
+    second: Box024|Material Static 001|Material Static 001|Box022|Take 001|BaseLay
+  - first:
+      74: -1939907729105919657
+    second: Box024|Material Static 001|Material Static 001|Box023|Take 001|BaseLay
+  - first:
+      74: -6054578553127422106
+    second: Box024|Material Static 001|Material Static 001|Box024|Take 001|BaseLay
+  - first:
+      74: 5445379224558534572
+    second: Box024|Material Static 001|Material Static 001|Bulb001|Take 001|BaseLa
+  - first:
+      74: 3581139788526142227
+    second: Box024|Material Static 001|Material Static 001|Camera001.Target|Take
+      0
+  - first:
+      74: 1603583788336366848
+    second: Box024|Material Static 001|Material Static 001|Camera001|Take 001|Base
+  - first:
+      74: 588370237120805206
+    second: Box024|Material Static 001|Material Static 001|Capsule007|Take 001|Bas
+  - first:
+      74: 3435133820575445784
+    second: Box024|Material Static 001|Material Static 001|Capsule008|Take 001|Bas
+  - first:
+      74: 3872389230086680100
+    second: Box024|Material Static 001|Material Static 001|ChamferBox002|Take 001|
+  - first:
+      74: -6126087156598296789
+    second: Box024|Material Static 001|Material Static 001|Cylinder009|Take 001|Ba
+  - first:
+      74: -6522281549029252424
+    second: Box024|Material Static 001|Material Static 001|Cylinder010|Take 001|Ba
+  - first:
+      74: -2655367791158619164
+    second: Box024|Material Static 001|Material Static 001|Cylinder011|Take 001|Ba
+  - first:
+      74: 4946091013503254307
+    second: Box024|Material Static 001|Material Static 001|Cylinder012|Take 001|Ba
+  - first:
+      74: 1330515612729518928
+    second: Box024|Material Static 001|Material Static 001|Display 001|Take 001|Ba
+  - first:
+      74: 7604815977368328755
+    second: Box024|Material Static 001|Material Static 001|Display 002|Take 001|Ba
+  - first:
+      74: 6838435196001938882
+    second: Box024|Material Static 001|Material Static 001|Display 003|Take 001|Ba
+  - first:
+      74: 6547763916147671006
+    second: Box024|Material Static 001|Material Static 001|Event 001|Take 001|Base
+  - first:
+      74: 8830924756669518800
+    second: Box024|Material Static 001|Material Static 001|Event 002|Take 001|Base
+  - first:
+      74: 5539609252187443306
+    second: Box024|Material Static 001|Material Static 001|Event 003|Take 001|Base
+  - first:
+      74: -4876863175877002689
+    second: Box024|Material Static 001|Material Static 001|Light_ceiling001|Take
+      0
+  - first:
+      74: 3199745148732312742
+    second: Box024|Material Static 001|Material Static 001|Material Static 001|Tak
+  - first:
+      74: -8707724395391457630
+    second: Box024|Material Static 001|Material Static 001|Omni001|Take 001|BaseLa
+  - first:
+      74: -6150889279242632128
+    second: Box024|Material Static 001|Material Static 001|Omni002|Take 001|BaseLa
+  - first:
+      74: -4048065973505879164
+    second: 'Box024|Material Static 001|Material Static 001|Particle View 001|Take '
+  - first:
+      74: 7185300292831448507
+    second: Box024|Material Static 001|Material Static 001|Position Object 001|Tak
+  - first:
+      74: -6463495106441188306
+    second: Box024|Material Static 001|Material Static 001|Render 001|Take 001|Bas
+  - first:
+      74: -1182477101826982758
+    second: Box024|Material Static 001|Material Static 001|Render 002|Take 001|Bas
+  - first:
+      74: 3819036618059030263
+    second: Box024|Material Static 001|Material Static 001|Shape Facing 001|Take
+      0
+  - first:
+      74: 2077941864674758188
+    second: Box024|Material Static 001|Material Static 001|Tunnel_light03|Take 001
+  - first:
+      74: -571022466936535426
+    second: Box024|Particle View 001|Particle View 001|Birth 001|Take 001|BaseLaye
+  - first:
+      74: -6225677661741178061
+    second: Box024|Particle View 001|Particle View 001|Box018|Take 001|BaseLayer
+  - first:
+      74: -5777014023775764105
+    second: Box024|Particle View 001|Particle View 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 2796141413496889329
+    second: Box024|Particle View 001|Particle View 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -853682939424625743
+    second: Box024|Particle View 001|Particle View 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 4878409820045435551
+    second: Box024|Particle View 001|Particle View 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -435475046184307535
+    second: Box024|Particle View 001|Particle View 001|Box023|Take 001|BaseLayer
+  - first:
+      74: 6398090582416615431
+    second: Box024|Particle View 001|Particle View 001|Box024|Take 001|BaseLayer
+  - first:
+      74: 1299065873179594185
+    second: Box024|Particle View 001|Particle View 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -2954767988233549565
+    second: Box024|Particle View 001|Particle View 001|Camera001.Target|Take 001|B
+  - first:
+      74: -6251211762992091000
+    second: Box024|Particle View 001|Particle View 001|Camera001|Take 001|BaseLaye
+  - first:
+      74: -978901680807844694
+    second: Box024|Particle View 001|Particle View 001|Capsule007|Take 001|BaseLay
+  - first:
+      74: -7135414931407066903
+    second: Box024|Particle View 001|Particle View 001|Capsule008|Take 001|BaseLay
+  - first:
+      74: -2202933573288597619
+    second: Box024|Particle View 001|Particle View 001|ChamferBox002|Take 001|Base
+  - first:
+      74: -3870115356950449018
+    second: Box024|Particle View 001|Particle View 001|Cylinder009|Take 001|BaseLa
+  - first:
+      74: 2433705918884022883
+    second: Box024|Particle View 001|Particle View 001|Cylinder010|Take 001|BaseLa
+  - first:
+      74: -1419328964625962648
+    second: Box024|Particle View 001|Particle View 001|Cylinder011|Take 001|BaseLa
+  - first:
+      74: 8134947415910668977
+    second: Box024|Particle View 001|Particle View 001|Cylinder012|Take 001|BaseLa
+  - first:
+      74: -393389423068481876
+    second: Box024|Particle View 001|Particle View 001|Display 001|Take 001|BaseLa
+  - first:
+      74: -4102858774823717205
+    second: Box024|Particle View 001|Particle View 001|Display 002|Take 001|BaseLa
+  - first:
+      74: -6068928037796502054
+    second: Box024|Particle View 001|Particle View 001|Display 003|Take 001|BaseLa
+  - first:
+      74: -3500769150423766804
+    second: Box024|Particle View 001|Particle View 001|Event 001|Take 001|BaseLaye
+  - first:
+      74: 8182689494105881858
+    second: Box024|Particle View 001|Particle View 001|Event 002|Take 001|BaseLaye
+  - first:
+      74: -2475954155558399414
+    second: Box024|Particle View 001|Particle View 001|Event 003|Take 001|BaseLaye
+  - first:
+      74: -4922609054888331237
+    second: Box024|Particle View 001|Particle View 001|Light_ceiling001|Take 001|B
+  - first:
+      74: 6006712134477855791
+    second: Box024|Particle View 001|Particle View 001|Material Static 001|Take 00
+  - first:
+      74: -6926457466581040073
+    second: Box024|Particle View 001|Particle View 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -3955011561780124778
+    second: Box024|Particle View 001|Particle View 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: 3680329663956803424
+    second: Box024|Particle View 001|Particle View 001|Particle View 001|Take 001|
+  - first:
+      74: -3941031780077439832
+    second: Box024|Particle View 001|Particle View 001|Position Object 001|Take 00
+  - first:
+      74: -5546545107093005841
+    second: Box024|Particle View 001|Particle View 001|Render 001|Take 001|BaseLay
+  - first:
+      74: -4672589486385272421
+    second: Box024|Particle View 001|Particle View 001|Render 002|Take 001|BaseLay
+  - first:
+      74: 2611959641825624383
+    second: Box024|Particle View 001|Particle View 001|Shape Facing 001|Take 001|B
+  - first:
+      74: 5825147777928956841
+    second: Box024|Particle View 001|Particle View 001|Tunnel_light03|Take 001|Bas
+  - first:
+      74: -2351360252333088499
+    second: Box024|Position Object 001|Position Object 001|Birth 001|Take 001|Base
+  - first:
+      74: -6240216666068329642
+    second: Box024|Position Object 001|Position Object 001|Box018|Take 001|BaseLay
+  - first:
+      74: 7005125724208981812
+    second: Box024|Position Object 001|Position Object 001|Box019|Take 001|BaseLay
+  - first:
+      74: 8948667677903694510
+    second: Box024|Position Object 001|Position Object 001|Box020|Take 001|BaseLay
+  - first:
+      74: -3357062568587049894
+    second: Box024|Position Object 001|Position Object 001|Box021|Take 001|BaseLay
+  - first:
+      74: 2861580020320453969
+    second: Box024|Position Object 001|Position Object 001|Box022|Take 001|BaseLay
+  - first:
+      74: -1753876196684747370
+    second: Box024|Position Object 001|Position Object 001|Box023|Take 001|BaseLay
+  - first:
+      74: 2216829303036338023
+    second: Box024|Position Object 001|Position Object 001|Box024|Take 001|BaseLay
+  - first:
+      74: -2294049850337477628
+    second: Box024|Position Object 001|Position Object 001|Bulb001|Take 001|BaseLa
+  - first:
+      74: 37611374650223810
+    second: Box024|Position Object 001|Position Object 001|Camera001.Target|Take
+      0
+  - first:
+      74: 463141365788712491
+    second: Box024|Position Object 001|Position Object 001|Camera001|Take 001|Base
+  - first:
+      74: -2491246826191092212
+    second: Box024|Position Object 001|Position Object 001|Capsule007|Take 001|Bas
+  - first:
+      74: 1145931676951947311
+    second: Box024|Position Object 001|Position Object 001|Capsule008|Take 001|Bas
+  - first:
+      74: -3134674511199808612
+    second: Box024|Position Object 001|Position Object 001|ChamferBox002|Take 001|
+  - first:
+      74: 1295031917327416020
+    second: Box024|Position Object 001|Position Object 001|Cylinder009|Take 001|Ba
+  - first:
+      74: -4136823629582630288
+    second: Box024|Position Object 001|Position Object 001|Cylinder010|Take 001|Ba
+  - first:
+      74: 5909359356567081709
+    second: Box024|Position Object 001|Position Object 001|Cylinder011|Take 001|Ba
+  - first:
+      74: -3020546480905723975
+    second: Box024|Position Object 001|Position Object 001|Cylinder012|Take 001|Ba
+  - first:
+      74: -4571156259353462997
+    second: Box024|Position Object 001|Position Object 001|Display 001|Take 001|Ba
+  - first:
+      74: 5291108568552256772
+    second: Box024|Position Object 001|Position Object 001|Display 002|Take 001|Ba
+  - first:
+      74: -1874044811801316326
+    second: Box024|Position Object 001|Position Object 001|Display 003|Take 001|Ba
+  - first:
+      74: -7596904731338172876
+    second: Box024|Position Object 001|Position Object 001|Event 001|Take 001|Base
+  - first:
+      74: -5370241610195747001
+    second: Box024|Position Object 001|Position Object 001|Event 002|Take 001|Base
+  - first:
+      74: -4164957079645364899
+    second: Box024|Position Object 001|Position Object 001|Event 003|Take 001|Base
+  - first:
+      74: -8649767796927673785
+    second: Box024|Position Object 001|Position Object 001|Light_ceiling001|Take
+      0
+  - first:
+      74: -652717307316813442
+    second: Box024|Position Object 001|Position Object 001|Material Static 001|Tak
+  - first:
+      74: 8603461763729506785
+    second: Box024|Position Object 001|Position Object 001|Omni001|Take 001|BaseLa
+  - first:
+      74: -3549334661182618333
+    second: Box024|Position Object 001|Position Object 001|Omni002|Take 001|BaseLa
+  - first:
+      74: 5813421290205711985
+    second: 'Box024|Position Object 001|Position Object 001|Particle View 001|Take '
+  - first:
+      74: 364375897235264240
+    second: Box024|Position Object 001|Position Object 001|Position Object 001|Tak
+  - first:
+      74: -2909620982053891490
+    second: Box024|Position Object 001|Position Object 001|Render 001|Take 001|Bas
+  - first:
+      74: -3675615148378306160
+    second: Box024|Position Object 001|Position Object 001|Render 002|Take 001|Bas
+  - first:
+      74: 7274123495197871292
+    second: Box024|Position Object 001|Position Object 001|Shape Facing 001|Take
+      0
+  - first:
+      74: 6838985941122099308
+    second: Box024|Position Object 001|Position Object 001|Tunnel_light03|Take 001
+  - first:
+      74: -6759737474124107731
+    second: Box024|Render 001|Render 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -4482894464426589265
+    second: Box024|Render 001|Render 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 3815240130173341025
+    second: Box024|Render 001|Render 001|Box019|Take 001|BaseLayer
+  - first:
+      74: -6346958066657620545
+    second: Box024|Render 001|Render 001|Box020|Take 001|BaseLayer
+  - first:
+      74: 9046941304922412096
+    second: Box024|Render 001|Render 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 6393373303592273272
+    second: Box024|Render 001|Render 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -1750002775192378042
+    second: Box024|Render 001|Render 001|Box023|Take 001|BaseLayer
+  - first:
+      74: 8540149963607943888
+    second: Box024|Render 001|Render 001|Box024|Take 001|BaseLayer
+  - first:
+      74: 5194851480630600308
+    second: Box024|Render 001|Render 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -6190526298782252089
+    second: Box024|Render 001|Render 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 4094996723751125074
+    second: Box024|Render 001|Render 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -4233426296553045784
+    second: Box024|Render 001|Render 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 9167381389541729132
+    second: Box024|Render 001|Render 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -8147563846453125732
+    second: Box024|Render 001|Render 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -2424041660993199360
+    second: Box024|Render 001|Render 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -3251905574402524611
+    second: Box024|Render 001|Render 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -8045322607086573945
+    second: Box024|Render 001|Render 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -6043764085913817603
+    second: Box024|Render 001|Render 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 5576822911937992394
+    second: Box024|Render 001|Render 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: 1013234588730879040
+    second: Box024|Render 001|Render 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: 3536749838784142072
+    second: Box024|Render 001|Render 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: -5999709680568719669
+    second: Box024|Render 001|Render 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -7536507025865473273
+    second: Box024|Render 001|Render 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: -4712819690482407560
+    second: Box024|Render 001|Render 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: 5375277772226606928
+    second: Box024|Render 001|Render 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 5251108461642978659
+    second: Box024|Render 001|Render 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -8676346468667027287
+    second: Box024|Render 001|Render 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -6679367349132643287
+    second: Box024|Render 001|Render 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -6546827944917284525
+    second: Box024|Render 001|Render 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 2084385469207044912
+    second: Box024|Render 001|Render 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -7787990901760732926
+    second: Box024|Render 001|Render 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: -7697542127085583460
+    second: Box024|Render 001|Render 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: 956433530433398381
+    second: Box024|Render 001|Render 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -1048719529858697722
+    second: Box024|Render 001|Render 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 3889022499098332991
+    second: Box024|Render 002|Render 002|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 8901978221978010944
+    second: Box024|Render 002|Render 002|Box018|Take 001|BaseLayer
+  - first:
+      74: 3435331006592181768
+    second: Box024|Render 002|Render 002|Box019|Take 001|BaseLayer
+  - first:
+      74: -769963004315570464
+    second: Box024|Render 002|Render 002|Box020|Take 001|BaseLayer
+  - first:
+      74: -4421856539193583491
+    second: Box024|Render 002|Render 002|Box021|Take 001|BaseLayer
+  - first:
+      74: -992137869704494992
+    second: Box024|Render 002|Render 002|Box022|Take 001|BaseLayer
+  - first:
+      74: -6127731461758582698
+    second: Box024|Render 002|Render 002|Box023|Take 001|BaseLayer
+  - first:
+      74: -7053510345617904042
+    second: Box024|Render 002|Render 002|Box024|Take 001|BaseLayer
+  - first:
+      74: 1053669393091682084
+    second: Box024|Render 002|Render 002|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -5194057618666621703
+    second: Box024|Render 002|Render 002|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 5964798480160189461
+    second: Box024|Render 002|Render 002|Camera001|Take 001|BaseLayer
+  - first:
+      74: -3180526110162951913
+    second: Box024|Render 002|Render 002|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -3597328303955795282
+    second: Box024|Render 002|Render 002|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -5495722140420631701
+    second: Box024|Render 002|Render 002|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -998530945809390268
+    second: Box024|Render 002|Render 002|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -7597095081331169732
+    second: Box024|Render 002|Render 002|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 3743712103386106980
+    second: Box024|Render 002|Render 002|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -8500164662805283544
+    second: Box024|Render 002|Render 002|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 1916358453295391951
+    second: Box024|Render 002|Render 002|Display 001|Take 001|BaseLayer
+  - first:
+      74: 1067070099100287072
+    second: Box024|Render 002|Render 002|Display 002|Take 001|BaseLayer
+  - first:
+      74: 5672922051282861776
+    second: Box024|Render 002|Render 002|Display 003|Take 001|BaseLayer
+  - first:
+      74: -8199455307819493987
+    second: Box024|Render 002|Render 002|Event 001|Take 001|BaseLayer
+  - first:
+      74: -3922813450311015439
+    second: Box024|Render 002|Render 002|Event 002|Take 001|BaseLayer
+  - first:
+      74: -738279555264330452
+    second: Box024|Render 002|Render 002|Event 003|Take 001|BaseLayer
+  - first:
+      74: -4648230249035355180
+    second: Box024|Render 002|Render 002|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 1637124402053608242
+    second: Box024|Render 002|Render 002|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 8295177508983142589
+    second: Box024|Render 002|Render 002|Omni001|Take 001|BaseLayer
+  - first:
+      74: 1064730861235622404
+    second: Box024|Render 002|Render 002|Omni002|Take 001|BaseLayer
+  - first:
+      74: -4753656924423892623
+    second: Box024|Render 002|Render 002|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -2589580649819032151
+    second: Box024|Render 002|Render 002|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -8762962387351440734
+    second: Box024|Render 002|Render 002|Render 001|Take 001|BaseLayer
+  - first:
+      74: 7933278194593893199
+    second: Box024|Render 002|Render 002|Render 002|Take 001|BaseLayer
+  - first:
+      74: 3584119736022675277
+    second: Box024|Render 002|Render 002|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -5883668029541081738
+    second: Box024|Render 002|Render 002|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -7687568684326709017
+    second: Box024|Shape Facing 001|Shape Facing 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -4468057596314421001
+    second: Box024|Shape Facing 001|Shape Facing 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 7135079761685470188
+    second: Box024|Shape Facing 001|Shape Facing 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 4454600022425410046
+    second: Box024|Shape Facing 001|Shape Facing 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -3301438562323555995
+    second: Box024|Shape Facing 001|Shape Facing 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 9029490188843495613
+    second: Box024|Shape Facing 001|Shape Facing 001|Box022|Take 001|BaseLayer
+  - first:
+      74: 705436824883476115
+    second: Box024|Shape Facing 001|Shape Facing 001|Box023|Take 001|BaseLayer
+  - first:
+      74: -123137409791264652
+    second: Box024|Shape Facing 001|Shape Facing 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -8960387436421059589
+    second: Box024|Shape Facing 001|Shape Facing 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 6785001071663475616
+    second: Box024|Shape Facing 001|Shape Facing 001|Camera001.Target|Take 001|Bas
+  - first:
+      74: -4553223671274479127
+    second: Box024|Shape Facing 001|Shape Facing 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -3744447796164948809
+    second: Box024|Shape Facing 001|Shape Facing 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 4818996599425092795
+    second: Box024|Shape Facing 001|Shape Facing 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 827502948265766135
+    second: Box024|Shape Facing 001|Shape Facing 001|ChamferBox002|Take 001|BaseLa
+  - first:
+      74: -2234985788254829889
+    second: Box024|Shape Facing 001|Shape Facing 001|Cylinder009|Take 001|BaseLaye
+  - first:
+      74: -1214524761363637767
+    second: Box024|Shape Facing 001|Shape Facing 001|Cylinder010|Take 001|BaseLaye
+  - first:
+      74: 8437105889587859353
+    second: Box024|Shape Facing 001|Shape Facing 001|Cylinder011|Take 001|BaseLaye
+  - first:
+      74: -7331710025659363770
+    second: Box024|Shape Facing 001|Shape Facing 001|Cylinder012|Take 001|BaseLaye
+  - first:
+      74: -1479983357265764082
+    second: Box024|Shape Facing 001|Shape Facing 001|Display 001|Take 001|BaseLaye
+  - first:
+      74: -7802111154364307858
+    second: Box024|Shape Facing 001|Shape Facing 001|Display 002|Take 001|BaseLaye
+  - first:
+      74: 594583008241017236
+    second: Box024|Shape Facing 001|Shape Facing 001|Display 003|Take 001|BaseLaye
+  - first:
+      74: 7225869064247279398
+    second: Box024|Shape Facing 001|Shape Facing 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: 6874525701284595978
+    second: Box024|Shape Facing 001|Shape Facing 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 1483250080431436678
+    second: Box024|Shape Facing 001|Shape Facing 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -1472206926607065732
+    second: Box024|Shape Facing 001|Shape Facing 001|Light_ceiling001|Take 001|Bas
+  - first:
+      74: 8737094600603926317
+    second: Box024|Shape Facing 001|Shape Facing 001|Material Static 001|Take 001|
+  - first:
+      74: -997258807024067809
+    second: Box024|Shape Facing 001|Shape Facing 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: 8791719303799631363
+    second: Box024|Shape Facing 001|Shape Facing 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -5669873422398725798
+    second: Box024|Shape Facing 001|Shape Facing 001|Particle View 001|Take 001|Ba
+  - first:
+      74: 873263105808911732
+    second: Box024|Shape Facing 001|Shape Facing 001|Position Object 001|Take 001|
+  - first:
+      74: -1699918554158454366
+    second: Box024|Shape Facing 001|Shape Facing 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 2800538905997148683
+    second: Box024|Shape Facing 001|Shape Facing 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -6223596498997557601
+    second: Box024|Shape Facing 001|Shape Facing 001|Shape Facing 001|Take 001|Bas
+  - first:
+      74: -7436366804289035397
+    second: Box024|Shape Facing 001|Shape Facing 001|Tunnel_light03|Take 001|BaseL
+  - first:
+      74: -6358595704843749693
+    second: Light_ceiling001|Birth 001|Birth 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 6587215872616785480
+    second: Light_ceiling001|Birth 001|Birth 001|Box018|Take 001|BaseLayer
+  - first:
+      74: -6947835324573585277
+    second: Light_ceiling001|Birth 001|Birth 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 2177906503974504711
+    second: Light_ceiling001|Birth 001|Birth 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -7948468504422923418
+    second: Light_ceiling001|Birth 001|Birth 001|Box021|Take 001|BaseLayer
+  - first:
+      74: -4431630820425378272
+    second: Light_ceiling001|Birth 001|Birth 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -4571805212897854920
+    second: Light_ceiling001|Birth 001|Birth 001|Box023|Take 001|BaseLayer
+  - first:
+      74: -8665577753312437179
+    second: Light_ceiling001|Birth 001|Birth 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -8346688400791626906
+    second: Light_ceiling001|Birth 001|Birth 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 6231511986422914167
+    second: Light_ceiling001|Birth 001|Birth 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 4277189685785828996
+    second: Light_ceiling001|Birth 001|Birth 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: 8971808457516546586
+    second: Light_ceiling001|Birth 001|Birth 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -2141327448012481410
+    second: Light_ceiling001|Birth 001|Birth 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -2303340423478906573
+    second: Light_ceiling001|Birth 001|Birth 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 3786791153420723651
+    second: Light_ceiling001|Birth 001|Birth 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 7947459007771202850
+    second: Light_ceiling001|Birth 001|Birth 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -6302599229262874887
+    second: Light_ceiling001|Birth 001|Birth 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 3202895501409918619
+    second: Light_ceiling001|Birth 001|Birth 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -1071857401398392877
+    second: Light_ceiling001|Birth 001|Birth 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: 9042416677738485872
+    second: Light_ceiling001|Birth 001|Birth 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: 104220597554100428
+    second: Light_ceiling001|Birth 001|Birth 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: 6975658846012624148
+    second: Light_ceiling001|Birth 001|Birth 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -36216893391246302
+    second: Light_ceiling001|Birth 001|Birth 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 935891595917896524
+    second: Light_ceiling001|Birth 001|Birth 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -5266850354635046893
+    second: Light_ceiling001|Birth 001|Birth 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 2327344595721746893
+    second: Light_ceiling001|Birth 001|Birth 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 7334761001108376265
+    second: Light_ceiling001|Birth 001|Birth 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: 2640863714337015390
+    second: Light_ceiling001|Birth 001|Birth 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -2260030774005343622
+    second: Light_ceiling001|Birth 001|Birth 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 5914644854790441030
+    second: Light_ceiling001|Birth 001|Birth 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 6077496516002125891
+    second: Light_ceiling001|Birth 001|Birth 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 6428889494401561743
+    second: Light_ceiling001|Birth 001|Birth 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -1800905288205768645
+    second: Light_ceiling001|Birth 001|Birth 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 9066209866211530141
+    second: Light_ceiling001|Birth 001|Birth 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 1715937926706682684
+    second: Light_ceiling001|Box024|Box024|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 6127506791009045703
+    second: Light_ceiling001|Box024|Box024|Box018|Take 001|BaseLayer
+  - first:
+      74: -4927187428094695663
+    second: Light_ceiling001|Box024|Box024|Box019|Take 001|BaseLayer
+  - first:
+      74: -8984342122496296858
+    second: Light_ceiling001|Box024|Box024|Box020|Take 001|BaseLayer
+  - first:
+      74: 3586945619836560830
+    second: Light_ceiling001|Box024|Box024|Box021|Take 001|BaseLayer
+  - first:
+      74: 8580228125212970000
+    second: Light_ceiling001|Box024|Box024|Box022|Take 001|BaseLayer
+  - first:
+      74: -5953832625051442352
+    second: Light_ceiling001|Box024|Box024|Box023|Take 001|BaseLayer
+  - first:
+      74: 8419483318751696278
+    second: Light_ceiling001|Box024|Box024|Box024|Take 001|BaseLayer
+  - first:
+      74: 520165569558708916
+    second: Light_ceiling001|Box024|Box024|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -8011392678859738176
+    second: Light_ceiling001|Box024|Box024|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 2858382031042815700
+    second: Light_ceiling001|Box024|Box024|Camera001|Take 001|BaseLayer
+  - first:
+      74: -570611865333505533
+    second: Light_ceiling001|Box024|Box024|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 3245519583612038424
+    second: Light_ceiling001|Box024|Box024|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -734762582655652295
+    second: Light_ceiling001|Box024|Box024|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 9114574834280342183
+    second: Light_ceiling001|Box024|Box024|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 6963179452926275416
+    second: Light_ceiling001|Box024|Box024|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 4390553383445231357
+    second: Light_ceiling001|Box024|Box024|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 2665028634917399574
+    second: Light_ceiling001|Box024|Box024|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -5691817002523135268
+    second: Light_ceiling001|Box024|Box024|Display 001|Take 001|BaseLayer
+  - first:
+      74: -5798472093448621184
+    second: Light_ceiling001|Box024|Box024|Display 002|Take 001|BaseLayer
+  - first:
+      74: -688029217946867192
+    second: Light_ceiling001|Box024|Box024|Display 003|Take 001|BaseLayer
+  - first:
+      74: 6861628312197019339
+    second: Light_ceiling001|Box024|Box024|Event 001|Take 001|BaseLayer
+  - first:
+      74: 982122711316711306
+    second: Light_ceiling001|Box024|Box024|Event 002|Take 001|BaseLayer
+  - first:
+      74: -5783926036041432210
+    second: Light_ceiling001|Box024|Box024|Event 003|Take 001|BaseLayer
+  - first:
+      74: -1578024939933370747
+    second: Light_ceiling001|Box024|Box024|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 6614018558894251709
+    second: Light_ceiling001|Box024|Box024|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 2465097761880358853
+    second: Light_ceiling001|Box024|Box024|Omni001|Take 001|BaseLayer
+  - first:
+      74: 1952231983106465939
+    second: Light_ceiling001|Box024|Box024|Omni002|Take 001|BaseLayer
+  - first:
+      74: -464086267303395662
+    second: Light_ceiling001|Box024|Box024|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -3160489966652246769
+    second: Light_ceiling001|Box024|Box024|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 3421566884577531766
+    second: Light_ceiling001|Box024|Box024|Render 001|Take 001|BaseLayer
+  - first:
+      74: -3017545493698716395
+    second: Light_ceiling001|Box024|Box024|Render 002|Take 001|BaseLayer
+  - first:
+      74: 6990518334801518838
+    second: Light_ceiling001|Box024|Box024|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 477909454867661792
+    second: Light_ceiling001|Box024|Box024|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -3383724718158601367
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -2660146563519051094
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box018|Take 001|BaseLayer
+  - first:
+      74: -7326691414251439470
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box019|Take 001|BaseLayer
+  - first:
+      74: -8889970873446980083
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box020|Take 001|BaseLayer
+  - first:
+      74: 7640189771600215608
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box021|Take 001|BaseLayer
+  - first:
+      74: 959487427752360777
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box022|Take 001|BaseLayer
+  - first:
+      74: -4711956258832516507
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box023|Take 001|BaseLayer
+  - first:
+      74: -5053262128903343686
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Box024|Take 001|BaseLayer
+  - first:
+      74: 5965704096477395667
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -2655150197494120755
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Camera001.Target|Take
+      001|Bas
+  - first:
+      74: -723280292548234750
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Camera001|Take 001|BaseLayer
+  - first:
+      74: -740535145487805424
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -917070890902052230
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 5679538912466125196
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|ChamferBox002|Take
+      001|BaseLa
+  - first:
+      74: 7482978132243854325
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Cylinder009|Take 001|BaseLaye
+  - first:
+      74: -5086944859299747854
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Cylinder010|Take 001|BaseLaye
+  - first:
+      74: 7628891016351280091
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Cylinder011|Take 001|BaseLaye
+  - first:
+      74: 5621254682415700942
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Cylinder012|Take 001|BaseLaye
+  - first:
+      74: -2916482090435714879
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Display 001|Take 001|BaseLaye
+  - first:
+      74: 4013693360921909489
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Display 002|Take 001|BaseLaye
+  - first:
+      74: -1486120764961524608
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Display 003|Take 001|BaseLaye
+  - first:
+      74: -494379512841181183
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Event 001|Take 001|BaseLayer
+  - first:
+      74: 7490009668808802742
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Event 002|Take 001|BaseLayer
+  - first:
+      74: -5687163389449788758
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Event 003|Take 001|BaseLayer
+  - first:
+      74: -7138553662707205963
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Light_ceiling001|Take
+      001|Bas
+  - first:
+      74: 2556916934151892430
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Material Static 001|Take
+      001|
+  - first:
+      74: 355684494773560535
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Omni001|Take 001|BaseLayer
+  - first:
+      74: 9154841523188505843
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Omni002|Take 001|BaseLayer
+  - first:
+      74: 1280144740333334687
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Particle View 001|Take
+      001|Ba
+  - first:
+      74: 4954017211183195615
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Position Object 001|Take
+      001|
+  - first:
+      74: -6542683080059298562
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Render 001|Take 001|BaseLayer
+  - first:
+      74: -5128069207679874785
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Render 002|Take 001|BaseLayer
+  - first:
+      74: -7967810784241866385
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Shape Facing 001|Take
+      001|Bas
+  - first:
+      74: 3298102669842315086
+    second: Light_ceiling001|Camera001.Target|Camera001.Target|Tunnel_light03|Take
+      001|BaseL
+  - first:
+      74: -8971450217854041870
+    second: Light_ceiling001|Cylinder009|Cylinder009|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 5291207708351973264
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box018|Take 001|BaseLayer
+  - first:
+      74: -2556984862644807125
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box019|Take 001|BaseLayer
+  - first:
+      74: 8721297468356426229
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box020|Take 001|BaseLayer
+  - first:
+      74: -465560604491385723
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box021|Take 001|BaseLayer
+  - first:
+      74: -3148922738038581942
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box022|Take 001|BaseLayer
+  - first:
+      74: 8071704072596071046
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box023|Take 001|BaseLayer
+  - first:
+      74: -6613746312774029339
+    second: Light_ceiling001|Cylinder009|Cylinder009|Box024|Take 001|BaseLayer
+  - first:
+      74: -8797754380589402642
+    second: Light_ceiling001|Cylinder009|Cylinder009|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -7945747746537463676
+    second: Light_ceiling001|Cylinder009|Cylinder009|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 7940455609346069490
+    second: Light_ceiling001|Cylinder009|Cylinder009|Camera001|Take 001|BaseLayer
+  - first:
+      74: -8326015050756999776
+    second: Light_ceiling001|Cylinder009|Cylinder009|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -5274573380871690633
+    second: Light_ceiling001|Cylinder009|Cylinder009|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 690726926661121610
+    second: Light_ceiling001|Cylinder009|Cylinder009|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -1352398712222733250
+    second: Light_ceiling001|Cylinder009|Cylinder009|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -5850648036054436839
+    second: Light_ceiling001|Cylinder009|Cylinder009|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 5077597438474622342
+    second: Light_ceiling001|Cylinder009|Cylinder009|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 1957532775123475998
+    second: Light_ceiling001|Cylinder009|Cylinder009|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -8888079960775597199
+    second: Light_ceiling001|Cylinder009|Cylinder009|Display 001|Take 001|BaseLayer
+  - first:
+      74: -3588699550755968716
+    second: Light_ceiling001|Cylinder009|Cylinder009|Display 002|Take 001|BaseLayer
+  - first:
+      74: -1488149788240881947
+    second: Light_ceiling001|Cylinder009|Cylinder009|Display 003|Take 001|BaseLayer
+  - first:
+      74: 7950523420101817005
+    second: Light_ceiling001|Cylinder009|Cylinder009|Event 001|Take 001|BaseLayer
+  - first:
+      74: 1008223097857173923
+    second: Light_ceiling001|Cylinder009|Cylinder009|Event 002|Take 001|BaseLayer
+  - first:
+      74: -3211897205585029371
+    second: Light_ceiling001|Cylinder009|Cylinder009|Event 003|Take 001|BaseLayer
+  - first:
+      74: -5789029447837470697
+    second: Light_ceiling001|Cylinder009|Cylinder009|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 6164244755155913802
+    second: Light_ceiling001|Cylinder009|Cylinder009|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -5487046509500819217
+    second: Light_ceiling001|Cylinder009|Cylinder009|Omni001|Take 001|BaseLayer
+  - first:
+      74: -856981977688560554
+    second: Light_ceiling001|Cylinder009|Cylinder009|Omni002|Take 001|BaseLayer
+  - first:
+      74: 2688525540070329803
+    second: Light_ceiling001|Cylinder009|Cylinder009|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -7678721132811652101
+    second: Light_ceiling001|Cylinder009|Cylinder009|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -7252559061280412787
+    second: Light_ceiling001|Cylinder009|Cylinder009|Render 001|Take 001|BaseLayer
+  - first:
+      74: 6427190464433903265
+    second: Light_ceiling001|Cylinder009|Cylinder009|Render 002|Take 001|BaseLayer
+  - first:
+      74: 8412165109038528469
+    second: Light_ceiling001|Cylinder009|Cylinder009|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 7118832242800582487
+    second: Light_ceiling001|Cylinder009|Cylinder009|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -7525820242222159638
+    second: Light_ceiling001|Cylinder010|Cylinder010|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -3968968653088476732
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box018|Take 001|BaseLayer
+  - first:
+      74: -6730903868927088465
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box019|Take 001|BaseLayer
+  - first:
+      74: 6303461499940264795
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box020|Take 001|BaseLayer
+  - first:
+      74: 2964792720027408058
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box021|Take 001|BaseLayer
+  - first:
+      74: -5750239428749781141
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box022|Take 001|BaseLayer
+  - first:
+      74: -8839334717827258098
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box023|Take 001|BaseLayer
+  - first:
+      74: 4995033629250132889
+    second: Light_ceiling001|Cylinder010|Cylinder010|Box024|Take 001|BaseLayer
+  - first:
+      74: 5255969269918530499
+    second: Light_ceiling001|Cylinder010|Cylinder010|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -3448600775917722771
+    second: Light_ceiling001|Cylinder010|Cylinder010|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -5319197239710665955
+    second: Light_ceiling001|Cylinder010|Cylinder010|Camera001|Take 001|BaseLayer
+  - first:
+      74: 7953432396492675943
+    second: Light_ceiling001|Cylinder010|Cylinder010|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -3874806034442420314
+    second: Light_ceiling001|Cylinder010|Cylinder010|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -6251895106800183753
+    second: Light_ceiling001|Cylinder010|Cylinder010|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -6154491689063958244
+    second: Light_ceiling001|Cylinder010|Cylinder010|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -7435563768016284775
+    second: Light_ceiling001|Cylinder010|Cylinder010|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 2469726825401061571
+    second: Light_ceiling001|Cylinder010|Cylinder010|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -2835247271342490417
+    second: Light_ceiling001|Cylinder010|Cylinder010|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 2602245813054707328
+    second: Light_ceiling001|Cylinder010|Cylinder010|Display 001|Take 001|BaseLayer
+  - first:
+      74: 7914446885964827680
+    second: Light_ceiling001|Cylinder010|Cylinder010|Display 002|Take 001|BaseLayer
+  - first:
+      74: -3016463705850286110
+    second: Light_ceiling001|Cylinder010|Cylinder010|Display 003|Take 001|BaseLayer
+  - first:
+      74: 5405141668222722437
+    second: Light_ceiling001|Cylinder010|Cylinder010|Event 001|Take 001|BaseLayer
+  - first:
+      74: -5986056988791047287
+    second: Light_ceiling001|Cylinder010|Cylinder010|Event 002|Take 001|BaseLayer
+  - first:
+      74: 3978684749152440678
+    second: Light_ceiling001|Cylinder010|Cylinder010|Event 003|Take 001|BaseLayer
+  - first:
+      74: 1800183484157242244
+    second: Light_ceiling001|Cylinder010|Cylinder010|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -8644472289316591996
+    second: Light_ceiling001|Cylinder010|Cylinder010|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 8795457258957870225
+    second: Light_ceiling001|Cylinder010|Cylinder010|Omni001|Take 001|BaseLayer
+  - first:
+      74: -8239443787537989646
+    second: Light_ceiling001|Cylinder010|Cylinder010|Omni002|Take 001|BaseLayer
+  - first:
+      74: 2522730032335438620
+    second: Light_ceiling001|Cylinder010|Cylinder010|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -1787888823007801751
+    second: Light_ceiling001|Cylinder010|Cylinder010|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -3760040117133861454
+    second: Light_ceiling001|Cylinder010|Cylinder010|Render 001|Take 001|BaseLayer
+  - first:
+      74: 2649096122981598662
+    second: Light_ceiling001|Cylinder010|Cylinder010|Render 002|Take 001|BaseLayer
+  - first:
+      74: 9025906535008786413
+    second: Light_ceiling001|Cylinder010|Cylinder010|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -2543932247607962699
+    second: Light_ceiling001|Cylinder010|Cylinder010|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -8998932626271988399
+    second: Light_ceiling001|Cylinder011|Cylinder011|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -2838535390290706822
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box018|Take 001|BaseLayer
+  - first:
+      74: 8761530612028991972
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box019|Take 001|BaseLayer
+  - first:
+      74: -2177254111940736395
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box020|Take 001|BaseLayer
+  - first:
+      74: 445871310140290585
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box021|Take 001|BaseLayer
+  - first:
+      74: -761173172494773355
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box022|Take 001|BaseLayer
+  - first:
+      74: 5094775202174346911
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box023|Take 001|BaseLayer
+  - first:
+      74: 4629552231128201519
+    second: Light_ceiling001|Cylinder011|Cylinder011|Box024|Take 001|BaseLayer
+  - first:
+      74: 4892934628843097408
+    second: Light_ceiling001|Cylinder011|Cylinder011|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -7593111005930670552
+    second: Light_ceiling001|Cylinder011|Cylinder011|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -3989260875649419550
+    second: Light_ceiling001|Cylinder011|Cylinder011|Camera001|Take 001|BaseLayer
+  - first:
+      74: 4139816449353852683
+    second: Light_ceiling001|Cylinder011|Cylinder011|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 5312554660166315145
+    second: Light_ceiling001|Cylinder011|Cylinder011|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 4275073644526063823
+    second: Light_ceiling001|Cylinder011|Cylinder011|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 465164761262366682
+    second: Light_ceiling001|Cylinder011|Cylinder011|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -1019724817953306127
+    second: Light_ceiling001|Cylinder011|Cylinder011|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -4365295265398905430
+    second: Light_ceiling001|Cylinder011|Cylinder011|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -5208625441437139764
+    second: Light_ceiling001|Cylinder011|Cylinder011|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 8204399841032339579
+    second: Light_ceiling001|Cylinder011|Cylinder011|Display 001|Take 001|BaseLayer
+  - first:
+      74: -5051473220093236418
+    second: Light_ceiling001|Cylinder011|Cylinder011|Display 002|Take 001|BaseLayer
+  - first:
+      74: -7498425761536437326
+    second: Light_ceiling001|Cylinder011|Cylinder011|Display 003|Take 001|BaseLayer
+  - first:
+      74: 3974671868484012903
+    second: Light_ceiling001|Cylinder011|Cylinder011|Event 001|Take 001|BaseLayer
+  - first:
+      74: -4237557019434932424
+    second: Light_ceiling001|Cylinder011|Cylinder011|Event 002|Take 001|BaseLayer
+  - first:
+      74: -5597458335794554944
+    second: Light_ceiling001|Cylinder011|Cylinder011|Event 003|Take 001|BaseLayer
+  - first:
+      74: -8426628448651506988
+    second: Light_ceiling001|Cylinder011|Cylinder011|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -8769370341019564914
+    second: Light_ceiling001|Cylinder011|Cylinder011|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 8306743919950001656
+    second: Light_ceiling001|Cylinder011|Cylinder011|Omni001|Take 001|BaseLayer
+  - first:
+      74: 7505110602613650509
+    second: Light_ceiling001|Cylinder011|Cylinder011|Omni002|Take 001|BaseLayer
+  - first:
+      74: -263567145100278966
+    second: Light_ceiling001|Cylinder011|Cylinder011|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -3060194202380220651
+    second: Light_ceiling001|Cylinder011|Cylinder011|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -8899049382801605046
+    second: Light_ceiling001|Cylinder011|Cylinder011|Render 001|Take 001|BaseLayer
+  - first:
+      74: -7662863851303352135
+    second: Light_ceiling001|Cylinder011|Cylinder011|Render 002|Take 001|BaseLayer
+  - first:
+      74: 3323237999772595053
+    second: Light_ceiling001|Cylinder011|Cylinder011|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -3114160339010028252
+    second: Light_ceiling001|Cylinder011|Cylinder011|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 7383932886257346350
+    second: Light_ceiling001|Cylinder012|Cylinder012|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -4126637677934746978
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box018|Take 001|BaseLayer
+  - first:
+      74: 8135978002033007252
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box019|Take 001|BaseLayer
+  - first:
+      74: -8094571936171782259
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box020|Take 001|BaseLayer
+  - first:
+      74: 2626107186473685685
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box021|Take 001|BaseLayer
+  - first:
+      74: 5768104666111181261
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box022|Take 001|BaseLayer
+  - first:
+      74: 5961256312789901322
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box023|Take 001|BaseLayer
+  - first:
+      74: 10206422813068626
+    second: Light_ceiling001|Cylinder012|Cylinder012|Box024|Take 001|BaseLayer
+  - first:
+      74: -1667524474343877569
+    second: Light_ceiling001|Cylinder012|Cylinder012|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 8350526566389780005
+    second: Light_ceiling001|Cylinder012|Cylinder012|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -439635036579955923
+    second: Light_ceiling001|Cylinder012|Cylinder012|Camera001|Take 001|BaseLayer
+  - first:
+      74: -9211558181810125366
+    second: Light_ceiling001|Cylinder012|Cylinder012|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -6402465121847561095
+    second: Light_ceiling001|Cylinder012|Cylinder012|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -235852134116532028
+    second: Light_ceiling001|Cylinder012|Cylinder012|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -651871876294972361
+    second: Light_ceiling001|Cylinder012|Cylinder012|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 8629979714265117360
+    second: Light_ceiling001|Cylinder012|Cylinder012|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 2269623807086477784
+    second: Light_ceiling001|Cylinder012|Cylinder012|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -4672823778532544086
+    second: Light_ceiling001|Cylinder012|Cylinder012|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -6660911782640603392
+    second: Light_ceiling001|Cylinder012|Cylinder012|Display 001|Take 001|BaseLayer
+  - first:
+      74: 3726585591817213632
+    second: Light_ceiling001|Cylinder012|Cylinder012|Display 002|Take 001|BaseLayer
+  - first:
+      74: 3585796241058436077
+    second: Light_ceiling001|Cylinder012|Cylinder012|Display 003|Take 001|BaseLayer
+  - first:
+      74: 7839177448221394792
+    second: Light_ceiling001|Cylinder012|Cylinder012|Event 001|Take 001|BaseLayer
+  - first:
+      74: -4979963320763984949
+    second: Light_ceiling001|Cylinder012|Cylinder012|Event 002|Take 001|BaseLayer
+  - first:
+      74: -4063987078708387967
+    second: Light_ceiling001|Cylinder012|Cylinder012|Event 003|Take 001|BaseLayer
+  - first:
+      74: -5674045068133064819
+    second: Light_ceiling001|Cylinder012|Cylinder012|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -1920744553981910232
+    second: Light_ceiling001|Cylinder012|Cylinder012|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 2999762367974005607
+    second: Light_ceiling001|Cylinder012|Cylinder012|Omni001|Take 001|BaseLayer
+  - first:
+      74: -6973881613812775227
+    second: Light_ceiling001|Cylinder012|Cylinder012|Omni002|Take 001|BaseLayer
+  - first:
+      74: -287622940201969540
+    second: Light_ceiling001|Cylinder012|Cylinder012|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 205114284346099883
+    second: Light_ceiling001|Cylinder012|Cylinder012|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -8514894158533615276
+    second: Light_ceiling001|Cylinder012|Cylinder012|Render 001|Take 001|BaseLayer
+  - first:
+      74: 5596308259203571087
+    second: Light_ceiling001|Cylinder012|Cylinder012|Render 002|Take 001|BaseLayer
+  - first:
+      74: 4174942088637135548
+    second: Light_ceiling001|Cylinder012|Cylinder012|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -1858840192530185146
+    second: Light_ceiling001|Cylinder012|Cylinder012|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 2036803910001134341
+    second: Light_ceiling001|Display 001|Display 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -6924930164264024233
+    second: Light_ceiling001|Display 001|Display 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 7035791938020854967
+    second: Light_ceiling001|Display 001|Display 001|Box019|Take 001|BaseLayer
+  - first:
+      74: -290418510815972654
+    second: Light_ceiling001|Display 001|Display 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -8548052681951234365
+    second: Light_ceiling001|Display 001|Display 001|Box021|Take 001|BaseLayer
+  - first:
+      74: -9126447168963167358
+    second: Light_ceiling001|Display 001|Display 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -3861152355559739065
+    second: Light_ceiling001|Display 001|Display 001|Box023|Take 001|BaseLayer
+  - first:
+      74: 109523014881674953
+    second: Light_ceiling001|Display 001|Display 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -5602682721717173017
+    second: Light_ceiling001|Display 001|Display 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 7681198506280180152
+    second: Light_ceiling001|Display 001|Display 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 5444162717960752420
+    second: Light_ceiling001|Display 001|Display 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: 6661977533808261729
+    second: Light_ceiling001|Display 001|Display 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -288246109094778579
+    second: Light_ceiling001|Display 001|Display 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -2943304310940198435
+    second: Light_ceiling001|Display 001|Display 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 4311354804586521145
+    second: Light_ceiling001|Display 001|Display 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -8277410524131594284
+    second: Light_ceiling001|Display 001|Display 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -5073430366687133246
+    second: Light_ceiling001|Display 001|Display 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -2299833162451739009
+    second: Light_ceiling001|Display 001|Display 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 3515827160117631738
+    second: Light_ceiling001|Display 001|Display 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: 362156013132319972
+    second: Light_ceiling001|Display 001|Display 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: -1879241160425582850
+    second: Light_ceiling001|Display 001|Display 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: -8273898214367631832
+    second: Light_ceiling001|Display 001|Display 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: 450117308006814476
+    second: Light_ceiling001|Display 001|Display 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 366668040121503858
+    second: Light_ceiling001|Display 001|Display 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -8452254626532658070
+    second: Light_ceiling001|Display 001|Display 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -8910197667534809995
+    second: Light_ceiling001|Display 001|Display 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -8018316460125830983
+    second: Light_ceiling001|Display 001|Display 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: 7587058305547866056
+    second: Light_ceiling001|Display 001|Display 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -2813700604560715009
+    second: Light_ceiling001|Display 001|Display 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 5795244619201250402
+    second: Light_ceiling001|Display 001|Display 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -2521461047878565709
+    second: Light_ceiling001|Display 001|Display 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: -8275667132697090570
+    second: Light_ceiling001|Display 001|Display 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -1866708651922913986
+    second: Light_ceiling001|Display 001|Display 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -2136076582111460443
+    second: Light_ceiling001|Display 001|Display 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 3959622847951721493
+    second: Light_ceiling001|Display 002|Display 002|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 7416549293881179571
+    second: Light_ceiling001|Display 002|Display 002|Box018|Take 001|BaseLayer
+  - first:
+      74: -5198104523031681984
+    second: Light_ceiling001|Display 002|Display 002|Box019|Take 001|BaseLayer
+  - first:
+      74: 2788992046833923416
+    second: Light_ceiling001|Display 002|Display 002|Box020|Take 001|BaseLayer
+  - first:
+      74: 8935626821025436458
+    second: Light_ceiling001|Display 002|Display 002|Box021|Take 001|BaseLayer
+  - first:
+      74: -7688829508702264571
+    second: Light_ceiling001|Display 002|Display 002|Box022|Take 001|BaseLayer
+  - first:
+      74: -6041534899909061492
+    second: Light_ceiling001|Display 002|Display 002|Box023|Take 001|BaseLayer
+  - first:
+      74: -6615809762315374774
+    second: Light_ceiling001|Display 002|Display 002|Box024|Take 001|BaseLayer
+  - first:
+      74: 8479098139922287131
+    second: Light_ceiling001|Display 002|Display 002|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 3147313823720579003
+    second: Light_ceiling001|Display 002|Display 002|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -1834905344740976953
+    second: Light_ceiling001|Display 002|Display 002|Camera001|Take 001|BaseLayer
+  - first:
+      74: -3848946687997313320
+    second: Light_ceiling001|Display 002|Display 002|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 4652696259947422810
+    second: Light_ceiling001|Display 002|Display 002|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -5906629537501052590
+    second: Light_ceiling001|Display 002|Display 002|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 3426297693235108620
+    second: Light_ceiling001|Display 002|Display 002|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -4488152281677631775
+    second: Light_ceiling001|Display 002|Display 002|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -7768346623916173721
+    second: Light_ceiling001|Display 002|Display 002|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -6318501532777587523
+    second: Light_ceiling001|Display 002|Display 002|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -462424153535161311
+    second: Light_ceiling001|Display 002|Display 002|Display 001|Take 001|BaseLayer
+  - first:
+      74: -3331645034845936145
+    second: Light_ceiling001|Display 002|Display 002|Display 002|Take 001|BaseLayer
+  - first:
+      74: -7738362375341721466
+    second: Light_ceiling001|Display 002|Display 002|Display 003|Take 001|BaseLayer
+  - first:
+      74: -3403860826902753750
+    second: Light_ceiling001|Display 002|Display 002|Event 001|Take 001|BaseLayer
+  - first:
+      74: 9030785300673031931
+    second: Light_ceiling001|Display 002|Display 002|Event 002|Take 001|BaseLayer
+  - first:
+      74: 1679020643250459064
+    second: Light_ceiling001|Display 002|Display 002|Event 003|Take 001|BaseLayer
+  - first:
+      74: 3699608608952707948
+    second: Light_ceiling001|Display 002|Display 002|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 5060478565023670793
+    second: Light_ceiling001|Display 002|Display 002|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -6568827276693642464
+    second: Light_ceiling001|Display 002|Display 002|Omni001|Take 001|BaseLayer
+  - first:
+      74: -1469393883020475733
+    second: Light_ceiling001|Display 002|Display 002|Omni002|Take 001|BaseLayer
+  - first:
+      74: 7259386136310838869
+    second: Light_ceiling001|Display 002|Display 002|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -6704563038643592973
+    second: Light_ceiling001|Display 002|Display 002|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -5769926452800008848
+    second: Light_ceiling001|Display 002|Display 002|Render 001|Take 001|BaseLayer
+  - first:
+      74: -5780043720308143654
+    second: Light_ceiling001|Display 002|Display 002|Render 002|Take 001|BaseLayer
+  - first:
+      74: -2070460191126142938
+    second: Light_ceiling001|Display 002|Display 002|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 5078934308075719604
+    second: Light_ceiling001|Display 002|Display 002|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -7713665028383282318
+    second: Light_ceiling001|Display 003|Display 003|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 5313677395869129423
+    second: Light_ceiling001|Display 003|Display 003|Box018|Take 001|BaseLayer
+  - first:
+      74: -1809392795003795832
+    second: Light_ceiling001|Display 003|Display 003|Box019|Take 001|BaseLayer
+  - first:
+      74: -5594617258749335540
+    second: Light_ceiling001|Display 003|Display 003|Box020|Take 001|BaseLayer
+  - first:
+      74: 6144519911492056475
+    second: Light_ceiling001|Display 003|Display 003|Box021|Take 001|BaseLayer
+  - first:
+      74: -2293324993928577004
+    second: Light_ceiling001|Display 003|Display 003|Box022|Take 001|BaseLayer
+  - first:
+      74: 4502709999184695505
+    second: Light_ceiling001|Display 003|Display 003|Box023|Take 001|BaseLayer
+  - first:
+      74: -3924662932457122818
+    second: Light_ceiling001|Display 003|Display 003|Box024|Take 001|BaseLayer
+  - first:
+      74: 2658996738576964950
+    second: Light_ceiling001|Display 003|Display 003|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -6838593669801208899
+    second: Light_ceiling001|Display 003|Display 003|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -1819181579930279959
+    second: Light_ceiling001|Display 003|Display 003|Camera001|Take 001|BaseLayer
+  - first:
+      74: -9096861668603427209
+    second: Light_ceiling001|Display 003|Display 003|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -5539361715011186973
+    second: Light_ceiling001|Display 003|Display 003|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 6182959018897026162
+    second: Light_ceiling001|Display 003|Display 003|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -8401621113286496307
+    second: Light_ceiling001|Display 003|Display 003|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 8535433098547597211
+    second: Light_ceiling001|Display 003|Display 003|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 6029822249159479178
+    second: Light_ceiling001|Display 003|Display 003|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -1940747647895944852
+    second: Light_ceiling001|Display 003|Display 003|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 7587839028694311579
+    second: Light_ceiling001|Display 003|Display 003|Display 001|Take 001|BaseLayer
+  - first:
+      74: 8664787345495126928
+    second: Light_ceiling001|Display 003|Display 003|Display 002|Take 001|BaseLayer
+  - first:
+      74: 7717699138257080320
+    second: Light_ceiling001|Display 003|Display 003|Display 003|Take 001|BaseLayer
+  - first:
+      74: -6138129954057333757
+    second: Light_ceiling001|Display 003|Display 003|Event 001|Take 001|BaseLayer
+  - first:
+      74: 7018258797322464174
+    second: Light_ceiling001|Display 003|Display 003|Event 002|Take 001|BaseLayer
+  - first:
+      74: -4125875702217258045
+    second: Light_ceiling001|Display 003|Display 003|Event 003|Take 001|BaseLayer
+  - first:
+      74: 1589123007680915188
+    second: Light_ceiling001|Display 003|Display 003|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 3383452581774090758
+    second: Light_ceiling001|Display 003|Display 003|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 2859943886117847895
+    second: Light_ceiling001|Display 003|Display 003|Omni001|Take 001|BaseLayer
+  - first:
+      74: 5676439985172497739
+    second: Light_ceiling001|Display 003|Display 003|Omni002|Take 001|BaseLayer
+  - first:
+      74: -8070750089908296348
+    second: Light_ceiling001|Display 003|Display 003|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 7511201296234214323
+    second: Light_ceiling001|Display 003|Display 003|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 8136870147132096337
+    second: Light_ceiling001|Display 003|Display 003|Render 001|Take 001|BaseLayer
+  - first:
+      74: -2140089681909856841
+    second: Light_ceiling001|Display 003|Display 003|Render 002|Take 001|BaseLayer
+  - first:
+      74: -5563210203192927029
+    second: Light_ceiling001|Display 003|Display 003|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -3467788561854092811
+    second: Light_ceiling001|Display 003|Display 003|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -1462081329149338666
+    second: Light_ceiling001|Event 001|Event 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -6082591426704574396
+    second: Light_ceiling001|Event 001|Event 001|Box018|Take 001|BaseLayer
+  - first:
+      74: -4099102625751444894
+    second: Light_ceiling001|Event 001|Event 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 7265276642180657050
+    second: Light_ceiling001|Event 001|Event 001|Box020|Take 001|BaseLayer
+  - first:
+      74: 5905791535352480509
+    second: Light_ceiling001|Event 001|Event 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 4685304040168325597
+    second: Light_ceiling001|Event 001|Event 001|Box022|Take 001|BaseLayer
+  - first:
+      74: 3611689425487584227
+    second: Light_ceiling001|Event 001|Event 001|Box023|Take 001|BaseLayer
+  - first:
+      74: -375159313676682501
+    second: Light_ceiling001|Event 001|Event 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -8054017835359133828
+    second: Light_ceiling001|Event 001|Event 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -2517201697631358977
+    second: Light_ceiling001|Event 001|Event 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -479781674937532829
+    second: Light_ceiling001|Event 001|Event 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -3552513285084990211
+    second: Light_ceiling001|Event 001|Event 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -2757983317700414894
+    second: Light_ceiling001|Event 001|Event 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 4505214192816443536
+    second: Light_ceiling001|Event 001|Event 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -3796581797755482721
+    second: Light_ceiling001|Event 001|Event 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 543668385780924350
+    second: Light_ceiling001|Event 001|Event 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -252762357481016054
+    second: Light_ceiling001|Event 001|Event 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 9148797213179873496
+    second: Light_ceiling001|Event 001|Event 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: -8135239664195635311
+    second: Light_ceiling001|Event 001|Event 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: -8271982443832941425
+    second: Light_ceiling001|Event 001|Event 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: 8411906464443892385
+    second: Light_ceiling001|Event 001|Event 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: -6464545328149377794
+    second: Light_ceiling001|Event 001|Event 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -3120680593088515789
+    second: Light_ceiling001|Event 001|Event 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 9073539729983929130
+    second: Light_ceiling001|Event 001|Event 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: 1421036496210895732
+    second: Light_ceiling001|Event 001|Event 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 6377306369653518519
+    second: Light_ceiling001|Event 001|Event 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 2333630594123503024
+    second: Light_ceiling001|Event 001|Event 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -5878614058640470311
+    second: Light_ceiling001|Event 001|Event 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -6260461198862463011
+    second: Light_ceiling001|Event 001|Event 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 708488561645101849
+    second: Light_ceiling001|Event 001|Event 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -2252570979238850678
+    second: Light_ceiling001|Event 001|Event 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: -2611949077762793706
+    second: Light_ceiling001|Event 001|Event 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -6206322178216522939
+    second: Light_ceiling001|Event 001|Event 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 1345139176850872501
+    second: Light_ceiling001|Event 001|Event 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 4832873906995164011
+    second: Light_ceiling001|Event 002|Event 002|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -8632395035010857904
+    second: Light_ceiling001|Event 002|Event 002|Box018|Take 001|BaseLayer
+  - first:
+      74: 7388712178488725781
+    second: Light_ceiling001|Event 002|Event 002|Box019|Take 001|BaseLayer
+  - first:
+      74: 4510650835176140349
+    second: Light_ceiling001|Event 002|Event 002|Box020|Take 001|BaseLayer
+  - first:
+      74: 1395180215752278824
+    second: Light_ceiling001|Event 002|Event 002|Box021|Take 001|BaseLayer
+  - first:
+      74: 8038009715167134803
+    second: Light_ceiling001|Event 002|Event 002|Box022|Take 001|BaseLayer
+  - first:
+      74: -7662900981164782556
+    second: Light_ceiling001|Event 002|Event 002|Box023|Take 001|BaseLayer
+  - first:
+      74: -2748724388002072495
+    second: Light_ceiling001|Event 002|Event 002|Box024|Take 001|BaseLayer
+  - first:
+      74: 4102364083368406018
+    second: Light_ceiling001|Event 002|Event 002|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -7869628253621999282
+    second: Light_ceiling001|Event 002|Event 002|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -2908181076363888737
+    second: Light_ceiling001|Event 002|Event 002|Camera001|Take 001|BaseLayer
+  - first:
+      74: -4300911057325048427
+    second: Light_ceiling001|Event 002|Event 002|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 5084283691062005277
+    second: Light_ceiling001|Event 002|Event 002|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -7859631555760254597
+    second: Light_ceiling001|Event 002|Event 002|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 6455235482994328511
+    second: Light_ceiling001|Event 002|Event 002|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 334690730623625758
+    second: Light_ceiling001|Event 002|Event 002|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -6710168666164406292
+    second: Light_ceiling001|Event 002|Event 002|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 2944066224676603678
+    second: Light_ceiling001|Event 002|Event 002|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 8062870184305913694
+    second: Light_ceiling001|Event 002|Event 002|Display 001|Take 001|BaseLayer
+  - first:
+      74: -706474031863589602
+    second: Light_ceiling001|Event 002|Event 002|Display 002|Take 001|BaseLayer
+  - first:
+      74: -6422673936535810600
+    second: Light_ceiling001|Event 002|Event 002|Display 003|Take 001|BaseLayer
+  - first:
+      74: -6081384702779802096
+    second: Light_ceiling001|Event 002|Event 002|Event 001|Take 001|BaseLayer
+  - first:
+      74: 7290005581299898459
+    second: Light_ceiling001|Event 002|Event 002|Event 002|Take 001|BaseLayer
+  - first:
+      74: -3450333077830569368
+    second: Light_ceiling001|Event 002|Event 002|Event 003|Take 001|BaseLayer
+  - first:
+      74: -5075407658411089906
+    second: Light_ceiling001|Event 002|Event 002|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 5040529085280135797
+    second: Light_ceiling001|Event 002|Event 002|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 4487369596056646596
+    second: Light_ceiling001|Event 002|Event 002|Omni001|Take 001|BaseLayer
+  - first:
+      74: 3195376607995105382
+    second: Light_ceiling001|Event 002|Event 002|Omni002|Take 001|BaseLayer
+  - first:
+      74: -9123300090245804840
+    second: Light_ceiling001|Event 002|Event 002|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -6641174465436554864
+    second: Light_ceiling001|Event 002|Event 002|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: 298863711054113361
+    second: Light_ceiling001|Event 002|Event 002|Render 001|Take 001|BaseLayer
+  - first:
+      74: -4358678338313102240
+    second: Light_ceiling001|Event 002|Event 002|Render 002|Take 001|BaseLayer
+  - first:
+      74: 9212111535471583630
+    second: Light_ceiling001|Event 002|Event 002|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 8617372867081956490
+    second: Light_ceiling001|Event 002|Event 002|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -1810715181126929736
+    second: Light_ceiling001|Event 003|Event 003|Birth 001|Take 001|BaseLayer
+  - first:
+      74: -1962014564180449412
+    second: Light_ceiling001|Event 003|Event 003|Box018|Take 001|BaseLayer
+  - first:
+      74: 3498507340739793650
+    second: Light_ceiling001|Event 003|Event 003|Box019|Take 001|BaseLayer
+  - first:
+      74: -2535478163493143142
+    second: Light_ceiling001|Event 003|Event 003|Box020|Take 001|BaseLayer
+  - first:
+      74: -5304114532524392250
+    second: Light_ceiling001|Event 003|Event 003|Box021|Take 001|BaseLayer
+  - first:
+      74: 3523462929663503454
+    second: Light_ceiling001|Event 003|Event 003|Box022|Take 001|BaseLayer
+  - first:
+      74: 8385871603079193802
+    second: Light_ceiling001|Event 003|Event 003|Box023|Take 001|BaseLayer
+  - first:
+      74: 6945903824028741183
+    second: Light_ceiling001|Event 003|Event 003|Box024|Take 001|BaseLayer
+  - first:
+      74: 7003349885546757028
+    second: Light_ceiling001|Event 003|Event 003|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 220222509240345701
+    second: Light_ceiling001|Event 003|Event 003|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -8630333427514062005
+    second: Light_ceiling001|Event 003|Event 003|Camera001|Take 001|BaseLayer
+  - first:
+      74: 4787788375990515000
+    second: Light_ceiling001|Event 003|Event 003|Capsule007|Take 001|BaseLayer
+  - first:
+      74: 2182294503560156875
+    second: Light_ceiling001|Event 003|Event 003|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -3393308735605015693
+    second: Light_ceiling001|Event 003|Event 003|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: 1040006767334312998
+    second: Light_ceiling001|Event 003|Event 003|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -7216657470949516730
+    second: Light_ceiling001|Event 003|Event 003|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -3410734749587884562
+    second: Light_ceiling001|Event 003|Event 003|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: 7882710554703081228
+    second: Light_ceiling001|Event 003|Event 003|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 433796128339237008
+    second: Light_ceiling001|Event 003|Event 003|Display 001|Take 001|BaseLayer
+  - first:
+      74: -7739173958276798394
+    second: Light_ceiling001|Event 003|Event 003|Display 002|Take 001|BaseLayer
+  - first:
+      74: -5639491093398378391
+    second: Light_ceiling001|Event 003|Event 003|Display 003|Take 001|BaseLayer
+  - first:
+      74: 1973930144099160385
+    second: Light_ceiling001|Event 003|Event 003|Event 001|Take 001|BaseLayer
+  - first:
+      74: 275386495220056778
+    second: Light_ceiling001|Event 003|Event 003|Event 002|Take 001|BaseLayer
+  - first:
+      74: 8841661052404868097
+    second: Light_ceiling001|Event 003|Event 003|Event 003|Take 001|BaseLayer
+  - first:
+      74: 2924777087065107185
+    second: Light_ceiling001|Event 003|Event 003|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: -6739187774739750620
+    second: Light_ceiling001|Event 003|Event 003|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: -2795902168279165083
+    second: Light_ceiling001|Event 003|Event 003|Omni001|Take 001|BaseLayer
+  - first:
+      74: 6517879487641075557
+    second: Light_ceiling001|Event 003|Event 003|Omni002|Take 001|BaseLayer
+  - first:
+      74: -2768948528406710880
+    second: Light_ceiling001|Event 003|Event 003|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 5930852147440953387
+    second: Light_ceiling001|Event 003|Event 003|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -8423423559763648030
+    second: Light_ceiling001|Event 003|Event 003|Render 001|Take 001|BaseLayer
+  - first:
+      74: 1983715959582633087
+    second: Light_ceiling001|Event 003|Event 003|Render 002|Take 001|BaseLayer
+  - first:
+      74: -323907637295178611
+    second: Light_ceiling001|Event 003|Event 003|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: -8498667028847237516
+    second: Light_ceiling001|Event 003|Event 003|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 8981736757187234727
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 8203915180225149132
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box018|Take 001|BaseLayer
+  - first:
+      74: -7144661724173196645
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box019|Take 001|BaseLayer
+  - first:
+      74: -6901171131993036094
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box020|Take 001|BaseLayer
+  - first:
+      74: -4143432527511077083
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box021|Take 001|BaseLayer
+  - first:
+      74: -518555274188177332
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box022|Take 001|BaseLayer
+  - first:
+      74: 5001995963281689630
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box023|Take 001|BaseLayer
+  - first:
+      74: 2238013107243773889
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Box024|Take 001|BaseLayer
+  - first:
+      74: -5327700895812978710
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -7566289172241594955
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Camera001.Target|Take
+      001|Bas
+  - first:
+      74: -2225302719960916896
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Camera001|Take 001|BaseLayer
+  - first:
+      74: -5173908240501980476
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -938088277422322211
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 6938828693622653581
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|ChamferBox002|Take
+      001|BaseLa
+  - first:
+      74: -1256965369713279833
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Cylinder009|Take 001|BaseLaye
+  - first:
+      74: 165546654789819976
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Cylinder010|Take 001|BaseLaye
+  - first:
+      74: -5074595427428424329
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Cylinder011|Take 001|BaseLaye
+  - first:
+      74: -7344525737898068723
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Cylinder012|Take 001|BaseLaye
+  - first:
+      74: 3686245076084457879
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Display 001|Take 001|BaseLaye
+  - first:
+      74: -4209648951177029477
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Display 002|Take 001|BaseLaye
+  - first:
+      74: -8748473585486703373
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Display 003|Take 001|BaseLaye
+  - first:
+      74: -4539700042869843499
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Event 001|Take 001|BaseLayer
+  - first:
+      74: 1605884516861612983
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Event 002|Take 001|BaseLayer
+  - first:
+      74: -8915158543384619242
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Event 003|Take 001|BaseLayer
+  - first:
+      74: -8932091008200963232
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Light_ceiling001|Take
+      001|Bas
+  - first:
+      74: 4912623692338788620
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Material Static 001|Take
+      001|
+  - first:
+      74: -2468944440992040142
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Omni001|Take 001|BaseLayer
+  - first:
+      74: 545952408334357999
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Omni002|Take 001|BaseLayer
+  - first:
+      74: 1262350520935217572
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Particle View 001|Take
+      001|Ba
+  - first:
+      74: 2190482374006354861
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Position Object 001|Take
+      001|
+  - first:
+      74: 213283075214285818
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 4069495340886334893
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -4834858892700847700
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Shape Facing 001|Take
+      001|Bas
+  - first:
+      74: 7630297128086303941
+    second: Light_ceiling001|Light_ceiling001|Light_ceiling001|Tunnel_light03|Take
+      001|BaseL
+  - first:
+      74: -282861017775851120
+    second: Light_ceiling001|Material Static 001|Material Static 001|Birth 001|Take
+      001|Base
+  - first:
+      74: 1761932794735595968
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box018|Take
+      001|BaseLay
+  - first:
+      74: 4141601144011310304
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box019|Take
+      001|BaseLay
+  - first:
+      74: 7464834394526229767
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box020|Take
+      001|BaseLay
+  - first:
+      74: 7144737946315084386
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box021|Take
+      001|BaseLay
+  - first:
+      74: -3168358047626821131
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box022|Take
+      001|BaseLay
+  - first:
+      74: -4329324375378203954
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box023|Take
+      001|BaseLay
+  - first:
+      74: -7192645971036637592
+    second: Light_ceiling001|Material Static 001|Material Static 001|Box024|Take
+      001|BaseLay
+  - first:
+      74: 4010073853168006635
+    second: Light_ceiling001|Material Static 001|Material Static 001|Bulb001|Take
+      001|BaseLa
+  - first:
+      74: 6472722650994795230
+    second: Light_ceiling001|Material Static 001|Material Static 001|Camera001.Target|Take
+      0
+  - first:
+      74: 6419453876209850556
+    second: Light_ceiling001|Material Static 001|Material Static 001|Camera001|Take
+      001|Base
+  - first:
+      74: 7459239212252593034
+    second: Light_ceiling001|Material Static 001|Material Static 001|Capsule007|Take
+      001|Bas
+  - first:
+      74: -8427659470775972833
+    second: Light_ceiling001|Material Static 001|Material Static 001|Capsule008|Take
+      001|Bas
+  - first:
+      74: -1042093260937625573
+    second: Light_ceiling001|Material Static 001|Material Static 001|ChamferBox002|Take
+      001|
+  - first:
+      74: 7173707574537791432
+    second: Light_ceiling001|Material Static 001|Material Static 001|Cylinder009|Take
+      001|Ba
+  - first:
+      74: -7968699726030158772
+    second: Light_ceiling001|Material Static 001|Material Static 001|Cylinder010|Take
+      001|Ba
+  - first:
+      74: -7056883697606283816
+    second: Light_ceiling001|Material Static 001|Material Static 001|Cylinder011|Take
+      001|Ba
+  - first:
+      74: -6225638251090018221
+    second: Light_ceiling001|Material Static 001|Material Static 001|Cylinder012|Take
+      001|Ba
+  - first:
+      74: 1252638864286526832
+    second: Light_ceiling001|Material Static 001|Material Static 001|Display 001|Take
+      001|Ba
+  - first:
+      74: -5457024654019009427
+    second: Light_ceiling001|Material Static 001|Material Static 001|Display 002|Take
+      001|Ba
+  - first:
+      74: -7915371243304599667
+    second: Light_ceiling001|Material Static 001|Material Static 001|Display 003|Take
+      001|Ba
+  - first:
+      74: -3905902904952234896
+    second: Light_ceiling001|Material Static 001|Material Static 001|Event 001|Take
+      001|Base
+  - first:
+      74: -914556057255686152
+    second: Light_ceiling001|Material Static 001|Material Static 001|Event 002|Take
+      001|Base
+  - first:
+      74: 81391081657554534
+    second: Light_ceiling001|Material Static 001|Material Static 001|Event 003|Take
+      001|Base
+  - first:
+      74: -4657313777077724328
+    second: Light_ceiling001|Material Static 001|Material Static 001|Light_ceiling001|Take
+      0
+  - first:
+      74: -443082001924527977
+    second: Light_ceiling001|Material Static 001|Material Static 001|Material Static
+      001|Tak
+  - first:
+      74: 7616755831463346408
+    second: Light_ceiling001|Material Static 001|Material Static 001|Omni001|Take
+      001|BaseLa
+  - first:
+      74: 4573566856239492658
+    second: Light_ceiling001|Material Static 001|Material Static 001|Omni002|Take
+      001|BaseLa
+  - first:
+      74: -8546756259910725054
+    second: 'Light_ceiling001|Material Static 001|Material Static 001|Particle View
+      001|Take '
+  - first:
+      74: 2503747699854146258
+    second: Light_ceiling001|Material Static 001|Material Static 001|Position Object
+      001|Tak
+  - first:
+      74: -6003872799488187810
+    second: Light_ceiling001|Material Static 001|Material Static 001|Render 001|Take
+      001|Bas
+  - first:
+      74: -7573776528048384227
+    second: Light_ceiling001|Material Static 001|Material Static 001|Render 002|Take
+      001|Bas
+  - first:
+      74: 967562927263554625
+    second: Light_ceiling001|Material Static 001|Material Static 001|Shape Facing
+      001|Take 0
+  - first:
+      74: -1133868833395208407
+    second: Light_ceiling001|Material Static 001|Material Static 001|Tunnel_light03|Take
+      001
+  - first:
+      74: 1794617430295841138
+    second: Light_ceiling001|Particle View 001|Particle View 001|Birth 001|Take 001|BaseLaye
+  - first:
+      74: -3192637389579759605
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 8927382039940422533
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 2017509654722252918
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -2532764692603836349
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box021|Take 001|BaseLayer
+  - first:
+      74: -8091702238986984842
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -7245591581546452650
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box023|Take 001|BaseLayer
+  - first:
+      74: 4169625109475029253
+    second: Light_ceiling001|Particle View 001|Particle View 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -3917902177579729055
+    second: Light_ceiling001|Particle View 001|Particle View 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 5636399182277452010
+    second: Light_ceiling001|Particle View 001|Particle View 001|Camera001.Target|Take
+      001|B
+  - first:
+      74: 3934381419778500320
+    second: Light_ceiling001|Particle View 001|Particle View 001|Camera001|Take 001|BaseLaye
+  - first:
+      74: 4601142758637316524
+    second: Light_ceiling001|Particle View 001|Particle View 001|Capsule007|Take
+      001|BaseLay
+  - first:
+      74: 656650865423743998
+    second: Light_ceiling001|Particle View 001|Particle View 001|Capsule008|Take
+      001|BaseLay
+  - first:
+      74: 4597314537287692348
+    second: Light_ceiling001|Particle View 001|Particle View 001|ChamferBox002|Take
+      001|Base
+  - first:
+      74: -3654657732919064641
+    second: Light_ceiling001|Particle View 001|Particle View 001|Cylinder009|Take
+      001|BaseLa
+  - first:
+      74: 403296823946623506
+    second: Light_ceiling001|Particle View 001|Particle View 001|Cylinder010|Take
+      001|BaseLa
+  - first:
+      74: 467097456204975270
+    second: Light_ceiling001|Particle View 001|Particle View 001|Cylinder011|Take
+      001|BaseLa
+  - first:
+      74: -6830999137898603322
+    second: Light_ceiling001|Particle View 001|Particle View 001|Cylinder012|Take
+      001|BaseLa
+  - first:
+      74: -4231087105595322891
+    second: Light_ceiling001|Particle View 001|Particle View 001|Display 001|Take
+      001|BaseLa
+  - first:
+      74: 3562225602226275009
+    second: Light_ceiling001|Particle View 001|Particle View 001|Display 002|Take
+      001|BaseLa
+  - first:
+      74: 2676546924441522133
+    second: Light_ceiling001|Particle View 001|Particle View 001|Display 003|Take
+      001|BaseLa
+  - first:
+      74: -8588363270014144253
+    second: Light_ceiling001|Particle View 001|Particle View 001|Event 001|Take 001|BaseLaye
+  - first:
+      74: 6642377057050690011
+    second: Light_ceiling001|Particle View 001|Particle View 001|Event 002|Take 001|BaseLaye
+  - first:
+      74: 2697919590963216742
+    second: Light_ceiling001|Particle View 001|Particle View 001|Event 003|Take 001|BaseLaye
+  - first:
+      74: 4413652823693187845
+    second: Light_ceiling001|Particle View 001|Particle View 001|Light_ceiling001|Take
+      001|B
+  - first:
+      74: 2467579847872985115
+    second: Light_ceiling001|Particle View 001|Particle View 001|Material Static
+      001|Take 00
+  - first:
+      74: 2008849301186785598
+    second: Light_ceiling001|Particle View 001|Particle View 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -7618947699251810663
+    second: Light_ceiling001|Particle View 001|Particle View 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: 7071018232186211600
+    second: Light_ceiling001|Particle View 001|Particle View 001|Particle View 001|Take
+      001|
+  - first:
+      74: -1999630102929924682
+    second: Light_ceiling001|Particle View 001|Particle View 001|Position Object
+      001|Take 00
+  - first:
+      74: -4521261095128428647
+    second: Light_ceiling001|Particle View 001|Particle View 001|Render 001|Take
+      001|BaseLay
+  - first:
+      74: 6561423095705983843
+    second: Light_ceiling001|Particle View 001|Particle View 001|Render 002|Take
+      001|BaseLay
+  - first:
+      74: 7153383508884044997
+    second: Light_ceiling001|Particle View 001|Particle View 001|Shape Facing 001|Take
+      001|B
+  - first:
+      74: 8117873949266911864
+    second: Light_ceiling001|Particle View 001|Particle View 001|Tunnel_light03|Take
+      001|Bas
+  - first:
+      74: 3372175753425398195
+    second: Light_ceiling001|Position Object 001|Position Object 001|Birth 001|Take
+      001|Base
+  - first:
+      74: 2239637591020617049
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box018|Take
+      001|BaseLay
+  - first:
+      74: 8897075466448684949
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box019|Take
+      001|BaseLay
+  - first:
+      74: -1037176998032729451
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box020|Take
+      001|BaseLay
+  - first:
+      74: 923796347927583114
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box021|Take
+      001|BaseLay
+  - first:
+      74: 1162142008265063973
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box022|Take
+      001|BaseLay
+  - first:
+      74: -1458013984435599346
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box023|Take
+      001|BaseLay
+  - first:
+      74: -1997961696939001844
+    second: Light_ceiling001|Position Object 001|Position Object 001|Box024|Take
+      001|BaseLay
+  - first:
+      74: -7039321725304053157
+    second: Light_ceiling001|Position Object 001|Position Object 001|Bulb001|Take
+      001|BaseLa
+  - first:
+      74: -456193405013546325
+    second: Light_ceiling001|Position Object 001|Position Object 001|Camera001.Target|Take
+      0
+  - first:
+      74: -6678951889947504583
+    second: Light_ceiling001|Position Object 001|Position Object 001|Camera001|Take
+      001|Base
+  - first:
+      74: 8115434437628344152
+    second: Light_ceiling001|Position Object 001|Position Object 001|Capsule007|Take
+      001|Bas
+  - first:
+      74: 8099637721588233296
+    second: Light_ceiling001|Position Object 001|Position Object 001|Capsule008|Take
+      001|Bas
+  - first:
+      74: 269378851827917668
+    second: Light_ceiling001|Position Object 001|Position Object 001|ChamferBox002|Take
+      001|
+  - first:
+      74: 3902054491704977197
+    second: Light_ceiling001|Position Object 001|Position Object 001|Cylinder009|Take
+      001|Ba
+  - first:
+      74: -5751674936665502609
+    second: Light_ceiling001|Position Object 001|Position Object 001|Cylinder010|Take
+      001|Ba
+  - first:
+      74: -6858653958551958236
+    second: Light_ceiling001|Position Object 001|Position Object 001|Cylinder011|Take
+      001|Ba
+  - first:
+      74: -3436325521981449101
+    second: Light_ceiling001|Position Object 001|Position Object 001|Cylinder012|Take
+      001|Ba
+  - first:
+      74: -873627412729631134
+    second: Light_ceiling001|Position Object 001|Position Object 001|Display 001|Take
+      001|Ba
+  - first:
+      74: 415131860107241083
+    second: Light_ceiling001|Position Object 001|Position Object 001|Display 002|Take
+      001|Ba
+  - first:
+      74: 8567818916628198455
+    second: Light_ceiling001|Position Object 001|Position Object 001|Display 003|Take
+      001|Ba
+  - first:
+      74: -3590643037563610285
+    second: Light_ceiling001|Position Object 001|Position Object 001|Event 001|Take
+      001|Base
+  - first:
+      74: 125519162208954822
+    second: Light_ceiling001|Position Object 001|Position Object 001|Event 002|Take
+      001|Base
+  - first:
+      74: 4332936709560969068
+    second: Light_ceiling001|Position Object 001|Position Object 001|Event 003|Take
+      001|Base
+  - first:
+      74: -8814145061352971158
+    second: Light_ceiling001|Position Object 001|Position Object 001|Light_ceiling001|Take
+      0
+  - first:
+      74: 586080944853161958
+    second: Light_ceiling001|Position Object 001|Position Object 001|Material Static
+      001|Tak
+  - first:
+      74: 8809643221271756122
+    second: Light_ceiling001|Position Object 001|Position Object 001|Omni001|Take
+      001|BaseLa
+  - first:
+      74: 7221876185716370426
+    second: Light_ceiling001|Position Object 001|Position Object 001|Omni002|Take
+      001|BaseLa
+  - first:
+      74: -2041106461185098268
+    second: 'Light_ceiling001|Position Object 001|Position Object 001|Particle View
+      001|Take '
+  - first:
+      74: -2267313072758638242
+    second: Light_ceiling001|Position Object 001|Position Object 001|Position Object
+      001|Tak
+  - first:
+      74: -1106316851660657094
+    second: Light_ceiling001|Position Object 001|Position Object 001|Render 001|Take
+      001|Bas
+  - first:
+      74: 8930647292183404294
+    second: Light_ceiling001|Position Object 001|Position Object 001|Render 002|Take
+      001|Bas
+  - first:
+      74: -5440406168644399596
+    second: Light_ceiling001|Position Object 001|Position Object 001|Shape Facing
+      001|Take 0
+  - first:
+      74: 9015029630044027399
+    second: Light_ceiling001|Position Object 001|Position Object 001|Tunnel_light03|Take
+      001
+  - first:
+      74: -3369162194017103975
+    second: Light_ceiling001|Render 001|Render 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 2783284007606438475
+    second: Light_ceiling001|Render 001|Render 001|Box018|Take 001|BaseLayer
+  - first:
+      74: -2009441929106646438
+    second: Light_ceiling001|Render 001|Render 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 5240505747733409359
+    second: Light_ceiling001|Render 001|Render 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -6683584376781187763
+    second: Light_ceiling001|Render 001|Render 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 3502780074076580022
+    second: Light_ceiling001|Render 001|Render 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -9196137214893874813
+    second: Light_ceiling001|Render 001|Render 001|Box023|Take 001|BaseLayer
+  - first:
+      74: -1352002870105438219
+    second: Light_ceiling001|Render 001|Render 001|Box024|Take 001|BaseLayer
+  - first:
+      74: -8844627458058525744
+    second: Light_ceiling001|Render 001|Render 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: 8300326951335542918
+    second: Light_ceiling001|Render 001|Render 001|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: -2055868350993953622
+    second: Light_ceiling001|Render 001|Render 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: 8306614679625133533
+    second: Light_ceiling001|Render 001|Render 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -3496601816238562909
+    second: Light_ceiling001|Render 001|Render 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 5009430004805588266
+    second: Light_ceiling001|Render 001|Render 001|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -4712867135265688300
+    second: Light_ceiling001|Render 001|Render 001|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: 7691097457053906407
+    second: Light_ceiling001|Render 001|Render 001|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: -6663891604258420063
+    second: Light_ceiling001|Render 001|Render 001|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -1804635330978279569
+    second: Light_ceiling001|Render 001|Render 001|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 2470640521550656833
+    second: Light_ceiling001|Render 001|Render 001|Display 001|Take 001|BaseLayer
+  - first:
+      74: -3598846295414132375
+    second: Light_ceiling001|Render 001|Render 001|Display 002|Take 001|BaseLayer
+  - first:
+      74: 5756229063569612040
+    second: Light_ceiling001|Render 001|Render 001|Display 003|Take 001|BaseLayer
+  - first:
+      74: -4859357631576121890
+    second: Light_ceiling001|Render 001|Render 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -5544161200072914402
+    second: Light_ceiling001|Render 001|Render 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 3950620783288266805
+    second: Light_ceiling001|Render 001|Render 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: 2062951216950608047
+    second: Light_ceiling001|Render 001|Render 001|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 2278965532942489942
+    second: Light_ceiling001|Render 001|Render 001|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 7276970734054924720
+    second: Light_ceiling001|Render 001|Render 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: 8994475209465029773
+    second: Light_ceiling001|Render 001|Render 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -4080331208447433887
+    second: Light_ceiling001|Render 001|Render 001|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: 7055238997638178284
+    second: Light_ceiling001|Render 001|Render 001|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -7518508723830157335
+    second: Light_ceiling001|Render 001|Render 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 7472467734047398483
+    second: Light_ceiling001|Render 001|Render 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: 5789153988358615296
+    second: Light_ceiling001|Render 001|Render 001|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 3526811543599201388
+    second: Light_ceiling001|Render 001|Render 001|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: 4299878183034990176
+    second: Light_ceiling001|Render 002|Render 002|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 4615667359114825806
+    second: Light_ceiling001|Render 002|Render 002|Box018|Take 001|BaseLayer
+  - first:
+      74: 1816238795579958177
+    second: Light_ceiling001|Render 002|Render 002|Box019|Take 001|BaseLayer
+  - first:
+      74: 4363771940480663365
+    second: Light_ceiling001|Render 002|Render 002|Box020|Take 001|BaseLayer
+  - first:
+      74: 588625553278842990
+    second: Light_ceiling001|Render 002|Render 002|Box021|Take 001|BaseLayer
+  - first:
+      74: -6706241688979210601
+    second: Light_ceiling001|Render 002|Render 002|Box022|Take 001|BaseLayer
+  - first:
+      74: -8788408489183939260
+    second: Light_ceiling001|Render 002|Render 002|Box023|Take 001|BaseLayer
+  - first:
+      74: 620037788021505149
+    second: Light_ceiling001|Render 002|Render 002|Box024|Take 001|BaseLayer
+  - first:
+      74: 2185546052368670767
+    second: Light_ceiling001|Render 002|Render 002|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -2296284124625768381
+    second: Light_ceiling001|Render 002|Render 002|Camera001.Target|Take 001|BaseLayer
+  - first:
+      74: 8510911749097261561
+    second: Light_ceiling001|Render 002|Render 002|Camera001|Take 001|BaseLayer
+  - first:
+      74: 765790243912948624
+    second: Light_ceiling001|Render 002|Render 002|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -2129911427574140317
+    second: Light_ceiling001|Render 002|Render 002|Capsule008|Take 001|BaseLayer
+  - first:
+      74: -7374049878636054573
+    second: Light_ceiling001|Render 002|Render 002|ChamferBox002|Take 001|BaseLayer
+  - first:
+      74: -5551485970028832288
+    second: Light_ceiling001|Render 002|Render 002|Cylinder009|Take 001|BaseLayer
+  - first:
+      74: -5917334484334683826
+    second: Light_ceiling001|Render 002|Render 002|Cylinder010|Take 001|BaseLayer
+  - first:
+      74: 609562281268246102
+    second: Light_ceiling001|Render 002|Render 002|Cylinder011|Take 001|BaseLayer
+  - first:
+      74: -1514824221074103017
+    second: Light_ceiling001|Render 002|Render 002|Cylinder012|Take 001|BaseLayer
+  - first:
+      74: 4440384152947254890
+    second: Light_ceiling001|Render 002|Render 002|Display 001|Take 001|BaseLayer
+  - first:
+      74: -4186910418465103420
+    second: Light_ceiling001|Render 002|Render 002|Display 002|Take 001|BaseLayer
+  - first:
+      74: 4022990582918375428
+    second: Light_ceiling001|Render 002|Render 002|Display 003|Take 001|BaseLayer
+  - first:
+      74: 2860810986834770602
+    second: Light_ceiling001|Render 002|Render 002|Event 001|Take 001|BaseLayer
+  - first:
+      74: -9215908592805672986
+    second: Light_ceiling001|Render 002|Render 002|Event 002|Take 001|BaseLayer
+  - first:
+      74: -2874497465222957325
+    second: Light_ceiling001|Render 002|Render 002|Event 003|Take 001|BaseLayer
+  - first:
+      74: -3310809258523380369
+    second: Light_ceiling001|Render 002|Render 002|Light_ceiling001|Take 001|BaseLayer
+  - first:
+      74: 276466771973110749
+    second: Light_ceiling001|Render 002|Render 002|Material Static 001|Take 001|BaseLayer
+  - first:
+      74: 3366884081334720443
+    second: Light_ceiling001|Render 002|Render 002|Omni001|Take 001|BaseLayer
+  - first:
+      74: 4961170120506181364
+    second: Light_ceiling001|Render 002|Render 002|Omni002|Take 001|BaseLayer
+  - first:
+      74: -9008776072311924760
+    second: Light_ceiling001|Render 002|Render 002|Particle View 001|Take 001|BaseLayer
+  - first:
+      74: -4759989455086343229
+    second: Light_ceiling001|Render 002|Render 002|Position Object 001|Take 001|BaseLayer
+  - first:
+      74: -6854657375324962282
+    second: Light_ceiling001|Render 002|Render 002|Render 001|Take 001|BaseLayer
+  - first:
+      74: 4035157925043611815
+    second: Light_ceiling001|Render 002|Render 002|Render 002|Take 001|BaseLayer
+  - first:
+      74: 4076406125841688209
+    second: Light_ceiling001|Render 002|Render 002|Shape Facing 001|Take 001|BaseLayer
+  - first:
+      74: 5688262627690949941
+    second: Light_ceiling001|Render 002|Render 002|Tunnel_light03|Take 001|BaseLayer
+  - first:
+      74: -7975428098321274650
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Birth 001|Take 001|BaseLayer
+  - first:
+      74: 7059345034052835690
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box018|Take 001|BaseLayer
+  - first:
+      74: 8132574266348107838
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box019|Take 001|BaseLayer
+  - first:
+      74: 5867127964558237362
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box020|Take 001|BaseLayer
+  - first:
+      74: -1495099829170668013
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box021|Take 001|BaseLayer
+  - first:
+      74: 1351879460183102785
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box022|Take 001|BaseLayer
+  - first:
+      74: -8638677184527257207
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box023|Take 001|BaseLayer
+  - first:
+      74: 4399121465496267453
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Box024|Take 001|BaseLayer
+  - first:
+      74: 8489603932373406576
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Bulb001|Take 001|BaseLayer
+  - first:
+      74: -8463619197546006214
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Camera001.Target|Take
+      001|Bas
+  - first:
+      74: 843689921246465314
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Camera001|Take 001|BaseLayer
+  - first:
+      74: 1350597650194119408
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Capsule007|Take 001|BaseLayer
+  - first:
+      74: -8008651808781412857
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Capsule008|Take 001|BaseLayer
+  - first:
+      74: 2979901370058340528
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|ChamferBox002|Take
+      001|BaseLa
+  - first:
+      74: 5845622442772197400
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Cylinder009|Take 001|BaseLaye
+  - first:
+      74: -3414862615791087093
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Cylinder010|Take 001|BaseLaye
+  - first:
+      74: 7440338866667433872
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Cylinder011|Take 001|BaseLaye
+  - first:
+      74: 4758882233641616645
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Cylinder012|Take 001|BaseLaye
+  - first:
+      74: -6674087502446775403
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Display 001|Take 001|BaseLaye
+  - first:
+      74: -2195438345901615106
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Display 002|Take 001|BaseLaye
+  - first:
+      74: 6883221465891083417
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Display 003|Take 001|BaseLaye
+  - first:
+      74: 1124461918985825116
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Event 001|Take 001|BaseLayer
+  - first:
+      74: -8460498132741835142
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Event 002|Take 001|BaseLayer
+  - first:
+      74: 2439102018669033915
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Event 003|Take 001|BaseLayer
+  - first:
+      74: 8717484175661053044
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Light_ceiling001|Take
+      001|Bas
+  - first:
+      74: -4971605168844951020
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Material Static 001|Take
+      001|
+  - first:
+      74: 5986258617404546544
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Omni001|Take 001|BaseLayer
+  - first:
+      74: -4043883360367536475
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Omni002|Take 001|BaseLayer
+  - first:
+      74: -8602379485041887669
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Particle View 001|Take
+      001|Ba
+  - first:
+      74: -7801908389942091263
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Position Object 001|Take
+      001|
+  - first:
+      74: -4132494814341088589
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Render 001|Take 001|BaseLayer
+  - first:
+      74: 6574809186189849777
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Render 002|Take 001|BaseLayer
+  - first:
+      74: -1537050710647259145
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Shape Facing 001|Take
+      001|Bas
+  - first:
+      74: 6366442387044287850
+    second: Light_ceiling001|Shape Facing 001|Shape Facing 001|Tunnel_light03|Take
+      001|BaseL
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

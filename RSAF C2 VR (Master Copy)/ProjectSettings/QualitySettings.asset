@@ -83,3 +83,5 @@ QualitySettings:
     Server: 0
     Standalone: 0
     WebGL: 1
+    Windows Store Apps: 0
+    tvOS: 0
