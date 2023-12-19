@@ -18,6 +18,7 @@ public class Register : MonoBehaviour
     public TMP_InputField passwordInputField;
     public Button loginButton;
     public Button registerButton;
+    public TMP_Text messageText;
 
     private List<User> users = new List<User>();
 
@@ -65,18 +66,24 @@ public class Register : MonoBehaviour
                 Debug.Log("Login successful");
                 if (user.category == adminMode)
                 {
+                    messageText.text = "Welcome Admin";
+                    StartCoroutine(ClearMessageAfterDelay(3f));
                     Debug.Log("Welcome Admin");
                     sceneLoader.LoadScene("FYP ADMIN UI 1");
 
                 }
                 else
                 {
+                    messageText.text = "Welcome Trainee";
+                    StartCoroutine(ClearMessageAfterDelay(3f));
                     Debug.Log("Welcome Trainee");
                     sceneLoader.LoadScene("FYP NORMAL UI 1");
                 }
                 return;
             }
         }
+        messageText.text = "Login failed";
+        StartCoroutine(ClearMessageAfterDelay(3f));
         Debug.Log("Login failed");
     }
     public void Registering()
@@ -87,6 +94,8 @@ public class Register : MonoBehaviour
         {
             if (user.Username == username)
             {
+                messageText.text = "Username already exists";
+                StartCoroutine(ClearMessageAfterDelay(3f));
                 Debug.Log("Username already exists");
                 return;
             }
@@ -99,7 +108,8 @@ public class Register : MonoBehaviour
 
         //LoadUserData();
         SaveUserData();
-
+        messageText.text = "Registration Successful";
+        StartCoroutine(ClearMessageAfterDelay(3f));
         Debug.Log("Registration Successful");
     }
     public void SaveUserData()
@@ -250,6 +260,11 @@ public class Register : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator ClearMessageAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        messageText.text = "";
     }
 }
 
