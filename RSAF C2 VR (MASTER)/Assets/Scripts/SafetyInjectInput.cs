@@ -5,14 +5,8 @@ using UnityEngine;
 public class SafetyInjectInput : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    public void SafeInjectStart ()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
