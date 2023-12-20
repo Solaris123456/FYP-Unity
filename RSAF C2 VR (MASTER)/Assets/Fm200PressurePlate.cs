@@ -8,7 +8,10 @@ public class Fm200PressurePlate : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-      FM200UI.SetActive(false);
+        if (FM200UI.activeSelf)
+        {
+            FM200UI.SetActive(false);
+        }
     }
     void OnTriggerEnter (Collider other)
     {
