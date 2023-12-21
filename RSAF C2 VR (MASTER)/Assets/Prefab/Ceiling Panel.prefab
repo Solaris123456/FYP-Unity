@@ -156,6 +156,7 @@ MonoBehaviour:
   safety: 1
   panel: 0
   lights: 0
+  errorFound: 0
 --- !u!1 &918945716106868955
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +611,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8530909374296006927}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8351454296076555328}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 690370698986579604}
+        m_TargetAssemblyTypeName: RoofSafetyActivation, Assembly-CSharp
+        m_MethodName: safetydone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &2228306961121596342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1241,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5634352234935140581}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7244529519980045262}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 690370698986579604}
+        m_TargetAssemblyTypeName: RoofSafetyActivation, Assembly-CSharp
+        m_MethodName: safetydone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3585331316109604301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5186642140727971482}
+  - component: {fileID: 4573558957441594057}
   m_Layer: 0
   m_Name: Ceiling Panel (broken)
   m_TagString: Untagged
@@ -1353,6 +1403,19 @@ Transform:
   m_Father: {fileID: 3118576067770626428}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4573558957441594057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473114133333150837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e81672703fe7004189d803239e46168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetToDisable: {fileID: 8351454296076555328}
 --- !u!1 &4480583037540682870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3244,6 +3307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7494604268308940552}
+  - component: {fileID: 8350570156315683371}
   m_Layer: 0
   m_Name: Ceiling Panel (fixed)
   m_TagString: Untagged
@@ -3273,6 +3337,19 @@ Transform:
   m_Father: {fileID: 3118576067770626428}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8350570156315683371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351454296076555328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e81672703fe7004189d803239e46168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetToDisable: {fileID: 4473114133333150837}
 --- !u!1 &8650673313081573357
 GameObject:
   m_ObjectHideFlags: 0
