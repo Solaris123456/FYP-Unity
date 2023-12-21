@@ -5,21 +5,19 @@ using UnityEngine;
 
 public class RoofSafetyActivation : MonoBehaviour
 {
-    public bool safety = true;
-    public bool panel = false;
-    public bool lights = false;
-    public bool errorFound = false;
-
+    public safetyStarter SafetyStarter;
+    public GameObject CeilingError;
+    public GameObject LightError;
     // Start is called before the first frame update
-    public void safetydone()
+    void Start()
     {
-        safety = true;
-        errorFound = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (SafetyStarter.Light)
+        { 
+            LightError.SetActive(true);
+        }
+        if (SafetyStarter.Panel)
+        {
+            CeilingError.SetActive(true);
+        }
     }
 }
