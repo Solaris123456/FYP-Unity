@@ -4770,6 +4770,7 @@ GameObject:
   - component: {fileID: 419912801}
   - component: {fileID: 419912802}
   - component: {fileID: 419912803}
+  - component: {fileID: 419912804}
   m_Layer: 5
   m_Name: User Interface
   m_TagString: Untagged
@@ -4834,6 +4835,20 @@ MonoBehaviour:
   loadSceneMode: 0
   UseSceenFader: 1
   ScreenFadeTime: 0.5
+--- !u!114 &419912804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419912800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf06e6eefd80214fb7102ff0615a3b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstInput: {fileID: 185229557}
+  submitButton: {fileID: 661204981}
 --- !u!1 &424564047
 GameObject:
   m_ObjectHideFlags: 0

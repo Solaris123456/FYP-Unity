@@ -123,11 +123,17 @@ public class Register : MonoBehaviour
             foreach (User user in users)
             {
                 string encryptedUsername = user.Username;/*Encrypt(user.Username)*/
-
-                //string attemptsData = String.Join(",", user.Attempts.Select(a => a >= 0 ? a.ToString() : "Failed"));
-                string attemptsData = user.Attempts.Count > 0 ? String.Join(",", user.Attempts.Select(a => a == -1 ? a.ToString() : "Failed")) : "";
-                writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);
-                //writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
+                // Only write attempts data if user has made at least one attempt
+                if (user.Attempts.Count > 0)
+                {
+                    string attemptsData = String.Join(",", user.Attempts.Select(a => a == -1 ? "Failed" : a.ToString()));
+                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);
+                }
+                else
+                {
+                    // If user has not made any attempts, don't write "Failed"
+                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
+                }
             }
         }
         Debug.Log("User data saved");
@@ -152,10 +158,10 @@ public class Register : MonoBehaviour
                     {
                         attempts.Add(timeTaken);
                     }
-                    else
+                    /*else
                     {
                         attempts.Add(-1);
-                    }
+                    }*/
                 }
 
                 User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };
@@ -311,6 +317,10 @@ public class Register : MonoBehaviour
 
         // Load the login scene
         SceneManager.LoadScene("FYP UI 2");
+        SceneManager.sceneLoaded += (scene, mode) => {
+            Canvas myCanvas = FindObjectOfType<Canvas>();
+            myCanvas.enabled = true;
+        };
     }
 }
 
