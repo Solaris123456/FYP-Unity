@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public User CurrentUser { get; set; }
+    public string SimulationResults { get; set; }
 
     private void Awake()
     {
