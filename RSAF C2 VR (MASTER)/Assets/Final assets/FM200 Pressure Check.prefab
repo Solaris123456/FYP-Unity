@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 7501265280949071661}
   - component: {fileID: 7501265280949071662}
   m_Layer: 5
-  m_Name: FM200 Test Discharge
+  m_Name: FM200 Normal Pressure Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,7 +1638,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7501265281661887502}
-  - component: {fileID: 7501265281661887501}
   m_Layer: 0
   m_Name: FM200 Pressure Check
   m_TagString: Untagged
@@ -1658,23 +1657,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8562157173853171694}
   - {fileID: 7501265282703458816}
   - {fileID: 7501265282343923762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7501265281661887501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501265281661887503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329cccdf3ae4b704abce59f55a47ac50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7501265281840740567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,7 +2742,7 @@ Transform:
   - {fileID: 7501265280711695959}
   - {fileID: 7501265282202088683}
   m_Father: {fileID: 7501265281661887502}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7501265282606881162
 GameObject:
@@ -2867,7 +2855,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7501265281661887502}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7501265282703458830
 BoxCollider:
@@ -2895,3 +2883,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FM200UI: {fileID: 7501265282343923763}
+--- !u!1 &7924063275868253399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8562157173853171694}
+  - component: {fileID: 5959732552563682148}
+  m_Layer: 0
+  m_Name: Pressure Check Starter (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8562157173853171694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7924063275868253399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7501265281661887502}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5959732552563682148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7924063275868253399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 329cccdf3ae4b704abce59f55a47ac50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

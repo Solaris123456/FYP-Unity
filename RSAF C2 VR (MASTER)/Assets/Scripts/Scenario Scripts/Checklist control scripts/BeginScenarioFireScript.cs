@@ -40,7 +40,7 @@ public class BeginScenarioFireScript : MonoBehaviour
     {
         selectedOptions.Clear();
         int numTargets;
-        if (MinNoRacks == MaxNoRacks)
+        if (MinNoRacks >= MaxNoRacks)
         {
             numTargets = MinNoRacks;
         }
