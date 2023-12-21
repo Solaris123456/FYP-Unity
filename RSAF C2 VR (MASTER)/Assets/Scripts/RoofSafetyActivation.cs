@@ -11,9 +11,10 @@ public class RoofSafetyActivation : MonoBehaviour
     public bool errorFound = false;
 
     // Start is called before the first frame update
-    void Start()
+    public void safetydone()
     {
-        
+        safety = true;
+        errorFound = true;
     }
 
     // Update is called once per frame
