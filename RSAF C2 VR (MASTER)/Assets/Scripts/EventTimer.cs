@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class EventTImer : MonoBehaviour
+public class EventTimer : MonoBehaviour
 {
     public GameObject TimerActivationFlag;
     public float RecordedTime;
