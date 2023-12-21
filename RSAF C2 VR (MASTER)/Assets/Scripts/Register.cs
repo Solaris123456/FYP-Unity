@@ -11,6 +11,8 @@ using UnityEditor.Build.Content;
 using static System.Net.WebRequestMethods;
 using static UnityEditor.PlayerSettings;
 using UnityEngine.EventSystems;
+using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class Register : MonoBehaviour
 {
@@ -63,6 +65,7 @@ public class Register : MonoBehaviour
         {
             if (user.Username == username && VerifyPassword(password, user.Password))
             {
+                GameManager.Instance.CurrentUser = user;
                 Debug.Log("Login successful");
                 if (user.category == adminMode)
                 {
@@ -114,12 +117,17 @@ public class Register : MonoBehaviour
     }
     public void SaveUserData()
     {
-        using (StreamWriter writer = new StreamWriter("Accounts.csv"))
+        System.IO.File.WriteAllText("Accounts.csv", "");
+        using (StreamWriter writer = new StreamWriter("Accounts.csv", append: true))
         {
             foreach (User user in users)
             {
                 string encryptedUsername = user.Username;/*Encrypt(user.Username)*/
-                writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
+
+                //string attemptsData = String.Join(",", user.Attempts.Select(a => a >= 0 ? a.ToString() : "Failed"));
+                string attemptsData = user.Attempts.Count > 0 ? String.Join(",", user.Attempts.Select(a => a == -1 ? a.ToString() : "Failed")) : "";
+                writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);
+                //writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
             }
         }
         Debug.Log("User data saved");
@@ -136,7 +144,21 @@ public class Register : MonoBehaviour
                 string decryptedUsername = parts[0];//Decrypt(parts[0])
                 string encryptedPassword = parts[1];
                 string Category = parts[2];
-                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category };
+
+                List<float> attempts = new List<float>();
+                for (int i = 3; i < parts.Length; i++)
+                {
+                    if (!string.IsNullOrEmpty(parts[i]) && float.TryParse(parts[i], out float timeTaken))
+                    {
+                        attempts.Add(timeTaken);
+                    }
+                    else
+                    {
+                        attempts.Add(-1);
+                    }
+                }
+
+                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };
                 users.Add(user);
             }
         }
@@ -266,6 +288,30 @@ public class Register : MonoBehaviour
         yield return new WaitForSeconds(delay);
         messageText.text = "";
     }
+    public void CompleteSimulation(float timeTaken)
+    {
+        GameManager.Instance.CurrentUser.Attempts.Add(timeTaken);
+        // Save user data after updating
+        SaveUserData();
+    }
+
+    public void FailSimulation()
+    {
+        GameManager.Instance.CurrentUser.Attempts.Add(-1);
+        // Save user data after updating
+        SaveUserData();
+    }
+    public void Logout()
+    {
+        // Save the current user's data before logging out
+        SaveUserData();
+
+        // Clear the current user's data in memory
+        GameManager.Instance.CurrentUser = null;
+
+        // Load the login scene
+        SceneManager.LoadScene("FYP UI 2");
+    }
 }
 
 public class User
@@ -273,4 +319,10 @@ public class User
     public string Username { get; set; }
     public string Password { get; set; }
     public string category { get; set; }
+    public List<float> Attempts { get; set; } = new List<float>();
 }
+/*public class Attempt
+{
+    public float TimeTaken { get; set; }
+    public bool WasSuccessful { get; set; }
+}*/
