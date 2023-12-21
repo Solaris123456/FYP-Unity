@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
-using Unity.VisualScripting;
+//using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEditor.Build.Content;
-using static System.Net.WebRequestMethods;
-using static UnityEditor.PlayerSettings;
-using UnityEngine.EventSystems;
+//using UnityEditor.Build.Content;
+//using static System.Net.WebRequestMethods;
+//using static UnityEditor.PlayerSettings;
+//using UnityEngine.EventSystems;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
@@ -117,8 +117,8 @@ public class Register : MonoBehaviour
     }
     public void SaveUserData()
     {
-        System.IO.File.WriteAllText("Accounts.csv", "");
-        using (StreamWriter writer = new StreamWriter("Accounts.csv", append: true))
+        System.IO.File.WriteAllText(Application.dataPath + "/Accounts.csv", "");
+        using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
         {
             foreach (User user in users)
             {
@@ -141,7 +141,7 @@ public class Register : MonoBehaviour
     public void LoadUserData()
     {
         users.Clear();
-        using (StreamReader reader = new StreamReader("Accounts.csv"))
+        using (StreamReader reader = new StreamReader(Application.dataPath + "/Accounts.csv"))
         {
             string line;
             while ((line = reader.ReadLine()) != null)
