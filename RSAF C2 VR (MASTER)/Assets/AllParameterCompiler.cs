@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AllParameterCompiler : MonoBehaviour
 {
-    public 
     public void Finish()
     {
 
