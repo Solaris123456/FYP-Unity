@@ -16,7 +16,7 @@ public class SuccessfulSafetyInject : MonoBehaviour
 {
     public safetyInjectToCheck[] safetyInjectToCheck; 
     public SafetyInjectInput safetyInjectInput;
-    // Start is called before the first frame update
+    
     public void safetyInjectCheck()
     {
         for (int safetynum = 0; safetynum < safetyInjectToCheck.Length; safetynum++)

@@ -15,7 +15,7 @@ public class SuccessRackCounter : MonoBehaviour
     public int RacksLeft = 0;
     public bool AllRacksDone = false;
     public UnityEvent racksfinished;
-    // Start is called before the first frame update
+    
     void Start()
     {
         selectedRacks.Clear();
@@ -23,9 +23,11 @@ public class SuccessRackCounter : MonoBehaviour
         {
             for (int x = 0; x < beginScenarioScripts[i].beginScenarioFireScript.selectedOptions.Count; x++)
             {
-                selectedRacks.Add(beginScenarioScripts[i].beginScenarioFireScript.selectedOptions[x]);
+                Transform childObject = beginScenarioScripts[i].beginScenarioFireScript.selectedOptions[x].transform.Find("BurnFlag");
+                selectedRacks.Add(childObject.gameObject);
             }
         }
+       
     }
 
     // Update is called once per frame

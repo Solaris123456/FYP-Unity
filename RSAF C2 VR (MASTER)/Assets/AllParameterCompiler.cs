@@ -9,7 +9,11 @@ public class AllParameterCompiler : MonoBehaviour
     public SuccessfulSafetyInject successfulSafetyInject;
     public SuccessRackCounter successfulRackCounter;
     public bool trainingMode = false;
-    public bool pressedWithoutFinishing = false;
+    public float FinalTime = 0;
+    public bool Fm200 = false;
+    public bool CeilingCheck = false;
+    public bool LightCheck = false;
+    public bool PressedWithoutFinishing = false;
     public void Finish()
     {
         if (successfulRackCounter.AllRacksDone)
@@ -41,9 +45,9 @@ public class AllParameterCompiler : MonoBehaviour
         }
         else
         {
-            if (pressedWithoutFinishing == false)
+            if (PressedWithoutFinishing == false)
             {
-                pressedWithoutFinishing = true;
+                PressedWithoutFinishing = true;
             }
         }
     }
