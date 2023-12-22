@@ -317,7 +317,8 @@ public class Register : MonoBehaviour
 
         // Load the login scene
         SceneManager.LoadScene("FYP UI 2");
-        SceneManager.sceneLoaded += (scene, mode) => {
+        SceneManager.sceneLoaded += (scene, mode) => 
+        {
             Canvas myCanvas = FindObjectOfType<Canvas>();
             myCanvas.enabled = true;
         };
