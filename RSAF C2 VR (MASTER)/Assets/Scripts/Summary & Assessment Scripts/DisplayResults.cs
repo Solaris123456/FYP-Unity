@@ -21,10 +21,10 @@ public class DisplayResults : MonoBehaviour
         
         float timeTaken = float.Parse(results["TimeTaken"]);
         bool lightErrorFound = bool.Parse(results["LightErrorFound"]);
-        bool wrongButtonPressed = bool.Parse(results["WrongButtonPressed"]);
+        bool Fm200CheckFail = bool.Parse(results["Fm200CheckFail"]);
 
         timeTakenText.text = "Time Taken: " + timeTaken;
         lightErrorFoundText.text = "Light Error Found: " + (lightErrorFound ? "Yes" : "No");
-        wrongButtonPressedText.text = "Wrong Button Pressed: " + (wrongButtonPressed ? "Yes" : "No");
+        wrongButtonPressedText.text = "Fm200 Check Fail: " + (Fm200CheckFail ? "Yes" : "No");
     }
 }

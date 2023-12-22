@@ -7,7 +7,9 @@ public class SummarizerForC2 : MonoBehaviour
 {
     public SuccessfulSafetyInject successfulSafetyInject;
     public SuccessRackCounter successfulRackCounter;
+    public EventTimer eventTimer;
     public GameObject timerFlag;
+
     public bool trainingMode = false;
     public float FinalTime = 0;
     public bool Fm200 = false;
@@ -59,12 +61,14 @@ public class SummarizerForC2 : MonoBehaviour
             if (trainingMode == false)
             {
                 timerFlag.SetActive(false);
+                FinalTime = eventTimer.RecordedTime;
             }
             else
             {
                 if(LightCheck && CeilingCheck && Fm200)
                 {
                     timerFlag.SetActive(false);
+                    FinalTime = eventTimer.RecordedTime;
                 }
             }
         }

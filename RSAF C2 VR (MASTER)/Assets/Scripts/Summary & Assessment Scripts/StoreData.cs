@@ -5,7 +5,7 @@ public class StoreData : MonoBehaviour
 {
     public Button storeButton;
     public bool lightErrorFound; // public bool for light error found
-    public bool wrongButtonPressed; // public bool for wrong button pressed
+    public bool Fm200CheckFail; // public bool for wrong button pressed
 
     void Start()
     {
@@ -20,6 +20,6 @@ public class StoreData : MonoBehaviour
         string timeTakenString = timeTaken.ToString();
 
         // Store the results in the GameManager
-        GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},WrongButtonPressed={wrongButtonPressed}";
+        GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},Fm200CheckFail={Fm200CheckFail}";
     }
 }
