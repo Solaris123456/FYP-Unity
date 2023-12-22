@@ -25,7 +25,8 @@ public class SafetyInjector
     public string[] AllPreviousChildObjectNameInPath;
     public string[] PathUnderTargetObjectToActivate;
     public bool pathActivationsStatus;
-    public int TrueTargetCount; //link to other script to check if user has completed the same number of targets
+    public int TrueTargetCount; //for debugging 
+    public List<GameObject> selectedTargets = new List<GameObject>();
 }
 
 public class SafetyInjectInput : MonoBehaviour
@@ -43,11 +44,16 @@ public class SafetyInjectInput : MonoBehaviour
     // Start is called before the first frame update
     public void SafeInjectStart()
     {
+        
+        childObject = null;
+        Temporary = null;
+        TargetObject = null;
         // Check if the selectedOption has a child object named "ChildObject"
         activated = true;
         
         for (int safetynum = 0; safetynum < safetyInjectors.Length; safetynum++)
         {
+            safetyInjectors[safetynum].selectedTargets.Clear(); //clear the gameobject list
             Temporary = safetyInjectors[safetynum].SafetyInjectParentGameObject.transform;
 
             if (safetyInjectors[safetynum].AllPreviousChildObjectNameInPath.Length > 0)
@@ -58,10 +64,12 @@ public class SafetyInjectInput : MonoBehaviour
                     Temporary = childObject;
                 }
             }
+            // pathfinder to find the parant object of the list of child objects to randomize
 
-            count = Temporary.childCount;
+            count = Temporary.childCount; // to count how many child objects there are to randomize
             childObject = null;
 
+            //from here
             if (safetyInjectors[safetynum].MinNumberOfRandomTargets >= safetyInjectors[safetynum].MaxNumberOfRandomTargets)
             {
                 numoftargets = safetyInjectors[safetynum].MinNumberOfRandomTargets;
@@ -75,20 +83,22 @@ public class SafetyInjectInput : MonoBehaviour
             {
                 numoftargets = 1;
             }
-
             safetyInjectors[safetynum].TrueTargetCount = numoftargets;
+            //to here
+            //is just in case some idiot put an invalid range
 
             for (int i = 0; i < numoftargets; i++)
             {
                 RNG = Random.Range(0, count * 2);
                 childObject = Temporary.Find(safetyInjectors[safetynum].targetRandomObjectBaseName + " (" + RNG + ") ");
 
-                while (childObject == null)
+                while (childObject == null || childObject.gameObject.activeSelf == safetyInjectors[safetynum].pathActivationsStatus)
                 {
                     RNG = Random.Range(0, count * 2);
                     childObject = Temporary.Find(safetyInjectors[safetynum].targetRandomObjectBaseName + " (" + RNG + ")");
                 }
                 TargetObject = childObject;
+                //Randomly pick any target that has not been activated
 
                 if (safetyInjectors[safetynum].PathUnderTargetObjectToActivate.Length > 0)
                 {
@@ -98,12 +108,19 @@ public class SafetyInjectInput : MonoBehaviour
                         TargetObject = childObject;
                     }
                 }
+                //path finder to find exact targeted child object to activate
 
                 TargetObject.gameObject.SetActive(safetyInjectors[safetynum].pathActivationsStatus);
+                safetyInjectors[safetynum].selectedTargets.Add(TargetObject.gameObject);
+                //activations of path and adding the object into the list for the checker script to check
+
                 childObject = null;
                 TargetObject = null;
             }
             Temporary = null;
+            //clear all temporary gameobjects for the loop to run agn
         }
     }
 }
+
+// text me if you still dont understand (Lang Wenbo / SP 2023 sem 2 / DARE/FT/3B/02)

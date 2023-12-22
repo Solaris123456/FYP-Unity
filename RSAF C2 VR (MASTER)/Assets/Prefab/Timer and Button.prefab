@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 399759370612867712}
+  - component: {fileID: 1735711338878861754}
   m_Layer: 0
   m_Name: Timer and Button
   m_TagString: Untagged
@@ -34,6 +35,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1735711338878861754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399759370612867715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a4d517c31ae9f49bf565adc0dbdd43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &731771068215482056
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 648354258648158104}
+  - component: {fileID: 7716261637987061326}
   m_Layer: 0
   m_Name: TimerActivationFlag
   m_TagString: Untagged
@@ -398,6 +412,19 @@ Transform:
   m_Father: {fileID: 2468320537183138342}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7716261637987061326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897958296991354271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a90f7221fce8496429f74a0e7b99c1bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 6723823964206374168}
 --- !u!1 &6723823962774913151
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,10 +609,10 @@ MonoBehaviour:
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3897958296991354271}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1735711338878861754}
+        m_TargetAssemblyTypeName: AllParameterCompiler, Assembly-CSharp
+        m_MethodName: Finish
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -716,7 +743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6723823964206374171
 Transform:
   m_ObjectHideFlags: 0
