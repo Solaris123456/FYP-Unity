@@ -74,7 +74,10 @@ public class BeginScenarioFireScript : MonoBehaviour
         } 
         StartCoroutine(ActivateTargets());
         Debug.Log("Process Started");
-        Rackcounter.SetActive(true);
+        if (!Rackcounter.activeSelf)
+        {
+            Rackcounter.SetActive(true);
+        }
     }
 
     private IEnumerator ActivateTargets()
