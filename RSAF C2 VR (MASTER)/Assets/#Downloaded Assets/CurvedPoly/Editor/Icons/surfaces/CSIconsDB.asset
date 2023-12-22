@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: CSIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: CS_Free_Path
+    texture: {fileID: 2800000, guid: 78802b621f4d3e04daa3eb92ebd887f6, type: 3}
+  - id: CS_Circles
+    texture: {fileID: 2800000, guid: fe931b6f173272a40ae550b6086a46d3, type: 3}
+  - id: CS_Ellipses
+    texture: {fileID: 2800000, guid: ed7c1899f066f444a8c3d03b6c239e2c, type: 3}
+  - id: CS_Arcs
+    texture: {fileID: 2800000, guid: b3b4ce3198fa2334299366dcfa5c8ca5, type: 3}
+  - id: CS_Round_Rect
+    texture: {fileID: 2800000, guid: 46cb91f0672028a4692984716759c14d, type: 3}
+  - id: CS_Flip_Normals
+    texture: {fileID: 2800000, guid: 4df600237da619748940419cfa01ae2c, type: 3}
+  - id: CS_Delete
+    texture: {fileID: 2800000, guid: 6390390563c83c945a90539717a2fd84, type: 3}
+  - id: CS_Convert_Into_CP
+    texture: {fileID: 2800000, guid: 5d7ddaece76eb3c41bb51204145d3643, type: 3}
+  - id: CS_Duplicate
+    texture: {fileID: 2800000, guid: 26cad0da517492b4fa7b92a7defd384f, type: 3}
+  - id: CS_Revolution_Surface
+    texture: {fileID: 2800000, guid: 76381f75ff5bc9a4bab5fff2bef7dd1e, type: 3}
+  - id: CS_Curved_Tube
+    texture: {fileID: 2800000, guid: 9da2d1aff1668304080eee7827f61ed9, type: 3}
+  - id: CS_Loft_Surface
+    texture: {fileID: 2800000, guid: c3c45a7b9232b994a8c6b86077c7b6fd, type: 3}

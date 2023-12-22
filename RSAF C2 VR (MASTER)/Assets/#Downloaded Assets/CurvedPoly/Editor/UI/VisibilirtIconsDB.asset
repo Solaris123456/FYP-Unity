@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: VisibilirtIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: vertices
+    texture: {fileID: 2800000, guid: 4dfc8a1d8a116c64490f811bbad648f6, type: 3}
+  - id: points
+    texture: {fileID: 2800000, guid: 50d06379b6cdb8e4188c0325464e15ed, type: 3}
+  - id: curves
+    texture: {fileID: 2800000, guid: 1032048cc69aaa1409166649cdbe250d, type: 3}
+  - id: edges
+    texture: {fileID: 2800000, guid: c118646649964d9419545ecdc428105f, type: 3}
+  - id: grids
+    texture: {fileID: 2800000, guid: 52ef52bdd540feb478d88da5443f5995, type: 3}
+  - id: handles
+    texture: {fileID: 2800000, guid: ca6319458de89e64796488f6d0b4e7cf, type: 3}
+  - id: gridscontrols
+    texture: {fileID: 2800000, guid: 094133138e68aa943b3c16ab6bdde876, type: 3}
+  - id: SelectionActions_edges
+    texture: {fileID: 2800000, guid: 1032048cc69aaa1409166649cdbe250d, type: 3}

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: FillingAlgorithms
+  m_EditorClassIdentifier: 
+  topElementName: ShapeOperator,AdvancedShapeOperator,ShapeTessellationOperator
+  elementname: FillingAlgorithms
+  iconSet: []
+  title: Filling Algorithms
+  paragraphs:
+  - icons: []
+    texts:
+    - 'There are more ways Curved Poly can use to <b>fill</b> a curved polygon with
+      a proper set of raw polygons (i.e. triangles). Each way is a specific procedure
+      we call <b>Filling Algorithm</b> (or also <b>Interpolation Algorithm</b> or
+      <b>Interpolation  Schema</b>). Since they change the way each specific Curved
+      Polygon appears, it''s possible to use different <b>Filling Algorithm</b> on
+      different curved polygons. You can select any group of Curved Polygons here,
+      and click on one of the buttons to try out a different procedure for each curved
+      polygon which doesn''t look the way you want it to look. '
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>How to Use this:</b> you can select any group of Curved Polygons here, and
+      click on one of the buttons to try out a different <b>Filling Algorithm</b> '
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: there is a lot of work around Filling Algorithms at MushroomsLabs.
+      We literally researching on more and more alternatives to do this. You may find
+      new alternative algorithms in newer version of Curved Poly, each one improving
+      the way polygons are shaped. Version 1.2 introduced a new algorithm called <b>Half
+      Corner Surface</b>, we are planning to introduce a better one we are working
+      on in one of the 1.3.x</i>'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: fac4cf46e5d67a04c9f40c8771073d11, type: 3}
+    texts:
+    - '<b>Half-Corner Schema</b>: this is a very complex interpolation schema, generating
+      wonderfull polygons in most of the cases. Since version 1.3, it''s the default
+      choice for every new model generated with Curved Poly Maker. It''s not perfect,
+      but slightly better than <b>Edge Surface Schema</b>, and slightly slower. In
+      most of the cases, you should not see a bit difference, but if something looks
+      wrong with this schema, you should switch to one of the others.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 68e53f73e6078b04da4c69f7e92dae4e, type: 3}
+    texts:
+    - '<b>Edge Surface Schema</b>: this is a very complex interpolation schema, generating
+      wonderfull polygons in most of the case. If the edges pattern is too complex,
+      this may generate some strange behaviour.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 5e1fbf9ce711dd345ae7137cbbb5c7cc, type: 3}
+    texts:
+    - '<b>Cylindric Interpolation</b>: this is a fast one and works perfectly in situations
+      where edges across vertices satisfy some specific constraints (you need to have
+      4 edges on a corner, and opposite handles must be aligned; this is the case
+      of almost all primitives of Curved Poly - Shape Editor). <i>Cylindric Interpolation
+      ignores Edges Editing Normals. </i> Also, this is the reccommended algorithm
+      in case you have very little polygons or polygons with a very low Level of Details
+      or low Tessellation Hints.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 268b407fe852f8a41b5a3d7e5415114a, type: 3}
+    texts:
+    - '<b>Gouraud Interpolation</b>: same as <b>Cylindric Interpolation</b>, but the
+      way normals are computed is more simple'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 22222fd4da494b448b31c82139fbb6ed, type: 3}
+    texts:
+    - '<b>(ALPHA) Advanced Cilindric Interpolation</b>: an improved version of <b>Cylindric
+      Interpolation</b>, with a better surface approximation which approximates the
+      quality of Edge Surface or Half-Corner. It''s faster and works better in situations
+      in which HCS and ESS may create undesidered behaviors.'
+    mod: 3

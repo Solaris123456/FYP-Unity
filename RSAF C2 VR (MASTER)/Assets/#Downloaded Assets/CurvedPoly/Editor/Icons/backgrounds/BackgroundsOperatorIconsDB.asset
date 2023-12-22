@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: BackgroundsOperatorIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: BackgroundsOperator_AddBackground
+    texture: {fileID: 2800000, guid: c11342ae5fc9ffb42973ad9bf538cf35, type: 3}
+  - id: BackgroundsOperator_AlignCamera
+    texture: {fileID: 2800000, guid: 680aa7a54f2f38345913517a27e368dc, type: 3}
+  - id: BackgroundsOperator_RemoveBackground
+    texture: {fileID: 2800000, guid: c5e101455078f794c93568053c46a5ec, type: 3}
+  - id: BackgroundsOperator_LoadBackground
+    texture: {fileID: 2800000, guid: 412a9f174cc77d349960780cfe403678, type: 3}
+  - id: BackgroundsOperator_SaveBackground
+    texture: {fileID: 2800000, guid: 8ebab9a084820e148bfadbbdc63949b8, type: 3}
+  - id: BackgroundsOperator_RemoveAllBackground
+    texture: {fileID: 2800000, guid: 950017b45962460409536c1c6b63f024, type: 3}

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: EdgeHints
+  m_EditorClassIdentifier: 
+  topElementName: ShapeOperator
+  elementname: EdgeHints
+  iconSet: []
+  title: EdgeHints
+  paragraphs:
+  - icons: []
+    texts:
+    - Each edge as a pair of Hints, one on each side. This hints are used to decide
+      how much segments should be used to approximate the edge. An hint is a label
+      with 16 possible values from <b>A</b> to <b>P</b>, where, usually, <b>A</b>
+      means a very low tessellation and low resolution, and <b>P</b> means an extremely
+      high one. Good values are usually between <b>C</b> and <b>F</b>, but this pretty
+      much depends on the shape of the edge and on what you want to achieve.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 9009797204140724a95b5a9d462dcb12, type: 3}
+    texts:
+    - <i>Suggested Sections:</i>
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 9009797204140724a95b5a9d462dcb12, type: 3}
+    texts:
+    - Tessellation Tools
+    - Tessellation Tools
+    - Visit the Tessellation Tools section to learn more about hints assignments a
+      Level of Details.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: e31ceedd1045aba4ba769dfb0aeb3643, type: 3}
+    texts:
+    - Levels of Detail
+    - Levels of Detail
+    - Visit the Levels of Details Section to learn more about LoDs and LoDs Assets.
+    mod: 7

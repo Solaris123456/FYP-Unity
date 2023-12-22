@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: CurvesAndSurfacesOperator
+  m_EditorClassIdentifier: 
+  topElementName: Tools Sets
+  elementname: CurvesAndSurfacesOperator
+  iconSet:
+  - {fileID: 2800000, guid: ed55ae7436b30b344b4722dde47f3f1c, type: 3}
+  title: Curves and Surfaces
+  paragraphs:
+  - icons: []
+    texts:
+    - With Curves and Surfaces you will be able to generate advanced primitives and
+      shapes for your Curved Polys. <b>The actual version is an alpha stage</b> and
+      shall be considered as a preview of the toolset.  sadsad
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Alpha Notes</b>: Surfaces and Curves are supposed to be saved with the Editable
+      Asset of your curved poly, but actually they are not. Some tools here misses
+      a complete implementation of Undo, which may therefore break the model, so be
+      careful.'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 78802b621f4d3e04daa3eb92ebd887f6, type: 3}
+    texts:
+    - '<b>Free Path</b>: free paths are splines, similar to the ones generated with
+      Put Edges in Edit Tools. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: fe931b6f173272a40ae550b6086a46d3, type: 3}
+    texts:
+    - '<b>Circle</b>: creates one or more circles. Circles are shaped paths: after
+      creation they can be transformed with parameters shared with arcs, ellipses
+      and rects.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: ed7c1899f066f444a8c3d03b6c239e2c, type: 3}
+    texts:
+    - '<b>Ellipse</b>: creates one or more ellipses. Ellipses are shaped paths: after
+      creation they can be transformed with parameters shared with arcs, ellipses
+      and rects.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: b3b4ce3198fa2334299366dcfa5c8ca5, type: 3}
+    texts:
+    - '<b>Arc</b>: creates one or more arcs. Arcs are shaped paths: after creation
+      they can be transformed with parameters shared with arcs, ellipses and rects.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 46cb91f0672028a4692984716759c14d, type: 3}
+    texts:
+    - '<b>Round Rect</b>: creates one or more round rects. Round Rects are shaped
+      paths: after creation they can be transformed with parameters shared with arcs,
+      ellipses and rects.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 78802b621f4d3e04daa3eb92ebd887f6, type: 3}
+    texts:
+    - '<b>Connection Path</b>: creates a freepath constrained to two vertices on two
+      other paths, which connects them. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 76381f75ff5bc9a4bab5fff2bef7dd1e, type: 3}
+    texts:
+    - '<b>Revolution Surface</b>: creates a revolution surface, making any path to
+      rotate around an (editable) axis. After pressing the button, it is necessary
+      to choose a path in the scene view.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 9da2d1aff1668304080eee7827f61ed9, type: 3}
+    texts:
+    - '<b>Curved Tube Surface</b>: creates a tubular surface connecting two paths.
+      You must have two paths with the same number of edges first. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: c3c45a7b9232b994a8c6b86077c7b6fd, type: 3}
+    texts:
+    - '<b>Loft Surface</b>: creates a loft surface connecting two paths. You must
+      have two paths with the same number of edges first. '
+    mod: 3

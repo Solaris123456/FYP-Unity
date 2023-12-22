@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: CirclePathUpdate
+  m_EditorClassIdentifier: 
+  topElementName: CurvesAndSurfacesOperator
+  elementname: CirclePathUpdate
+  iconSet:
+  - {fileID: 2800000, guid: fe931b6f173272a40ae550b6086a46d3, type: 3}
+  - {fileID: 2800000, guid: ed7c1899f066f444a8c3d03b6c239e2c, type: 3}
+  - {fileID: 2800000, guid: 46cb91f0672028a4692984716759c14d, type: 3}
+  - {fileID: 2800000, guid: b3b4ce3198fa2334299366dcfa5c8ca5, type: 3}
+  title: Parametric Paths
+  paragraphs:
+  - icons: []
+    texts:
+    - There is only one parametric model here, which can be used to blend a circle
+      into an ellipse into an arc or into a rounded rect, or a mix of all of them.
+      You shall try the parameters to discover what you can create here.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 4df600237da619748940419cfa01ae2c, type: 3}
+    texts:
+    - '<b>Flip Normals</b>: flips the editing normals of the path.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 6390390563c83c945a90539717a2fd84, type: 3}
+    texts:
+    - '<b>Cancel Curve</b>: cancel this curve.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 5d7ddaece76eb3c41bb51204145d3643, type: 3}
+    texts:
+    - '<b>Convert into Curved Poly</b>: transform this curve into a regular Curved
+      Poly set of edges, which can edited from the other tools.'
+    mod: 3
+  - icons: []
+    texts:
+    - '<b>N</b>: number of edges used on the Curve'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Center</b>: use this to edit the center of the curve.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Orientation</b>: rotate the curve.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Bounds-size</b>: overall size of the curve. For instance, it controls the
+      radius of a circle or the axis of an ellipse.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Bounds-stretch</b>: stretch the shape in one direction. For instance this
+      can be used to transform a circle in an ellipse.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Angles-0</b>: first angle on which an arc is defined. This can be used,
+      for instance, to transform a circle into an arc. Default value is 0.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Angles-1</b>: second angle on which an arc is defined. This can be used,
+      for instance, to transform a circle into an arc. Default value is 6.283185 (sorry
+      for radians!).'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Raps-hRap</b>: first value used to blend a circle into a Round Rect. Try
+      it!'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Raps-wRap</b>: second value used to blend a circle into a Round Rect. Try
+      it!'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Raps-starRap</b>: add an oscillation to the shape of the curve, allows the
+      generation of star-shaped curves (use N to define the amount of tips of the
+      star)'
+    mod: 0

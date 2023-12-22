@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Free Form Transform (3x)
+  m_EditorClassIdentifier: 
+  topElementName: Advanced Shaping Tools
+  elementname: Free Form Transform (3x)
+  iconSet: []
+  title: Free Form Transform (3x)
+  paragraphs:
+  - icons: []
+    texts:
+    - '<i><b>How to Use</b>: make any selection, then click on the button. A lot of
+      sphere-shaped handles appear, organized in a 3D grid. Move the handles to transform
+      the elements which were in the original selection.</i>'
+    mod: 0
+  - icons: []
+    texts:
+    - 'The Free Form Transform generates a grid of vertices around your selection,
+      so that you can reshape the selection by moving the points in the grid. The
+      grid will be rendered as a set of lines connecting grid points which can be
+      white or blue. You can make white grid points become blue by clicking them.
+      You can then use Unity Transform Tool to translate, rotate or scale the subset
+      of the blue points, while white points will keep unchanged. In the Menu you
+      will find other useful buttons:'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: e93928e5e7ae73440a253f316fd127e5, type: 3}
+    texts:
+    - '<b>Reset </b>: clear the set of blue vertices, making all of them white'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: b16abdc069c3a3d4c8f6bfe89870e2b8, type: 3}
+    texts:
+    - '<b>Extend on Grid (x) </b>: extend the set of blue vertices on x direction.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 7b788f56df8e50f428fa40a6a25f2435, type: 3}
+    texts:
+    - '<b>Extend on Grid (y) </b>: extend the set of blue vertices on y direction '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: d2c0033ed621c9a40adcfa3a4978f74b, type: 3}
+    texts:
+    - '<b>Extend on Grid (z) </b>: extend the set of blue vertices on z direction'
+    mod: 3
+  - icons: []
+    texts:
+    - Once inside one of the 3 available transforms, you can't change the grid size,
+      but you can always Close or Apply the transform and open another one.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: e0043cdddda2a8d4f91a7055da6aa8b4, type: 3}
+    texts:
+    - <b>Apply:</b> Close the  Free Form Transform Editor and apply changes.
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1cf9305bfb29b44499cb775a21f2cb9d, type: 3}
+    texts:
+    - '<b>Close: </b>Close the Free Form Transform Editor undoing all the changes.'
+    mod: 3

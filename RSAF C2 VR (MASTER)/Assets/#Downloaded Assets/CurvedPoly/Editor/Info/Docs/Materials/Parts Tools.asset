@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Parts Tools
+  m_EditorClassIdentifier: 
+  topElementName: MaterialsOperator,CompositionOperator
+  elementname: Parts Tools
+  iconSet: []
+  title: Parts Tools
+  paragraphs:
+  - icons: []
+    texts:
+    - Each model can be separated into more parts, and each part can be assigned a
+      different material. This tools are used to reorganize o model into different
+      parts.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: d8f7f42336a0f8341999db2409d76772, type: 3}
+    texts:
+    - '<b>Generate Part (with Selected Polygons)</b>: Generate a new Part. <i>HOW
+      TO USE</i>: select a group of polygons and click the buttons. The Polygons will
+      be removed from their previous part and added into a new part.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: e3851c581a8b66c4c9de92ba90be281d, type: 3}
+    texts:
+    - '<b>Move Polygons</b>: Move a group of polygons from their part to another part
+      (to Active Part). <i>HOW TO USE</i>: use the radio button in Parts List to choose
+      the destination part. Select a group of polygons you want to move in that part.
+      Click the button.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 9c4d30a246cbd924abca531c8b912ab0, type: 3}
+    texts:
+    - '<b>Reset by Materials</b>: reorganize the parts so that parts having the same
+      material are merged into one part'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: edc9f7b5d4714c0479d1d6cbc156ad9c, type: 3}
+    texts:
+    - '<b>Reset (Parts)</b>: reset parts, removing all of them, and moving all their
+      polygons into a default part.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 38fd0df36293193459a9c8dde0085dda, type: 3}
+    texts:
+    - '<b>Show Only</b>: hide all the parts but the selected one. <i>How to use</i>:  you
+      can change which part is selected in Parts List.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 37b038d080c6452409dfd8d1382cb012, type: 3}
+    texts:
+    - '<b>Remove Unused Parts</b>: in case there are parts which are not used (meaning
+      that they have no polygons), remove all of them. '
+    mod: 3

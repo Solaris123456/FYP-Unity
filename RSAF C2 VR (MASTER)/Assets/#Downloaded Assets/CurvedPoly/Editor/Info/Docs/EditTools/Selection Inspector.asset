@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Selection Inspector
+  m_EditorClassIdentifier: 
+  topElementName: ShapeEditOperator
+  elementname: Selection Inspector
+  iconSet: []
+  title: Selection Inspector
+  paragraphs:
+  - icons: []
+    texts:
+    - This tool writes a trace of informations about all selected elements. Its quite
+      heavy if used on large selections, so you should keep it close when you don't
+      need it, and use it on small selection. You can also selectively disable some
+      of the infos which are traced to make it a bit less heavy.
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: this tool has been thought to give you a very specific inspection instrument,
+      which may be useful in situation where edges or polygons overlap in strange
+      ways. It''s very detailed and HARD to use. </i>'
+    mod: 0
+  - icons: []
+    texts:
+    - Vertices
+    mod: 4
+  - icons: []
+    texts:
+    - List of Selected Vertices. Each vertex is presented in the format <b>V[index]</b>,
+      where index is the internal index of the vertex assigned by the Editor. Each
+      vertex is followed by its coordinates in the format <b>(x,y,z)</b>, to help
+      you recognize it.
+    mod: 0
+  - icons: []
+    texts:
+    - <b>Vertices Edges</b>. <i>Optionally</i> it can write the list of edges attached
+      to each vertex. The format is the same used in the <b>Edges</b> section.
+    mod: 0
+  - icons: []
+    texts:
+    - <b>Vertices Polygons</b>. <i>Optionally</i> it can write the list of polygons
+      attached to each vertex. The format is the same used in the <b>Polygons</b>
+      section.
+    mod: 0
+  - icons: []
+    texts:
+    - Edges
+    mod: 4
+  - icons: []
+    texts:
+    - List of Selected Edges (both Curved Edges or Lines). Each vertex is presented
+      in the format <b>E[index][V1,V2]</b>, where index is the internal index of the
+      edge assigned by the Editor. Each curve or line has two vertices, so V1 is the
+      index of its first vertex, V2 is the index of its last vertex.
+    mod: 0
+  - icons: []
+    texts:
+    - <b>Edges Polygons</b>. <i>Optionally</i> it can write the list of polygons attached
+      to each edge. The format is the same used in the <b>Polygons</b> section.
+    mod: 0
+  - icons: []
+    texts:
+    - Polygons
+    mod: 4
+  - icons: []
+    texts:
+    - 'List of Selected Polygons. Each polygon is presented in the format <b>P:[V1,V2,V3,...]</b>,
+      where V1, V2, V3, ... are the indices of the vertices of the polygons. '
+    mod: 0

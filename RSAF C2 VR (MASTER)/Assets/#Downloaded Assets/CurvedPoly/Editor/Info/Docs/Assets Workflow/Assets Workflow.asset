@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Assets Workflow
+  m_EditorClassIdentifier: 
+  topElementName: TransformsOperator
+  elementname: Assets Workflow
+  iconSet: []
+  title: Assets Workflow
+  paragraphs:
+  - icons:
+    - {fileID: 2800000, guid: dd7b2d26438964640a3ac0c01d5a74da, type: 3}
+    texts:
+    - '<b>New Assets Worklow (version 1.3)</b>: You can now choose to save your models
+      as part of the scene or as separated Assets. Models saved as Assets may be shared
+      among more objects. You can switch between the two modes with <b>Save Asset</b>
+      and <b>Detach From Asset</b>. '
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: d6397b32fb4079f43b236a684548cc0c, type: 3}
+    texts:
+    - '<b>Create New</b>: Create a new Empty Curved Poly Game Object, adding it to
+      the hierarchy. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 15f7ee467cf8f994bbeb0b8478c31e1b, type: 3}
+    texts:
+    - '<b>Import</b>: Create e new Curved Poly as a copy of a Curved Poly Asset. Curved
+      Polys generated this way are stored in scene rather than being saved as assets. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1cad6b0bb451ea24fa1a55961f211e44, type: 3}
+    texts:
+    - '<b>Add</b>: Create e new Curved Poly attached to a Curved Poly Asset. Any change
+      to the asset will affect this object. More Game Objects can share the same Asset,
+      and any change to the Asset will affect all them at once.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: dd7b2d26438964640a3ac0c01d5a74da, type: 3}
+    texts:
+    - '<b>Save Asset</b>: Save the asset assigned to a Curved Poly. If the model is
+      storing its data in scene, a new Asset will be generated and assigned to your
+      Curved Poly.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1601eea98a440e14dbb5cfb6459f0e79, type: 3}
+    texts:
+    - '<b>Save as Asset</b>: if a Curved Poly as an Asset assigned, create a copy
+      of that Asset and save it as a new Asset, assigning the new Asset to that Curved
+      Poly.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: dc1ee540328f76446afaa318b68069c3, type: 3}
+    texts:
+    - '<b>Detach From Asset</b>: if a Curved Poly has an Asset assigned, transform
+      that CurvedPoly in a Curved Poly which save it''s own data in scene, making
+      it a copy of the original asset, and saving it as a new asset.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 6abcd5bd047c0ec47b5ecf6e5c3451f7, type: 3}
+    texts:
+    - '<b>!! Note !!</b>: Edit folders and Edit Assets which were used in version
+      1.1 and 1.2 are not used anymore. If you have any previous Asset, the new system
+      will load the data from the Edit folders the first time the model is used. New
+      Assets generated with version 1.3 will not create Edit Data folders any more.
+      <b>PLEASE: don''t remove Edit Data created with previous versions of Curved
+      Poly. Accessing them is the only way to recover your models in case something
+      goes wrong!</b>'
+    mod: 0

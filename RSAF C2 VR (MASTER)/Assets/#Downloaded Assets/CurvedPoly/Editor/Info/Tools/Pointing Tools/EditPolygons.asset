@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: EditPolygons
+  m_EditorClassIdentifier: 
+  topElementName: 
+  elementname: EditPolygons
+  iconSet: []
+  title: Edit Polygons
+  paragraphs:
+  - icons: []
+    texts:
+    - <b>Filling Algorithm</b>
+    mod: 4
+  - icons: []
+    texts:
+    - A <b>Filling Algorithm</b> is the way in which Curved Poly <b>Fills</b> polygons
+      with a set of triangles, making a Curved Poly to become a Mesh. This algorithms
+      can work during runtime, so the Mesh can be generated with a different amount
+      of vertices and triangles according to LoDs and tessellation parameters.<b>You
+      can assign different algorithm to each polygon, mixing them the way you like.
+      </b>
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Cylindric Interpolation</b>: this was originally the first algorithm used
+      for curved polys and one of the most light (meaning it takes less time to compute
+      the Mesh from Curved Polygons)'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Gouraud Schema</b>: this is the simplest schema. It works like Cylindric
+      Interpolation, but simplify the way normals are computed (in a way which resemble
+      Gouraud Shading)'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Edge Surface Schema</b>: a better solution, which was the default choice
+      in Curved Poly 1.1 and 1.2. This schema generates good looking Curved Polygons
+      in most of the cases. Sometimes, it may generate strange shapes: if this is
+      the case, we suggest to fall back to Cylindric Interpolation or Gouraud Schema
+      (only on the polygons with bad shapes)'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Half Corner Surface</b>: this is our best algorithm at the moment, and the
+      default choice for Curved Polys Made with version 1.3. As for Edge Surface Schema,
+      you should fall back to Cylindric Interpolation on single polygons when you
+      see strange shapes.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Apply To All</b>: extend the algorithm chosen for a polygon to all the Model.'
+    mod: 0

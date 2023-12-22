@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: FreePathGeneration
+  m_EditorClassIdentifier: 
+  topElementName: CurvesAndSurfacesOperator
+  elementname: FreePathGeneration
+  iconSet:
+  - {fileID: 2800000, guid: 78802b621f4d3e04daa3eb92ebd887f6, type: 3}
+  title: Free Paths - Generation
+  paragraphs:
+  - icons: []
+    texts:
+    - CLICK to add new vertices to the path
+    mod: 0
+  - icons: []
+    texts:
+    - DOUBLE CLICK to close a path and generate a new one
+    mod: 0
+  - icons: []
+    texts:
+    - Press ENTER or ESC to exit generation mode
+    mod: 0

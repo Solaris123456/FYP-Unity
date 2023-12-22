@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Curved Poly Editor
+  m_EditorClassIdentifier: 
+  topElementName: 
+  elementname: Curved Poly Editor
+  iconSet: []
+  title: Curved Poly Editor
+  paragraphs:
+  - icons: []
+    texts:
+    - What's a Curved Poly?
+    - What's a Curved Poly
+    mod: 2
+  - icons: []
+    texts:
+    - How to Start?
+    - How To Start
+    mod: 2
+  - icons: []
+    texts:
+    - Learn about Tools Sets!
+    - Tools Sets
+    mod: 2
+  - icons: []
+    texts:
+    - Shape Editor or Curved Poly Maker?
+    - Shape Editor or Maker
+    mod: 2
+  - icons: []
+    texts:
+    - 'Other Online Resources:'
+    mod: 4
+  - icons: []
+    texts:
+    - Video Docs
+    - https://www.youtube.com/watch?v=Eps64maqENo&list=PLePRnymRv1MQ68A8oUmmlNqbAlElYof7a&index=1
+    mod: 1
+  - icons: []
+    texts:
+    - Online Docs
+    - https://www.curvedpoly.com/guide/cpdocs/0
+    mod: 1
+  - icons: []
+    texts:
+    - Support
+    - https://support.mushroomslabs.com/
+    mod: 1
+  - icons: []
+    texts:
+    - Asset Store
+    - https://assetstore.unity.com/publishers/40167
+    mod: 1
+  - icons: []
+    texts:
+    - 'Upcoming Tools '
+    - https://www.curvedpoly.com/tools
+    mod: 1
+  - icons: []
+    texts:
+    - Please, if you enjoy Curved Poly, rate us!
+    mod: 0

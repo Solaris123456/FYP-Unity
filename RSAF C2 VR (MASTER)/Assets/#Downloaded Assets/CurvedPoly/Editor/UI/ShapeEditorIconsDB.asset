@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: ShapeEditorIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: BrushOperator_CircleIcon
+    texture: {fileID: 2800000, guid: 12581709f7a6d234f9b3bad230d5985e, type: 3}
+  - id: BrushOperator_RectangleIcon
+    texture: {fileID: 2800000, guid: 8b439429bd2acad4898ad406260eaa1d, type: 3}
+  - id: BrushOperator_EsclusiveMode
+    texture: {fileID: 2800000, guid: 33104a25f59305e43bb21c7ffbf42a1a, type: 3}
+  - id: BrushOperator_InclusiveMode
+    texture: {fileID: 2800000, guid: 49ecbd8457a2af04a9e46db153830bed, type: 3}
+  - id: QuadAlignMenu_QuadAlign
+    texture: {fileID: 2800000, guid: e68d7bef588036b4c88e731667016c8f, type: 3}
+  - id: EditingNormalDirectionControl.BlockX
+    texture: {fileID: 2800000, guid: 163b11f0841427749939b81d1123848e, type: 3}
+  - id: EditingNormalDirectionControl.BlockY
+    texture: {fileID: 2800000, guid: 159bd1d9f34e34e41963e1d4e4c33643, type: 3}
+  - id: EditingNormalDirectionControl.BlockZ
+    texture: {fileID: 2800000, guid: eb2455eec4ab2dc459e4a53ec7fe93ec, type: 3}
+  - id: HandlesSelectionMenu.BackToVertex
+    texture: {fileID: 2800000, guid: ee010e9bd44047c4ca7a1912a14a59ff, type: 3}
+  - id: HandlesSelectionMenu.CenterHandle
+    texture: {fileID: 2800000, guid: 7b60189a0e7cc194d959ace692d71836, type: 3}
+  - id: Elasticity_Clayish_Full
+    texture: {fileID: 2800000, guid: 58197e7f7664322419c87a2c855cb305, type: 3}
+  - id: Elasticity_Clayish_Mini
+    texture: {fileID: 2800000, guid: 58197e7f7664322419c87a2c855cb305, type: 3}
+  - id: Elasticity_Elastic_Full
+    texture: {fileID: 2800000, guid: 59d578e53ecbeee40875c545552f35b2, type: 3}
+  - id: Elasticity_Elastic_Mini
+    texture: {fileID: 2800000, guid: 59d578e53ecbeee40875c545552f35b2, type: 3}
+  - id: Elasticity_Proportional_Full
+    texture: {fileID: 2800000, guid: 88466a711259a7d479fab112920fe6bd, type: 3}
+  - id: Elasticity_Proportional_Mini
+    texture: {fileID: 2800000, guid: 88466a711259a7d479fab112920fe6bd, type: 3}
+  - id: Elasticity_Elliptic_Full
+    texture: {fileID: 2800000, guid: d5fef577df239ee47a80adee2a883829, type: 3}
+  - id: Elasticity_Elliptic_Mini
+    texture: {fileID: 2800000, guid: d5fef577df239ee47a80adee2a883829, type: 3}
+  - id: HandlesSelectionMenu.directionX
+    texture: {fileID: 2800000, guid: 58208e2bfa42ff442a9e87c60acd58da, type: 3}
+  - id: HandlesSelectionMenu.directionY
+    texture: {fileID: 2800000, guid: 41c5ba8c2f70096448a57741c1e59062, type: 3}
+  - id: HandlesSelectionMenu.directionZ
+    texture: {fileID: 2800000, guid: c8e1559e4a8ea324bb4b38c6345f1cb0, type: 3}
+  - id: HandlesSelectionMenu.BackToEdge
+    texture: {fileID: 2800000, guid: f55f29b62ef3edd429e8ab57f49b5ce2, type: 3}
+  - id: PointingsOperator_VerticesMode
+    texture: {fileID: 2800000, guid: d504cd0e590f6f74f8f56ba9d76ca166, type: 3}
+  - id: PointingsOperator_EdgesMode
+    texture: {fileID: 2800000, guid: 49e2277e630ab924495cfc7f306a257b, type: 3}
+  - id: PointingsOperator_PolygonsMode
+    texture: {fileID: 2800000, guid: 3b405bc8e463a1649aa042717ed4ff21, type: 3}
+  - id: EdgesSelectionMenu_EdgeNormal
+    texture: {fileID: 2800000, guid: 186a22a23c1190247ae97d52d9e3eccb, type: 3}
+  - id: EdgesSelectionMenu_AxisNormal
+    texture: {fileID: 2800000, guid: 513b4b6de66970a40a6982e4f9b87c8c, type: 3}
+  - id: EdgesSelectionMenu_CurvatureNormal
+    texture: {fileID: 2800000, guid: 1581a076cdf95b6419a4e5fa3458aad8, type: 3}
+  - id: EdgesSettingsMenu_Apply
+    texture: {fileID: 2800000, guid: e93928e5e7ae73440a253f316fd127e5, type: 3}
+  - id: EdgesSettingsMenu_AxisNormal
+    texture: {fileID: 2800000, guid: e74d2196b35c7de49ae35320268b866d, type: 3}
+  - id: EdgesSettingsMenu_EdgeNormal
+    texture: {fileID: 2800000, guid: f6ebd3a292db8284b950c6d5c4ca9cee, type: 3}
+  - id: OperationsGroupOperator_Close
+    texture: {fileID: 2800000, guid: 1cf9305bfb29b44499cb775a21f2cb9d, type: 3}
+  - id: EdgesSettingsMenu_BalanceNormal
+    texture: {fileID: 2800000, guid: 8df8b1ef3d317f8429e21a2c8bf1f64b, type: 3}
+  - id: EdgesSelectionMenu_BalanceNormal
+    texture: {fileID: 2800000, guid: 77cfef7948c0bca48a0f3aa9de81e66b, type: 3}
+  - id: STT_PivotIcon
+    texture: {fileID: 2800000, guid: 33f1188951796ea4b8960aa8cd95ab9a, type: 3}
+  - id: TessellationOperator_BrushSelect
+    texture: {fileID: 2800000, guid: e54fefdd25ee6a64e84ea3d9e50250c8, type: 3}
+  - id: TessellationOperator_BrushFreeze
+    texture: {fileID: 2800000, guid: 152f663291135fb4fa1c4a66affe22c2, type: 3}
+  - id: TessellationOperator_BrushFreezePolygon
+    texture: {fileID: 2800000, guid: 7f82e059a0349734fb4667721bbac18b, type: 3}
+  - id: BackgroundsOperator_AddBackground
+    texture: {fileID: 2800000, guid: c11342ae5fc9ffb42973ad9bf538cf35, type: 3}
+  - id: BackgroundsOperator_AlignCamera
+    texture: {fileID: 2800000, guid: 680aa7a54f2f38345913517a27e368dc, type: 3}
+  - id: BackgroundsOperator_RemoveBackground
+    texture: {fileID: 2800000, guid: c5e101455078f794c93568053c46a5ec, type: 3}
+  - id: PointingsOperator_LoopsMode
+    texture: {fileID: 2800000, guid: f3867379311bd51448a1fcad62430f0f, type: 3}
+  - id: PointingsOperator_RingsMode
+    texture: {fileID: 2800000, guid: 1aa3cf9c85963bb45826693fe339d0f6, type: 3}
+  - id: BrushOperator_HandleIcon
+    texture: {fileID: 2800000, guid: 5f59189e64393fa43b47a6824a04edbe, type: 3}
+  - id: BrushOperator_CumulativeMode
+    texture: {fileID: 2800000, guid: 4387e59bf9c7b074f8dfcae66933ceca, type: 3}
+  - id: PointingsOperator_PartsMode
+    texture: {fileID: 2800000, guid: a5a5de1c18c69a341868cde5c1542c05, type: 3}
+  - id: PointingsOperator_BackgroundsMode
+    texture: {fileID: 2800000, guid: 9dd80bbb022292745bc04fcd4f3f0b20, type: 3}
+  - id: BackgroundsOperator_LoadBackground
+    texture: {fileID: 2800000, guid: 412a9f174cc77d349960780cfe403678, type: 3}
+  - id: BackgroundsOperator_SaveBackground
+    texture: {fileID: 2800000, guid: 8ebab9a084820e148bfadbbdc63949b8, type: 3}

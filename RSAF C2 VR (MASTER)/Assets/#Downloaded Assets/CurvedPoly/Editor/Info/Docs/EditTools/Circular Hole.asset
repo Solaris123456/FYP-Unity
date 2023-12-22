@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Circular Hole
+  m_EditorClassIdentifier: 
+  topElementName: Edit Curved Poly
+  elementname: Circular Hole
+  iconSet:
+  - {fileID: 2800000, guid: 36caf0bd4fb8df44895d04bb762400f7, type: 3}
+  title: Circular Hole
+  paragraphs:
+  - icons: []
+    texts:
+    - 'Makes an hole in a surface. '
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>How to Use</b>: you need to have a very simple selection of only 1 vertex,
+      then you can press the button. An hole is generated cutting every edge or polygon
+      around that vertex.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: this works fine on simple shapes made of quads or triangles. The hole
+      is not necessary circular, it depends on the starting shape. UVs will look a
+      bit broken, and you will need to either UNDO or get to Materials Tool if you
+      don''t like it.</i>'
+    mod: 0

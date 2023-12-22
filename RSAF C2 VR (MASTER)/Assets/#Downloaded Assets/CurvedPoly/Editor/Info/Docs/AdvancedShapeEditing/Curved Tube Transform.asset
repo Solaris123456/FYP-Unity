@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Curved Tube Transform
+  m_EditorClassIdentifier: 
+  topElementName: Advanced Shaping Tools
+  elementname: Curved Tube Transform
+  iconSet:
+  - {fileID: 2800000, guid: 8687a55ae506e1146ae8c48610d07a01, type: 3}
+  title: Curved Tube Transform
+  paragraphs:
+  - icons: []
+    texts:
+    - '<i><b>How to Use</b>: select one or more vertices, then click on the button.
+      While active, every time you move one of the vertices which were selected in
+      first place will affect also vertices which were not part of the first selection.</i>'
+    mod: 0
+  - icons: []
+    texts:
+    - 'Curved Selection Transform allows you to transform groups of points at once
+      in a way that makes transforms on edges between the groups blend smoothly. Before
+      you enter the transform you need to plan carefully which vertices you want to
+      select:'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Selected vertices will become lead vertices</b>: lead vertices controls
+      the position of other vertices.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Unselected vertices will become passive vertices</b>: each passive vertex
+      is assigned to one of the lead vertices, depending upon their distances. (There
+      is no other options about this, but we may have more options in the future)'
+    mod: 0
+  - icons: []
+    texts:
+    - Once active,the operation works in a way which is similar to the pointings operator,
+      but you will be allowed to point only lead vertices. Once you point a lead vertex,
+      all its assigned passive vertices will be selected and also the edges connecting
+      vertices in the group will be selected. The entire group will follow any transform
+      you apply to the lead vertex.
+    mod: 0
+  - icons: []
+    texts:
+    - On each lead vertex you can also find 6 transform handles which will allow you
+      to scale or screw the group on its relative x, y or z axis. The handles are
+      6 because there are separated scaling factor for down and up, left and right,
+      forward and backward.
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: This transform always affect all vertices of your model with the exception
+      of the ones which have been hidden, so you may want to hide parts of the model
+      you don''t want to be affected by these transforms. That said, it is recommended
+      to use this transform on fresh Curved Polys with only one shape inside. Indeed,
+      you can also mix shapes with Composition Tools at a second time.</i>'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: e0043cdddda2a8d4f91a7055da6aa8b4, type: 3}
+    texts:
+    - <b>Apply:</b> Close the  Curved Tube Transform Editor and apply changes.
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1cf9305bfb29b44499cb775a21f2cb9d, type: 3}
+    texts:
+    - '<b>Close: </b>Close the Curved Tube Transform Editor undoing all the changes.'
+    mod: 3

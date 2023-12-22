@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: TessellationTool
+  m_EditorClassIdentifier: 
+  topElementName: Tools Sets
+  elementname: TessellationTool
+  iconSet:
+  - {fileID: 2800000, guid: 9009797204140724a95b5a9d462dcb12, type: 3}
+  title: Tessellation Tools
+  paragraphs:
+  - icons: []
+    texts:
+    - Curved Poly Editor uses hints to control how each polygons is tessellated when
+      the Curved Poly is transformed into a Mesh.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: e54fefdd25ee6a64e84ea3d9e50250c8, type: 3}
+    texts:
+    - '<b>Brush to select</b>: you can use brushes to select edges. When an edge is
+      selected, it''s tessellation hints are visibile and can be assigned.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 152f663291135fb4fa1c4a66affe22c2, type: 3}
+    texts:
+    - '<b>Brush to Freeze Edges</b>: by default edges are setup to work with Runtime
+      tessellation, which changes the amount of tessels used on each edge depening
+      on the LoD chosen. <b>With Brush to Freeze</b> you can change this behavior,
+      <b>so some edges will have a fixed tessellation at runtime</b>. This istrument
+      allows you to switch from Runtime Tessellation to specific tessellation based
+      on the LoDs available on your Curved Poly.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: c118646649964d9419545ecdc428105f, type: 3}
+    - {fileID: 2800000, guid: 1032048cc69aaa1409166649cdbe250d, type: 3}
+    - {fileID: 2800000, guid: 9d6bb217c7fd12e428c909a73c4034f5, type: 3}
+    texts:
+    - '... Visibility and Intreraction'
+    - GlobalVisibility
+    mod: 2
+  - icons:
+    - {fileID: 2800000, guid: f3e01fe6d345a984e944a3223e4495bd, type: 3}
+    - {fileID: 2800000, guid: f1c0a41dffec0a041ab94bed9f18f2fa, type: 3}
+    - {fileID: 2800000, guid: 73f6d465eb8732f4680d2f398c5eaf4a, type: 3}
+    texts:
+    - '...Common Actions'
+    - GlobalActions
+    mod: 2

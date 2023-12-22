@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: EditVertices
+  m_EditorClassIdentifier: 
+  topElementName: 
+  elementname: EditVertices
+  iconSet: []
+  title: Edit Vertices
+  paragraphs:
+  - icons: []
+    texts:
+    - '<b>Vertex Position</b>: when  you change a vertex position, also handles will
+      follow it. Elasticities settings are used to control the way handles follow
+      the vertex. You can move a vertex either from Curved Poly Inspector or with
+      Unity Move Tool'
+    - '<b>Editing Normal</b>: when you rotate a vertex, the editing normal is changed
+      instead. The editing normal is the normal vector applied on that vertex. If
+      a vertex is smooth, all handles will rotate together with the editing normal.'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 50d06379b6cdb8e4188c0325464e15ed, type: 3}
+    texts:
+    - Show/Hide Vertices (Visibility)
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 4dfc8a1d8a116c64490f811bbad648f6, type: 3}
+    texts:
+    - Enable/Disable vertices gizmos (Visibility)
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: ca6319458de89e64796488f6d0b4e7cf, type: 3}
+    texts:
+    - Show/Hide Handles (Visibility)
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: dcedc6af76c0a4a4298eeaa0885cd588, type: 3}
+    texts:
+    - Show/Hide Handles Weights(Visibility)
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 163b11f0841427749939b81d1123848e, type: 3}
+    texts:
+    - Rotate a vertex, so that its normal become (1,0,0). If a vertex is smooth, also
+      handles will rotate, and they will lay on plane Y-Z
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 159bd1d9f34e34e41963e1d4e4c33643, type: 3}
+    texts:
+    - Rotate a vertex, so that its normal become (0,1,0). If a vertex is smooth, also
+      handles will rotate, and they will lay on plane X-Z
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: eb2455eec4ab2dc459e4a53ec7fe93ec, type: 3}
+    texts:
+    - Rotate a vertex, so that its normal become (0,0,1). If a vertex is smooth, also
+      handles will rotate, and they will lay on plane X-Y
+    mod: 3
+  - icons: []
+    texts:
+    - <b>Vertex Snapping</b>
+    mod: 4
+  - icons: []
+    texts:
+    - '<b>None</b>: no vertex snapping is applied'
+    - '<b>All</b>: when you move a vertex, its position will snap to any other vertex.'
+    - '<b>Selected</b>: when you move a vertex, its position will snap to any selected
+      vertex.'
+    - '<b>Special</b>: when you move a vertex, its position will snap only to special
+      vertices. Vertices can be marked as special.'
+    - '<b>X,Y,Z</b>: snapping can apply, separately, on x, y or z axis'
+    - '<b>threshold</b>: the minimum distance on each axis two vertices must have
+      before snapping occurs.'
+    - '<b>Mark As Special</b>: mark a vertex to be a special one'
+    mod: 0

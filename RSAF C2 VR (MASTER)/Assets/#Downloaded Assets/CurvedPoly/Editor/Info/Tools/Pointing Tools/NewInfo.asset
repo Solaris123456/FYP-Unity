@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: NewInfo
+  m_EditorClassIdentifier: 
+  elementname: PointingsOperator
+  iconSet:
+  - {fileID: 2800000, guid: 22af3c8ef403c154885c6eb1555191ac, type: 3}
+  title: Pointing Tools
+  paragraphs:
+  - icons: []
+    texts:
+    - Click or Ctrl+Click on any element to point and edit it. Handles are accessible
+      only after a vertex or and edge has been pointed.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: d504cd0e590f6f74f8f56ba9d76ca166, type: 3}
+    texts:
+    - In <b>Vertex Mode</b>, Click to select vertices and Ctrl+Click to Select edges
+      or polygons. Only vertices gizmos are visible.
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 49e2277e630ab924495cfc7f306a257b, type: 3}
+    texts:
+    - In <b>Edge Mode</b>, Click to select edges and Ctrl+Click to select vertices
+      or polygons. Only edges gizmos are visible.
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 3b405bc8e463a1649aa042717ed4ff21, type: 3}
+    texts:
+    - In <b>Polygon Mode</b>, Click to select polygons and Ctrl+Click to select vertices
+      or edges. Only polygons gizmos are visible.
+    mod: 3
+  - icons:
+    - {fileID: 0}
+    texts:
+    - '<b>Tip</b>: keep the Controls-Behind-Objects (Visibility) option active if
+      you don''t see some gizmo'
+    mod: 3
+  - icons: []
+    texts: []
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 88466a711259a7d479fab112920fe6bd, type: 3}
+    - {fileID: 2800000, guid: 59d578e53ecbeee40875c545552f35b2, type: 3}
+    - {fileID: 2800000, guid: d5fef577df239ee47a80adee2a883829, type: 3}
+    - {fileID: 2800000, guid: 58197e7f7664322419c87a2c855cb305, type: 3}
+    texts:
+    - Edges Elasticities
+    - EdgesElasticities
+    mod: 2
+  - icons:
+    - {fileID: 2800000, guid: e74d2196b35c7de49ae35320268b866d, type: 3}
+    - {fileID: 2800000, guid: f6ebd3a292db8284b950c6d5c4ca9cee, type: 3}
+    - {fileID: 2800000, guid: 8df8b1ef3d317f8429e21a2c8bf1f64b, type: 3}
+    texts:
+    - Edges Normal Settings
+    - EdgesNormalsSettings
+    mod: 2
+  - icons: []
+    texts:
+    - Edit Vertices
+    - EditVertices
+    - Edit Handles
+    - EdiitHandles
+    mod: 2
+  - icons: []
+    texts:
+    - Edit Handles
+    - EdgesNormalsSettings
+    mod: 2
+  - icons: []
+    texts:
+    - Edit Edges
+    - EdgesNormalsSettings
+    mod: 2
+  - icons: []
+    texts:
+    - Edit Polygons
+    - EdgesNormalsSettings
+    mod: 2

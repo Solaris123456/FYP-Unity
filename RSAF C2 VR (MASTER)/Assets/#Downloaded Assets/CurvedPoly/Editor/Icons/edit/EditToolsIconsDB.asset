@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: EditToolsIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: EditOperator_Edges_Operation
+    texture: {fileID: 2800000, guid: 554c2666f61350b4e932092f4bc17660, type: 3}
+  - id: EditOperator_Points_Operation
+    texture: {fileID: 2800000, guid: e2e46289cc5d0b140a42c8b805daae0b, type: 3}
+  - id: EditOperator_Lines_Operation
+    texture: {fileID: 2800000, guid: 08f0ad50c8421634cb2adb754a508420, type: 3}
+  - id: EditOperator_Make_Polygons
+    texture: {fileID: 2800000, guid: b223739f5ea82f441b37586debe20197, type: 3}
+  - id: EditOperator_Cancel_Selection
+    texture: {fileID: 2800000, guid: be6605e575161e24fb12f2fcaaf637e3, type: 3}
+  - id: EditOperator_Cancel_Selected_Points
+    texture: {fileID: 2800000, guid: 63de6a724b495e04e8fbfb3a62ad3dda, type: 3}
+  - id: EditOperator_Cancel_Selected_Edges
+    texture: {fileID: 2800000, guid: a396b24040ca3124486c07bb4d71118e, type: 3}
+  - id: EditOperator_Cancel_Selected_Polygons
+    texture: {fileID: 2800000, guid: 4acdb6c16d014de43a8bbefdc9baf9cb, type: 3}
+  - id: EditOperator_Duplicate
+    texture: {fileID: 2800000, guid: edac341453126f94e91f612fb066f618, type: 3}
+  - id: EditOperator_Quad_Align
+    texture: {fileID: 2800000, guid: 72afcc65ead128e4eb8d8b6adf085f92, type: 3}
+  - id: EditOperator_Auto_Align
+    texture: {fileID: 2800000, guid: 72afcc65ead128e4eb8d8b6adf085f92, type: 3}
+  - id: EditOperator_Make_Circle6
+    texture: {fileID: 2800000, guid: 48c72e070b5cb35439cd66312e307635, type: 3}
+  - id: EditOperator_Make_Circle4
+    texture: {fileID: 2800000, guid: 60849b7664e1f3849bba1639cdab421a, type: 3}
+  - id: EditOperator_Weld_Vertices
+    texture: {fileID: 2800000, guid: f2cd9d263c55ca84b9efda8a91e8378f, type: 3}
+  - id: EditOperator_Remove_Doubles
+    texture: {fileID: 2800000, guid: 96fd85c80f8b9a64583678f1084a09f3, type: 3}
+  - id: EditOperator_Revert_Polygons
+    texture: {fileID: 2800000, guid: 3fea724949882a5488f62198b81fe310, type: 3}
+  - id: EditOperator_Transform
+    texture: {fileID: 2800000, guid: d820989c84af60445a4fcc1c125500d1, type: 3}
+  - id: EditOperator_Auto_Align
+    texture: {fileID: 2800000, guid: ada0be884b454114c8b35366f114ac6a, type: 3}
+  - id: EditOperator_Quad_Align
+    texture: {fileID: 2800000, guid: 46feb0f1909c33a46b764264976b9b42, type: 3}
+  - id: EditOperator_Reset_Normals
+    texture: {fileID: 2800000, guid: 2e4bbd0da4750fe43b6c86fda230461b, type: 3}
+  - id: EditOperator_CreateBridgeJoint
+    texture: {fileID: 2800000, guid: 850c95e96ed97dc4dbc95a2fc6539b12, type: 3}
+  - id: EditOperator_Subdivide
+    texture: {fileID: 2800000, guid: 0c8c16039838d8945a3a55fecf6fe7be, type: 3}
+  - id: EditOperator_CreateCircularHole
+    texture: {fileID: 2800000, guid: 36caf0bd4fb8df44895d04bb762400f7, type: 3}
+  - id: EditOperator_CreateHoleJoint
+    texture: {fileID: 2800000, guid: 4029529437d926044893cc8723ad2182, type: 3}
+  - id: EditOperator_PathExtrudeOperation
+    texture: {fileID: 2800000, guid: 2175c709e0737cb48bb17942a6fa09b1, type: 3}
+  - id: EditOperator_Break_Alignments
+    texture: {fileID: 2800000, guid: cb8fc2e0cb946ab42b01f58ba49470a9, type: 3}
+  - id: EditOperator_Normalize_Handles
+    texture: {fileID: 2800000, guid: fcd9d17e2c2a12842aa569670eecbe1a, type: 3}
+  - id: EditOperator_Make_Sharp
+    texture: {fileID: 2800000, guid: dc03ae5bad79e4540ab8070f891f6cf7, type: 3}
+  - id: EditOperator_Make_Smooth
+    texture: {fileID: 2800000, guid: 2fa76946b83277b40b4958fee98b8e0f, type: 3}
+  - id: EditOperator_Corners
+    texture: {fileID: 2800000, guid: 6f71b791f4cb84c49aa55d4b5707b680, type: 3}
+  - id: EditOperator_Bindings
+    texture: {fileID: 2800000, guid: 92c1d81a6a40c4645a382cdb5000bfcc, type: 3}
+  - id: EditOperator_Inspect
+    texture: {fileID: 2800000, guid: 449a3f43a44e18548856429475dcf6fe, type: 3}
+  - id: EditOperator_Pointings
+    texture: {fileID: 2800000, guid: 22af3c8ef403c154885c6eb1555191ac, type: 3}
+  - id: EditOperator_Edges_Linear
+    texture: {fileID: 2800000, guid: a4b8cc6f74ccbcc43a87f3fe2ed63afa, type: 3}
+  - id: EditOperator_Edges_Curved
+    texture: {fileID: 2800000, guid: c93f60d001902ed48b075716686bdb53, type: 3}
+  - id: EditOperator_Revert_Normals
+    texture: {fileID: 2800000, guid: 543c77175b7642c488c8af493e93b813, type: 3}

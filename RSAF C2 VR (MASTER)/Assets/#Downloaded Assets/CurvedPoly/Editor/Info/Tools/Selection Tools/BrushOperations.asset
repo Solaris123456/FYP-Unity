@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: BrushOperations
+  m_EditorClassIdentifier: 
+  topElementName: 
+  elementname: BrushOperations
+  iconSet: []
+  title: Brushes
+  paragraphs:
+  - icons:
+    - {fileID: 2800000, guid: 8b439429bd2acad4898ad406260eaa1d, type: 3}
+    texts:
+    - '<b>Rectangle</b>: Drag a rectangle in scene view. Vertices, edges or polygons
+      within the rectangle will be selected (or hidden if you are in Hide Operator)'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 12581709f7a6d234f9b3bad230d5985e, type: 3}
+    texts:
+    - '<b>Circle</b>: Drag a circle in scene view. The radius of the circle can be
+      increased or decreased with <b>O</b> or <b>P</b> keys. Vertices, edges or polygons
+      within the circle will be selected (or hidden if you are in Hide Operator)'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 49ecbd8457a2af04a9e46db153830bed, type: 3}
+    texts:
+    - '<b>Part</b>: Edges and polygons will be selected (or hidden) if any part of
+      them is covered by the Rectangle or the Circle.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 33104a25f59305e43bb21c7ffbf42a1a, type: 3}
+    texts:
+    - '<b>Full</b>: Edges and polygons will be selected (or hidden) only if entirely
+      covered by the Rectangle or the Circle.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 4dfc8a1d8a116c64490f811bbad648f6, type: 3}
+    texts:
+    - '<b>vertices (Visibility)</b>: keep this active it you want brushes to work
+      on vertices. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: c118646649964d9419545ecdc428105f, type: 3}
+    texts:
+    - '<b>edges (Visibility)</b>: keep this active it you want brushes to work on
+      edges. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 64d1e5e314e181a4793b30e51118f31d, type: 3}
+    texts:
+    - '<b>polygons (Visibility)</b>: keep this active it you want brushes to work
+      on polygons. '
+    mod: 3

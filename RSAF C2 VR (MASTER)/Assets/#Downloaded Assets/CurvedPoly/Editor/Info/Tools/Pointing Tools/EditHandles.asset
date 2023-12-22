@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: EditHandles
+  m_EditorClassIdentifier: 
+  topElementName: 
+  elementname: EditHandles
+  iconSet: []
+  title: Edit Handles
+  paragraphs:
+  - icons: []
+    texts:
+    - <b>Handles Controls</b>
+    mod: 4
+  - icons: []
+    texts:
+    - '<b>Length</b>: distance between the handle and its vertex. Changing this will
+      not affect the normal.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Roll</b>: angle evaluated on the plane of this handle vertex normals. Changing
+      this will not affect the normal.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Pitch</b>: angle evaluated on the plane made from this handle and its vertex
+      normals. Changing this <b>will</b> affect the normal.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Handles Direction</b>: raw coordinates of the Distance vector between the
+      handle and it''s vertex.'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: f55f29b62ef3edd429e8ab57f49b5ce2, type: 3}
+    texts:
+    - '<b>Back to vertex</b>: point this handle vertex.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: ee010e9bd44047c4ca7a1912a14a59ff, type: 3}
+    texts:
+    - '<b>Back to edge</b>: point this handle edge.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 7b60189a0e7cc194d959ace692d71836, type: 3}
+    texts:
+    - '<b>Center Handle</b>: if the handle has two other handles, one on the left,
+      one on the right, center it between them.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 58208e2bfa42ff442a9e87c60acd58da, type: 3}
+    texts:
+    - '<b>Align handle to x direction</b>: Handle Direction become (1,0,0). This may
+      affect the normal of this handle vertex.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 41c5ba8c2f70096448a57741c1e59062, type: 3}
+    texts:
+    - '<b>Align handle to y direction</b>: Handle Direction become (0,1,0). This may
+      affect the normal of this handle vertex.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: c8e1559e4a8ea324bb4b38c6345f1cb0, type: 3}
+    texts:
+    - '<b>Align handle to z direction</b>: Handle Direction become (0,0,1). This may
+      affect the normal of this handle vertex.'
+    mod: 3
+  - icons: []
+    texts:
+    - '<b>Handle Properties: Weight</b>. The weight of this handle, affected the handle
+      edge shape.'
+    mod: 0

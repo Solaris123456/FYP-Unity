@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: SelectionTransform
+  m_EditorClassIdentifier: 
+  topElementName: ShapeOperator,AdvancedShapeOperator
+  elementname: SelectionTransform
+  iconSet: []
+  title: Selection Transform
+  paragraphs:
+  - icons: []
+    texts:
+    - There is a Transform in scene (similar to the one used on every game object)
+      you can use to change any group of selected elements. This transform is affected
+      by Unity Tools like Move Tool, Rotate Tool or Scale Tool. Here you can control
+      its parameters.
+    mod: 0
+  - icons: []
+    texts:
+    - '<i><b>Tip</b>: </i> this transform is based on an <b>Edit Pivot</b> which can
+      be edited here. By default, the pivot is positioned at the center of your selection.
+      Everytime the set of selected elements is changed, both the pivot and the transform
+      are resetted.'
+    mod: 0
+  - icons: []
+    texts:
+    - Transform Parameters
+    mod: 4
+  - icons: []
+    texts:
+    - '<b>Position</b>: relative translation of the selection relative to the Edit
+      Pivot. By default its <b>(0,0,0)</b>'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Rotation</b>: relative rotation of the selection relative to the Edit Pivot.
+      By default its <b>(0,0,0)</b>'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Scale</b>: relative scaling of the selection relative to the Edit Pivot.
+      By default its <b>(1,1,1)</b>'
+    mod: 0
+  - icons: []
+    texts:
+    - Edit Pivot
+    mod: 4
+  - icons: []
+    texts:
+    - '<b>Edit Pivot Checkbox</b>: activates the edit pivot mode. in Edit Pivot mode
+      the Transform in scene changes the parameters of the Edit Pivot and should not
+      affect the selection. The edit pivot reference system can only be translated
+      or rotated, not scaled.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Pivot Position</b>: position of the pivot. This is very important since
+      it stays for the position around which <b>Rotation</b> and <b>Scale</b> are
+      applied.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Pivot Rotation</b>: this is a specific tool which rotates the reference
+      system of a Pivot, changing the axis directions used when <b>Rotation</b> and
+      <b>Scale</b> are applied. For instance, if Pivot Rotation is (0,0,45), a rotation
+      of (90,0,0) rotates around the axis (1,1,0) rather than the x-axis (1,0,0)'
+    mod: 0
+  - icons: []
+    texts:
+    - <i><b>Tip:</b></i> when you change Pivot Rotation, it is not suggested to work
+      both on Scale and Rotation. You should rather split the transform in two separated
+      steps (first with Scale, second with Rotate) to keep full control of everything.
+      To reset the transform between more transform steps, the easiest way is actually
+      to unselect everything and select again the same group of elements.
+    mod: 0

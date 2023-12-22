@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: ShapeEditOperator
+  m_EditorClassIdentifier: 
+  topElementName: Tools Sets
+  elementname: ShapeEditOperator
+  iconSet:
+  - {fileID: 2800000, guid: dc2eacc4adc921c458d0a8a07b9251a2, type: 3}
+  title: Edit Tools
+  paragraphs:
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Selection and Visibility
+    - Selection and Visibility
+    - Controls which elements and controls are visible on the model and how to select
+      them. There are a lot of elements you can work with, especially <b>vertices</b>,  <b>edges</b>,
+      <b>handles</b>, <b>polygons</b>, <b>parts</b>, <b>rings</b> and <b>loops</b>.
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Edit Curved Poly
+    - Edit Curved Poly
+    - A wide set of tools used to change the content of a Curved Poly.
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Fix Tools
+    - Fix Tools
+    - A few tools used to fix problematic models.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 1d522a767184af04082ec516e451f242, type: 3}
+    texts:
+    - <i>The following tools are available in the dedicated Curved Poly Inspector,
+      look for the icon here on the left or find it in <b>Tools->Curved Poly-> Inspector
+      Window</b> </i>
+    mod: 3
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Parts List
+    - PartsList
+    - Shows the parts a model is made with and allows to change their names and materials.
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Selection Inspector
+    - Selection Inspector
+    - Selection Inspector
+    mod: 7

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: UV Handles Controls
+  m_EditorClassIdentifier: 
+  topElementName: MaterialsOperator
+  elementname: UV Handles Controls
+  iconSet: []
+  title: UV Transform
+  paragraphs:
+  - icons: []
+    texts:
+    - '<b>uv</b>: uv coordinates of the a selected handle, if any.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: the following tools are used to automaticcally improve the shape of
+      edges. One good approach to manually assign uv is moving around the vertices
+      first, then use <b>Simplify All Edges uvs</b> and then again use <b>UV Fix Handles
+      Multi.</b></i>'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: eb47b46965e54aa429233c9335d81d50, type: 3}
+    texts:
+    - '<b>Simplify Edge uvs</b>: recompute uv for handles, so that the edge becomes
+      linear in uv space. This is good if you have messed up edges and you want to
+      manually correct them. This button works only on the edge of a selected handle,
+      if any.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 8c44aea4063b9d24ea47ab2bc8c531dc, type: 3}
+    texts:
+    - '<b>Simplify All Edges uvs</b>: recompute uv for handles, so that the edges
+      become linear in uv space. This is good if you have messed up edges and you
+      want to manually correct them. This button works on all edges at once.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: c5ec4f85125765f4bb184dab3567dde4, type: 3}
+    texts:
+    - '<b>Uv Fix Handles</b>: rework uv handles distance from their vertices, in order
+      to fit the distances handles have from their vertices in 3D space, and making
+      the UV mapping look for smooth around the edge. Works only on the edge of a
+      selected handle, if any.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 01561107786a66b44825b742f74b4c1a, type: 3}
+    texts:
+    - '<b>Uv Fix Handles Multi</b>: rework uv handles distance from their vertices,
+      in order to fit the distances handles have from their vertices in 3D space,
+      and making the UV mapping look for smooth around the edges. Works on all the
+      edges at once.'
+    mod: 3

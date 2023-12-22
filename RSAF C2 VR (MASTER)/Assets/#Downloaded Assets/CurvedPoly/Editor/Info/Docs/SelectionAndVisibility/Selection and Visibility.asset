@@ -1,0 +1,212 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Selection and Visibility
+  m_EditorClassIdentifier: 
+  topElementName: ShapeOperator,ShapeTessellationOperator,CompositionOperator,MaterialsOperator,AdvancedShapeOperator,ShapeEditOperator
+  elementname: Selection and Visibility
+  iconSet: []
+  title: Selection and Visibility
+  paragraphs:
+  - icons: []
+    texts:
+    - These are the most important Tools in Curved Poly Editor, and they are shared
+      among most of the Tools Sets. They controls how you can interact with a model
+      by how you can select its parts.
+    mod: 0
+  - icons: []
+    texts:
+    - Element Mode
+    mod: 4
+  - icons: []
+    texts:
+    - 'There is always one element mode active: it controls which elements can be
+      selected in the editor. '
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: d504cd0e590f6f74f8f56ba9d76ca166, type: 3}
+    texts:
+    - '<b>Vertices</b>: click a vertex to select it. Multiple selection of vertices
+      are supported using different Selection Modes.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 49e2277e630ab924495cfc7f306a257b, type: 3}
+    texts:
+    - '<b>Edges</b>: click an edge (or a line) to select it. Multiple selection of
+      edges are supported using different Selection Modes.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 3b405bc8e463a1649aa042717ed4ff21, type: 3}
+    texts:
+    - '<b>Polygons</b>: click a polygon to select it. Multiple selection of polygons
+      are supported using different Selection Modes.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: a5a5de1c18c69a341868cde5c1542c05, type: 3}
+    texts:
+    - '<b>Parts</b>: click a part to select it. Only one part can be selected this
+      way at a time, and only Pointing Selecion Mode is supported.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: f3867379311bd51448a1fcad62430f0f, type: 3}
+    texts:
+    - '<b>Loops</b>: click an edge to select a loop (or strip) of edges getting through
+      it. Only one loop can be selected this way at a time, and only Pointing Selecion
+      Mode is supported.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1aa3cf9c85963bb45826693fe339d0f6, type: 3}
+    texts:
+    - '<b>Rings</b>: click an edge to select a ring (or strip) of polygons getting
+      through it. Only one ring can be selected this way at a time, and only Pointing
+      Selecion Mode is supported.'
+    mod: 3
+  - icons: []
+    texts:
+    - Selection Mode
+    mod: 4
+  - icons: []
+    texts:
+    - 'There is always one selection mode active: it controls how much elements can
+      be selected and how to select them.'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 22af3c8ef403c154885c6eb1555191ac, type: 3}
+    texts:
+    - '<b>Pick</b>: select an element by clicking it'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 8b439429bd2acad4898ad406260eaa1d, type: 3}
+    texts:
+    - '<b>Rect</b>: select an element by dragging a rectangle around it. More elements
+      can be selected at one this way.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 12581709f7a6d234f9b3bad230d5985e, type: 3}
+    texts:
+    - '<b>Circle</b>: select an element by dragging a circle over it. Use letters
+      buttons <b>O</b> or <b>P</b> to change the circle size. More elements can be
+      selected at one this way.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 4387e59bf9c7b074f8dfcae66933ceca, type: 3}
+    texts:
+    - '<b>Cumulative (Toggle)</b>: can be activated to work on either <b>Pick</b>
+      or <b>Rect</b>. When active, every time you select something the new selection
+      is added to the previous one, rather than replacing the previous one. Use this
+      to select more elements, especially when using <b>Pick</b>. It does not apply
+      to <b>Circle</b>, which is always Cumulative.'
+    mod: 3
+  - icons: []
+    texts:
+    - '<i><b>Tip</b></i>: hodling <b>Shift</b> while you select any elements works
+      like having Cumulative applied!'
+    mod: 0
+  - icons: []
+    texts:
+    - Selection Actions
+    mod: 4
+  - icons: []
+    texts:
+    - A list of instant actions to work with selections.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: f3e01fe6d345a984e944a3223e4495bd, type: 3}
+    texts:
+    - '<b>Select All</b>: select all elements in the model.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: f1c0a41dffec0a041ab94bed9f18f2fa, type: 3}
+    texts:
+    - '<b>Unselect All</b>: remove any element from selection.'
+    mod: 3
+  - icons: []
+    texts:
+    - '<i>Tip: Select All is also activated by pressing <b>S</b> on the keyboard.
+      For Unselect All, press <b>Shift+S</b></i>'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 581bb2d1bc7702644a64106005bc1edf, type: 3}
+    texts:
+    - '<b>Grow</b>: extend the actual selection to any element adjacent to actual
+      selection.'
+    mod: 3
+  - icons: []
+    texts:
+    - '<i>Tip: Curved Poly Elements can be hidden. The following tools control which
+      elements are hidden</i>'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 73f6d465eb8732f4680d2f398c5eaf4a, type: 3}
+    texts:
+    - '<b>Show All</b>: if any element has been hidden, show it back.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: e9a0113abdc758e4ca1e7fb48c021eff, type: 3}
+    texts:
+    - '<b>Hide Selected</b>: hide selected elements.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1a8de3c2009cbee46bef76df75dc3aa6, type: 3}
+    texts:
+    - '<b>Hide Unselected</b>: complementar action to hide selected elements. It hides
+      any element not being in the actual selection.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 02fad99c2333d75458ad7ef7f35e856b, type: 3}
+    texts:
+    - '<b>Hide Not Visible Elements</b>: hide elements which are behind other elements
+      and which therefore can''t be seen.'
+    mod: 3
+  - icons: []
+    texts:
+    - <b>Visibility and Interaction Settings</b>
+    mod: 4
+  - icons: []
+    texts:
+    - In edit mode, a Curved Poly has a lot of controls and handles which are used
+      to shape it. Take controls of this elements with this toggle buttons.
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: d683e67f52df01d4f99014bffa906d3a, type: 3}
+    texts:
+    - '<b>normals</b>: shows vertices <b>and edges </b>normals and normals interactive
+      controls in scene.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1032048cc69aaa1409166649cdbe250d, type: 3}
+    texts:
+    - '<b>edges</b>: shows curved polygons edges.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: ca6319458de89e64796488f6d0b4e7cf, type: 3}
+    texts:
+    - '<b>handles</b>: shows handles controls on vertices and edges (works only for
+      Shape Tools).'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 547af5138b014b042899778dd08484e5, type: 3}
+    texts:
+    - '<b>controls behind objects</b>: controls which are behind other objects or
+      elements become visible. Some of them may still be not interactive.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 52ef52bdd540feb478d88da5443f5995, type: 3}
+    texts:
+    - '<b>grids (backgrounds)</b>: shows backgrounds/grids. Backgrounds and Grids
+      can be edited with Shape Tools.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 094133138e68aa943b3c16ab6bdde876, type: 3}
+    texts:
+    - '<b>snap to grid</b>: activates the snap to grids options.'
+    mod: 3

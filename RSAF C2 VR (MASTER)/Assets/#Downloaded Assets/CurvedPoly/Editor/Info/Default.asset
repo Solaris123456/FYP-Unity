@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  elementname: DefaultInfo
+  iconSet: []
+  title: Welcome to Curved Poly Editor!
+  paragraphs:
+  - icons: []
+    texts:
+    - Please, if you enjoy Curved Poly, rate us!
+    mod: 0
+  - icons: []
+    texts:
+    - Online Docs
+    - https://www.curvedpoly.com/guide/cpdocs/0
+    mod: 1
+  - icons: []
+    texts:
+    - Support
+    - https://support.mushroomslabs.com/
+    mod: 1
+  - icons: []
+    texts:
+    - Asset Store
+    - https://assetstore.unity.com/publishers/40167
+    mod: 1
+  - icons: []
+    texts:
+    - 'Upcoming Tools '
+    - https://www.curvedpoly.com/tools
+    mod: 1

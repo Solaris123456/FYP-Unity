@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Remove Doubles
+  m_EditorClassIdentifier: 
+  topElementName: Edit Curved Poly
+  elementname: Remove Doubles
+  iconSet:
+  - {fileID: 2800000, guid: 96fd85c80f8b9a64583678f1084a09f3, type: 3}
+  title: Remove Doubles
+  paragraphs:
+  - icons: []
+    texts:
+    - Merges duplicated elements within your selection.
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: this tools does not remove duplicated Polygons, only duplicated vertices
+      or edges. You can easily remove the polygons on your duplicated elements with
+      <b>Cancel Polygons</b> and then use <b>Make Polygons</b> after the Doubles vertices
+      and edges has been removed.</i>'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Distance d</b>: maximum distance between two vertices which has to be considered
+      the same. It''s the threshold used while looking for duplicated elements.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Removed Vertices</b>: report the amount of removed vertices.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Removed Edges</b>: report the amount of removed edges.'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: ba4ef0e9aee9090429ed0c4ac936e2db, type: 3}
+    texts:
+    - '<b>Update</b>: recomputes the Doubles and update the model using and changed
+      parameter.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: e0043cdddda2a8d4f91a7055da6aa8b4, type: 3}
+    texts:
+    - '<b>Apply</b>: applies changes and exit this tool.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1cf9305bfb29b44499cb775a21f2cb9d, type: 3}
+    texts:
+    - '<b>Close</b>: exit the tool, but after undoing all the changes.'
+    mod: 3

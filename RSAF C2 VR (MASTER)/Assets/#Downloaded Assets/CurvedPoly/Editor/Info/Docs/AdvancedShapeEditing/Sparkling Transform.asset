@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Sparkling Transform
+  m_EditorClassIdentifier: 
+  topElementName: Advanced Shaping Tools
+  elementname: Sparkling Transform
+  iconSet:
+  - {fileID: 2800000, guid: 8198acb98a52c6d4bb7c5288e928cba8, type: 3}
+  title: Sparkling Transfom
+  paragraphs:
+  - icons: []
+    texts:
+    - '<i><b>How to Use</b>: select one or more vertices, then click on the button.
+      While active, every time you move one of the vertices or change its handles,
+      also the other vertices and their handles will be affected. Try it!</i>'
+    mod: 0
+  - icons: []
+    texts:
+    - 'With Sparkling Transform you can replicates changes you make on a vertex or
+      its handles to other vertices.. You need to select the vertices you want to
+      work on, than the transform will try to match the handles across that vertices
+      in order to apply symmetric changes. There are two relevant cases in which this
+      transform does a good work:'
+    mod: 0
+  - icons: []
+    texts:
+    - <b>Case 1 </b>You select a set of vertices having all the same editing normal
+      and the same amount of handles (this is common if you are working on a Curved
+      Poly primitive).
+    mod: 0
+  - icons: []
+    texts:
+    - <b>Case 2 </b>You select a set of vertices on a circle. Any change will (hopefully)
+      be applied in a way which is symmetric to the center of the circle.
+    mod: 0
+  - icons: []
+    texts:
+    - The transform will work in any case, but it may fail matching handles on different
+      vertices if it doesn't find a good mapping of the handles.
+    mod: 0
+  - icons: []
+    texts:
+    - 'Once active, you can point on a vertex and then you can point on one of its
+      handle to change its length, roll or pitch, the same way you can do in Pointings
+      Operator, but here any change is replicated to all mapped handles on the other
+      vertices, making all selected vertices change in shape at once in the most symmetric
+      way possible (again: this depends on how good is your starting selection so
+      you should have a try and maybe Close the operator to roll it back and make
+      a different selection of vertices) '
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: e0043cdddda2a8d4f91a7055da6aa8b4, type: 3}
+    texts:
+    - <b>Apply:</b> Close the Sparkling Transform Editor and apply changes.
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1cf9305bfb29b44499cb775a21f2cb9d, type: 3}
+    texts:
+    - '<b>Close: </b>Close the Sparkling Transform Editor undoing all the changes.'
+    mod: 3

@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: ShapeOperator
+  m_EditorClassIdentifier: 
+  topElementName: Tools Sets
+  elementname: ShapeOperator
+  iconSet:
+  - {fileID: 2800000, guid: 4078cd613741e3f478e2119be96a80b3, type: 3}
+  title: Shape Tools
+  paragraphs:
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Selection and Visibility
+    - Selection and Visibility
+    - Controls which elements and controls are visible on the model and how to select
+      them. There are a lot of elements you can work with, especially <b>vertices</b>,  <b>edges</b>,
+      <b>handles</b>, <b>polygons</b>, <b>parts</b>, <b>rings</b> and <b>loops</b>.
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Shaping Options
+    - Shaping Options
+    - Defines the way in which unselected elements react to shaping operations and
+      transforms.
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Backgrounds
+    - Backgrounds
+    - Allows the generation and management of background grids which can use background
+      images. Backgrounds can be saved in specific assets and reused at a second time.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 1d522a767184af04082ec516e451f242, type: 3}
+    texts:
+    - <i>The following tools are available in the dedicated Curved Poly Inspector,
+      look for the icon here on the left or find it in <b>Tools->Curved Poly-> Inspector
+      Window</b> </i>
+    mod: 3
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Parts List
+    - PartsList
+    - Shows the parts a model is made with and allows to change their names and materials
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Selection Transform
+    - SelectionTransform
+    - 'Transform Parameters applied to Selection. '
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Polygons Filling Algorithms
+    - FillingAlgorithms
+    - Algorithms used to fill a Curved Polygons with Raw Triangles
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Vertex Snapping
+    - VertexSnapping
+    - 'Allows selection transform to snap to vertices. '
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Pointed Vertex
+    - PointedVertex
+    - More Controls about vertices
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Pointed Edge
+    - EdgeSelection
+    - More Controls about edges
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Edge Hints
+    - EdgeHints
+    - Controls edge hints
+    mod: 7
+  - icons:
+    - {fileID: 0}
+    texts:
+    - Pointed Handle
+    - PointedHandle
+    - Controls handles shape
+    mod: 7

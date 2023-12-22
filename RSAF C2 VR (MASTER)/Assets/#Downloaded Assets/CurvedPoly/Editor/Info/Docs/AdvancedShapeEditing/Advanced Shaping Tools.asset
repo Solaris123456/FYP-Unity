@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Advanced Shaping Tools
+  m_EditorClassIdentifier: 
+  topElementName: AdvancedShapeOperator
+  elementname: Advanced Shaping Tools
+  iconSet: []
+  title: Advanced Shaping Tools
+  paragraphs:
+  - icons:
+    - {fileID: 2800000, guid: 7412fd3b529778540a4277655a78d7f8, type: 3}
+    texts:
+    - Circleify
+    - Circleify
+    - Reshape a set of edges or vertices to lay on a circle. Best used on a Loop Selection.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: d1ffabe964a616349805b46ba99f58e4, type: 3}
+    texts:
+    - Cylindric Transform
+    - Cylindric Transform
+    - An alternative Transform which treats everything as part of a cylindric shape.
+      Best used with a Ring Selection.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: cdc5171ffaef21640adb6264a76f5f21, type: 3}
+    texts:
+    - Proportional Editing
+    - Proportional Editing
+    - Allows you to transform groups of points at once in a way that makes transforms
+      on edges between the groups blend smoothly.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 8687a55ae506e1146ae8c48610d07a01, type: 3}
+    texts:
+    - Curved Selection Transform
+    - Curved Tube Transform
+    - A Transform which reshape elements has they are attached to a continuos curved
+      path. Affects everything in the model.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 8198acb98a52c6d4bb7c5288e928cba8, type: 3}
+    texts:
+    - Sparkling Transform
+    - Sparkling Transform
+    - 'Replicates changes you make on a vertex or its handles to other vertices. '
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 092aac8ad3b92aa4fb8bc30beec03b5a, type: 3}
+    texts:
+    - Symmetry
+    - Symmetry
+    - Defines a set of symmetry relationships between vertices, allowing transforms
+      among them.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: f81bc3efa003c674bb2ce722c5344f3e, type: 3}
+    texts:
+    - Mirroring
+    - Mirroring
+    - Flips selected elements with respect to a mirroring plane.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 6d79cb4b8f20cb249b66e21b12e86aac, type: 3}
+    texts:
+    - Free Form Transform 1x
+    - Free Form Transform (1x)
+    - Generates a grid of (8) vertices around your selection, so that you can reshape
+      the selection by moving the points in the grid.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 4ce1384968950e44d8a0421407875498, type: 3}
+    texts:
+    - Free Form Transform (2x)
+    - Free Form Transform (2x)
+    - Generates a grid of (27) vertices around your selection, so that you can reshape
+      the selection by moving the points in the grid.
+    mod: 7
+  - icons:
+    - {fileID: 2800000, guid: 2ce109c3afd2e2a42b9a50fbb54cbd47, type: 3}
+    texts:
+    - Free Form Transform 3x
+    - Free Form Transform (3x)
+    - Generates a grid of (64) vertices around your selection, so that you can reshape
+      the selection by moving the points in the grid.
+    mod: 7

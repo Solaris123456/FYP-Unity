@@ -1,0 +1,53 @@
+
+These two libraries contain 80+ sample models and primitives, mostly unwrapped, which were all made with Curved Poly Maker.
+They are here both to improve your experience with Curved Poly Shape Editor and to show you what you can do with Curved Poly Maker.
+
+Here a list of HOW TOs related to library. If you need something more, ask it at http://support.mushroomslabs.com.
+
+1) How to use one of the Models in the Library.
+
+     - Select it from the Project Panel.
+	 - Click on 'Add to Scene'
+	 - Once in the scene, click on 'Save New' (we haven't add  here a control to avoid overwriting of elements in the library,
+	 so if you don't 'Save New' you will overwrite the original model)	 
+
+2) How to copy the content of a Library
+
+	- Choose a folder. 
+	- In the Project Panel, activate the Popup Menu and Click on 'Create -> Curved Poly -> Curved Poly Asset Library'
+	- Give the new Library a name you can remember.
+	- Get back to the library containing the elements you want to copy. Select all of them.
+	- In the Inspector, click 'Copy Into Library'.
+	- Select the Library you create in the first steps. Curved Poly will create a correct copy of all the assets in the new library.
+	
+Note: 'Copy Into Library' works with any Curved Poly Asset, either the ones in a library or the standalone ones you created with 'Save' or 'Save new'
+
+
+3) Moving Libraries in another folder for further editing.
+
+	Each library has an associated folder named 'Editor' which contains a file with all the Editor Assets. 
+	The Editor Assets are necessary for Curved Poly Editors to work, and they are discarded at runtime.
+	If you move a library and you want to go on editing its assets you also need to move its associated Editor Assets.
+	Or: you can create a copy of the library  (Point 2) in a new location and delete the original one in the previuos location.
+	
+	If you don't do this: once you open an asset missing its Editor counterpart curved poly Editors will try to regenerate it.
+	Sadly: the regeneration process is not perfect and it will fail on unwrapped models or models with sharp vertices. 
+	This is better explained in the documentation.
+	
+4) Moving Libraries in another folder to use at Run Time.
+
+	(Read point 3 first)
+	If you don't need to further edit a library, you don't need to move the Editor Assets,
+	But to avoid assets breaking you need to disable Curved Poly Editors first.
+	To do so: look for 'CurvedPoly/Editor/Plyugins/CPBaseEditor.dll' and Exclude the 'Editor' Platform.
+	
+	If you are working in a team and there are people which need only the runtime features of Curved Poly they will need:
+		- The 'CurvedPoly/Plugins' folder (containing the 2 runtime dlls).
+		- Any Curved Poly Asset, with or without their editing counterparts.
+		- Any Curved Poly Assets Library, with or without their editing counterparts.
+	The Editing CounterParts can be copied or not, since once you remove or disable the 'CurvedPoly/Editor/Plyugins/CPBaseEditor.dll'
+	library they will be ignored by Unity even in Edit Mode. 
+		
+	
+	
+	

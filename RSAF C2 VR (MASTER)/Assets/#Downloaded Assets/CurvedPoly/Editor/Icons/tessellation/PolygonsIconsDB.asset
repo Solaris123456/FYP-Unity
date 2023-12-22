@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: PolygonsIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: Polygons_Cylindric_Interpolation
+    texture: {fileID: 2800000, guid: 5e1fbf9ce711dd345ae7137cbbb5c7cc, type: 3}
+  - id: Polygons_Gouraud_Interpolation
+    texture: {fileID: 2800000, guid: 268b407fe852f8a41b5a3d7e5415114a, type: 3}
+  - id: Polygons_Edge_Surface_Interpolation
+    texture: {fileID: 2800000, guid: 68e53f73e6078b04da4c69f7e92dae4e, type: 3}
+  - id: Polygons_Half_Corner_Interpolation
+    texture: {fileID: 2800000, guid: fac4cf46e5d67a04c9f40c8771073d11, type: 3}
+  - id: Polygons_Advanced_Cylindric_Interpolation
+    texture: {fileID: 2800000, guid: 22222fd4da494b448b31c82139fbb6ed, type: 3}

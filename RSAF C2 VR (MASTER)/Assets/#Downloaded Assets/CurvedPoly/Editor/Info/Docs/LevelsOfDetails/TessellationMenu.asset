@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: TessellationMenu
+  m_EditorClassIdentifier: 
+  topElementName: ShapeTessellationOperator
+  elementname: TessellationMenu
+  iconSet: []
+  title: Tessellation Instruments
+  paragraphs:
+  - icons: []
+    texts:
+    - Levels of Detail
+    mod: 4
+  - icons: []
+    texts:
+    - Choose the active LoD. The same value can be changed in Unity Inspector on Curved
+      Poly Component (they are synchronized). Available LoDs are the ones in the <b>LoDs
+      Asset</b> assigned to Curved Poly Component in the inspector.
+    mod: 0
+  - icons: []
+    texts:
+    - Tessellation Hints
+    mod: 4
+  - icons: []
+    texts:
+    - Here there are 16 buttons which can be used to assign the hints of all selected
+      edges at once. For instance, if you press <b>E</b> all selected edges will be
+      assigned tessellation hint <b>E</b> on both sides.
+    mod: 0

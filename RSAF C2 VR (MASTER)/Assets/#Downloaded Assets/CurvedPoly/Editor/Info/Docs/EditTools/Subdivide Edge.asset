@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: Subdivide Edge
+  m_EditorClassIdentifier: 
+  topElementName: Edit Curved Poly
+  elementname: Subdivide Edge
+  iconSet:
+  - {fileID: 2800000, guid: 0c8c16039838d8945a3a55fecf6fe7be, type: 3}
+  title: Subdivide Edge
+  paragraphs:
+  - icons: []
+    texts:
+    - Split an edge into two halves. Can be extended through adjacent polygons to
+      split them into two halves too. The extensions can go through quads and opposite
+      edges. If a polygon is not a quad, the sequence ends.
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>Extend Through Polygons</b>: extends the split through adjacent polygons
+      and opposite edges. You can control how much polygons to split on the left,
+      and how much polygons to split on the right. Once this editor find a polygon
+      which is not a quad, the sequence ends. '
+    mod: 0
+  - icons: []
+    texts:
+    - '<b>t</b>: The exact position on the edge where the split occurs. By default
+      is 0.5. Values are between 0 and 1. '
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: ba4ef0e9aee9090429ed0c4ac936e2db, type: 3}
+    texts:
+    - '<b>Update</b>: update the split after changing <b>t</b>.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: e0043cdddda2a8d4f91a7055da6aa8b4, type: 3}
+    texts:
+    - '<b>Apply</b>: applies changes and exit this tool.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1cf9305bfb29b44499cb775a21f2cb9d, type: 3}
+    texts:
+    - '<b>Close</b>: exit the tool, but after undoing all the changes.'
+    mod: 3

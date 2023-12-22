@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -194101228, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: UVOperatorIconsDB
+  m_EditorClassIdentifier: 
+  allIcons:
+  - id: UVOperator_DefaultUnwrap
+    texture: {fileID: 2800000, guid: 37487e4864d400d4b986c96ded26a763, type: 3}
+  - id: UVOperator_TransformsMode
+    texture: {fileID: 2800000, guid: 83a7e0f51e27fd948834a316e9a52b35, type: 3}
+  - id: UVOperator_VerticesMode
+    texture: {fileID: 2800000, guid: 1ab9564edd7c4e24e80971c0aaeaf676, type: 3}
+  - id: UVOperator_HandlesMode
+    texture: {fileID: 2800000, guid: b049d1a993d163c49b827b9f7ded133b, type: 3}
+  - id: UVOperator_VerticesAndHandlesMode
+    texture: {fileID: 2800000, guid: d0fb8ee8be20b9b479d186f250800cb7, type: 3}
+  - id: UVOperator_Transforms_Reflect
+    texture: {fileID: 2800000, guid: 4ffe8b6c7ae293c498e6eee0c8c95c1b, type: 3}
+  - id: UVOperator_Handles_Simplify
+    texture: {fileID: 2800000, guid: eb47b46965e54aa429233c9335d81d50, type: 3}
+  - id: UVOperator_Handles_Simplify_ForAll
+    texture: {fileID: 2800000, guid: 8c44aea4063b9d24ea47ab2bc8c531dc, type: 3}
+  - id: UVOperator_Handles_FixArcLength
+    texture: {fileID: 2800000, guid: c5ec4f85125765f4bb184dab3567dde4, type: 3}
+  - id: UVOperator_Handles_FixArcLength_ForAll
+    texture: {fileID: 2800000, guid: 01561107786a66b44825b742f74b4c1a, type: 3}
+  - id: UVOperator_SelectionMode
+    texture: {fileID: 2800000, guid: ef6652d16615f314c904408167510fa9, type: 3}
+  - id: UVOperator_Transforms_HideByUnwrapGroup
+    texture: {fileID: 2800000, guid: 2ebccd4e9919e234194f6c85be2e99e3, type: 3}

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1337209931, guid: cb982876f862dda4c84cfd49bae5a49b, type: 3}
+  m_Name: EdgeSelection
+  m_EditorClassIdentifier: 
+  topElementName: ShapeOperator
+  elementname: EdgeSelection
+  iconSet: []
+  title: Edge
+  paragraphs:
+  - icons: []
+    texts:
+    - '<b>Normal</b>: normal assigned to the center of the edge. Can be recalculated
+      with one of the following procedures.'
+    mod: 0
+  - icons: []
+    texts:
+    - '<i>Tip: the alternative algorithms here affects only the edge you are pointing.
+      They produce the same result on the most simple edges, results may differ on
+      edges with a more complex shape.</i>'
+    mod: 0
+  - icons:
+    - {fileID: 2800000, guid: 513b4b6de66970a40a6982e4f9b87c8c, type: 3}
+    texts:
+    - '<b>Axis Normal</b>: an algorithm which takes into account the shape of the
+      Edge, the two editing normals on the two extreme vertices and also the direction
+      of other edges nearby the extremes. Such direction is called the Axis. Axis
+      Normal is more correct to use in situation where there are sharp angles between
+      edges, and it is a generally good choice.'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 186a22a23c1190247ae97d52d9e3eccb, type: 3}
+    texts:
+    - '<b>Edge Normal</b>: an algorithm which takes into accounts only the shape of
+      the Edge and the two editing normals on the two extremes vertices. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 77cfef7948c0bca48a0f3aa9de81e66b, type: 3}
+    texts:
+    - '<b>Balance (or Sphere) Normal </b>: an algorithm which takes into account the
+      shape of the Edge, the two editing normals on the two extremes vertices and
+      also the position of any opposite edge (for quads) or opposite vertex (for triangles)
+      on adjacent polygons. The Editing Normal will be perfectly balanced between
+      the two opposite positions: this is correct on spherical surfaces equally subdivided
+      (as it is for spherical primitives) .'
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: 1581a076cdf95b6419a4e5fa3458aad8, type: 3}
+    texts:
+    - '<b>Curvature Normal </b>: an algorithm which takes into accounts only the shape
+      of the Edge, forcing the Normal to follow the direction towards which the curve
+      of the edge bends. In some situations, it gives a better results, but most of
+      the times it doesn''t. '
+    mod: 3
+  - icons:
+    - {fileID: 2800000, guid: d683e67f52df01d4f99014bffa906d3a, type: 3}
+    texts:
+    - '<i><b>Tip</b>: when <b>normals</b> is active in <b>Selection and Visibility</b>
+      section, the editing normal can be changed in scene with a proper tool. You
+      can find it exiting from the center of the edge, with a curved arrow on its
+      top.</i>'
+    mod: 3
