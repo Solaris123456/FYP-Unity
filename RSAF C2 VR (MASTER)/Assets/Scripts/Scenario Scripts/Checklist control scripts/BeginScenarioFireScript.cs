@@ -7,12 +7,13 @@ using Valve.VR;
 public class BeginScenarioFireScript : MonoBehaviour
 {
     public GameObject[] FlammableTargets;
-    private List<GameObject> selectedOptions = new List<GameObject>();
+    public List<GameObject> selectedOptions = new List<GameObject>();
     public GameObject FireTick;
     //public GameObject ScenarioChecker;
     //public GameObject ManualPickedflag;
     //public GameObject ConfirmedInspectionflag;
-    public SuccessRackCounter RackCounter;
+    //public SuccessRackCounter RackCounter;
+    public GameObject Rackcounter;
     public GameObject TimerStartFlag;
     public SafetyInjectInput safetyInjectInput;
     public int MinNoRacks = 1;
@@ -52,7 +53,6 @@ public class BeginScenarioFireScript : MonoBehaviour
         {
             numTargets = 1;
         }
-        RackCounter.RacksToCount += numTargets;
 
         if (!TimerStartFlag.activeSelf)
         {
@@ -71,10 +71,10 @@ public class BeginScenarioFireScript : MonoBehaviour
             GameObject selectedOption = options[selectedIndex];
             selectedOptions.Add(selectedOption);
             options.RemoveAt(selectedIndex);
-        }
-
+        } 
         StartCoroutine(ActivateTargets());
         Debug.Log("Process Started");
+        Rackcounter.SetActive(true);
     }
 
     private IEnumerator ActivateTargets()

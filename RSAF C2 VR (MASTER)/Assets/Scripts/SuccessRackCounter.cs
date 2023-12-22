@@ -2,29 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class BeginScenarioScripts
+{
+    public BeginScenarioFireScript beginScenarioFireScript;
+}
 public class SuccessRackCounter : MonoBehaviour
 {
-    public GameObject RackCounter;
-    public int SuccessfulRackCount = 0;
-    public int RacksToCount = 0;
-    public GameObject AllRacksDone;
+    public BeginScenarioScripts[] beginScenarioScripts;
+    public List<GameObject> selectedRacks = new List<GameObject>();
+    public int RacksLeft = 0;
+    public bool AllRacksDone = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        selectedRacks.Clear();
+        for (int i = 0; i < beginScenarioScripts.Length; i++)
+        {
+            for (int x = 0; x < beginScenarioScripts[i].beginScenarioFireScript.selectedOptions.Count; x++)
+            {
+                selectedRacks.Add(beginScenarioScripts[i].beginScenarioFireScript.selectedOptions[x]);
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!RackCounter.activeSelf && SuccessfulRackCount < RacksToCount)
+        RacksLeft = 0;
+        for (int racknum = 0; racknum < selectedRacks.Count; racknum++)
         {
-            SuccessfulRackCount++;
-            RackCounter.SetActive(true);
-            if (SuccessfulRackCount == RacksToCount)
+            if (selectedRacks[racknum].activeSelf)
             {
-                AllRacksDone.SetActive(true);
+                RacksLeft++;
             }
+        }
+        if (RacksLeft == 0 && AllRacksDone == false)
+        {
+            AllRacksDone = true;    
         }
     }
 }
