@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class BeginScenarioScripts
@@ -13,6 +14,7 @@ public class SuccessRackCounter : MonoBehaviour
     public List<GameObject> selectedRacks = new List<GameObject>();
     public int RacksLeft = 0;
     public bool AllRacksDone = false;
+    public UnityEvent racksfinished;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +41,8 @@ public class SuccessRackCounter : MonoBehaviour
         }
         if (RacksLeft == 0 && AllRacksDone == false)
         {
-            AllRacksDone = true;    
+            AllRacksDone = true;
+            racksfinished.Invoke();
         }
     }
 }
