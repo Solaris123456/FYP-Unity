@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class readMe : MonoBehaviour
 {
-    // Start is called before the first frame update
-   /*
+    /*
+  
+  Note
+
     */
 }

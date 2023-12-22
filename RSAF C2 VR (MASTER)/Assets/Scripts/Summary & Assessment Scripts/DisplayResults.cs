@@ -7,7 +7,8 @@ public class DisplayResults : MonoBehaviour
 {
     public Text timeTakenText;
     public Text lightErrorFoundText;
-    public Text wrongButtonPressedText;
+    public Text fm200CheckFailText;
+    public Text ceilingErrorFoundText;
 
     void Start()
     {
@@ -21,10 +22,13 @@ public class DisplayResults : MonoBehaviour
         
         float timeTaken = float.Parse(results["TimeTaken"]);
         bool lightErrorFound = bool.Parse(results["LightErrorFound"]);
+        bool ceilingErrorFound = bool.Parse(results["CeilingErrorFound"]);
         bool Fm200CheckFail = bool.Parse(results["Fm200CheckFail"]);
+
 
         timeTakenText.text = "Time Taken: " + timeTaken;
         lightErrorFoundText.text = "Light Error Found: " + (lightErrorFound ? "Yes" : "No");
-        wrongButtonPressedText.text = "Fm200 Check Fail: " + (Fm200CheckFail ? "Yes" : "No");
+        ceilingErrorFoundText.text = "Light Error Found: " + (ceilingErrorFound ? "Yes" : "No");
+        fm200CheckFailText.text = "Fm200 Check Fail: " + (Fm200CheckFail ? "Yes" : "No");
     }
 }
