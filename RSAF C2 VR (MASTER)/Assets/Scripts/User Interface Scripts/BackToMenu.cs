@@ -64,7 +64,7 @@ public class BackToMenu : MonoBehaviour
     void LoadUserData()
     {
         users.Clear();
-        using (StreamReader reader = new StreamReader("Accounts.csv"))
+        using (StreamReader reader = new StreamReader(Application.dataPath + "/Accounts.csv"))
         {
             string line;
             while ((line = reader.ReadLine()) != null)
