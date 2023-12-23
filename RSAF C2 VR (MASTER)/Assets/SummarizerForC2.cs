@@ -11,6 +11,7 @@ public class SummarizerForC2 : MonoBehaviour
     public EventTimer eventTimer;
     public GameObject timerFlag;
     public GameObject GameCompleteTrigger;
+    public AudioSource NotDoneAudio;
 
     public bool trainingMode = false;
     public float FinalTime = 0;
@@ -74,6 +75,7 @@ public class SummarizerForC2 : MonoBehaviour
                 }
                 else
                 {
+                    NotDoneAudio.Play();
                     if (PressedWithoutFinishing == false)
                     {
                         PressedWithoutFinishing = true;
@@ -83,6 +85,7 @@ public class SummarizerForC2 : MonoBehaviour
         }
         else
         {
+            NotDoneAudio.Play();
             if (PressedWithoutFinishing == false)
             {
                 PressedWithoutFinishing = true;
