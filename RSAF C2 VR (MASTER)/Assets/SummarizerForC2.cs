@@ -7,6 +7,7 @@ public class SummarizerForC2 : MonoBehaviour
 {
     public SuccessfulSafetyInject successfulSafetyInject;
     public SuccessRackCounter successfulRackCounter;
+    public StoreData storeData;
     public EventTimer eventTimer;
     public GameObject timerFlag;
     public GameObject GameCompleteTrigger;
@@ -62,6 +63,7 @@ public class SummarizerForC2 : MonoBehaviour
             if (trainingMode == false)
             {
                 StopTheGame();
+                StoreDataForC2();
             }
             else
             {
@@ -69,6 +71,13 @@ public class SummarizerForC2 : MonoBehaviour
                 if(LightCheck && CeilingCheck && Fm200)
                 {
                     StopTheGame();
+                }
+                else
+                {
+                    if (PressedWithoutFinishing == false)
+                    {
+                        PressedWithoutFinishing = true;
+                    }
                 }
             }
         }
@@ -85,6 +94,14 @@ public class SummarizerForC2 : MonoBehaviour
         timerFlag.SetActive(false);
         FinalTime = eventTimer.RecordedTime;
         GameCompleteTrigger.SetActive(true);
+    }
+    public void StoreDataForC2()
+    {
+        storeData.timeTaken = FinalTime;
+        storeData.lightErrorFound = LightCheck;
+        storeData.ceilingErrorFound = CeilingCheck;
+        storeData.Fm200CheckFail = Fm200;
+        storeData.StoreSimulationResults();
     }
 }
 
