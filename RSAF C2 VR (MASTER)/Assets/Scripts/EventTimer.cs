@@ -2,18 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
-using TMPro;
-using UnityEngine.Profiling;
 
 public class EventTimer : MonoBehaviour
 {
     public GameObject TimerActivationFlag;
-    public TextMeshProUGUI TimerText;
-    public TextMeshProUGUI MillisecondsText;
-    public TextMeshProUGUI MillisecondsText2;
     public float RecordedTime;
     public float Timer;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,27 +21,11 @@ public class EventTimer : MonoBehaviour
         if (TimerActivationFlag.activeSelf)
         {
             Timer += Time.deltaTime;
-            DisplayTime(Timer);
         }
         else
         {
-            RecordedTime = Mathf.FloorToInt(Timer * 1000) / 1000;
-            DisplayTime(RecordedTime);
+            RecordedTime = Timer;
             Timer = 0;
         }
     }
-
-    public void DisplayTime(float Timing)
-    {
-        var minutes = Mathf.FloorToInt(Timing / 60);
-        var seconds = Mathf.FloorToInt(Timing - minutes * 60);
-        string gameTimeClockDisplay = string.Format("{0:00}:{1:00}", seconds, minutes);
-        TimerText.text = gameTimeClockDisplay;
-
-        var miliseconds = Mathf.FloorToInt((Timing - minutes * 60 - seconds) * 1000);
-        string milisecondsDisplay = string.Format("{0:000}", miliseconds);
-        MillisecondsText.text = milisecondsDisplay;
-        MillisecondsText2.text = MillisecondsText.text;
-    }
-
 }
