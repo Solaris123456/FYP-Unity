@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using TMPro;
 using UnityEngine;
 
@@ -43,9 +40,11 @@ public class EventTimer : MonoBehaviour
         string gameTimeClockDisplay = string.Format("{0:00}:{1:00}", seconds, minutes);
         TimerText.text = gameTimeClockDisplay;
 
+        /*
         var miliseconds = Mathf.FloorToInt((Timing - minutes * 60 - seconds) * 1000);
         string milisecondsDisplay = string.Format("{0:000}", miliseconds);
         MillisecondsText.text = milisecondsDisplay;
         MillisecondsText2.text = MillisecondsText.text;
+        */
     }
 }

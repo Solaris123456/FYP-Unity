@@ -53,15 +53,6 @@ public class BeginScenarioFireScript : MonoBehaviour
             numTargets = 1;
         }
 
-        if (!TimerStartFlag.activeSelf)
-        {
-            TimerStartFlag.SetActive(true);
-        }
-        if (!safetyInjectInput.activated)
-        {
-            safetyInjectInput.SafeInjectStart();
-        }
-
         List<GameObject> options = new List<GameObject>(FlammableTargets);
 
         for (int i = 0; i < numTargets; i++)
@@ -73,9 +64,18 @@ public class BeginScenarioFireScript : MonoBehaviour
         } 
         StartCoroutine(ActivateTargets());
         Debug.Log("Process Started");
+
         if (!Rackcounter.activeSelf)
         {
             Rackcounter.SetActive(true);
+        }
+        if (!TimerStartFlag.activeSelf)
+        {
+            TimerStartFlag.SetActive(true);
+        }
+        if (!safetyInjectInput.activated)
+        {
+            safetyInjectInput.SafeInjectStart();
         }
     }
 

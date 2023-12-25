@@ -187,6 +187,20 @@ MonoBehaviour:
   beginScenarioScripts:
   - beginScenarioFireScript: {fileID: 0}
   selectedRacks: []
-  SuccessfulRackCount: 0
-  RacksToCount: 0
+  RacksLeft: 0
   AllRacksDone: 0
+  racksfinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6854070400108166085}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

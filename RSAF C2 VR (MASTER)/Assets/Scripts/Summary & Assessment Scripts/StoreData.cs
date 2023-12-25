@@ -8,7 +8,7 @@ public class StoreData : MonoBehaviour
     public bool ceilingErrorFound;
     public bool Fm200CheckFail; // public bool for wrong button pressed
     public float timeTaken;
-
+ 
     public void StoreSimulationResults()
     {
         // CalculateTimeTaken(); // The time taken for the simulation

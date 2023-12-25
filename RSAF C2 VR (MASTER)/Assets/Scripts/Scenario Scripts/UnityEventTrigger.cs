@@ -7,6 +7,7 @@ public class UnityEventTrigger : MonoBehaviour
 {
     public UnityEvent TargetElement;
     public GameObject ReferenceElement;
+    public bool done = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +18,13 @@ public class UnityEventTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!ReferenceElement.activeSelf)
+        if (!done)
         {
-            TargetElement.Invoke();
+            if (!ReferenceElement.activeSelf)
+            {
+                TargetElement.Invoke();
+                done = true;
+            }
         }
     }
 }

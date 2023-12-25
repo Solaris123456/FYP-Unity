@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 648354258648158104}
-  - component: {fileID: 7716261637987061326}
+  - component: {fileID: 5393541917546547031}
   m_Layer: 0
   m_Name: TimerActivationFlag
   m_TagString: Untagged
@@ -539,7 +539,7 @@ Transform:
   m_Father: {fileID: 2468320537183138342}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7716261637987061326
+--- !u!114 &5393541917546547031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -548,10 +548,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3897958296991354271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a90f7221fce8496429f74a0e7b99c1bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 6959835633a038748a0b2bab8c8d524c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activator: {fileID: 6723823964206374168}
+  Invoking:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6723823964206374168}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &5527489265615736191
 GameObject:
   m_ObjectHideFlags: 0

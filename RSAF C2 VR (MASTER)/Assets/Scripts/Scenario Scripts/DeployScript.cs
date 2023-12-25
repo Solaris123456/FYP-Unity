@@ -1,3 +1,4 @@
+using Palmmedia.ReportGenerator.Core;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Remoting.Messaging;
@@ -13,6 +14,7 @@ public class DeployScript : MonoBehaviour
     public GameObject DeployExitUI;
     public GameObject DeployChecklist;
     public GameObject DeployChatlog;
+    public bool done = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,14 +25,18 @@ public class DeployScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!FM200Checker.activeSelf)
+        if (!done)
         {
-            VoiceRecog.SetActive(false);
-            ExitUI.SetActive(false);
+            if (!FM200Checker.activeSelf)
+            {
+                VoiceRecog.SetActive(false);
+                ExitUI.SetActive(false);
 
-            DeployExitUI.SetActive(true);
-            DeployChecklist.SetActive(true);
-            DeployChatlog.SetActive(true);
+                DeployExitUI.SetActive(true);
+                DeployChecklist.SetActive(true);
+                DeployChatlog.SetActive(true);
+                done = true;
+            }
         }
     }
 }

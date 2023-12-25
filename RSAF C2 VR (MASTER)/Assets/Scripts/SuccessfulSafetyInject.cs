@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [System.Serializable]
-public class safetyInjectToCheck
+public class SafetyInjectToCheck
 {
     public string safetyInjectName;
     public bool alldone;
@@ -14,7 +14,7 @@ public class safetyInjectToCheck
 }
 public class SuccessfulSafetyInject : MonoBehaviour
 {
-    public safetyInjectToCheck[] safetyInjectToCheck; 
+    public SafetyInjectToCheck[] safetyInjectToCheck; 
     public SafetyInjectInput safetyInjectInput;
     
     public void safetyInjectCheck()

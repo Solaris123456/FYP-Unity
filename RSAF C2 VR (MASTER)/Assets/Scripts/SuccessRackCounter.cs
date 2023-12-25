@@ -30,7 +30,6 @@ public class SuccessRackCounter : MonoBehaviour
        
     }
 
-    // Update is called once per frame
     void Update()
     {
         RacksLeft = 0;
@@ -47,4 +46,5 @@ public class SuccessRackCounter : MonoBehaviour
             racksfinished.Invoke();
         }
     }
+    
 }
