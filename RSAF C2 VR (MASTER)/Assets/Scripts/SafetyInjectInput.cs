@@ -1,19 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using System.Text.RegularExpressions;
 
-using System.Globalization;
-
-using Valve.VR;
 //using NativeWebSocket;
-using UnityEngine.Events;
-using UnityEditor.Animations;
-using UnityEngine.UIElements;
-using EPOOutline.Demo;
-using UnityEditor.PackageManager;
-using System.Diagnostics.CodeAnalysis;
+
 
 [System.Serializable]
 public class SafetyInjector
@@ -37,7 +26,7 @@ public class SafetyInjectInput : MonoBehaviour
     private Transform childObject;
     private Transform TargetObject;
     private int RNG;
-    private int count;
+    private float count;
     private int numoftargets;
     //public GameObject CeilingBoards;
     //public GameObject Lights;
@@ -89,13 +78,13 @@ public class SafetyInjectInput : MonoBehaviour
 
             for (int i = 0; i < numoftargets; i++)
             {
-                RNG = Random.Range(0, count * 2);
-                childObject = Temporary.Find(safetyInjectors[safetynum].targetRandomObjectBaseName + " (" + RNG + ") ");
+                RNG = Random.Range(0, Mathf.FloorToInt(count * 3 / 2));
+                childObject = Temporary.Find(string.Format("{0} ({1})", safetyInjectors[safetynum].targetRandomObjectBaseName, RNG));
 
                 while (childObject == null || childObject.gameObject.activeSelf == safetyInjectors[safetynum].pathActivationsStatus)
                 {
-                    RNG = Random.Range(0, count * 2);
-                    childObject = Temporary.Find(safetyInjectors[safetynum].targetRandomObjectBaseName + " (" + RNG + ")");
+                    RNG = Random.Range(0, Mathf.FloorToInt(count * 3 / 2));
+                    childObject = Temporary.Find(string.Format("{0} ({1})", safetyInjectors[safetynum].targetRandomObjectBaseName, RNG));
                 }
                 TargetObject = childObject;
                 //Randomly pick any target that has not been activated

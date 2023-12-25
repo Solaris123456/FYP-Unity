@@ -48,5 +48,4 @@ public class EventTimer : MonoBehaviour
         MillisecondsText.text = milisecondsDisplay;
         MillisecondsText2.text = MillisecondsText.text;
     }
-
 }
