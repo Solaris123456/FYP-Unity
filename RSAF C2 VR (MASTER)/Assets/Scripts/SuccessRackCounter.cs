@@ -1,35 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[System.Serializable]
-public class BeginScenarioScripts
-{
-    public BeginScenarioFireScript beginScenarioFireScript;
-}
+
 public class SuccessRackCounter : MonoBehaviour
 {
-    public BeginScenarioScripts[] beginScenarioScripts;
     public List<GameObject> selectedRacks = new List<GameObject>();
     public int RacksLeft = 0;
     public bool AllRacksDone = false;
     public UnityEvent racksfinished;
     
-    void Start()
-    {
-        selectedRacks.Clear();
-        for (int i = 0; i < beginScenarioScripts.Length; i++)
-        {
-            for (int x = 0; x < beginScenarioScripts[i].beginScenarioFireScript.selectedOptions.Count; x++)
-            {
-                Transform childObject = beginScenarioScripts[i].beginScenarioFireScript.selectedOptions[x].transform.Find("BurnFlag");
-                selectedRacks.Add(childObject.gameObject);
-            }
-        }
-       
-    }
-
     void Update()
     {
         RacksLeft = 0;

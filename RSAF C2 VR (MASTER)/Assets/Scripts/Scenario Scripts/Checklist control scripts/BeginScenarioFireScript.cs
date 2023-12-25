@@ -6,8 +6,9 @@ using UnityEngine;
 public class BeginScenarioFireScript : MonoBehaviour
 {
     public GameObject[] FlammableTargets;
-    public List<GameObject> selectedOptions = new List<GameObject>();
+    private List<GameObject> selectedOptions = new List<GameObject>();
     public GameObject FireTick;
+    public SuccessRackCounter SuccessRackCounter;
     //public GameObject ScenarioChecker;
     //public GameObject ManualPickedflag;
     //public GameObject ConfirmedInspectionflag;
@@ -95,6 +96,8 @@ public class BeginScenarioFireScript : MonoBehaviour
 
             // Check if the selectedOption has a child object named "ChildObject"
             Transform childObject = selectedOption.transform.Find("BurnFlag");
+            SuccessRackCounter.selectedRacks.Add(childObject.gameObject);
+
             if (childObject != null)
             {
                 childObject.gameObject.SetActive(true);
