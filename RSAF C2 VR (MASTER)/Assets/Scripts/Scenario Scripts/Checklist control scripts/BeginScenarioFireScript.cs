@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using UnityEditor;
 using UnityEngine;
 
 public class BeginScenarioFireScript : MonoBehaviour
 {
     public GameObject[] FlammableTargets;
-    private List<GameObject> selectedOptions = new List<GameObject>();
+    public List<int> selectedOptions = new List<int>();
     public GameObject FireTick;
     public SuccessRackCounter SuccessRackCounter;
     //public GameObject ScenarioChecker;
@@ -36,10 +36,10 @@ public class BeginScenarioFireScript : MonoBehaviour
         } 
     }
     */
-
     public void FlameSelector()
     {
         selectedOptions.Clear();
+        //from here
         int numTargets;
         if (MinNoRacks >= MaxNoRacks)
         {
@@ -53,6 +53,75 @@ public class BeginScenarioFireScript : MonoBehaviour
         {
             numTargets = 1;
         }
+        //to here
+        //for stupid people you know
+
+        for (int i = 0; i < numTargets; i++)
+        {
+            int selectedIndex;
+            do { selectedIndex = Random.Range(0, FlammableTargets.Length); } while (selectedOptions.Contains(selectedIndex));
+            selectedOptions.Add(selectedIndex);
+        }
+        //RNG
+
+        for (int x = 0; x < selectedOptions.Count; x++)
+        {
+            int indexvalue = selectedOptions[x];
+            Transform childObject = FlammableTargets[indexvalue].transform.Find("BurnFlag");
+            if (childObject != null)
+            {
+                childObject.gameObject.SetActive(true);
+                Debug.Log("Burn Flag activated");
+            }
+        }
+
+        if (!FireTick.activeSelf)
+        {
+            FireTick.SetActive(true);
+            Debug.Log("Fire Tick Triggered");
+        }
+        Debug.Log("Begin Burn Flag process");
+        //Fire Flag set active
+
+        Debug.Log("Process Started");
+
+        if (!Rackcounter.activeSelf)
+        {
+            Rackcounter.SetActive(true);
+        }
+        if (!TimerStartFlag.activeSelf)
+        {
+            TimerStartFlag.SetActive(true);
+        }
+        //start timer
+
+        if (!safetyInjectInput.activated)
+        {
+            safetyInjectInput.SafeInjectStart();
+        }
+    }
+
+    
+    /*
+    public void FlameSelector()
+    {
+        selectedOptions.Clear();
+        //from here
+        int numTargets;
+        if (MinNoRacks >= MaxNoRacks)
+        {
+            numTargets = MinNoRacks;
+        }
+        else
+        {
+            numTargets = Random.Range(MinNoRacks, MaxNoRacks);
+        }
+        if (numTargets < 1)
+        {
+            numTargets = 1;
+        }
+        //to here
+        //for stupid people you know
 
         List<GameObject> options = new List<GameObject>(FlammableTargets);
 
@@ -105,4 +174,7 @@ public class BeginScenarioFireScript : MonoBehaviour
             }
         }
     }
+    //unused code because it crashes unity every single time (not efficient)
+    */
 }
+// text me if you still dont understand (Lang Wenbo / SP 2023 sem 2 / DARE/FT/3B/02)

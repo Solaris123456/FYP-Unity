@@ -11,11 +11,10 @@ public class SafetyInjector
     public int MaxNumberOfRandomTargets = 1;
     public GameObject SafetyInjectParentGameObject;
     public string targetRandomObjectBaseName;
-    public string[] AllPreviousChildObjectNameInPath;
     public string[] PathUnderTargetObjectToActivate;
     public bool pathActivationsStatus;
     public int TrueTargetCount; //for debugging 
-    public List<GameObject> selectedTargets = new List<GameObject>();
+    public List<int> targetnumber = new List<int>();
 }
 
 public class SafetyInjectInput : MonoBehaviour
@@ -42,24 +41,6 @@ public class SafetyInjectInput : MonoBehaviour
 
             for (int safetynum = 0; safetynum < safetyInjectors.Length; safetynum++)
             {
-                safetyInjectors[safetynum].selectedTargets.Clear(); //clear the gameobject list
-                Temporary = safetyInjectors[safetynum].SafetyInjectParentGameObject.transform;
-
-                /*
-                if (safetyInjectors[safetynum].AllPreviousChildObjectNameInPath.Length > 0)
-                {
-                    for (int x = 0; x < safetyInjectors[safetynum].AllPreviousChildObjectNameInPath.Length; x++)
-                    {
-                        childObject = Temporary.Find(safetyInjectors[safetynum].AllPreviousChildObjectNameInPath[x]);
-                        Temporary = childObject;
-                    }
-                }
-                */
-                // pathfinder to find the parant object of the list of child objects to randomize
-
-                count = Temporary.childCount; // to count how many child objects there are to randomize
-                childObject = null;
-
                 //from here
                 if (safetyInjectors[safetynum].MinNumberOfRandomTargets >= safetyInjectors[safetynum].MaxNumberOfRandomTargets)
                 {
@@ -78,18 +59,17 @@ public class SafetyInjectInput : MonoBehaviour
                 //to here
                 //is just in case some idiot put an invalid range
 
+                safetyInjectors[safetynum].targetnumber.Clear(); //clear the gameobject list
+                Temporary = safetyInjectors[safetynum].SafetyInjectParentGameObject.transform;
+
+                count = Temporary.childCount; // to count how many child objects there are to randomize
+                childObject = null;
+
                 for (int i = 0; i < numoftargets; i++)
                 {
-                    RNG = Random.Range(0, Mathf.FloorToInt(count * 3 / 2));
-                    string RNGName = string.Format("{0} ({1})", safetyInjectors[safetynum].targetRandomObjectBaseName, RNG);
-                    childObject = Temporary.Find(RNGName);
+                    do { RNG = Random.Range(0, Mathf.FloorToInt(count * 3 / 2)); } while (safetyInjectors[safetynum].targetnumber.Contains(RNG));
+                    childObject = Temporary.GetChild(RNG);
 
-                    while (childObject == null || childObject.gameObject.activeSelf == safetyInjectors[safetynum].pathActivationsStatus)
-                    {
-                        RNG = Random.Range(0, Mathf.FloorToInt(count * 3 / 2));
-                        RNGName = string.Format("{0} ({1})", safetyInjectors[safetynum].targetRandomObjectBaseName, RNG);
-                        childObject = Temporary.Find(RNGName);
-                    }
                     TargetObject = childObject;
                     //Randomly pick any target that has not been activated
 
@@ -104,7 +84,6 @@ public class SafetyInjectInput : MonoBehaviour
                     //path finder to find exact targeted child object to activate
 
                     TargetObject.gameObject.SetActive(safetyInjectors[safetynum].pathActivationsStatus);
-                    safetyInjectors[safetynum].selectedTargets.Add(TargetObject.gameObject);
                     //activations of path and adding the object into the list for the checker script to check
 
                     childObject = null;

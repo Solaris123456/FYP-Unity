@@ -184,7 +184,6 @@ public class DeepgramInstance : MonoBehaviour
                                                 currentIndex2++;
                                                 wordMatches[currentIndex2].activated = true;
                                                 allDone = false;
-
                                             }
                                         }
                                         currentIndex2++;
@@ -252,5 +251,17 @@ public class DeepgramInstance : MonoBehaviour
         }
 
         return true;
+    }
+
+    public void DoAllDone()
+    {
+        allDone = true;
+        if (allDone == true)
+        {
+            currentIndex2++;
+            wordMatches[currentIndex2].activated = true;
+            allDone = false;
+
+        }
     }
 }
