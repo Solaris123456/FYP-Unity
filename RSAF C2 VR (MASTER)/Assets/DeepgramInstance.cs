@@ -180,13 +180,6 @@ public class DeepgramInstance : MonoBehaviour
                                             {
                                                 wordMatches[currentIndex2].activated = false;
                                                 currentIndex2--;
-                                                if (allDone == true)
-                                                {
-                                                    currentIndex2++;
-                                                    wordMatches[currentIndex2].activated = true;
-                                                    allDone = false;
-                                                }
-                                                //will only ge to here if you want to use the bool instead of the function below, but note this will needs you to set bool to true 1 cycle before, not in current cycle
                                             }
                                             currentIndex2++;
                                             bypassScript.pressed = false;

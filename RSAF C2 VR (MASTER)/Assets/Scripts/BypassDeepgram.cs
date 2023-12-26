@@ -132,13 +132,6 @@ public class BypassDeepgram : MonoBehaviour
             {
                 deepgramInstance.wordMatches[deepgramInstance.currentIndex2].activated = false; // reset the currentindex active status
                 deepgramInstance.currentIndex2--; // go back i want to be monkey
-                if (deepgramInstance.allDone == true) // if the current wordmatch method is finally done repeating
-                {
-                    deepgramInstance.currentIndex2++; // next method
-                    deepgramInstance.wordMatches[deepgramInstance.currentIndex2].activated = true; // is finally done fr this time
-                    deepgramInstance.allDone = false; // reset all done so that the next element that needs to repeat can repeat
-
-                }
                 //will only ge to here if you want to use the bool instead of the function below, but note this will needs you to set bool to true 1 cycle before, not in current cycle
             }
             deepgramInstance.currentIndex2++; // Next
