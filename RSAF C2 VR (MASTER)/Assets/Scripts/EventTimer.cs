@@ -24,10 +24,10 @@ public class EventTimer : MonoBehaviour
         {
             Timer += Time.deltaTime;
             DisplayTime(Timer);
+            RecordedTime = Mathf.FloorToInt(Timer * 1000) / 1000;
         }
         else
         {
-            RecordedTime = Mathf.FloorToInt(Timer * 1000) / 1000;
             DisplayTime(RecordedTime);
             Debug.Log(RecordedTime);
             Timer = 0;
