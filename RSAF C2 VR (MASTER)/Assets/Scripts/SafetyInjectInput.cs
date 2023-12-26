@@ -25,7 +25,7 @@ public class SafetyInjectInput : MonoBehaviour
     private Transform childObject;
     private Transform TargetObject;
     private int RNG;
-    private float count;
+    private int count;
     private int numoftargets;
     //public GameObject CeilingBoards;
     //public GameObject Lights;
@@ -59,7 +59,7 @@ public class SafetyInjectInput : MonoBehaviour
                 //to here
                 //is just in case some idiot put an invalid range
 
-                safetyInjectors[safetynum].targetnumber.Clear(); //clear the gameobject list
+                safetyInjectors[safetynum].targetnumber.Clear(); //clear the numbers list
                 Temporary = safetyInjectors[safetynum].SafetyInjectParentGameObject.transform;
 
                 count = Temporary.childCount; // to count how many child objects there are to randomize
@@ -67,7 +67,7 @@ public class SafetyInjectInput : MonoBehaviour
 
                 for (int i = 0; i < numoftargets; i++)
                 {
-                    do { RNG = Random.Range(0, Mathf.FloorToInt(count * 3 / 2)); } while (safetyInjectors[safetynum].targetnumber.Contains(RNG));
+                    do { RNG = Random.Range(0, count); } while (safetyInjectors[safetynum].targetnumber.Contains(RNG));
                     childObject = Temporary.GetChild(RNG);
 
                     TargetObject = childObject;
