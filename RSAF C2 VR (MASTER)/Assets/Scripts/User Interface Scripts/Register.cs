@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,10 +23,15 @@ public class Register : MonoBehaviour
     public Button registerButton;
     public TMP_Text messageText;
 
+    public bool lightErrorFound; // public bool for light error found
+    public bool ceilingErrorFound;
+    public bool Fm200CheckFail; // public bool for wrong button pressed
+    public float timeTaken;
+
     private List<User> users = new List<User>();
 
-    private const string EncryptionKey = "QgaTO6Tqj1Jg0VwZgehmXF6uQXKK84WkXnwldAjPNlI=";
-    private const string InitializationVector = "Vo7arMerutWiGl+zCjdhSA==";
+    //(ignore this) private const string EncryptionKey = "QgaTO6Tqj1Jg0VwZgehmXF6uQXKK84WkXnwldAjPNlI=";
+    //(ignore this) private const string InitializationVector = "Vo7arMerutWiGl+zCjdhSA==";
     private const string PasswordSalt = "UGFzc3dvcmRTYWx0";
 
     string trainingMode = "1";
@@ -33,26 +39,11 @@ public class Register : MonoBehaviour
 
     public BNG.SceneLoader sceneLoader;
 
-    /*private void GenerateKeyAndIV()
-    {
-        using (Aes aes = Aes.Create())
-        {
-            // Generate a new key and IV.
-            aes.GenerateKey();
-            aes.GenerateIV();
-
-            // Get the key and IV as Base64 strings.
-            EncryptionKey = Convert.ToBase64String(aes.Key);
-            InitializationVector = Convert.ToBase64String(aes.IV);
-
-            Debug.Log($"Key: {EncryptionKey}");
-            Debug.Log($"IV: {InitializationVector}");
-        }
-    }*/
+    
     void Start()
     {
         LoadUserData();
-        //GenerateKeyAndIV();
+        //(ignore this) GenerateKeyAndIV();
 
     }
 
@@ -60,6 +51,12 @@ public class Register : MonoBehaviour
     {
         string username = nameInputField.text;
         string password = passwordInputField.text;
+
+        // Logout the current user before logging in a new user
+        if (GameManager.Instance.CurrentUser != null)
+        {
+            Logout();
+        }
 
         foreach (User user in users)
         {
@@ -122,12 +119,16 @@ public class Register : MonoBehaviour
         {
             foreach (User user in users)
             {
-                string encryptedUsername = user.Username;/*Encrypt(user.Username)*/
+                string encryptedUsername = user.Username;
                 // Only write attempts data if user has made at least one attempt
-                if (user.Attempts.Count > 0)
+                if (user.Attempts.Count > 0 && user.Attempts[0] != -1)
                 {
-                    string attemptsData = String.Join(",", user.Attempts.Select(a => a == -1 ? "Failed" : a.ToString()));
-                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);
+                    float finalTimeTaken = user.Attempts[0];
+                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + finalTimeTaken);
+
+
+                    /*string attemptsData = String.Join(",", user.Attempts.Select(a => a == -1 ? "Failed" : a.ToString()));
+                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);*/
                 }
                 else
                 {
@@ -147,78 +148,35 @@ public class Register : MonoBehaviour
             while ((line = reader.ReadLine()) != null)
             {
                 string[] parts = line.Split(',');
-                string decryptedUsername = parts[0];//Decrypt(parts[0])
+                string decryptedUsername = parts[0];
                 string encryptedPassword = parts[1];
                 string Category = parts[2];
 
-                List<float> attempts = new List<float>();
+                float finalTimeTaken = -1;
+                if (parts.Length > 3)
+                {
+                    float.TryParse(parts[3], out finalTimeTaken);
+                }
+                /*List<float> attempts = new List<float>();
                 for (int i = 3; i < parts.Length; i++)
                 {
                     if (!string.IsNullOrEmpty(parts[i]) && float.TryParse(parts[i], out float timeTaken))
                     {
                         attempts.Add(timeTaken);
                     }
-                    /*else
+                    else
                     {
                         attempts.Add(-1);
-                    }*/
-                }
+                    }
+                }*/
 
-                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };
+                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = new List<float>() { finalTimeTaken } };
                 users.Add(user);
             }
         }
     }
 
-    /*private string Encrypt(string value)
-    {
-        byte[] encryptedBytes;
-        using (Aes aes = Aes.Create())
-        {
-            aes.Key = Convert.FromBase64String(EncryptionKey);
-            aes.IV = Convert.FromBase64String(InitializationVector);
-
-            ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
-
-            using (MemoryStream ms = new MemoryStream())
-            {
-                using (CryptoStream cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
-                {
-                    using (StreamWriter sw = new StreamWriter(cs))
-                    {
-                        sw.Write(value);
-                    }
-                }
-                encryptedBytes = ms.ToArray();
-            }
-        }
-        return Convert.ToBase64String(encryptedBytes);
-    }*/
-
-    /*private string Decrypt(string value)
-    {
-        byte[] encryptedBytes = Convert.FromBase64String(value);
-        string decryptedValue;
-        using (Aes aes = Aes.Create())
-        {
-            aes.Key = Convert.FromBase64String(EncryptionKey);
-            aes.IV = Convert.FromBase64String(InitializationVector);
-
-            ICryptoTransform decryptor = aes.CreateDecryptor(aes.Key, aes.IV);
-
-            using (MemoryStream ms = new MemoryStream(encryptedBytes))
-            {
-                using (CryptoStream cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))
-                {
-                    using (StreamReader sr = new StreamReader(cs))
-                    {
-                        decryptedValue = sr.ReadToEnd();
-                    }
-                }
-            }
-        }
-        return decryptedValue;
-    }*/
+    
 
     private string EncryptPassword(string password)
     {
@@ -289,6 +247,15 @@ public class Register : MonoBehaviour
             }
         }
     }
+    public void SaveFinalTimeTaken(float finalTimeTaken)
+    {
+        using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
+        {
+            string encryptedUsername = GameManager.Instance.CurrentUser.Username;
+            writer.WriteLine(encryptedUsername + "," + GameManager.Instance.CurrentUser.Password + "," + GameManager.Instance.CurrentUser.category + "," + finalTimeTaken);
+        }
+        Debug.Log("Final time taken saved");
+    }
     IEnumerator ClearMessageAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -296,7 +263,9 @@ public class Register : MonoBehaviour
     }
     public void CompleteSimulation(float timeTaken)
     {
-        GameManager.Instance.CurrentUser.Attempts.Add(timeTaken);
+        string timeTakenString = timeTaken.ToString();
+        //GameManager.Instance.CurrentUser.Attempts.Add(timeTaken);
+        GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},CeilingErrorFound={ceilingErrorFound},Fm200CheckFail={Fm200CheckFail}";
         // Save user data after updating
         SaveUserData();
     }
