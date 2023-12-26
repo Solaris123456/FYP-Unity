@@ -119,8 +119,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  selectedOptions: []
+  selectedOptions: 
   FireTick: {fileID: 0}
+  SuccessRackCounter: {fileID: 6854070400108166087}
   Rackcounter: {fileID: 6854070400108166085}
   TimerStartFlag: {fileID: 0}
   safetyInjectInput: {fileID: 4217907516579215613}
@@ -184,9 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e77e68b8b4b89848ac86e188fb1cf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginScenarioScripts:
-  - beginScenarioFireScript: {fileID: 0}
-  selectedRacks: []
+  beginScenarioFireScript: {fileID: 0}
   RacksLeft: 0
   AllRacksDone: 0
   racksfinished:
