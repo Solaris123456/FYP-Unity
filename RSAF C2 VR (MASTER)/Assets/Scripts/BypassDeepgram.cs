@@ -122,19 +122,22 @@ public class BypassDeepgram : MonoBehaviour
     public void ActivateBypass()
     {
         // Check if all previous elements have been activated
-        deepgramInstance.wordMatches[deepgramInstance.currentIndex2].activated = true; //the current index was activated
         if (AllPreviousElementsActivated(deepgramInstance.wordMatches, deepgramInstance.wordMatches[deepgramInstance.currentIndex2]))
         {
+            deepgramInstance.wordMatches[deepgramInstance.currentIndex2].activated = true; //the current index was activated
             // Invoke (bypass) the UnityEvent associated with the current WordMatch method element
-            deepgramInstance.wordMatches[deepgramInstance.currentIndex2].method.Invoke();
-
+            
             if (deepgramInstance.wordMatches[deepgramInstance.currentIndex2].singleUseOnly == false) // if the method element is multiple use
             {
                 deepgramInstance.wordMatches[deepgramInstance.currentIndex2].activated = false; // reset the currentindex active status
-                deepgramInstance.currentIndex2--; // go back i want to be monkey
-                //will only ge to here if you want to use the bool instead of the function below, but note this will needs you to set bool to true 1 cycle before, not in current cycle
+          
+                deepgramInstance.wordMatches[deepgramInstance.currentIndex2].method.Invoke();
             }
-            deepgramInstance.currentIndex2++; // Next
+            else
+            {
+                deepgramInstance.wordMatches[deepgramInstance.currentIndex2].method.Invoke();
+                deepgramInstance.currentIndex2++; // Next
+            }
             Debug.Log(deepgramInstance.currentIndex2);
         }
     }

@@ -101,104 +101,108 @@ public class DeepgramInstance : MonoBehaviour
 
         websocket.OnMessage += (bytes) =>
         {
-            
-                var message = System.Text.Encoding.UTF8.GetString(bytes);
-                Debug.Log("OnMessage: " + message);
-                DeepgramResponse deepgramResponse = JsonUtility.FromJson<DeepgramResponse>(message);
-                if (deepgramResponse.is_final)
+
+            var message = System.Text.Encoding.UTF8.GetString(bytes);
+            Debug.Log("OnMessage: " + message);
+            DeepgramResponse deepgramResponse = JsonUtility.FromJson<DeepgramResponse>(message);
+            if (deepgramResponse.is_final)
+            {
+                var transcript = deepgramResponse.channel.alternatives[0].transcript;
+                Debug.Log(transcript);
+
+                string[] words = transcript.Split(' ');
+
+                int wordsToMatch = Mathf.CeilToInt(words.Length * tolerance);
+
+                // Reset activated flag for all word matches
+                foreach (var wordMatch in wordMatches)
                 {
-                    var transcript = deepgramResponse.channel.alternatives[0].transcript;
-                    Debug.Log(transcript);
+                    wordMatch.matchedCount = 0;
+                    //wordMatch.activated = false;
+                }
 
-                    string[] words = transcript.Split(' ');
+                for (int i = 0; i < words.Length; i++)
+                {
+                    string word = words[i];
 
-                    int wordsToMatch = Mathf.CeilToInt(words.Length * tolerance);
-
-                    // Reset activated flag for all word matches
-                    foreach (var wordMatch in wordMatches)
+                    if (currentIndex2 < wordMatches.Length)
                     {
-                        wordMatch.matchedCount = 0;
-                        //wordMatch.activated = false;
-                    }
-
-                    for (int i = 0; i < words.Length; i++)
-                    {
-                        string word = words[i];
-
-                        if (currentIndex2 < wordMatches.Length)
+                        if (EnabledWords && !wordMatches[currentIndex2].audiocheck.isPlaying)
                         {
-                            if (EnabledWords && !wordMatches[currentIndex2].audiocheck.isPlaying)
+                            /*
+                            foreach (var wordMatch in wordMatches)
                             {
-                                /*
-                                foreach (var wordMatch in wordMatches)
+                                if (!wordMatch.activated && Array.Exists(wordMatch.words, w => w == word))
                                 {
-                                    if (!wordMatch.activated && Array.Exists(wordMatch.words, w => w == word))
+                                    wordMatch.matchedCount++;
+
+                                    if (wordMatch.matchedCount >= wordsToMatch)
                                     {
-                                        wordMatch.matchedCount++;
-
-                                        if (wordMatch.matchedCount >= wordsToMatch)
-                                        {
-                                            wordMatch.activated = true;
-
-                                            // Invoke the method only if all previous elements have been activated
-                                            if (AllPreviousElementsActivated(wordMatches, wordMatch))
-                                            {
-                                                wordMatch.method.Invoke();
-                                                //wordMatches[currentIndex2].method.Invoke();
-                                                currentIndex2++;
-                                                Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatch) + 1));
-
-                                                if (wordMatch.singleUseOnly)
-                                                {
-                                                    // Remove the word match from the array to prevent further invocation
-                                                    wordMatches = wordMatches.Where(match => match != wordMatch).ToArray();
-                                                }
-                                            }
-                                        }
-
-                                        break;
-                                    }
-                                }
-                                */
-
-                                if (!wordMatches[currentIndex2].activated && Array.Exists(wordMatches[currentIndex2].words, w => w == word))
-                                {
-                                    wordMatches[currentIndex2].matchedCount++;
-
-                                    if (wordMatches[currentIndex2].matchedCount >= wordsToMatch)
-                                    {
-                                        wordMatches[currentIndex2].activated = true;
+                                        wordMatch.activated = true;
 
                                         // Invoke the method only if all previous elements have been activated
-                                        if (AllPreviousElementsActivated(wordMatches, wordMatches[currentIndex2]))
+                                        if (AllPreviousElementsActivated(wordMatches, wordMatch))
+                                        {
+                                            wordMatch.method.Invoke();
+                                            //wordMatches[currentIndex2].method.Invoke();
+                                            currentIndex2++;
+                                            Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatch) + 1));
+
+                                            if (wordMatch.singleUseOnly)
+                                            {
+                                                // Remove the word match from the array to prevent further invocation
+                                                wordMatches = wordMatches.Where(match => match != wordMatch).ToArray();
+                                            }
+                                        }
+                                    }
+
+                                    break;
+                                }
+                            }
+                            */
+
+                            if (!wordMatches[currentIndex2].activated && Array.Exists(wordMatches[currentIndex2].words, w => w == word))
+                            {
+                                wordMatches[currentIndex2].matchedCount++;
+
+                                if (wordMatches[currentIndex2].matchedCount >= wordsToMatch)
+                                {
+                                    wordMatches[currentIndex2].activated = true;
+
+                                    // Invoke the method only if all previous elements have been activated
+                                    if (AllPreviousElementsActivated(wordMatches, wordMatches[currentIndex2]))
+                                    {
+                                        //wordMatches[currentIndex2].method.Invoke();
+                                        Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatches[currentIndex2]) + 1));
+
+                                        wordMatches[currentIndex2].bypassUiPopup.SetActive(false); // deactive bypass pop up
+                                        if (!wordMatches[currentIndex2].singleUseOnly)
+                                        {
+                                            wordMatches[currentIndex2].activated = false;
+                                            wordMatches[currentIndex2].method.Invoke();
+                                        }
+
+                                        else
                                         {
                                             wordMatches[currentIndex2].method.Invoke();
-                                            //wordMatches[currentIndex2].method.Invoke();
-                                            Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatches[currentIndex2]) + 1));
-
-                                            if (!wordMatches[currentIndex2].singleUseOnly)
-                                            {
-                                                wordMatches[currentIndex2].activated = false;
-                                                currentIndex2--;
-                                            }
                                             currentIndex2++;
-                                            bypassScript.pressed = false;
-                                            bypassScript.hold = false;
-                                            bypassScript.addtime = 0;
-                                            bypassScript.timer = 0;
-                                            //bypassimgmenu.SetActive(false); // deactive bypass loading
-                                            wordMatches[currentIndex2].bypassUiPopup.SetActive(false); // deactive bypass pop up
                                         }
-                                        break;
+                                        bypassScript.pressed = false;
+                                        bypassScript.hold = false;
+                                        bypassScript.addtime = 0;
+                                        bypassScript.timer = 0;
+                                        //bypassimgmenu.SetActive(false); // deactive bypass loading
                                     }
+                                    break;
                                 }
                             }
                         }
                     }
-
                 }
-            
-        
+
+            }
+
+
         };
 
         await websocket.Connect();
