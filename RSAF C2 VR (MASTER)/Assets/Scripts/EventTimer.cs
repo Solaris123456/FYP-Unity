@@ -24,7 +24,7 @@ public class EventTimer : MonoBehaviour
         {
             Timer += Time.deltaTime;
             DisplayTime(Timer);
-            RecordedTime = Mathf.FloorToInt(Timer * 1000) / 1000;
+            RecordedTime = Timer;
         }
         else
         {
