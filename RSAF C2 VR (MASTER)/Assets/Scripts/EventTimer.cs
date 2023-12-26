@@ -29,6 +29,7 @@ public class EventTimer : MonoBehaviour
         {
             RecordedTime = Mathf.FloorToInt(Timer * 1000) / 1000;
             DisplayTime(RecordedTime);
+            Debug.Log(RecordedTime);
             Timer = 0;
         }
     }
@@ -37,14 +38,12 @@ public class EventTimer : MonoBehaviour
     {
         var minutes = Mathf.FloorToInt(Timing / 60);
         var seconds = Mathf.FloorToInt(Timing - minutes * 60);
-        string gameTimeClockDisplay = string.Format("{0:00}:{1:00}", seconds, minutes);
+        string gameTimeClockDisplay = string.Format("{0:00}:{1:00}", minutes, seconds);
         TimerText.text = gameTimeClockDisplay;
 
-        /*
         var miliseconds = Mathf.FloorToInt((Timing - minutes * 60 - seconds) * 1000);
         string milisecondsDisplay = string.Format("{0:000}", miliseconds);
         MillisecondsText.text = milisecondsDisplay;
         MillisecondsText2.text = MillisecondsText.text;
-        */
     }
 }
