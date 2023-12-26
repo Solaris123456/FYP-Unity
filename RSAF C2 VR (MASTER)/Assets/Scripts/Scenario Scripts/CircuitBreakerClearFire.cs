@@ -11,7 +11,6 @@ public class CircuitBreakerClearFire : MonoBehaviour
     public GameObject BurnFlag;
     public string Failure;
     public GameObject BreakerChecker;
-    public GameObject SuccessfulCount;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +34,6 @@ public class CircuitBreakerClearFire : MonoBehaviour
             FireTick.SetActive(false);
             Debug.Log("Power to breaker removed");
             BreakerChecker.SetActive(false);
-            SuccessfulCount.SetActive(false);
         }
         else
         {
