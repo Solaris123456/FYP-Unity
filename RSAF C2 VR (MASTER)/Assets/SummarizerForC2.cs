@@ -59,7 +59,7 @@ public class SummarizerForC2 : MonoBehaviour
             }
 
             //training & assessment mode logic
-            if (trainingMode == false)
+            if (!trainingMode)
             {
                 StopTheGame();
                 StoreDataForC2();

@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FYP NORMAL UI 1.unity
     guid: d97ed98f462c03b49bf8cd2a67ef717f
   - enabled: 1
-    path: Assets/Scenes/[VR] C2 room Scenario.unity
-    guid: 86f0b3f132db720479103b2cc1fc4157
-  - enabled: 1
     path: Assets/Scenes/Fail Scene (Circuit Breaker).unity
     guid: 21579d15196ebc845a37fcbb09c35173
   - enabled: 1
@@ -35,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/[VR] C2 room Scenario 2.unity
     guid: bb6977a0de8ffc847a93caf90f469eaf
+  - enabled: 1
+    path: Assets/Scenes/[VR] C2 room Scenario.unity
+    guid: 86f0b3f132db720479103b2cc1fc4157
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 44689fb6e6b1e454aa7564ec9725d79c,
       type: 2}
