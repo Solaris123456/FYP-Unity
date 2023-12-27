@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   successfulSafetyInject: {fileID: 0}
   successfulRackCounter: {fileID: 0}
-  storeData: {fileID: 582375892043758623}
+  register: {fileID: 582375891188619401}
   eventTimer: {fileID: 0}
   timerFlag: {fileID: 0}
   GameCompleteTrigger: {fileID: 582375892043758621}
@@ -77,6 +77,9 @@ MonoBehaviour:
   loginButton: {fileID: 0}
   registerButton: {fileID: 0}
   messageText: {fileID: 0}
+  lightErrorFound: 0
+  ceilingErrorFound: 0
+  Fm200CheckFail: 0
   sceneLoader: {fileID: 0}
 --- !u!1 &582375892043758621
 GameObject:
