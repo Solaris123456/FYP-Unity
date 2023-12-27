@@ -26,7 +26,7 @@ public class SuccessfulSafetyInject : MonoBehaviour
 
             for (int x = 0; x < safetyInjectInput.safetyInjectors[safetynum].targetnumber.Count; x++)
             {
-                Transform childObject = Temporary.GetChild(x);
+                Transform childObject = Temporary.GetChild(safetyInjectInput.safetyInjectors[safetynum].targetnumber[x]);
                 Transform TargetObject = childObject;
 
                 if (safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate.Length > 0)

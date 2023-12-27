@@ -216,6 +216,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.RSAFC2BUILDINGINTERIORwithplaceholders
     Standalone: com.DefaultCompany.RSAF-C2-BUILDING-INTERIOR-with-placeholders-
   buildNumber:
     Standalone: 0
