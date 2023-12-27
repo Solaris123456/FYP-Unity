@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby Assessment.unity
     guid: f44253700fbfe764ab173e6d45d3b7b6
   - enabled: 1
-    path: Assets/Scenes/[VR] C2 room Scenario 2.unity
+    path: Assets/Scenes/[VR] C2 room Scenario 1.unity
     guid: bb6977a0de8ffc847a93caf90f469eaf
   - enabled: 1
     path: Assets/Scenes/[VR] C2 room Scenario.unity
