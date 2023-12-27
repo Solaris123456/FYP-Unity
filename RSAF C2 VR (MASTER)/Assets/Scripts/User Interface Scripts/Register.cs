@@ -26,7 +26,7 @@ public class Register : MonoBehaviour
     public bool lightErrorFound; // public bool for light error found
     public bool ceilingErrorFound;
     public bool Fm200CheckFail; // public bool for wrong button pressed
-    public float timeTaken;
+    //public float timeTaken;
 
     private List<User> users = new List<User>();
 
@@ -247,12 +247,12 @@ public class Register : MonoBehaviour
             }
         }
     }
-    public void SaveFinalTimeTaken(float finalTimeTaken)
+    public void SaveFinalTimeTaken(string fiTimeTaken)
     {
         using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
         {
             string encryptedUsername = GameManager.Instance.CurrentUser.Username;
-            writer.WriteLine(encryptedUsername + "," + GameManager.Instance.CurrentUser.Password + "," + GameManager.Instance.CurrentUser.category + "," + finalTimeTaken);
+            writer.WriteLine(encryptedUsername + "," + GameManager.Instance.CurrentUser.Password + "," + GameManager.Instance.CurrentUser.category + "," + fiTimeTaken);
         }
         Debug.Log("Final time taken saved");
     }
