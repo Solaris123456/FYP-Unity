@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,9 +13,9 @@ public class DisplayResults : MonoBehaviour
     public Text ceilingErrorFoundText;
 
     // Define your penalty times
-    float lightErrorPenalty = 10f; // Replace with your actual penalty time
-    float ceilingErrorPenalty = 20f; // Replace with your actual penalty time
-    float fm200CheckFailPenalty = 30f; // Replace with your actual penalty time
+    public float lightErrorPenalty = 120; // Replace with your actual penalty time
+    public float ceilingErrorPenalty = 120; // Replace with your actual penalty time
+    public float fm200CheckFailPenalty = 120; // Replace with your actual penalty time
 
     void Start()
     {
@@ -37,17 +38,24 @@ public class DisplayResults : MonoBehaviour
         if (ceilingErrorFound) finalTimeTaken += ceilingErrorPenalty;
         if (Fm200CheckFail) finalTimeTaken += fm200CheckFailPenalty;
 
-        originalTimeTakenText.text = "Original Time Taken: " + originalTimeTaken;
-        finalTimeTakenText.text = "Final Time Taken: " + finalTimeTaken;
-        lightErrorFoundText.text = "Light Error Found: " + (lightErrorFound ? "Yes" : "Error was not found: Time Penalty Incurred");
-        ceilingErrorFoundText.text = "Ceiling Error Found: " + (ceilingErrorFound ? "Yes" : "Error was not found: Time Penalty Incurred");
-        fm200CheckFailText.text = "Fm200 Check Fail: " + (Fm200CheckFail ? "Yes" : "Error was not found: Time Penalty Incurred");
+        //float lightErrorPenaltyString = lightErrorPenalty;
+        //lightErrorPenaltyString
+
+        //TimeSpan timeSpan = new TimeSpan((long)(originalTimeTaken * TimeSpan.TicksPerSecond));
+        string ogTimeTaken = originalTimeTaken.ToString(@"mm\:ss\.fff");
+        string fiTimeTaken = finalTimeTaken.ToString(@"mm\:ss\.fff");
+
+        originalTimeTakenText.text = "Original Time Taken: " + ogTimeTaken;
+        finalTimeTakenText.text = "Final Time Taken: " + fiTimeTaken;
+        lightErrorFoundText.text = "Light Error Found: " + (lightErrorFound ? "Yes" : $"Error was not found: Time Penalty of {lightErrorPenalty} Incurred");
+        ceilingErrorFoundText.text = "Ceiling Error Found: " + (ceilingErrorFound ? "Yes" : $"Error was not found: Time Penalty of {ceilingErrorPenalty} Incurred");
+        fm200CheckFailText.text = "Fm200 Check Fail: " + (Fm200CheckFail ? "Yes" : $"Error was not found: Time Penalty of {fm200CheckFailPenalty} Incurred");
 
         // Get a reference to the Register script
         Register registerScript = FindObjectOfType<Register>();
 
         // Call the SaveFinalTimeTaken method with the finalTimeTaken as argument
-        registerScript.SaveFinalTimeTaken(finalTimeTaken);
+        registerScript.SaveFinalTimeTaken(fiTimeTaken);
     }
 }
 
