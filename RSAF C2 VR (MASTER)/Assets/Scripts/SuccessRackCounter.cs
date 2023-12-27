@@ -7,6 +7,7 @@ public class SuccessRackCounter : MonoBehaviour
 {
     //public List<GameObject> selectedRacks = new List<GameObject>();
     public BeginScenarioFireScript beginScenarioFireScript;
+    public AudioSource RacksNotDoneAudio;
     public int RacksLeft = 0;
     public bool AllRacksDone = false;
     public UnityEvent racksfinished;
@@ -28,6 +29,10 @@ public class SuccessRackCounter : MonoBehaviour
         {
             AllRacksDone = true;
             racksfinished.Invoke();
+        }
+        if (RacksLeft != 0 && AllRacksDone == false)
+        {
+            RacksNotDoneAudio.Play();
         }
     }
 

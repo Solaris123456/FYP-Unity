@@ -18,6 +18,7 @@ public class SummarizerForC2 : MonoBehaviour
     public bool PressedWithoutFinishing = false;
     public void Finish()
     {
+        successfulRackCounter.SuccessRackCheck();
         successfulSafetyInject.safetyInjectCheck();
         if (successfulRackCounter.AllRacksDone)
         {
