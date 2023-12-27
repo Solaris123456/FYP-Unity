@@ -10,7 +10,7 @@ public class SafetyInjector
     public int MinNumberOfRandomTargets = 1;
     public int MaxNumberOfRandomTargets = 1;
     public GameObject SafetyInjectParentGameObject;
-    public string targetRandomObjectBaseName;
+    //public string targetRandomObjectBaseName;
     public string[] PathUnderTargetObjectToActivate;
     public bool pathActivationsStatus;
     public int TrueTargetCount; //for debugging 
