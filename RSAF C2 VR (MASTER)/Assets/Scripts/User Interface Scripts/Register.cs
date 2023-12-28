@@ -120,6 +120,18 @@ public class Register : MonoBehaviour
             foreach (User user in users)
             {
                 string encryptedUsername = user.Username;
+                string encryptedPassword = user.Password;
+                string Category = user.category;
+
+                string attempts = string.Join(",", user.Attempts);
+
+                writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
+            }
+
+
+            /*foreach (User user in users)
+            {
+                string encryptedUsername = user.Username;
                 // Only write attempts data if user has made at least one attempt
                 if (user.Attempts.Count > 0 && user.Attempts[0] != -1)
                 {
@@ -127,15 +139,15 @@ public class Register : MonoBehaviour
                     writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + finalTimeTaken);
 
 
-                    /*string attemptsData = String.Join(",", user.Attempts.Select(a => a == -1 ? "Failed" : a.ToString()));
-                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);*/
+                    //string attemptsData = String.Join(",", user.Attempts.Select(a => a == -1 ? "Failed" : a.ToString()));
+                    //writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);
                 }
                 else
                 {
                     // If user has not made any attempts, don't write "Failed"
                     writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
                 }
-            }
+            }*/
         }
         Debug.Log("User data saved");
     }
@@ -151,12 +163,16 @@ public class Register : MonoBehaviour
                 string decryptedUsername = parts[0];
                 string encryptedPassword = parts[1];
                 string Category = parts[2];
-
-                float finalTimeTaken = -1;
+                string attempts = "-1";
+                if (parts.Length > 3)
+                {
+                    attempts = parts[3];
+                }
+                /*float finalTimeTaken = -1;
                 if (parts.Length > 3)
                 {
                     float.TryParse(parts[3], out finalTimeTaken);
-                }
+                }*/
                 /*List<float> attempts = new List<float>();
                 for (int i = 3; i < parts.Length; i++)
                 {
@@ -170,7 +186,7 @@ public class Register : MonoBehaviour
                     }
                 }*/
 
-                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = new List<float>() { finalTimeTaken } };
+                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = new List<string>() { attempts } };
                 users.Add(user);
             }
         }
@@ -249,11 +265,17 @@ public class Register : MonoBehaviour
     }
     public void SaveFinalTimeTaken(string fiTimeTaken)
     {
-        using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
+        User currentUser = GameManager.Instance.CurrentUser;
+        currentUser.Attempts.Add(fiTimeTaken);
+        SaveUserData();
+
+
+
+        /*using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
         {
             string encryptedUsername = GameManager.Instance.CurrentUser.Username;
             writer.WriteLine(encryptedUsername + "," + GameManager.Instance.CurrentUser.Password + "," + GameManager.Instance.CurrentUser.category + "," + fiTimeTaken);
-        }
+        }*/
         Debug.Log("Final time taken saved");
     }
     IEnumerator ClearMessageAfterDelay(float delay)
@@ -267,12 +289,12 @@ public class Register : MonoBehaviour
         //GameManager.Instance.CurrentUser.Attempts.Add(timeTaken);
         GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},CeilingErrorFound={ceilingErrorFound},Fm200CheckFail={Fm200CheckFail}";
         // Save user data after updating
-        SaveUserData();
+        //SaveUserData();
     }
 
     public void FailSimulation()
     {
-        GameManager.Instance.CurrentUser.Attempts.Add(-1);
+        GameManager.Instance.CurrentUser.Attempts.Add("Failed");
         // Save user data after updating
         SaveUserData();
     }
@@ -299,10 +321,16 @@ public class User
     public string Username { get; set; }
     public string Password { get; set; }
     public string category { get; set; }
-    public List<float> Attempts { get; set; } = new List<float>();
+    public List<string> Attempts { get; set; } = new List<string>();
 }
 /*public class Attempt
 {
     public float TimeTaken { get; set; }
     public bool WasSuccessful { get; set; }
 }*/
+
+//to anyone tryna understand: At the end of the simulation, the CompleteSimulation method is invoked. This method takes the time taken by the user to complete the simulation as an argument. The timeTaken value is converted to a string (timeTakenString) and stored in the SimulationResults field of the GameManager.
+//The GameManager's SimulationResults field is then accessed by the DisplayResults script. This script parses the SimulationResults string to extract the game values such as originalTimeTaken, lightErrorFound, ceilingErrorFound, and Fm200CheckFail.
+//The DisplayResults script calculates the finalTimeTaken value based on these game values and the lightErrorPenalty, ceilingErrorPenalty, and fm200CheckFailPenalty values defined in the script.
+//The finalTimeTaken value is then converted to a string (fiTimeTaken) and passed to the SaveFinalTimeTaken method of the Register script. This method adds the fiTimeTaken value to the Attempts list of the current user and immediately calls the SaveUserData method to write the updated Attempts list to the CSV file.
+
