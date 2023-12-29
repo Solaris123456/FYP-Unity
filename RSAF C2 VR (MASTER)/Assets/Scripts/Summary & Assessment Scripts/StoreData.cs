@@ -17,6 +17,6 @@ public class StoreData : MonoBehaviour
         string timeTakenString = timeTaken.ToString();
 
         // Store the results in the GameManager
-        GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},CeilingErrorFound={ceilingErrorFound},Fm200CheckFail ={Fm200CheckFail}";
+        //GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},CeilingErrorFound={ceilingErrorFound},Fm200CheckFail ={Fm200CheckFail}";
     }
 }
