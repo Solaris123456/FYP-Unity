@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class CircuitBreakerClearFire : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class CircuitBreakerClearFire : MonoBehaviour
     public GameObject BurnFlag;
     public string Failure;
     public GameObject BreakerChecker;
+    public UnityEvent ForAssessmentOnly;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,7 @@ public class CircuitBreakerClearFire : MonoBehaviour
         }
         else
         {
+            ForAssessmentOnly.Invoke();
             Debug.Log("Game over due to incorrect breaker input, Returning to menu");
             SceneManager.LoadScene(Failure);
         }
