@@ -123,7 +123,7 @@ public class Register : MonoBehaviour
                 string encryptedPassword = user.Password;
                 string Category = user.category;
                 Debug.Log($"{user.Attempts}");
-                string attempts = string.Join(",", GameManager.Instance.CurrentUser.Attempts); //previously user.Attempts
+                string attempts = string.Join(",", user.Attempts); //previously user.Attempts
 
                 writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
             }
@@ -163,11 +163,12 @@ public class Register : MonoBehaviour
                 string decryptedUsername = parts[0];
                 string encryptedPassword = parts[1];
                 string Category = parts[2];
-                string attempts = "-1";
-                if (parts.Length > 3)
+                //string attempts = "-1";
+                List<string> attempts = parts.Skip(3).ToList(); // Skip the first 3 elements and take the rest
+                /*if (parts.Length > 3)
                 {
                     attempts = parts[3];
-                }
+                }*/
                 /*float finalTimeTaken = -1;
                 if (parts.Length > 3)
                 {
@@ -186,7 +187,7 @@ public class Register : MonoBehaviour
                     }
                 }*/
 
-                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = new List<string>() { attempts } };
+                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };//Attempts = new List<string>() { attempts }
                 users.Add(user);
             }
         }
@@ -294,10 +295,21 @@ public class Register : MonoBehaviour
 
     public void FailSimulation()
     {
-        GameManager.Instance.CurrentUser.Attempts.Add("Failed");
+        /*GameManager.Instance.CurrentUser.Attempts.Add("Failed");
         Debug.Log("Failed Sim Saved");
         // Save user data after updating
-        SaveUserData();
+        SaveUserData();*/
+        if (GameManager.Instance.CurrentUser != null)
+        {
+            GameManager.Instance.CurrentUser.Attempts.Add("Failed");
+            Debug.Log("Failed Sim Saved");
+            // Save user data after updating
+            SaveUserData();
+        }
+        else
+        {
+            Debug.LogError("FailSimulation called but no current user is set in GameManager.Instance.CurrentUser");
+        }
     }
     public void Logout()
     {
