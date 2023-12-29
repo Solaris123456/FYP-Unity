@@ -295,6 +295,7 @@ public class Register : MonoBehaviour
     public void FailSimulation()
     {
         GameManager.Instance.CurrentUser.Attempts.Add("Failed");
+        Debug.Log("Failed Sim Saved");
         // Save user data after updating
         SaveUserData();
     }
