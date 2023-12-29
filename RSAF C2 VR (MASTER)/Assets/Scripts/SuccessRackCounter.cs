@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -6,34 +7,38 @@ using UnityEngine.Events;
 public class SuccessRackCounter : MonoBehaviour
 {
     //public List<GameObject> selectedRacks = new List<GameObject>();
-    public BeginScenarioFireScript beginScenarioFireScript;
+    public BeginScenarioFireScript[] beginScenarioFireScript;
     public AudioSource RacksNotDoneAudio;
     public int RacksLeft = 0;
     public bool AllRacksDone = false;
     public UnityEvent racksfinished;
-    
+
     public void SuccessRackCheck()
     {
         RacksLeft = 0;
-        for (int racknum = 0; racknum < beginScenarioFireScript.selectedOptions.Count; racknum++)
+        for (int i = 0; i < beginScenarioFireScript.Length; i++)
         {
-            int indexvalue = beginScenarioFireScript.selectedOptions[racknum];
-            Transform childObject = beginScenarioFireScript.FlammableTargets[indexvalue].transform.Find("BurnFlag");
-            if (childObject.gameObject.activeSelf)
+            for (int racknum = 0; racknum < beginScenarioFireScript[i].selectedOptions.Count; racknum++)
             {
-                RacksLeft++;
-                Debug.Log("RACK NUMBER " + indexvalue + " Not shutting down");
+                int indexvalue = beginScenarioFireScript[i].selectedOptions[racknum];
+                Transform childObject = beginScenarioFireScript[i].FlammableTargets[indexvalue].transform.Find("BurnFlag");
+                if (childObject.gameObject.activeSelf)
+                {
+                    RacksLeft++;
+                    Debug.Log("RACK NUMBER " + indexvalue + " Not shutting down");
+                }
             }
         }
-        if (RacksLeft == 0 && AllRacksDone == false)
-        {
-            AllRacksDone = true;
-            racksfinished.Invoke();
-        }
-        if (RacksLeft != 0 && AllRacksDone == false)
-        {
-            RacksNotDoneAudio.Play();
-        }
+            if (RacksLeft == 0 && AllRacksDone == false)
+            {
+                AllRacksDone = true;
+                racksfinished.Invoke();
+            }
+            if (RacksLeft != 0 && AllRacksDone == false)
+            {
+                RacksNotDoneAudio.Play();
+            }
+        
     }
 
     /*

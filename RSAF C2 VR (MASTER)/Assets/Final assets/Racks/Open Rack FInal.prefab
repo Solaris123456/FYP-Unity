@@ -5687,8 +5687,8 @@ MonoBehaviour:
   BurnFlag: {fileID: 5104297875176690297}
   FireFlag: {fileID: 4546813722784654937}
   sparktime: 5
-  smoketime: 60
-  firetime: 90
+  smoketime: 180
+  firetime: 15
 --- !u!114 &254816340241270195
 MonoBehaviour:
   m_ObjectHideFlags: 0

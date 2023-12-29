@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BeginScenarioFireScript : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class BeginScenarioFireScript : MonoBehaviour
     public SafetyInjectInput safetyInjectInput;
     public int MinNoRacks = 1;
     public int MaxNoRacks = 4;
-
+    public UnityEvent ExtraItemsToTrigger;
     // Start is called before the first frame update
     /*void Start()
     {
@@ -99,6 +100,8 @@ public class BeginScenarioFireScript : MonoBehaviour
         {
             safetyInjectInput.SafeInjectStart();
         }
+
+        ExtraItemsToTrigger.Invoke();
     }
 
     

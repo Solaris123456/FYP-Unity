@@ -127,6 +127,9 @@ MonoBehaviour:
   safetyInjectInput: {fileID: 4217907516579215613}
   MinNoRacks: 1
   MaxNoRacks: 4
+  ExtraItemsToTrigger:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4217907516579215613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e77e68b8b4b89848ac86e188fb1cf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginScenarioFireScript: {fileID: 0}
+  beginScenarioFireScript:
+  - {fileID: 4217907516579215612}
   RacksNotDoneAudio: {fileID: 3947799533772684104}
   RacksLeft: 0
   AllRacksDone: 0
