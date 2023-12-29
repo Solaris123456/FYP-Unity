@@ -122,8 +122,8 @@ public class Register : MonoBehaviour
                 string encryptedUsername = user.Username;
                 string encryptedPassword = user.Password;
                 string Category = user.category;
-
-                string attempts = string.Join(",", user.Attempts);
+                Debug.Log($"{user.Attempts}");
+                string attempts = string.Join(",", GameManager.Instance.CurrentUser.Attempts); //previously user.Attempts
 
                 writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
             }
