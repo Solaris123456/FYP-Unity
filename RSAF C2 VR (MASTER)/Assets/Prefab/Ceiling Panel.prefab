@@ -814,9 +814,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlickerObject: {fileID: 5110551396085103102}
-  speedMultiplier: 3
+  speedMultiplier: 15
   timeBeforeFlicker: 4
-  FlickerFor: 1.5
+  FlickerFor: 1
 --- !u!1 &2228306961121596342
 GameObject:
   m_ObjectHideFlags: 0

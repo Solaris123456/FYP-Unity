@@ -34,15 +34,16 @@ public class Flicker : MonoBehaviour
                 OddOrEven = Mathf.FloorToInt(FlickerTime % 2);
                 if (OddOrEven == 1) // that's odd XD get it (I lame af sia lol)
                 {
-                    FlickerObject.SetActive(false);
+                    FlickerObject.SetActive(true);
                 }
                 if (OddOrEven == 0)
                 {
-                    FlickerObject.SetActive(true);
+                    FlickerObject.SetActive(false);
                 }
             }
             else
             {
+                FlickerObject.SetActive(true);
                 FlickerTime = 0;
                 TimingValue = 0;
             }
