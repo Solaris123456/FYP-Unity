@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FYP UI 2.unity
+    path: Assets/Scenes/Login and Other Scene/FYP UI 2.unity
     guid: c72d4e8c798f3914d851d15402ed93a6
   - enabled: 1
-    path: Assets/Scenes/FYP ADMIN UI 1.unity
+    path: Assets/Scenes/Login and Other Scene/FYP ADMIN UI 1.unity
     guid: 06516d9a47f50244b965f42650d9ded8
   - enabled: 1
-    path: Assets/Scenes/FYP NORMAL UI 1.unity
+    path: Assets/Scenes/Login and Other Scene/FYP NORMAL UI 1.unity
     guid: d97ed98f462c03b49bf8cd2a67ef717f
   - enabled: 1
     path: Assets/Scenes/Training Scenes/Fail Scene (Circuit Breaker).unity
