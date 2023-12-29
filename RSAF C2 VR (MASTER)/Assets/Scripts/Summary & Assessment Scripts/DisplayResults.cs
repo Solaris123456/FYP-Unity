@@ -1,16 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DisplayResults : MonoBehaviour
 {
-    public Text originalTimeTakenText;
-    public Text finalTimeTakenText;
-    public Text lightErrorFoundText;
-    public Text fm200CheckFailText;
-    public Text ceilingErrorFoundText;
+    public TMP_Text originalTimeTakenText;
+    public TMP_Text finalTimeTakenText;
+    public TMP_Text lightErrorFoundText;
+    public TMP_Text fm200CheckFailText;
+    public TMP_Text ceilingErrorFoundText;
 
     // Define your penalty times
     public float lightErrorPenalty = 120; // Replace with your actual penalty time
