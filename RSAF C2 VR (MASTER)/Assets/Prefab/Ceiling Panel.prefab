@@ -768,6 +768,55 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &1950801964384441485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435508413595920013}
+  - component: {fileID: 7178126830642968973}
+  m_Layer: 0
+  m_Name: Flickering Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1435508413595920013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950801964384441485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1997716907533186729}
+  m_Father: {fileID: 6202645268978041592}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7178126830642968973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950801964384441485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c39e0fa897b679848b67fa7ad7389b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlickerObject: {fileID: 5110551396085103102}
+  speedMultiplier: 3
+  timeBeforeFlicker: 4
+  FlickerFor: 1.5
 --- !u!1 &2228306961121596342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,12 +1833,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5110551396085103102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5168266, y: 0.184, z: 0.045410156}
+  m_LocalPosition: {x: -0.5168266, y: 0.18399811, z: 0.045410156}
   m_LocalScale: {x: 0.12432905, y: 0.019019, z: 0.92164}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6202645268978041592}
-  m_RootOrder: 3
+  m_Father: {fileID: 1435508413595920013}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5700941030461048637
 MeshFilter:
@@ -2719,7 +2768,7 @@ Transform:
   - {fileID: 1488410873653304817}
   - {fileID: 7403493870452554930}
   - {fileID: 607966188143521614}
-  - {fileID: 1997716907533186729}
+  - {fileID: 1435508413595920013}
   - {fileID: 4734378735248109159}
   m_Father: {fileID: 3118576067770626428}
   m_RootOrder: 3
