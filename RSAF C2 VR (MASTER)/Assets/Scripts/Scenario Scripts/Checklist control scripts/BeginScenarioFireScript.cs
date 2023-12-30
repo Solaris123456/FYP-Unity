@@ -60,7 +60,7 @@ public class BeginScenarioFireScript : MonoBehaviour
         for (int i = 0; i < numTargets; i++)
         {
             int selectedIndex;
-            do { selectedIndex = Random.Range(0, FlammableTargets.Length); } while (selectedOptions.Contains(selectedIndex));
+            do { selectedIndex = Random.Range(0, (FlammableTargets.Length) -1); } while (selectedOptions.Contains(selectedIndex));
             selectedOptions.Add(selectedIndex);
         }
         //RNG
