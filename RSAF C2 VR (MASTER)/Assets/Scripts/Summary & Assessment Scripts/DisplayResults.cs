@@ -43,8 +43,8 @@ public class DisplayResults : MonoBehaviour
         //lightErrorPenaltyString
 
         //TimeSpan timeSpan = new TimeSpan((long)(originalTimeTaken * TimeSpan.TicksPerSecond));
-        string ogTimeTaken = originalTimeTaken.ToString(); //@"mm\:ss\.fff"
-        string fiTimeTaken = finalTimeTaken.ToString(); //@"mm\:ss\.fff"
+        string ogTimeTaken = originalTimeTaken.ToString(); //previously: string ogTimeTaken = originalTimeTaken.ToString(@"mm\:ss\.fff"); 
+        string fiTimeTaken = finalTimeTaken.ToString(); //previously: string fiTimeTaken = finalTimeTaken.ToString(@"mm\:ss\.fff");
 
         originalTimeTakenText.text = "Original Time Taken: " + ogTimeTaken;
         finalTimeTakenText.text = "Final Time Taken: " + fiTimeTaken;
@@ -54,7 +54,7 @@ public class DisplayResults : MonoBehaviour
 
         // Get a reference to the Register script
         Register registerScript = FindObjectOfType<Register>();
-
+        Debug.Log($"#Saving final time taken: {fiTimeTaken}");
         // Call the SaveFinalTimeTaken method with the finalTimeTaken as argument
         registerScript.SaveFinalTimeTaken(fiTimeTaken);
     }

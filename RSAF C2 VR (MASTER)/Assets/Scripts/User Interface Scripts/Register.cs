@@ -1,17 +1,16 @@
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
-//using Unity.VisualScripting;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-//using UnityEditor.Build.Content;
-//using static System.Net.WebRequestMethods;
-//using static UnityEditor.PlayerSettings;
-//using UnityEngine.EventSystems;
+using UnityEditor.Build.Content;
+using static System.Net.WebRequestMethods;
+using static UnityEditor.PlayerSettings;
+using UnityEngine.EventSystems;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
@@ -23,15 +22,12 @@ public class Register : MonoBehaviour
     public Button registerButton;
     public TMP_Text messageText;
 
-    public bool lightErrorFound; // public bool for light error found
+    public bool lightErrorFound;
     public bool ceilingErrorFound;
-    public bool Fm200CheckFail; // public bool for wrong button pressed
-    //public float timeTaken;
+    public bool Fm200CheckFail;
 
     private List<User> users = new List<User>();
 
-    //(ignore this) private const string EncryptionKey = "QgaTO6Tqj1Jg0VwZgehmXF6uQXKK84WkXnwldAjPNlI=";
-    //(ignore this) private const string InitializationVector = "Vo7arMerutWiGl+zCjdhSA==";
     private const string PasswordSalt = "UGFzc3dvcmRTYWx0";
 
     string trainingMode = "1";
@@ -39,11 +35,9 @@ public class Register : MonoBehaviour
 
     public BNG.SceneLoader sceneLoader;
 
-    
     void Start()
     {
         LoadUserData();
-        //(ignore this) GenerateKeyAndIV();
 
     }
 
@@ -52,7 +46,6 @@ public class Register : MonoBehaviour
         string username = nameInputField.text;
         string password = passwordInputField.text;
 
-        // Logout the current user before logging in a new user
         if (GameManager.Instance.CurrentUser != null)
         {
             Logout();
@@ -63,12 +56,13 @@ public class Register : MonoBehaviour
             if (user.Username == username && VerifyPassword(password, user.Password))
             {
                 GameManager.Instance.CurrentUser = user;
-                Debug.Log("Login successful");
+                Debug.Log("#Login successful");
                 if (user.category == adminMode)
                 {
                     messageText.text = "Welcome Admin";
                     StartCoroutine(ClearMessageAfterDelay(3f));
-                    Debug.Log("Welcome Admin");
+                    Debug.Log("#Welcome Admin");
+                    //FailSimulation();//remove after done
                     sceneLoader.LoadScene("FYP ADMIN UI 1");
 
                 }
@@ -76,7 +70,7 @@ public class Register : MonoBehaviour
                 {
                     messageText.text = "Welcome Trainee";
                     StartCoroutine(ClearMessageAfterDelay(3f));
-                    Debug.Log("Welcome Trainee");
+                    Debug.Log("#Welcome Trainee");
                     sceneLoader.LoadScene("FYP NORMAL UI 1");
                 }
                 return;
@@ -84,7 +78,7 @@ public class Register : MonoBehaviour
         }
         messageText.text = "Login failed";
         StartCoroutine(ClearMessageAfterDelay(3f));
-        Debug.Log("Login failed");
+        Debug.Log("#Login failed");
     }
     public void Registering()
     {
@@ -96,24 +90,28 @@ public class Register : MonoBehaviour
             {
                 messageText.text = "Username already exists";
                 StartCoroutine(ClearMessageAfterDelay(3f));
-                Debug.Log("Username already exists");
+                Debug.Log("#Username already exists");
                 return;
             }
         }
-
 
         string encryptedPassword = EncryptPassword(password);
         User newUser = new User { Username = username, Password = encryptedPassword, category = "1" };
         users.Add(newUser);
 
-        //LoadUserData();
         SaveUserData();
         messageText.text = "Registration Successful";
         StartCoroutine(ClearMessageAfterDelay(3f));
-        Debug.Log("Registration Successful");
+        Debug.Log("#Registration Successful");
     }
     public void SaveUserData()
     {
+        Debug.Log($"#Saving user data. Users count before saving: {users.Count}");
+
+        
+
+        
+
         System.IO.File.WriteAllText(Application.dataPath + "/Accounts.csv", "");
         using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
         {
@@ -122,34 +120,20 @@ public class Register : MonoBehaviour
                 string encryptedUsername = user.Username;
                 string encryptedPassword = user.Password;
                 string Category = user.category;
-                Debug.Log($"{user.Attempts}");
-                string attempts = string.Join(",", user.Attempts); //previously user.Attempts
-
+                string attempts = string.Join(",", user.Attempts);
+                Debug.Log($"#Writing to CSV. User: {user.Username}, Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
                 writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
             }
-
-
-            /*foreach (User user in users)
-            {
-                string encryptedUsername = user.Username;
-                // Only write attempts data if user has made at least one attempt
-                if (user.Attempts.Count > 0 && user.Attempts[0] != -1)
-                {
-                    float finalTimeTaken = user.Attempts[0];
-                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + finalTimeTaken);
-
-
-                    //string attemptsData = String.Join(",", user.Attempts.Select(a => a == -1 ? "Failed" : a.ToString()));
-                    //writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category + "," + attemptsData);
-                }
-                else
-                {
-                    // If user has not made any attempts, don't write "Failed"
-                    writer.WriteLine(encryptedUsername + "," + user.Password + "," + user.category);
-                }
-            }*/
         }
-        Debug.Log("User data saved");
+
+        Debug.Log($"#Saved user data. Users: {string.Join(", ", users.Select(u => u.Username))}");
+
+        Debug.Log("#User data saved");
+        Debug.Log($"#Users count after saving: {users.Count}");
+        foreach (User user in users)
+        {
+            Debug.Log($"#User: {user.Username}, Attempts: {string.Join(",", user.Attempts)}");
+        }
     }
     public void LoadUserData()
     {
@@ -163,37 +147,15 @@ public class Register : MonoBehaviour
                 string decryptedUsername = parts[0];
                 string encryptedPassword = parts[1];
                 string Category = parts[2];
-                //string attempts = "-1";
-                List<string> attempts = parts.Skip(3).ToList(); // Skip the first 3 elements and take the rest
-                /*if (parts.Length > 3)
-                {
-                    attempts = parts[3];
-                }*/
-                /*float finalTimeTaken = -1;
-                if (parts.Length > 3)
-                {
-                    float.TryParse(parts[3], out finalTimeTaken);
-                }*/
-                /*List<float> attempts = new List<float>();
-                for (int i = 3; i < parts.Length; i++)
-                {
-                    if (!string.IsNullOrEmpty(parts[i]) && float.TryParse(parts[i], out float timeTaken))
-                    {
-                        attempts.Add(timeTaken);
-                    }
-                    else
-                    {
-                        attempts.Add(-1);
-                    }
-                }*/
 
-                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };//Attempts = new List<string>() { attempts }
+                List<string> attempts = parts.Skip(3).ToList();
+
+                Debug.Log($"#Loading user data: {decryptedUsername}, {encryptedPassword}, {Category}, {string.Join(",", attempts)}");
+                User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };
                 users.Add(user);
             }
         }
     }
-
-    
 
     private string EncryptPassword(string password)
     {
@@ -259,7 +221,7 @@ public class Register : MonoBehaviour
                 }
                 catch (CryptographicException)
                 {
-                    return false; // Return false if the padding is invalid
+                    return false;
                 }
             }
         }
@@ -268,16 +230,10 @@ public class Register : MonoBehaviour
     {
         User currentUser = GameManager.Instance.CurrentUser;
         currentUser.Attempts.Add(fiTimeTaken);
+        Debug.Log($"#Final time taken saved for user {currentUser.Username}. Attempts: {string.Join(",", currentUser.Attempts)}");
         SaveUserData();
 
-
-
-        /*using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
-        {
-            string encryptedUsername = GameManager.Instance.CurrentUser.Username;
-            writer.WriteLine(encryptedUsername + "," + GameManager.Instance.CurrentUser.Password + "," + GameManager.Instance.CurrentUser.category + "," + fiTimeTaken);
-        }*/
-        Debug.Log("Final time taken saved");
+        Debug.Log("#Final time taken saved");
     }
     IEnumerator ClearMessageAfterDelay(float delay)
     {
@@ -287,41 +243,45 @@ public class Register : MonoBehaviour
     public void CompleteSimulation(float timeTaken)
     {
         string timeTakenString = timeTaken.ToString();
-        //GameManager.Instance.CurrentUser.Attempts.Add(timeTaken);
+
         GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},CeilingErrorFound={ceilingErrorFound},Fm200CheckFail={Fm200CheckFail}";
-        // Save user data after updating
-        //SaveUserData();
+
     }
 
     public void FailSimulation()
     {
-        /*GameManager.Instance.CurrentUser.Attempts.Add("Failed");
-        Debug.Log("Failed Sim Saved");
-        // Save user data after updating
-        SaveUserData();*/
+
         if (GameManager.Instance.CurrentUser != null)
         {
             GameManager.Instance.CurrentUser.Attempts.Add("Failed");
-            Debug.Log("Failed Sim Saved");
-            // Save user data after updating
+            Debug.Log($"#Failed attempt added for user {GameManager.Instance.CurrentUser.Username}. Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
+
+            int index = users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
+            if (index != -1)
+            {
+                users[index] = GameManager.Instance.CurrentUser;
+            }
+            else
+            {
+                Debug.LogError("#User not found in list");
+            }
+
             SaveUserData();
         }
         else
         {
-            Debug.LogError("FailSimulation called but no current user is set in GameManager.Instance.CurrentUser");
+            Debug.LogError("#FailSimulation called but no current user is set in GameManager.Instance.CurrentUser");
         }
     }
     public void Logout()
     {
-        // Save the current user's data before logging out
+
         SaveUserData();
 
-        // Clear the current user's data in memory
         GameManager.Instance.CurrentUser = null;
 
-        // Load the login scene
         SceneManager.LoadScene("FYP UI 2");
-        SceneManager.sceneLoaded += (scene, mode) => 
+        SceneManager.sceneLoaded += (scene, mode) =>
         {
             Canvas myCanvas = FindObjectOfType<Canvas>();
             myCanvas.enabled = true;
@@ -336,14 +296,4 @@ public class User
     public string category { get; set; }
     public List<string> Attempts { get; set; } = new List<string>();
 }
-/*public class Attempt
-{
-    public float TimeTaken { get; set; }
-    public bool WasSuccessful { get; set; }
-}*/
-
-//to anyone tryna understand: At the end of the simulation, the CompleteSimulation method is invoked. This method takes the time taken by the user to complete the simulation as an argument. The timeTaken value is converted to a string (timeTakenString) and stored in the SimulationResults field of the GameManager.
-//The GameManager's SimulationResults field is then accessed by the DisplayResults script. This script parses the SimulationResults string to extract the game values such as originalTimeTaken, lightErrorFound, ceilingErrorFound, and Fm200CheckFail.
-//The DisplayResults script calculates the finalTimeTaken value based on these game values and the lightErrorPenalty, ceilingErrorPenalty, and fm200CheckFailPenalty values defined in the script.
-//The finalTimeTaken value is then converted to a string (fiTimeTaken) and passed to the SaveFinalTimeTaken method of the Register script. This method adds the fiTimeTaken value to the Attempts list of the current user and immediately calls the SaveUserData method to write the updated Attempts list to the CSV file.
 
