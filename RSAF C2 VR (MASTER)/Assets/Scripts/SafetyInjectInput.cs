@@ -67,7 +67,7 @@ public class SafetyInjectInput : MonoBehaviour
 
                 for (int i = 0; i < numoftargets; i++)
                 {
-                    do { RNG = Random.Range(0, count); } while (safetyInjectors[safetynum].targetnumber.Contains(RNG));
+                    do { RNG = Random.Range(0, (count - 1)); } while (safetyInjectors[safetynum].targetnumber.Contains(RNG));
                     safetyInjectors[safetynum].targetnumber.Add(RNG);
                     childObject = Temporary.GetChild(RNG);
 
