@@ -35,9 +35,9 @@ public class DisplayResults : MonoBehaviour
 
         // Add penalty times based on the errors found
         float finalTimeTaken = originalTimeTaken;
-        if (lightErrorFound) finalTimeTaken += lightErrorPenalty;
-        if (ceilingErrorFound) finalTimeTaken += ceilingErrorPenalty;
-        if (Fm200CheckFail) finalTimeTaken += fm200CheckFailPenalty;
+        if (!lightErrorFound) finalTimeTaken += lightErrorPenalty;
+        if (!ceilingErrorFound) finalTimeTaken += ceilingErrorPenalty;
+        if (!Fm200CheckFail) finalTimeTaken += fm200CheckFailPenalty;
 
         //float lightErrorPenaltyString = lightErrorPenalty;
         //lightErrorPenaltyString

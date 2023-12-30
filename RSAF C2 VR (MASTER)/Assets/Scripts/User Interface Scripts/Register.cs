@@ -230,7 +230,17 @@ public class Register : MonoBehaviour
     {
         User currentUser = GameManager.Instance.CurrentUser;
         currentUser.Attempts.Add(fiTimeTaken);
-        Debug.Log($"#Final time taken saved for user {currentUser.Username}. Attempts: {string.Join(",", currentUser.Attempts)}");
+        /*GameManager.Instance.CurrentUser.Attempts.Add(fiTimeTaken);
+        int index = users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
+        if (index != -1)
+        {
+            users[index] = GameManager.Instance.CurrentUser;
+        }
+        else
+        {
+            Debug.LogError("#User not found in list");
+        }*/
+        Debug.Log($"#Final time taken saved for user {GameManager.Instance.CurrentUser}. Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
         SaveUserData();
 
         Debug.Log("#Final time taken saved");
@@ -277,7 +287,7 @@ public class Register : MonoBehaviour
     {
 
         SaveUserData();
-
+        users.Clear();
         GameManager.Instance.CurrentUser = null;
 
         SceneManager.LoadScene("FYP UI 2");
