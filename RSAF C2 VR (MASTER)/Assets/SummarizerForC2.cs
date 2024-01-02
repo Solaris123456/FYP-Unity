@@ -95,10 +95,14 @@ public class SummarizerForC2 : MonoBehaviour
     {
         timerFlag.SetActive(false);
         FinalTime = eventTimer.RecordedTime;
+        FinalTime = Mathf.Floor(FinalTime * 1000) / 1000;
+
         GameCompleteTrigger.SetActive(true);
     }
     public void StoreDataForC2()
     {
+        
+        
         register.lightErrorFound = LightCheck;
         register.ceilingErrorFound = CeilingCheck;
         register.Fm200CheckFail = Fm200;

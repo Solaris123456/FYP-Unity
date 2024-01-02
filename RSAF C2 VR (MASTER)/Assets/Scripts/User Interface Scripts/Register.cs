@@ -13,6 +13,7 @@ using static UnityEditor.PlayerSettings;
 using UnityEngine.EventSystems;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class Register : MonoBehaviour
 {
@@ -27,18 +28,17 @@ public class Register : MonoBehaviour
     public bool Fm200CheckFail;
 
     //public List<User> users = new List<User>();
-    GameManager gameManager;
     
     private const string PasswordSalt = "UGFzc3dvcmRTYWx0";
 
     string trainingMode = "1";
     string adminMode = "2";
-
+    public UnityEvent displayResult;
     public BNG.SceneLoader sceneLoader;
 
     void Start()
     {
-        gameManager = GameManager.Instance;
+        
         LoadUserData();
 
     }
@@ -53,7 +53,7 @@ public class Register : MonoBehaviour
             Logout();
         }
 
-        foreach (User user in gameManager.users)
+        foreach (User user in GameManager.Instance.users)
         {
             if (user.Username == username && VerifyPassword(password, user.Password))
             {
@@ -86,7 +86,7 @@ public class Register : MonoBehaviour
     {
         string username = nameInputField.text;
         string password = passwordInputField.text;
-        foreach (User user in gameManager.users)
+        foreach (User user in GameManager.Instance.users)
         {
             if (user.Username == username)
             {
@@ -99,7 +99,7 @@ public class Register : MonoBehaviour
 
         string encryptedPassword = EncryptPassword(password);
         User newUser = new User { Username = username, Password = encryptedPassword, category = "1" };
-        gameManager.users.Add(newUser);
+        GameManager.Instance.users.Add(newUser);
 
         SaveUserData();
         messageText.text = "Registration Successful";
@@ -108,7 +108,7 @@ public class Register : MonoBehaviour
     }
     public void SaveUserData()
     {
-        Debug.Log($"#Saving user data. Users count before saving: {gameManager.users.Count}");
+        Debug.Log($"#Saving user data. Users count before saving: {GameManager.Instance.users.Count}");
 
         
 
@@ -117,29 +117,34 @@ public class Register : MonoBehaviour
         System.IO.File.WriteAllText(Application.dataPath + "/Accounts.csv", "");
         using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
         {
-            foreach (User user in gameManager.users)
+            foreach (User user in GameManager.Instance.users)
             {
                 string encryptedUsername = user.Username;
                 string encryptedPassword = user.Password;
                 string Category = user.category;
-                string attempts = string.Join(",", user.Attempts);
-                Debug.Log($"#Writing to CSV. User: {user.Username}, Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
+                string attempts = "";
+                if(user.Attempts != null)
+                {
+                    attempts = string.Join(",", user.Attempts);
+                }
+                
+                Debug.Log($"#Writing to CSV. User: {GameManager.Instance.CurrentUser.Username}, Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
                 writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
             }
         }
 
-        Debug.Log($"#Saved user data. Users: {string.Join(", ", gameManager.users.Select(u => u.Username))}");
+        Debug.Log($"#Saved user data. Users: {string.Join(", ", GameManager.Instance.users.Select(u => u.Username))}");
 
         Debug.Log("#User data saved");
-        Debug.Log($"#Users count after saving: {gameManager.users.Count}");
-        foreach (User user in gameManager.users)
+        Debug.Log($"#Users count after saving: {GameManager.Instance.users.Count}");
+        foreach (User user in GameManager.Instance.users)
         {
             Debug.Log($"#User: {user.Username}, Attempts: {string.Join(",", user.Attempts)}");
         }
     }
     public void LoadUserData()
     {
-        gameManager.users.Clear();
+        GameManager.Instance.users.Clear();
         using (StreamReader reader = new StreamReader(Application.dataPath + "/Accounts.csv"))
         {
             string line;
@@ -154,10 +159,10 @@ public class Register : MonoBehaviour
 
                 Debug.Log($"#Loading user data: {decryptedUsername}, {encryptedPassword}, {Category}, {string.Join(",", attempts)}");
                 User user = new User() { Username = decryptedUsername, Password = encryptedPassword, category = Category, Attempts = attempts };
-                gameManager.users.Add(user);
+                GameManager.Instance.users.Add(user);
             }
         }
-        Debug.Log("#"+ gameManager.users.Count);
+        Debug.Log("#"+ GameManager.Instance.users.Count);
     }
 
     private string EncryptPassword(string password)
@@ -243,12 +248,12 @@ public class Register : MonoBehaviour
         {
             Debug.LogError("#User not found in list");
         }*/
-        if (GameManager.Instance.CurrentUser != null && gameManager.users.Exists(user => user.Username == GameManager.Instance.CurrentUser.Username))
+        if (GameManager.Instance.CurrentUser != null && GameManager.Instance.users.Exists(user => user.Username == GameManager.Instance.CurrentUser.Username))
         {
-            int index = gameManager.users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
+            int index = GameManager.Instance.users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
             if (index != -1)
             {
-                gameManager.users[index] = GameManager.Instance.CurrentUser;
+                GameManager.Instance.users[index] = GameManager.Instance.CurrentUser;
             }
         }
         else
@@ -256,7 +261,7 @@ public class Register : MonoBehaviour
             Debug.LogError("#User not found in list");
         }
         Debug.Log($"#Final time taken saved for user {GameManager.Instance.CurrentUser}. Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
-        Debug.Log("#Number of users " + gameManager.users.Count);
+        Debug.Log("#Number of users " + GameManager.Instance.users.Count);
         SaveUserData();
 
         Debug.Log("#Final time taken saved");
@@ -286,10 +291,10 @@ public class Register : MonoBehaviour
             GameManager.Instance.CurrentUser.Attempts.Add("Failed");
             Debug.Log($"#Failed attempt added for user {GameManager.Instance.CurrentUser.Username}. Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
 
-            int index = gameManager.users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
+            int index = GameManager.Instance.users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
             if (index != -1)
             {
-                gameManager.users[index] = GameManager.Instance.CurrentUser;
+                GameManager.Instance.users[index] = GameManager.Instance.CurrentUser;
             }
             else
             {
@@ -307,7 +312,7 @@ public class Register : MonoBehaviour
     {
 
         SaveUserData();
-        gameManager.users.Clear();
+        GameManager.Instance.users.Clear();
         GameManager.Instance.CurrentUser = null;
 
         SceneManager.LoadScene("FYP UI 2");

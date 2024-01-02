@@ -29,6 +29,7 @@ public class EventTimer : MonoBehaviour
         else
         {
             DisplayTime(RecordedTime);
+
             Debug.Log(RecordedTime);
             Timer = 0;
         }
