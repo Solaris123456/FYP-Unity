@@ -56,6 +56,7 @@ public class DisplayResults : MonoBehaviour
         Register registerScript = FindObjectOfType<Register>();
         Debug.Log($"#Saving final time taken: {fiTimeTaken}");
         // Call the SaveFinalTimeTaken method with the finalTimeTaken as argument
+        Debug.Log("#"+registerScript.gameObject.name);
         registerScript.SaveFinalTimeTaken(fiTimeTaken);
     }
 }
