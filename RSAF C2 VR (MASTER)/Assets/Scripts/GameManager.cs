@@ -1,5 +1,6 @@
 //using System.Collections;
 //using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     public User CurrentUser { get; set; }
     public string SimulationResults { get; set; }
 
+    public List<User> users = new List<User>();
+
     private void Awake()
     {
         if (Instance == null)
@@ -15,7 +18,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
+        else if (Instance != this)
         {
             Destroy(gameObject);
         }
