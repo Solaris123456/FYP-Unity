@@ -16,6 +16,7 @@ public class waitForIt : MonoBehaviour
     private bool cheated = false;
     public GameObject cheatObject;
     public UnityEvent cheatActivation;
+    public GameObject[]cheatPermenantlyDisabledObject;
     // Update is called once per frame
     public void Start()
     {
@@ -24,6 +25,18 @@ public class waitForIt : MonoBehaviour
             cheated = true;
             excutable.Invoke();
             cheatActivation.Invoke();
+        }
+        else
+        {
+            int x = 0;
+            foreach (GameObject cheat in cheatPermenantlyDisabledObject)
+            {
+                if (cheatPermenantlyDisabledObject[x].activeSelf)
+                {
+                    cheatPermenantlyDisabledObject[x].SetActive(false);
+                }
+                x++;
+            }
         }
     }
     void Update()
