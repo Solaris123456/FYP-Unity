@@ -228,10 +228,10 @@ public class Register : MonoBehaviour
     }
     public void SaveFinalTimeTaken(string fiTimeTaken)
     {
-        User currentUser = GameManager.Instance.CurrentUser;
-        currentUser.Attempts.Add(fiTimeTaken);
-        /*GameManager.Instance.CurrentUser.Attempts.Add(fiTimeTaken);
-        int index = users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
+        //User currentUser = GameManager.Instance.CurrentUser;
+        //currentUser.Attempts.Add(fiTimeTaken);
+        GameManager.Instance.CurrentUser.Attempts.Add(fiTimeTaken);
+        /*int index = users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
         if (index != -1)
         {
             users[index] = GameManager.Instance.CurrentUser;
@@ -240,6 +240,22 @@ public class Register : MonoBehaviour
         {
             Debug.LogError("#User not found in list");
         }*/
+        if (GameManager.Instance.CurrentUser != null && users.Exists(user => user.Username == GameManager.Instance.CurrentUser.Username))
+        {
+            int index = users.FindIndex(user => user.Username == GameManager.Instance.CurrentUser.Username);
+            if (index != -1)
+            {
+                users[index] = GameManager.Instance.CurrentUser;
+            }
+        }
+        else
+        {
+            Debug.LogError("#User not found in list");
+        }
+        Debug.Log($"#Final time taken saved for user {GameManager.Instance.CurrentUser}. Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
+        SaveUserData();
+
+        Debug.Log("#Final time taken saved");
         Debug.Log($"#Final time taken saved for user {GameManager.Instance.CurrentUser}. Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
         SaveUserData();
 
