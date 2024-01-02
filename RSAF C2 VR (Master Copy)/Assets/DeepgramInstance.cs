@@ -7,7 +7,9 @@ using System.Text.RegularExpressions;
 
 using NativeWebSocket;
 using UnityEngine.Events;
-using System.Linq;
+//using System.Linq;
+//using static UnityEditor.Timeline.Actions.MenuPriority;
+//using UnityEditor.Presets;
 
 [System.Serializable]
 public class DeepgramResponse
@@ -32,24 +34,25 @@ public class Alternative
 [System.Serializable]
 public class WordMatch
 {
-    public float waiting = 10;
+    public AudioSource audiocheck; // check if audio source is playing
+    public float waiting = 2; // waiting time before bypass menu pop up
+    public GameObject detectFlag; // currentflag active status detection
     public string[] words;
-    public GameObject detectFlag;
-    public string bypassTriggerWords;
+    // public string bypassUIWords; // bypass menu words 
     public int matchedCount;
     public bool activated;
     public bool singleUseOnly; // Added field to indicate if the element is single use only
     public UnityEvent method; // Added field to store the corresponding UnityEvent
-    
+    public GameObject bypassUiPopup; // bypass pop up
 }
 
 public class DeepgramInstance : MonoBehaviour
 {
-    public bool allDone = false;
+    public bool allDone = false; // for repeating elements
     public int currentIndex2 = 0; // To keep track of the current index
-    public bool Bypass;
-    public BypassDeepgram bypassScript;
-    WebSocket websocket;
+    public bool Bypass; // will only be true if only bypass is available (deepgram connection lost/fail)
+    public BypassDeepgram bypassScript; // BypassDeepgram script
+    WebSocket websocket; // Deepgram
     public WordMatch[] wordMatches; // Changed the type to WordMatch array
 
     public float tolerance;
@@ -100,9 +103,7 @@ public class DeepgramInstance : MonoBehaviour
         {
             var message = System.Text.Encoding.UTF8.GetString(bytes);
             Debug.Log("OnMessage: " + message);
-
-            DeepgramResponse deepgramResponse = new DeepgramResponse();
-            EditorJsonUtility.FromJsonOverwrite(message, deepgramResponse);
+            DeepgramResponse deepgramResponse = JsonUtility.FromJson<DeepgramResponse>(message);
             if (deepgramResponse.is_final)
             {
                 var transcript = deepgramResponse.channel.alternatives[0].transcript;
@@ -123,72 +124,86 @@ public class DeepgramInstance : MonoBehaviour
                 {
                     string word = words[i];
 
-                    if (EnabledWords)
+                    if (currentIndex2 < wordMatches.Length) 
                     {
-                        /*foreach (var wordMatch in wordMatches)
+                        if (EnabledWords && !wordMatches[currentIndex2].audiocheck.isPlaying)
                         {
-                            if (!wordMatch.activated && Array.Exists(wordMatch.words, w => w == word))
+                            /*
+                            foreach (var wordMatch in wordMatches)
                             {
-                                wordMatch.matchedCount++;
-
-                                if (wordMatch.matchedCount >= wordsToMatch)
+                                if (!wordMatch.activated && Array.Exists(wordMatch.words, w => w == word))
                                 {
-                                    wordMatch.activated = true;
+                                    wordMatch.matchedCount++;
+
+                                    if (wordMatch.matchedCount >= wordsToMatch)
+                                    {
+                                        wordMatch.activated = true;
+
+                                        // Invoke the method only if all previous elements have been activated
+                                        if (AllPreviousElementsActivated(wordMatches, wordMatch))
+                                        {
+                                            wordMatch.method.Invoke();
+                                            //wordMatches[currentIndex2].method.Invoke();
+                                            currentIndex2++;
+                                            Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatch) + 1));
+
+                                            if (wordMatch.singleUseOnly)
+                                            {
+                                                // Remove the word match from the array to prevent further invocation
+                                                wordMatches = wordMatches.Where(match => match != wordMatch).ToArray();
+                                            }
+                                        }
+                                    }
+
+                                    break;
+                                }
+                            }
+                            */
+
+                            if (!wordMatches[currentIndex2].activated && Array.Exists(wordMatches[currentIndex2].words, w => w == word))
+                            {
+                                wordMatches[currentIndex2].matchedCount++;
+
+                                if (wordMatches[currentIndex2].matchedCount >= wordsToMatch)
+                                {
+                                    wordMatches[currentIndex2].activated = true;
 
                                     // Invoke the method only if all previous elements have been activated
-                                    if (AllPreviousElementsActivated(wordMatches, wordMatch))
+                                    if (AllPreviousElementsActivated(wordMatches, wordMatches[currentIndex2]))
                                     {
-                                        wordMatch.method.Invoke();
+                                        wordMatches[currentIndex2].method.Invoke();
                                         //wordMatches[currentIndex2].method.Invoke();
+                                        Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatches[currentIndex2]) + 1));
+
+                                        if (!wordMatches[currentIndex2].singleUseOnly)
+                                        {
+                                            wordMatches[currentIndex2].activated = false;
+                                            currentIndex2--;
+                                            if (allDone == true)
+                                            {
+                                                currentIndex2++;
+                                                wordMatches[currentIndex2].activated = true;
+                                                allDone = false;
+
+                                            }
+                                        }
                                         currentIndex2++;
-                                        Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatch) + 1));
-
-                                        if (wordMatch.singleUseOnly)
-                                        {
-                                            // Remove the word match from the array to prevent further invocation
-                                            wordMatches = wordMatches.Where(match => match != wordMatch).ToArray();
-                                        }
+                                        bypassScript.pressed = false;
+                                        bypassScript.hold = false;
+                                        bypassScript.addtime = 0;
+                                        bypassScript.timer = 0;
+                                        //bypassimgmenu.SetActive(false); // deactive bypass loading
+                                        wordMatches[currentIndex2].bypassUiPopup.SetActive(false); // deactive bypass pop up
                                     }
+                                    break;
                                 }
-
-                                break;
-                            }
-                        }*/
-                        if (!wordMatches[currentIndex2].activated && Array.Exists(wordMatches[currentIndex2].words, w => w == word))
-                        {
-                            wordMatches[currentIndex2].matchedCount++;
-
-                            if (wordMatches[currentIndex2].matchedCount >= wordsToMatch)
-                            {
-                                wordMatches[currentIndex2].activated = true;
-
-                                // Invoke the method only if all previous elements have been activated
-                                if (AllPreviousElementsActivated(wordMatches, wordMatches[currentIndex2]))
-                                {
-                                    wordMatches[currentIndex2].method.Invoke();
-                                    //wordMatches[currentIndex2].method.Invoke();
-                                    Debug.Log("works" + (Array.IndexOf(wordMatches, wordMatches[currentIndex2]) + 1));
-
-                                    if (!wordMatches[currentIndex2].singleUseOnly)
-                                    {
-                                        wordMatches[currentIndex2].activated = false;
-                                        currentIndex2--;
-                                        if (allDone == true)
-                                        {
-                                            currentIndex2++;
-                                            wordMatches[currentIndex2].activated = true;
-                                            allDone = false;
-
-                                        }
-                                    }
-                                    currentIndex2++;
-                                }
-                                break;
                             }
                         }
                     }
                 }
+
             }
+        
         };
 
         await websocket.Connect();
