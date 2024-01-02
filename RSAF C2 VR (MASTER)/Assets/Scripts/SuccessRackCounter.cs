@@ -25,7 +25,7 @@ public class SuccessRackCounter : MonoBehaviour
                 if (childObject.gameObject.activeSelf)
                 {
                     RacksLeft++;
-                    Debug.Log("$ ROOM" + (i + 1) + "RACK NO. " + (indexvalue + 1) + " Not shutting down");
+                    Debug.Log("# ROOM " + (i + 1) + " RACK NO. " + (indexvalue + 1) + " Not shutting down");
                 }
             }
         }
