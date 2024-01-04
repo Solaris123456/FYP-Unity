@@ -1091,6 +1091,7 @@ GameObject:
   - component: {fileID: 1001257217}
   - component: {fileID: 1001257220}
   - component: {fileID: 1001257221}
+  - component: {fileID: 1001257222}
   m_Layer: 5
   m_Name: Logout
   m_TagString: Untagged
@@ -1164,8 +1165,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1001257221}
-        m_TargetAssemblyTypeName: Register, Assembly-CSharp
-        m_MethodName: Logout
+        m_TargetAssemblyTypeName: Logout, Assembly-CSharp
+        m_MethodName: logout
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1237,6 +1238,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1001257215}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905d223ae1e5cdd4c88845c7d39b840f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  registerScript: {fileID: 1001257222}
+--- !u!114 &1001257222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001257215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3db672ad9c1bd642b0da4b98632f40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1245,6 +1259,12 @@ MonoBehaviour:
   loginButton: {fileID: 0}
   registerButton: {fileID: 0}
   messageText: {fileID: 0}
+  lightErrorFound: 0
+  ceilingErrorFound: 0
+  Fm200CheckFail: 0
+  displayResult:
+    m_PersistentCalls:
+      m_Calls: []
   sceneLoader: {fileID: 0}
 --- !u!1001 &1073040046
 PrefabInstance:

@@ -11,6 +11,13 @@ public class GameManager : MonoBehaviour
 
     public List<User> users = new List<User>();
 
+    public void Start()
+    {
+        Register registerScript = FindObjectOfType<Register>();
+        registerScript.LoadUserData();
+        Debug.Log("this btr run once sia #");
+        Debug.Log("#" + GameManager.Instance.users.Count);
+    }
     private void Awake()
     {
         if (Instance == null)

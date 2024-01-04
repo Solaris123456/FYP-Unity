@@ -10,7 +10,7 @@ public class Logout : MonoBehaviour
     {
         
         registerScript = FindObjectOfType<Register>();
-            
+         
         
     }
     public void logout()

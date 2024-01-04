@@ -39,33 +39,38 @@ public class Register : MonoBehaviour
     void Start()
     {
         
-        LoadUserData();
+        //LoadUserData();
 
     }
 
     public void Login()
     {
+        
         string username = nameInputField.text;
         string password = passwordInputField.text;
 
         if (GameManager.Instance.CurrentUser != null)
         {
+            Debug.Log("#Logged out:" + GameManager.Instance.CurrentUser);
             Logout();
+            
         }
-
+        Debug.Log("#User count before login:" + GameManager.Instance.users.Count);
         foreach (User user in GameManager.Instance.users)
         {
             if (user.Username == username && VerifyPassword(password, user.Password))
             {
                 GameManager.Instance.CurrentUser = user;
                 Debug.Log("#Login successful");
+
                 if (user.category == adminMode)
                 {
                     messageText.text = "Welcome Admin";
                     StartCoroutine(ClearMessageAfterDelay(3f));
                     Debug.Log("#Welcome Admin");
-                    FailSimulation();//remove after done
+                    //FailSimulation();//remove after done
                     sceneLoader.LoadScene("FYP ADMIN UI 1");
+                    Debug.Log("#User count after login:" + GameManager.Instance.users.Count);
 
                 }
                 else
@@ -74,6 +79,7 @@ public class Register : MonoBehaviour
                     StartCoroutine(ClearMessageAfterDelay(3f));
                     Debug.Log("#Welcome Trainee");
                     sceneLoader.LoadScene("FYP NORMAL UI 1");
+                    Debug.Log("#User count after login:" + GameManager.Instance.users.Count);
                 }
                 return;
             }
@@ -86,6 +92,7 @@ public class Register : MonoBehaviour
     {
         string username = nameInputField.text;
         string password = passwordInputField.text;
+
         foreach (User user in GameManager.Instance.users)
         {
             if (user.Username == username)
@@ -98,9 +105,10 @@ public class Register : MonoBehaviour
         }
 
         string encryptedPassword = EncryptPassword(password);
-        User newUser = new User { Username = username, Password = encryptedPassword, category = "1" };
+        User newUser = new User { Username = username, Password = encryptedPassword, category = "1"};
+        
         GameManager.Instance.users.Add(newUser);
-
+        Debug.Log("#User count after registration:"+GameManager.Instance.users.Count);
         SaveUserData();
         messageText.text = "Registration Successful";
         StartCoroutine(ClearMessageAfterDelay(3f));
@@ -111,9 +119,6 @@ public class Register : MonoBehaviour
         Debug.Log($"#Saving user data. Users count before saving: {GameManager.Instance.users.Count}");
 
         
-
-        
-
         System.IO.File.WriteAllText(Application.dataPath + "/Accounts.csv", "");
         using (StreamWriter writer = new StreamWriter(Application.dataPath + "/Accounts.csv", append: true))
         {
@@ -127,7 +132,7 @@ public class Register : MonoBehaviour
                 {
                     attempts = string.Join(",", user.Attempts);
                 }
-                
+                Debug.Log($"#Users count before writing to csv: {GameManager.Instance.users.Count}");
                 Debug.Log($"#Writing to CSV. User: {GameManager.Instance.CurrentUser.Username}, Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
                 writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
             }
@@ -164,7 +169,10 @@ public class Register : MonoBehaviour
         }
         Debug.Log("#"+ GameManager.Instance.users.Count);
     }
-
+    //usernem = input("usernem: " )
+    //paswod = input("paswor: " )
+    //with open "Accounts.csv","r": 
+    //smu comp sci nerd award winning python code
     private string EncryptPassword(string password)
     {
         byte[] salt = Convert.FromBase64String(PasswordSalt);
@@ -312,15 +320,16 @@ public class Register : MonoBehaviour
     {
 
         SaveUserData();
-        GameManager.Instance.users.Clear();
+        //GameManager.Instance.users.Clear();
         GameManager.Instance.CurrentUser = null;
 
         SceneManager.LoadScene("FYP UI 2");
+        /*
         SceneManager.sceneLoaded += (scene, mode) =>
         {
             Canvas myCanvas = FindObjectOfType<Canvas>();
             myCanvas.enabled = true;
-        };
+        };*/
     }
 }
 
