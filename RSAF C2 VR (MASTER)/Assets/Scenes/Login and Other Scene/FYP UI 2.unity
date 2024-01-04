@@ -4906,6 +4906,7 @@ GameObject:
   - component: {fileID: 419912802}
   - component: {fileID: 419912803}
   - component: {fileID: 419912804}
+  - component: {fileID: 419912805}
   m_Layer: 5
   m_Name: User Interface
   m_TagString: Untagged
@@ -4995,6 +4996,20 @@ MonoBehaviour:
   registerButton: {fileID: 0}
   Selected_UI: 0
   UI_list: []
+--- !u!114 &419912805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419912800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb6921dc133cef646b30747fe4f84b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closeButton: {fileID: 991519081}
+  messageText: {fileID: 335676792}
 --- !u!1 &424564047
 GameObject:
   m_ObjectHideFlags: 0
@@ -11351,7 +11366,6 @@ GameObject:
   - component: {fileID: 991519083}
   - component: {fileID: 991519082}
   - component: {fileID: 991519081}
-  - component: {fileID: 991519084}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -11424,13 +11438,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 991519084}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 419912805}
+        m_TargetAssemblyTypeName: CloseAppButton, Assembly-CSharp
+        m_MethodName: CloseApplication
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11474,20 +11488,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991519079}
   m_CullTransparentMesh: 1
---- !u!114 &991519084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991519079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb6921dc133cef646b30747fe4f84b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  closeButton: {fileID: 991519081}
-  messageText: {fileID: 0}
 --- !u!114 &998387263
 MonoBehaviour:
   m_ObjectHideFlags: 0

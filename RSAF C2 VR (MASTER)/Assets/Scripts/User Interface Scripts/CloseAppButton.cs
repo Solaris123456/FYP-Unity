@@ -10,10 +10,10 @@ public class CloseAppButton : MonoBehaviour
     public TMP_Text messageText;
     void Start()
     {
-        closeButton.onClick.AddListener(CloseApplication);
+        //closeButton.onClick.AddListener(CloseApplication);
     }
 
-    void CloseApplication()
+    public void CloseApplication()
     {
 
         messageText.text = "Quitting Simulator";
