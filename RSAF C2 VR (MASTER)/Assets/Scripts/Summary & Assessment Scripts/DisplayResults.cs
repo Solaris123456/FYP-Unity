@@ -43,6 +43,13 @@ public class DisplayResults : MonoBehaviour
         //lightErrorPenaltyString
 
         //TimeSpan timeSpan = new TimeSpan((long)(originalTimeTaken * TimeSpan.TicksPerSecond));
+        TimeSpan lightErrortimeSpan = TimeSpan.FromSeconds(lightErrorPenalty);
+        string leTimeTaken = lightErrortimeSpan.ToString(@"mm\:ss");
+        TimeSpan ceilingErrortimeSpan = TimeSpan.FromSeconds(ceilingErrorPenalty);
+        string ceTimeTaken = ceilingErrortimeSpan.ToString(@"mm\:ss");
+        TimeSpan fm200timeSpan = TimeSpan.FromSeconds(fm200CheckFailPenalty);
+        string fmTimeTaken = fm200timeSpan.ToString(@"mm\:ss");
+
         TimeSpan ogtimeSpan = TimeSpan.FromSeconds(originalTimeTaken);
         TimeSpan fitimeSpan = TimeSpan.FromSeconds(finalTimeTaken);
         string ogTimeTaken = ogtimeSpan.ToString(@"mm\:ss\.fff"); //previously: string ogTimeTaken = originalTimeTaken.ToString(@"mm\:ss\.fff"); 
@@ -50,9 +57,9 @@ public class DisplayResults : MonoBehaviour
 
         originalTimeTakenText.text = "Original Time Taken: " + ogTimeTaken;
         finalTimeTakenText.text = "Final Time Taken: " + fiTimeTaken;
-        lightErrorFoundText.text = "Light Error Found: " + (lightErrorFound ? "Yes" : $"Error was not found: Time Penalty of {lightErrorPenalty} Incurred");
-        ceilingErrorFoundText.text = "Ceiling Error Found: " + (ceilingErrorFound ? "Yes" : $"Error was not found: Time Penalty of {ceilingErrorPenalty} Incurred");
-        fm200CheckFailText.text = "Fm200 Check Fail: " + (Fm200CheckFail ? "Yes" : $"Error was not found: Time Penalty of {fm200CheckFailPenalty} Incurred");
+        lightErrorFoundText.text = "Light Error: " + (lightErrorFound ? "Error Found" : $"Error not found: Penalty +{leTimeTaken} ");
+        ceilingErrorFoundText.text = "Ceiling Error: " + (ceilingErrorFound ? "Error Found" : $"Error not found: Penalty +{ceTimeTaken} ");
+        fm200CheckFailText.text = "Fm200 Check: " + (Fm200CheckFail ? "Error Found" : $"Error not found: Penalty +{fmTimeTaken} ");
 
         // Get a reference to the Register script
         Register registerScript = FindObjectOfType<Register>();
