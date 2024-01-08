@@ -78,6 +78,7 @@ public class Register : MonoBehaviour
                     messageText.text = "Welcome Trainee";
                     StartCoroutine(ClearMessageAfterDelay(3f));
                     Debug.Log("#Welcome Trainee");
+                    //FailSimulation();
                     sceneLoader.LoadScene("FYP NORMAL UI 1");
                     Debug.Log("#User count after login:" + GameManager.Instance.users.Count);
                 }
@@ -134,7 +135,7 @@ public class Register : MonoBehaviour
                 }
                 Debug.Log($"#Users count before writing to csv: {GameManager.Instance.users.Count}");
                 Debug.Log($"#Writing to CSV. User: {GameManager.Instance.CurrentUser.Username}, Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
-                writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + "," + attempts);
+                writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + ","+ attempts);
             }
         }
 
@@ -167,7 +168,8 @@ public class Register : MonoBehaviour
                 GameManager.Instance.users.Add(user);
             }
         }
-        Debug.Log("#"+ GameManager.Instance.users.Count);
+        Debug.Log("#LoadUserData"+ GameManager.Instance.users.Count);
+
     }
     //usernem = input("usernem: " )
     //paswod = input("paswor: " )
@@ -286,7 +288,7 @@ public class Register : MonoBehaviour
     public void CompleteSimulation(float timeTaken)
     {
         string timeTakenString = timeTaken.ToString();
-
+        Debug.Log("#Number of users complete sim " + GameManager.Instance.users.Count);
         GameManager.Instance.SimulationResults = $"TimeTaken={timeTakenString},LightErrorFound={lightErrorFound},CeilingErrorFound={ceilingErrorFound},Fm200CheckFail={Fm200CheckFail}";
 
     }

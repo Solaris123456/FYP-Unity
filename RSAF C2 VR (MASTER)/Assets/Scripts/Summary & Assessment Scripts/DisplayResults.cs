@@ -61,6 +61,7 @@ public class DisplayResults : MonoBehaviour
         ceilingErrorFoundText.text = "Ceiling Error: " + (ceilingErrorFound ? "Error Found" : $"Error not found: Penalty +{ceTimeTaken} ");
         fm200CheckFailText.text = "Fm200 Check: " + (Fm200CheckFail ? "Error Found" : $"Error not found: Penalty +{fmTimeTaken} ");
 
+        Debug.Log("#Number of users b4 savefinaltime " + GameManager.Instance.users.Count);
         // Get a reference to the Register script
         Register registerScript = FindObjectOfType<Register>();
         Debug.Log($"#Saving final time taken: {fiTimeTaken}");
