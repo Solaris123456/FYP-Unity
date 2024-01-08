@@ -13,6 +13,7 @@ public class CircuitBreakerClearFire : MonoBehaviour
     public string Failure;
     public GameObject BreakerChecker;
     public UnityEvent ForAssessmentOnly;
+    public bool pressed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,21 +29,24 @@ public class CircuitBreakerClearFire : MonoBehaviour
 
     public void ClearFire()
     {
-        if (BurnFlag.activeSelf)
-        {
-            BurnFlag.SetActive(false);
-            Spark.gameObject.SetActive(false);
-            Smoke.gameObject.SetActive(false);
-            FireTick.SetActive(false);
-            Debug.Log("Power to breaker removed");
-            BreakerChecker.SetActive(false);
+        if (!pressed)
+        { 
+            pressed = true;
+            if (BurnFlag.activeSelf)
+            {
+                BurnFlag.SetActive(false);
+                Spark.gameObject.SetActive(false);
+                Smoke.gameObject.SetActive(false);
+                FireTick.SetActive(false);
+                Debug.Log("Power to breaker removed");
+                BreakerChecker.SetActive(false);
+            }
+            else
+            {
+                ForAssessmentOnly.Invoke();
+                Debug.Log("Game over due to incorrect breaker input, Returning to menu");
+                SceneManager.LoadScene(Failure);
+            }
         }
-        else
-        {
-            ForAssessmentOnly.Invoke();
-            Debug.Log("Game over due to incorrect breaker input, Returning to menu");
-            SceneManager.LoadScene(Failure);
-        }
-
     }
 }
