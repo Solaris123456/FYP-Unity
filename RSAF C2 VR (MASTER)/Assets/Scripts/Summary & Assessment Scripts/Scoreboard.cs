@@ -33,8 +33,14 @@ public class Scoreboard : MonoBehaviour
             GameObject _scoreEntry = Instantiate(scoreEntry, scoreEntryParent.transform);
             TextMeshProUGUI[] picked_textMesh = _scoreEntry.GetComponentsInChildren<TextMeshProUGUI>();
             picked_textMesh[0].text = $"{user.Username}"; // user
-            picked_textMesh[1].text = $"{user.Attempts.Min()}"; // score
-            Debug.Log("#Is success");
+
+            //picked_textMesh[1].text = $"{user.Attempts.Min()}";
+            
+            // Remove quotes from the minimum time string
+            string minTime = user.Attempts.Min().TrimStart('\'').TrimEnd('\''); // score
+            picked_textMesh[1].text = minTime;
+
+            //Debug.Log("#Is success");
             /*
             GameObject textObject = new GameObject("Score Entry");
             textObject.transform.SetParent(contentObject.transform, false);
@@ -84,8 +90,10 @@ public class Scoreboard : MonoBehaviour
     }*/
     private float ConvertTimeSpanToSeconds(string timeSpanString)
     {
+        
         TimeSpan timeSpan;
-        if (TimeSpan.TryParseExact(timeSpanString, @"mm\:ss\.fff", null, out timeSpan))
+        string unquotedTimeSpanString = timeSpanString.TrimStart('\'').TrimEnd('\'');//test
+        if (TimeSpan.TryParseExact(unquotedTimeSpanString, @"mm\:ss\.fff", null, out timeSpan))
         {
             return (float)timeSpan.TotalSeconds;
 

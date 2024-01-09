@@ -128,14 +128,37 @@ public class Register : MonoBehaviour
                 string encryptedUsername = user.Username;
                 string encryptedPassword = user.Password;
                 string Category = user.category;
-                string attempts = "";
+                // Create separate lists for time strings and failure statuses
+                var timeStrings = new List<string>();
+                var failures = new List<string>();
+                foreach (var attempt in user.Attempts)
+                {
+                    if (attempt.Contains(":"))
+                    {
+                        // If the attempt contains a colon, it's a time string
+                        timeStrings.Add(attempt);
+                    }
+                    else
+                    {
+                        // Otherwise, it's a failure status
+                        failures.Add(attempt);
+                    }
+                }
+
+                // Apply the Select function to the time strings list only
+                string formattedTimeStrings = string.Join(",", timeStrings.Select(a => a.StartsWith("'") && a.EndsWith("'") ? a : $"'{a}'"));
+                string attempts = string.Join(",", failures.Concat(formattedTimeStrings.Split(',')).ToList());
+                /*string attempts = "";
                 if(user.Attempts != null)
                 {
-                    attempts = string.Join(",", user.Attempts);
-                }
+                    attempts = string.Join(",", user.Attempts.Select(a => $"'{a}'")); //attempts = string.Join(",", user.Attempts); before no '
+                }*/
                 Debug.Log($"#Users count before writing to csv: {GameManager.Instance.users.Count}");
                 Debug.Log($"#Writing to CSV. User: {GameManager.Instance.CurrentUser.Username}, Attempts: {string.Join(",", GameManager.Instance.CurrentUser.Attempts)}");
-                writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + ","+ attempts);
+                //writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + ","+ attempts);
+                string attemptsWithComma = !string.IsNullOrEmpty(attempts) ? "," + attempts : "";
+
+                writer.WriteLine(encryptedUsername + "," + encryptedPassword + "," + Category + attemptsWithComma);
             }
         }
 
@@ -168,7 +191,7 @@ public class Register : MonoBehaviour
                 GameManager.Instance.users.Add(user);
             }
         }
-        Debug.Log("#LoadUserData"+ GameManager.Instance.users.Count);
+        Debug.Log("#LoadUserData user count:"+ GameManager.Instance.users.Count);
 
     }
     //usernem = input("usernem: " )

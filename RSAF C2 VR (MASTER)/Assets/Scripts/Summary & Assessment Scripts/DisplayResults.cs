@@ -52,14 +52,16 @@ public class DisplayResults : MonoBehaviour
 
         TimeSpan ogtimeSpan = TimeSpan.FromSeconds(originalTimeTaken);
         TimeSpan fitimeSpan = TimeSpan.FromSeconds(finalTimeTaken);
-        string ogTimeTaken = ogtimeSpan.ToString(@"mm\:ss\.fff"); //previously: string ogTimeTaken = originalTimeTaken.ToString(@"mm\:ss\.fff"); 
-        string fiTimeTaken = fitimeSpan.ToString(@"mm\:ss\.fff"); //previously: string fiTimeTaken = finalTimeTaken.ToString(@"mm\:ss\.fff");
+        string ogTimeTaken = $"{ogtimeSpan.ToString(@"mm\:ss\.fff")}"; //ogtimeSpan.ToString(@"mm\:ss\.fff"); //previously: string ogTimeTaken = originalTimeTaken.ToString(@"mm\:ss\.fff"); 
+        string fiTimeTaken = $"'{fitimeSpan.ToString(@"mm\:ss\.fff")}'"; //fitimeSpan.ToString(@"mm\:ss\.fff"); //previously: string fiTimeTaken = finalTimeTaken.ToString(@"mm\:ss\.fff");
 
-        originalTimeTakenText.text = "Original Time Taken: " + ogTimeTaken;
-        finalTimeTakenText.text = "Final Time Taken: " + fiTimeTaken;
-        lightErrorFoundText.text = "Light Error: " + (lightErrorFound ? "Error Found" : $"Error not found: Penalty +{leTimeTaken} ");
-        ceilingErrorFoundText.text = "Ceiling Error: " + (ceilingErrorFound ? "Error Found" : $"Error not found: Penalty +{ceTimeTaken} ");
-        fm200CheckFailText.text = "Fm200 Check: " + (Fm200CheckFail ? "Error Found" : $"Error not found: Penalty +{fmTimeTaken} ");
+        //string ogDisplayTimeTaken = $"{ogtimeSpan.ToString(@"mm\:ss")}";
+        string fiDisplayTimeTaken = $"{fitimeSpan.ToString(@"mm\:ss\.fff")}";
+        originalTimeTakenText.text = "Time Taken: " + ogTimeTaken + " minutes";
+        finalTimeTakenText.text = "Final Time: " + fiDisplayTimeTaken + " minutes";
+        lightErrorFoundText.text = "Light Error: " + (lightErrorFound ? "Error Found" : $"Penalty +{leTimeTaken} minutes");
+        ceilingErrorFoundText.text = "Ceiling Error: " + (ceilingErrorFound ? "Error Found" : $"Penalty +{ceTimeTaken} minutes");
+        fm200CheckFailText.text = "Fm200 Check: " + (Fm200CheckFail ? "Error Found" : $"Penalty +{fmTimeTaken} minutes");
 
         Debug.Log("#Number of users b4 savefinaltime " + GameManager.Instance.users.Count);
         // Get a reference to the Register script
