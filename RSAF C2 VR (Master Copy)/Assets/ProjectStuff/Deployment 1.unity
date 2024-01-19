@@ -3959,9 +3959,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToActivate: {fileID: 4990514182083175452, guid: 7aa23398bc07d4e43a9783b3ee5c9d4d,
     type: 3}
-  debounceDelay: 0.5
+  isButtonPressed: 0
   objectstohide:
   - {fileID: 0}
+  buttoninput: 0
 --- !u!1001 &1736996098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4291,7 +4292,7 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 6329f313da6f6694491bfcf430623c29, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
+  m_TreeBillboardDistance: 2000
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 250
