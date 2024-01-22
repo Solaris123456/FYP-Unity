@@ -13,7 +13,7 @@ public class Fm200PressureCheck : MonoBehaviour
     public GameObject[] Abnormalities;
     public AudioSource wrongAudio;
     public int NumberOfFaultTargets;
-    private int Number;
+    private float Number;
     private int RNG;
     private List<int> targetnumber = new List<int>();
 
@@ -22,7 +22,8 @@ public class Fm200PressureCheck : MonoBehaviour
         RNG = 0;
         Number = 0;
         RNG = Random.Range(0, 9);
-        if (RNG % 2 == 0)
+        Number += RNG;
+        if (Number % 2 == 0)
         {
             Normal = true;
         }
