@@ -577,8 +577,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You did not find the Faults in time. The FM200 was deployed due to a fire
-    and the entire facilty had to be evacuated, due to your mistake.
+  m_Text: You did not find the Faults in time. This caused a fire to start, and the
+    components had to be replaced due to your carelessness.
 --- !u!1 &1299916471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Retry Assessment
+  m_Text: Retry Scenario
 --- !u!224 &271098997279708119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1172,7 +1172,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Assessment Failed
+  m_Text: Scenario Failed
 --- !u!114 &848579964596151649
 MonoBehaviour:
   m_ObjectHideFlags: 0

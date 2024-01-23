@@ -11,7 +11,7 @@ public class waitForIt : MonoBehaviour
 
     public float waitingTime;
     public bool activated = false;
-    private float realtime;
+    private float realtime = 0;
     public UnityEvent excutable;
     private bool cheated = false;
     public GameObject cheatObject;
