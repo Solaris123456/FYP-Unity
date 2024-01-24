@@ -72,7 +72,7 @@ MonoBehaviour:
     type: 3}
   plugObjt: {fileID: 3749660500698215857, guid: 1b6ad518bf036ee45b651ba015d0f3cf,
     type: 3}
-  selectPosition: {x: 0, y: 0, z: 0}
+  selectPosition: {x: 82.9827, y: 1.7372754, z: 118.530045}
   mousePossHelper: {fileID: 541287800083086103}
   presetJoint: {fileID: 2655988077585873504, guid: abc25b6363fdfea44958d0fb6b73e3c5,
     type: 2}
@@ -207,7 +207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541287800083086107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8875519, y: 0.16672032, z: -0.279847}
+  m_LocalPosition: {x: 3.481, y: 1.737, z: 0.05}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children: []
