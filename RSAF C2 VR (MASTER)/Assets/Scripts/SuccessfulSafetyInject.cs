@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -19,32 +20,35 @@ public class SuccessfulSafetyInject : MonoBehaviour
     
     public void safetyInjectCheck()
     {
-        for (int safetynum = 0; safetynum < safetyInjectToCheck.Length; safetynum++)
+        if (safetyInjectToCheck.Length != 0)
         {
-            safetyInjectToCheck[safetynum].numberOfInjectsLeft = 0;
-            Transform Temporary = safetyInjectInput.safetyInjectors[safetynum].SafetyInjectParentGameObject.transform;
-
-            for (int x = 0; x < safetyInjectInput.safetyInjectors[safetynum].targetnumber.Count; x++)
+            for (int safetynum = 0; safetynum < safetyInjectToCheck.Length; safetynum++)
             {
-                Transform childObject = Temporary.GetChild(safetyInjectInput.safetyInjectors[safetynum].targetnumber[x]);
-                Transform TargetObject = childObject;
+                safetyInjectToCheck[safetynum].numberOfInjectsLeft = 0;
+                Transform Temporary = safetyInjectInput.safetyInjectors[safetynum].SafetyInjectParentGameObject.transform;
 
-                if (safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate.Length > 0)
+                for (int x = 0; x < safetyInjectInput.safetyInjectors[safetynum].targetnumber.Count; x++)
                 {
-                    for (int i = 0; i < safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate.Length; i++)
+                    Transform childObject = Temporary.GetChild(safetyInjectInput.safetyInjectors[safetynum].targetnumber[x]);
+                    Transform TargetObject = childObject;
+
+                    if (safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate.Length > 0)
                     {
-                        childObject = TargetObject.Find(safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate[i]);
-                        TargetObject = childObject;
+                        for (int i = 0; i < safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate.Length; i++)
+                        {
+                            childObject = TargetObject.Find(safetyInjectInput.safetyInjectors[safetynum].PathUnderTargetObjectToActivate[i]);
+                            TargetObject = childObject;
+                        }
+                    }
+                    if (TargetObject.gameObject.activeSelf == safetyInjectInput.safetyInjectors[safetynum].pathActivationsStatus)
+                    {
+                        safetyInjectToCheck[safetynum].numberOfInjectsLeft++;
                     }
                 }
-                if (TargetObject.gameObject.activeSelf == safetyInjectInput.safetyInjectors[safetynum].pathActivationsStatus)
+                if (safetyInjectToCheck[safetynum].numberOfInjectsLeft == 0)
                 {
-                    safetyInjectToCheck[safetynum].numberOfInjectsLeft++;
+                    safetyInjectToCheck[safetynum].alldone = true;
                 }
-            }
-            if (safetyInjectToCheck[safetynum].numberOfInjectsLeft == 0)
-            {
-                safetyInjectToCheck[safetynum].alldone = true; 
             }
         }
     }

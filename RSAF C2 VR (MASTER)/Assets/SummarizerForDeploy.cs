@@ -19,7 +19,9 @@ public class SummarizerForDeploy : MonoBehaviour
         successfulRackCounter.SuccessRackCheck();
         successfulSafetyInject.safetyInjectCheck();
         if (successfulRackCounter.AllRacksDone)
-        {
+        { 
+        
+            /*
             //just copy past this if you need to add more injects
             if (successfulSafetyInject.safetyInjectToCheck[0].alldone)
             {
@@ -32,6 +34,7 @@ public class SummarizerForDeploy : MonoBehaviour
             {
 
             }
+            */
 
             //training & assessment mode logic
             if (!trainingMode)
@@ -42,18 +45,18 @@ public class SummarizerForDeploy : MonoBehaviour
             else
             {
                 //must complete all safety injects
-                if(LightCheck)
+                //if(LightCheck)
                 {
                     StopTheGame();
                 }
-                else
+                /*else
                 {
                     NotDoneAudio.Play();
                     if (PressedWithoutFinishing == false)
                     {
                         PressedWithoutFinishing = true;
                     }
-                }
+                }*/
             }
         }
         else
