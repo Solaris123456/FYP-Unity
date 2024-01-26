@@ -44,6 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/#2 Assessment Scenes/Fail Scene (Circuit Breaker) 2.unity
     guid: aaf07845112c3734bab8572a10e116dd
+  - enabled: 1
+    path: Assets/FinalVersion.unity
+    guid: 1b7d60ad34c0c6d4fb82bd6419e5d736
+  - enabled: 1
+    path: Assets/Scenes/New Environment Testing/Fail Scene (did not find faults in
+      time).unity
+    guid: f3dd52ecc518ed6468ec7e13b31759d0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 44689fb6e6b1e454aa7564ec9725d79c,
       type: 2}
