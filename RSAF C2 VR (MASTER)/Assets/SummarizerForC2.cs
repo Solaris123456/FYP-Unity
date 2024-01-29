@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SummarizerForC2 : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class SummarizerForC2 : MonoBehaviour
     public GameObject timerFlag;
     public GameObject GameCompleteTrigger;
     public AudioSource NotDoneAudio;
+    public UnityEvent FailTrigger;
 
     public bool trainingMode = false;
     public float FinalTime = 0;
@@ -68,7 +70,7 @@ public class SummarizerForC2 : MonoBehaviour
             else
             {
                 //must complete all safety injects
-                if(LightCheck && CeilingCheck && Fm200)
+                if (LightCheck && CeilingCheck && Fm200)
                 {
                     StopTheGame();
                 }
@@ -84,10 +86,17 @@ public class SummarizerForC2 : MonoBehaviour
         }
         else
         {
-            NotDoneAudio.Play();
-            if (PressedWithoutFinishing == false)
+            if (trainingMode)
             {
-                PressedWithoutFinishing = true;
+                NotDoneAudio.Play();
+                if (PressedWithoutFinishing == false)
+                {
+                    PressedWithoutFinishing = true;
+                }
+            }
+            else
+            {
+                FailTrigger.Invoke();
             }
         }
     }
