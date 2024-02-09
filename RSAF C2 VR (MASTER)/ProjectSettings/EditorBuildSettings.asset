@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/#2 Assessment Scenes/Fail Scene (Circuit Breaker) 2.unity
     guid: aaf07845112c3734bab8572a10e116dd
   - enabled: 1
-    path: Assets/FinalVersion.unity
+    path: Assets/Scenes/#3 Training Scenes/FinalVersion.unity
     guid: 1b7d60ad34c0c6d4fb82bd6419e5d736
   - enabled: 1
     path: Assets/Scenes/New Environment Testing/Fail Scene (did not find faults in
